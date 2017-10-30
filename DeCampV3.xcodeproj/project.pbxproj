@@ -15,6 +15,8 @@
 		AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */; };
 		AD067C951F9E71B5000C0630 /* DeCampV3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C941F9E71B5000C0630 /* DeCampV3Tests.m */; };
 		AD067CA01F9E71B5000C0630 /* DeCampV3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C9F1F9E71B5000C0630 /* DeCampV3UITests.m */; };
+		AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */; };
+		AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CEE1F9E740E000C0630 /* bus_pic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		AD067C9B1F9E71B5000C0630 /* DeCampV3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeCampV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C9F1F9E71B5000C0630 /* DeCampV3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeCampV3UITests.m; sourceTree = "<group>"; };
 		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decamp logo small.jpeg"; sourceTree = "<group>"; };
+		AD067CEE1F9E740E000C0630 /* bus_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus_pic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AD067CEE1F9E740E000C0630 /* bus_pic.jpg */,
+				AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */,
 				AD067C7B1F9E71B5000C0630 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -207,6 +213,7 @@
 				TargetAttributes = {
 					AD067C761F9E71B5000C0630 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G3P9A8Z2NP;
 						ProvisioningStyle = Automatic;
 					};
 					AD067C8F1F9E71B5000C0630 = {
@@ -248,7 +255,9 @@
 			files = (
 				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
+				AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */,
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
+				AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3P9A8Z2NP;
 				INFOPLIST_FILE = DeCampV3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3;
@@ -437,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G3P9A8Z2NP;
 				INFOPLIST_FILE = DeCampV3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3;
