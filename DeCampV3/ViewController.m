@@ -43,16 +43,18 @@
     // Do any additional setup after loading the view, typically from a nib.
     // Initialize Data
     //33 Bus
-    str66ToMtcAM = @"66 To MTC AM";
-    str66ToMtcPM = @"66 To MTC PM";
+
+    str33ToNycAM = @"5:30AM     6:07AM";
+    str33ToNycPM = @"12:45PM    1:21PM";
     str33ToMtcAM = @"6:45AM     7:19AM";
     str33ToMtcPM = @"12:00PM    12:35PM";
     
     //66 Bus
-    str66ToNycAM = @"66 To NYC AM";
-    str66ToNycPM = @"66 To NYC PM";
-    str33ToNycAM = @"5:30AM     6:07AM";
-    str33ToNycPM = @"12:45PM    1:21PM";
+    str66ToMtcAM = @"7:00AM     7:40AM";
+    str66ToMtcPM = @"12:30PM    1:00PM";
+    str66ToNycAM = @"5:55AM     6:43AM";
+    str66ToNycPM = @"12:30PM    1:15PM";
+
    
     //Initialize the choice selections
     iRoute = 0;
