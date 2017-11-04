@@ -8,9 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UITextView *lblOutput;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segBus;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segRoute;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segTime;
+
+- (IBAction)segBusTapped:(id)sender;
+- (IBAction)segRouteTapped:(id)sender;
+- (IBAction)segTimeTapped:(id)sender;
+
+
+
 
 @end
 
