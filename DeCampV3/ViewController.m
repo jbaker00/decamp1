@@ -44,16 +44,16 @@
     // Initialize Data
     //33 Bus
 
-    str33ToNycAM = @"5:30AM     6:07AM";
-    str33ToNycPM = @"12:45PM    1:21PM";
-    str33ToMtcAM = @"6:45AM     7:19AM";
-    str33ToMtcPM = @"12:00PM    12:35PM";
+    str33ToNycAM = @"5:30AM     6:07AM\r\n5:50AM      6:27AM";
+    str33ToNycPM = @"12:45PM    1:21PM\r\n1:45PM      2:21PM";
+    str33ToMtcAM = @"6:45AM     7:19AM\r\n7:30AM      8:04AM";
+    str33ToMtcPM = @"12:00PM    12:35PM\r\n1:00PM     1:30PM";
     
     //66 Bus
-    str66ToMtcAM = @"7:00AM     7:40AM";
-    str66ToMtcPM = @"12:30PM    1:00PM";
-    str66ToNycAM = @"5:55AM     6:43AM";
-    str66ToNycPM = @"12:30PM    1:15PM";
+    str66ToMtcAM = @"7:00AM     7:40AM\r\n7:15AM      7:55AM";
+    str66ToMtcPM = @"12:30PM    1:00PM\r\n1:30PM      2:05PM";
+    str66ToNycAM = @"5:55AM     6:43AM\r\n6:15AM      7:03AM";
+    str66ToNycPM = @"12:30PM    1:15PM\r\n1:00PM      1:45PM";
 
    
     //Initialize the choice selections
