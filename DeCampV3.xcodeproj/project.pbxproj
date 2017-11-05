@@ -17,7 +17,8 @@
 		AD067CA01F9E71B5000C0630 /* DeCampV3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C9F1F9E71B5000C0630 /* DeCampV3UITests.m */; };
 		AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */; };
 		AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CEE1F9E740E000C0630 /* bus_pic.jpg */; };
-		AD13DAC11FADE69800BB8129 /* 33BusSchedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD13DAC01FADE69700BB8129 /* 33BusSchedule.txt */; };
+		AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */; };
+		AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,8 @@
 		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decamp logo small.jpeg"; sourceTree = "<group>"; };
 		AD067CEE1F9E740E000C0630 /* bus_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus_pic.jpg; sourceTree = "<group>"; };
-		AD13DAC01FADE69700BB8129 /* 33BusSchedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33BusSchedule.txt; path = ../../../../33BusSchedule.txt; sourceTree = "<group>"; };
+		AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus33Schedule.txt; sourceTree = "<group>"; };
+		AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus66Schedule.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,8 @@
 		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AD13DAC01FADE69700BB8129 /* 33BusSchedule.txt */,
+				AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */,
+				AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */,
 				AD067CEE1F9E740E000C0630 /* bus_pic.jpg */,
 				AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */,
 				AD067C7B1F9E71B5000C0630 /* main.m */,
@@ -256,8 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD13DAC11FADE69800BB8129 /* 33BusSchedule.txt in Resources */,
+				AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */,
 				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
+				AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */,
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
 				AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */,
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
