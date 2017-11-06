@@ -10,17 +10,23 @@
 
 @interface ViewController ()
 {
-    //33 Bus
-    NSString    const   *str66ToMtcAM;
-    NSString    const   *str66ToMtcPM;
-    NSString    const   *str33ToMtcAM;
-    NSString    const   *str33ToMtcPM;
-    
-    //66 Bus
-    NSString    const   *str66ToNycAM;
-    NSString    const   *str66ToNycPM;
+    //33 Bus to NYC
     NSString    const   *str33ToNycAM;
     NSString    const   *str33ToNycPM;
+    
+    //33 Bus to MTC
+    NSString    const   *str33ToMtcAM;
+    NSString    const   *str33ToMtcPM;
+
+    
+    //66 Bus Bus to NYC
+    NSString    const   *str66ToNycAM;
+    NSString    const   *str66ToNycPM;
+    
+    //66 Bus to MTC
+    NSString    const   *str66ToMtcAM;
+    NSString    const   *str66ToMtcPM;
+
     
     //Variables for whats selected
     //Bool for the chosen bus 0 = 33 1 = 66
@@ -42,18 +48,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     // Initialize Data
-    //33 Bus
-
+    //33 Bus to NYC
     str33ToNycAM = @"5:30AM     6:07AM\r\n5:50AM      6:27AM";
     str33ToNycPM = @"12:45PM    1:21PM\r\n1:45PM      2:21PM";
+    
+    //33 Bus to MTC
     str33ToMtcAM = @"6:45AM     7:19AM\r\n7:30AM      8:04AM";
     str33ToMtcPM = @"12:00PM    12:35PM\r\n1:00PM     1:30PM";
     
-    //66 Bus
-    str66ToMtcAM = @"7:00AM     7:40AM\r\n7:15AM      7:55AM";
-    str66ToMtcPM = @"12:30PM    1:00PM\r\n1:30PM      2:05PM";
+    //66 Bus to NYC
     str66ToNycAM = @"5:55AM     6:43AM\r\n6:15AM      7:03AM";
     str66ToNycPM = @"12:30PM    1:15PM\r\n1:00PM      1:45PM";
+    
+    //66 Bus to MTC
+    str66ToMtcAM = @"7:00AM     7:40AM\r\n7:15AM      7:55AM";
+    str66ToMtcPM = @"12:30PM    1:00PM\r\n1:30PM      2:05PM";
+    
+
 
    
     //Initialize the choice selections
