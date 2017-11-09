@@ -10,32 +10,13 @@
 
 @interface ViewController ()
 {
-    //33 Bus to NYC
-    NSString    const   *str33ToNycAM;
-    NSString    const   *str33ToNycPM;
-    
-    //33 Bus to MTC
-    NSString    const   *str33ToMtcAM;
-    NSString    const   *str33ToMtcPM;
-
-    
-    //66 Bus Bus to NYC
-    NSString    const   *str66ToNycAM;
-    NSString    const   *str66ToNycPM;
-    
-    //66 Bus to MTC
-    NSString    const   *str66ToMtcAM;
-    NSString    const   *str66ToMtcPM;
-
-    
     //Variables for whats selected
-    //Bool for the chosen bus 0 = 33 1 = 66
+    //int for the chosen bus 33 or 66
     int iBus;
-    //Bool for the chosen route 0 = toNyc 1 = to MTC
+    //int for the chosen route 0 = toNyc 1 = to MTC
     int iRoute;
-    //Bool for the chosen time 0 = AM 1 = PM
+    //int for the chosen time 0 = AM 1 = PM
     int iTime;
-    
 }
 
 
@@ -48,29 +29,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     // Initialize Data
-    //33 Bus to NYC
-    str33ToNycAM = @"5:30AM     6:07AM\r\n5:50AM      6:27AM";
-    str33ToNycPM = @"12:45PM    1:21PM\r\n1:45PM      2:21PM";
-    
-    //33 Bus to MTC
-    str33ToMtcAM = @"6:45AM     7:19AM\r\n7:30AM      8:04AM";
-    str33ToMtcPM = @"12:00PM    12:35PM\r\n1:00PM     1:30PM";
-    
-    //66 Bus to NYC
-    str66ToNycAM = @"5:55AM     6:43AM\r\n6:15AM      7:03AM";
-    str66ToNycPM = @"12:30PM    1:15PM\r\n1:00PM      1:45PM";
-    
-    //66 Bus to MTC
-    str66ToMtcAM = @"7:00AM     7:40AM\r\n7:15AM      7:55AM";
-    str66ToMtcPM = @"12:30PM    1:00PM\r\n1:30PM      2:05PM";
-    
-
 
    
     //Initialize the choice selections
-    iRoute = 0;
-    iBus = 0;
-    iTime = 0;
+    iRoute = 0; //0 = NYC; 1= MTC
+    iBus = 33;  //33 bus or 66 bus initialize it to 33 since that is the first selected
+    iTime = 0; //0 = AM 1 = PM
     
 }
 
@@ -90,57 +54,59 @@
 - (IBAction)Go:(id)sender {
     
     NSLog(@"Go Button pressed");
+    NSLog(@"iBus is %i", iBus);
+    NSLog(@"iRoute is %i", iRoute);
+    NSLog(@"iTime is %i", iTime);
+    //33 toMtc AM
+    if(iBus == 33 && iRoute == 1 && iTime == 0)
+    {
+        NSLog(@"33 toMtc AM");
+        [self performSegueWithIdentifier:@"seg33ToMtcAM" sender:self];
+    }
+    //33 toMtc PM
+    else if(iBus == 33 && iRoute == 1 && iTime == 1)
+    {
+        NSLog(@"33 toMtc PM");
+        [self performSegueWithIdentifier:@"seg33ToMtcPM" sender:self];
+    }
+    //33 to NYC AM
+    else if(iBus == 33 && iRoute == 0 && iTime == 0)
+    {
+        NSLog(@"33 to NYC AM");
+        [self performSegueWithIdentifier:@"seg33ToNycAM" sender:self];
+    }
+    //33 to NYC PM
+    else if(iBus == 33 && iRoute == 0 && iTime == 1)
+    {
+        NSLog(@"33 to NYC PM");
+        [self performSegueWithIdentifier:@"seg33ToMtcPM" sender:self];
+    }
+    //66 ToMtc AM
+    else if(iBus == 66 && iRoute == 1 && iTime ==0)
+    {
+        NSLog(@"66 ToMtc AM");
+        [self performSegueWithIdentifier:@"seg66ToMtcAM" sender:self];
+    }
+        
+    //66 ToMtc PM
+    else if(iBus == 66 && iRoute == 1 && iTime == 1)
+    {
+        NSLog(@"66 ToMtc PM");
+        [self performSegueWithIdentifier:@"seg66ToMtcPM" sender:self];
+    }
+    //66 toNYC AM
+    else if(iBus == 66 && iRoute == 0 && iTime == 0)
+    {
+        NSLog(@"66 toNYC AM ");
+        [self performSegueWithIdentifier:@"seg66ToNycAM" sender:self];
 
-    //66 ToMtc AM str66ToMtcAM
-    if(iBus ==1 && iRoute == 1 && iTime == 0)
-    {
-        NSLog(@"66 ToMtc AM str66ToMtcAM");
-        _lblOutput.text = str66ToMtcAM;
     }
-    //66 ToMtc PM str66ToMtcPM
-    else if(iBus == 1 && iRoute == 1 && iTime == 1)
+    //66 toNYC PM
+    else if(iBus == 66 && iRoute == 0 && iTime == 1)
     {
-        NSLog(@"66 ToMtc AM str66ToMtcPM");
-        _lblOutput.text = str66ToMtcPM;
+        NSLog(@"66 toNYC PM");
+        [self performSegueWithIdentifier:@"seg66ToNycPM" sender:self];
     }
-    //66 toNYC AM str66ToNYCAM
-    else if(iBus == 1 && iRoute == 0 && iTime == 0)
-    {
-        NSLog(@"66 toNYC AM str66ToNYCAM");
-        _lblOutput.text = str66ToNycAM;
-    }
-    //66 toNYC PM str66ToNYCPM
-    else if(iBus == 1 && iRoute == 0 && iTime == 1)
-    {
-        NSLog(@"66 toNYC PM str66ToNYCPM");
-        _lblOutput.text = str66ToNycPM;
-    }
-    //33 toMtc AM strToMtcAM
-    else if(iBus == 0 && iRoute == 1 && iTime == 0)
-    {
-        NSLog(@"33 toMtc AM strToMtcAM");
-        _lblOutput.text = str33ToMtcAM;
-    }
-    //33 toMtc PM str33ToMtcPM
-    else if(iBus == 0 && iRoute == 1 && iTime == 1)
-    {
-        NSLog(@"33 toMtc PM str33ToMtcPM");
-        _lblOutput.text = str33ToMtcPM;
-    }
-    //33 to NYC AM str33ToNYCAM
-    else if(iBus == 0 && iRoute == 0 && iTime == 0)
-    {
-        NSLog(@"/33 to NYC AM str33ToNYCAM");
-        _lblOutput.text = str33ToNycAM;
-    }
-    //33 to NYC PM str33ToMtcPM
-    else if(iBus == 0 && iRoute == 1 && iTime == 1)
-    {
-        NSLog(@"33 to NYC PM str33ToMtcPM");
-        _lblOutput.text = str33ToMtcPM;
-    }
-
-    
 }
 
 
@@ -149,24 +115,25 @@
     if(_segBus.selectedSegmentIndex==0)
     {
         NSLog(@"Bus 33 selected");
-        iBus = 0;
+        iBus = 33;
     }
     else if(_segBus.selectedSegmentIndex==1)
     {
         NSLog(@"Bus 66 selected");
-        iBus = 1;
+        iBus = 66;
     }
     
 }
 
 - (IBAction)segRouteTapped:(id)sender {
     //test code to see if its working
+    NSLog(@"Debug::Route selected as %li",(long)_segRoute.selectedSegmentIndex );
     if(_segRoute.selectedSegmentIndex==0)
     {
         NSLog(@"To NYC selected");
         iRoute = 0;
     }
-    else if(_segBus.selectedSegmentIndex==1)
+    if(_segRoute.selectedSegmentIndex==1)
     {
         NSLog(@"To MTC selected");
         iRoute = 1;
