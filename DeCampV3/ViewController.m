@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 {
+
     
     //Variables for whats selected
     //int for the chosen bus 33 or 66
@@ -31,6 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     // Initialize Data
+
    
     //Initialize the choice selections
     iRoute = 0; //0 = NYC; 1= MTC
