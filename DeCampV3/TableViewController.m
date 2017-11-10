@@ -10,6 +10,7 @@
 
 @interface TableViewController ()
 
+
 @end
 
 @implementation TableViewController
@@ -22,6 +23,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,13 +36,12 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    //return the count of the nsArray being used depending on what was chosen in the UI, maybe return prepare for segway passses and receives it and we set the array as one named array with a pointer redirect on load of this table view
+    return tblData.count;
 }
 
 /*

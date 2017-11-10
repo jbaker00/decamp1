@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewController : UITableViewController
-
+{
+    NSArray *tblData;
+}
 @end
