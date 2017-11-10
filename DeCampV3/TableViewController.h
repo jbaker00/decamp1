@@ -10,6 +10,6 @@
 
 @interface TableViewController : UITableViewController
 {
-    NSArray *tblData;
+    @public NSArray *tblData;
 }
 @end
