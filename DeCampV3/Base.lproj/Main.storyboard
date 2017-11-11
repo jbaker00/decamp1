@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sSw-YD-52s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sSw-YD-52s">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Arial.ttf">
-            <string>ArialMT</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Table View Controller-->
         <scene sceneID="XFZ-P2-hWn">
@@ -40,7 +35,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ass-9n-Lwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="-514"/>
+            <point key="canvasLocation" x="1463" y="148"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -65,14 +60,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrj-lS-2fP">
-                                <rect key="frame" x="136" y="362" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go"/>
-                                <connections>
-                                    <action selector="Go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkO-h4-vqe"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Route" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMD-Ps-8Ah">
                                 <rect key="frame" x="24" y="269" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,9 +115,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-HT-8Es">
-                                <rect key="frame" x="151" y="443" width="46" height="30"/>
+                                <rect key="frame" x="157" y="363" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Go"/>
                                 <connections>
                                     <segue destination="QYk-zj-GST" kind="show" identifier="tableOutput" id="eCM-MA-GGg"/>
                                 </connections>
@@ -143,416 +130,11 @@
                         <outlet property="segBus" destination="jmB-PY-SGS" id="Ivw-zh-ar9"/>
                         <outlet property="segRoute" destination="3eO-Jl-Q62" id="gBl-0k-755"/>
                         <outlet property="segTime" destination="F3m-co-wta" id="cEm-i1-wTj"/>
-                        <segue destination="Doa-YS-E8K" kind="show" identifier="seg66ToMtcAM" id="y4H-7i-uNr"/>
-                        <segue destination="rlg-hr-pSE" kind="show" identifier="seg66ToNycAM" id="jwC-Ai-z0K"/>
-                        <segue destination="RtW-90-udv" kind="show" identifier="seg66ToNycPM" id="eyb-11-mFl"/>
-                        <segue destination="Xkr-YE-7HW" kind="show" identifier="seg33ToNycAM" id="VMx-WN-LFZ"/>
-                        <segue destination="Viy-gK-ryD" kind="show" identifier="seg66ToNycPM" id="ADd-DJ-rcR"/>
-                        <segue destination="QxH-B4-Khn" kind="show" identifier="seg33ToMtcAM" id="88d-uW-GAx"/>
-                        <segue destination="TSR-eA-aSg" kind="show" identifier="seg33ToMtcPM" id="V47-2y-0wk"/>
-                        <segue destination="flr-Z8-0jE" kind="show" identifier="seg66ToMtcPM" id="NPe-tM-YSB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="148"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="X7L-rB-v8G">
-            <objects>
-                <viewController id="Xkr-YE-7HW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IrD-Nh-uC6"/>
-                        <viewControllerLayoutGuide type="bottom" id="IHk-x6-n5K"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Gyq-DI-QFd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRM-4t-Cir">
-                                <rect key="frame" x="16" y="82" width="112" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wfw-xY-WWo">
-                                <rect key="frame" x="89" y="79" width="196" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">MTC           NYC      - #33 AM
-5:30AM     6:07AM
-5:50AM     6:27AM
-5:50AM     6:32AM
-6:10AM      6:47AM
-6:20AM      6:57AM
-6:27AM      7:09AM
-6:27AM      7:09AM
-6:44AM     7:26AM
-6:50AM     7:27AM
-7:00AM     7:37AM
-7:02AM     7:44AM
-7:10AM      7:47AM
-7:08AM     7:57AM
-7:20AM     8:02AM
-7:30AM     8:07AM
-7:35AM     8:17AM
-7:40AM     8:17AM
-7:50AM     8:27AM
-7:50AM     8:32AM
-8:00AM     8:37AM
-8:10AM     8:52AM
-8:12AM     8:52AM
-8:25AM     9:02AM
-8:35AM     9:17AM
-8:45AM     9:22AM
-8:55AM     9:37AM
-9:15AM      9:51AM
-9:34AM     10:16AM
-10:00AM    10:36AM
-10:45AM    11:21AM
-11:45AM    12:21AM</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c7w-D2-mgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1980" y="-729.08545727136436"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="5wT-5P-4k2">
-            <objects>
-                <viewController id="Viy-gK-ryD" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wpS-ar-lmQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="39n-ui-Hzn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7A1-Gq-83d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kwx-v5-Kdi">
-                                <rect key="frame" x="67" y="72" width="240" height="575"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">MTC            NYC       - #33 PM
-12:45PM     1:21PM
-1:45PM       2:21PM
-2:12PM       2:52PM
-2:45PM      3:45PM
-3:12PM       3:52PM
-3:45PM      4:21PM
-4:12PM       4:52PM
-4:45PM      5:21PM
-5:12PM       5:52PM
-5:45PM      6:21PM
-6:45PM      7:20PM
-7:49PM      8:20PM
-8:45PM      9:20PM
-9:45PM      10:20PM
-10:45PM     11:20PM</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MqH-R8-Rt1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1980" y="-18.440779610194905"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="gY0-fQ-t7h">
-            <objects>
-                <viewController id="TSR-eA-aSg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vsa-dL-7DV"/>
-                        <viewControllerLayoutGuide type="bottom" id="dyy-jL-XfR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2eR-u8-1PO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-yf-5Jm">
-                                <rect key="frame" x="16" y="72" width="145" height="567.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">NYC    MTC #33 PM
-12:00   12:35
-1:00    1:35
-2:00    2:35
-2:45    3:24
-3:15    3:50
-3:15    3:50
-3:50    4:29
-4:15    4:50
-4:15    4:50
-4:40    5:19
-4:55    5:30
-5:00    5:35
-5:15    5:50
-5:20    5:55
-5:35    6:10
-5:35    6:10
-5:55    6:34
-5:55    6:30
-6:15    6:50
-6:15    6:50
-6:25    7:04
-6:35    7:10
-6:35    7:10
-6:55    7:30
-7:00    7:39
-7:15    7:50
-7:15    7:50
-7:35    8:10
-7:35    8:10
-8:00    8:39
-8:00    8:35
-8:30    9:05
-8:30    9:05</string>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NyL-az-mRJ">
-                                <rect key="frame" x="208" y="72" width="167" height="575"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">NYC   MTC  #33 PM
-9:00    9:39
-9:30    10:05
-9:30    10:05
-10:!5   11:10
-10:45   11:20
-11:45   12:20
-12:45   1:20</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DHo-S6-bLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2000.8" y="1408.2458770614694"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="i4F-0J-g8g">
-            <objects>
-                <viewController id="QxH-B4-Khn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4hV-RV-H8p"/>
-                        <viewControllerLayoutGuide type="bottom" id="4f5-OX-udG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Mwu-ic-Fxz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MOh-JY-fHr">
-                                <rect key="frame" x="83" y="72" width="208" height="404"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">NYC	    MTC      - #33 AM
-6:45AM      7:19AM
-7:30AM	     8:04AM
-8:15	AM       8:49AM
-8:45AM	     9:24AM
-9:15	AM       9:49AM
-10:00AM     10:35AM
-11:00AM	     11:35AM
-12:00PM     12:35PM
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6xf-eF-0Cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2000.8" y="668.81559220389806"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4Xk-IS-dxA">
-            <objects>
-                <viewController id="rlg-hr-pSE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7wO-UW-son"/>
-                        <viewControllerLayoutGuide type="bottom" id="RtX-PP-EXI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pPI-Ui-zbs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VY2-Bi-PwJ">
-                                <rect key="frame" x="67" y="84" width="240" height="283.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">MTC	     NYC       - #66 AM
-5:55AM	     6:43AM
-6:15AM	     7:03AM
-6:35AM	     7:23AM
-6:55AM	     7:43AM
-7:15AM	     8:03AM
-7:35AM	     8:23AM
-7:55AM	     8:43AM
-8:20AM	     9:02AM
-8::40AM	     9:28AM
-9:00AM	     9:48AM
-10:10AM	     10:55AM
-10:30AM     11:15AM
-11:30AM	     12:15PM
-12:30PM     1:15PM
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9JW-rb-uHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3370" y="-699"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="y2e-RR-p67">
-            <objects>
-                <viewController id="flr-Z8-0jE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kAD-tT-P80"/>
-                        <viewControllerLayoutGuide type="bottom" id="P3x-2D-XHb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LWY-TX-k2h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jAH-zx-ikR">
-                                <rect key="frame" x="57" y="72" width="240" height="575"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">NYC            MTC     - #66 PM
-12:30PM    1:05PM
-1:30PM      2:05PM
-2:00PM      2:40PM
-2:30PM      3:05PM
-3:00PM      3:40PM
-3:30PM      4:05PM
-4:00PM      4:40PM
-4:30PM      5:05PM
-5:00PM      5:40PM
-5:25PM      6:05PM
-5:55PM      6:35PM
-6:10PM       6:50PM
-6:25PM       7:05PM
-6:40PM       7:20PM
-6:55PM       7:35PM
-7:10PM        7:45PM
-7:30PM        8:05PM
-8:30PM        9:05PM
-9:00PM        9:35PM
-10:15PM      10:50PM
-10:45PM      11:20PM
-12:00AM      12:35AM</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xXq-UI-R5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3349.5999999999999" y="1376.7616191904049"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="XdO-se-M1U">
-            <objects>
-                <viewController id="RtW-90-udv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eXu-Us-AwM"/>
-                        <viewControllerLayoutGuide type="bottom" id="ad9-b6-1s0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R6o-sS-iRQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Z5L-dj-kRt">
-                                <rect key="frame" x="67" y="79" width="240" height="435"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">MTC             NYC      - #66 PM
-12:30PM     1:15PM
-1:00PM       1:45PM
-1:30PM        2:15PM
-2:00PM       2:45PM
-2:30PM       3:15PM
-3:00PM       3:45PM
-3:30PM       4:15PM
-4:00PM       4:45PM
-5:00PM       5:48PM
-5:35PM       6:30PM
-6:30PM       7:20PM
-7:30PM       8:15PM
-8:30PM       9:15PM
-9:30PM       10:15PM
-11:50PM      12:32PM
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zAj-n2-br1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3368.8000000000002" y="-18.440779610194905"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hx7-h5-pN4">
-            <objects>
-                <viewController id="Doa-YS-E8K" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k9t-Pz-PHz"/>
-                        <viewControllerLayoutGuide type="bottom" id="sGg-nJ-UUr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fx6-su-7v4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-rZ-SRX">
-                                <rect key="frame" x="67" y="72" width="240" height="575"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">NYC           MTC       #66 AM
-7:00AM      7:40AM
-7:15AM       7:55AM
-8:00AM      8:40AM
-8:30AM      9:05AM
-9:00AM      9:40AM
-9:30AM     10:05AM
-10:00AM    10:40AM
-10:30AM    11:05AM
-11:30AM     12:05PM</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o9K-nX-ZFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3349.5999999999999" y="668.81559220389806"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LvN-EL-Vjn">
@@ -570,7 +152,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZA-jA-jK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-238" y="139"/>
+            <point key="canvasLocation" x="-239" y="148"/>
         </scene>
     </scenes>
     <resources>

@@ -19,7 +19,7 @@
     //int for the chosen time 0 = AM 1 = PM
     int iTime;
     
-    
+    //Arrays with the Bus schedules
     NSArray *tblData66NYCAM;
     NSArray *tblData66NYCPM;
     NSArray *tblData66MTCAM;
@@ -28,11 +28,7 @@
     NSArray *tblData33NYCPM;
     NSArray *tblData33MTCAM;
     NSArray *tblData33MTCPM;
-        
-    
 }
-
-
 
 @end
 
@@ -77,64 +73,60 @@
     if ([[segue identifier] isEqualToString:@"tableOutput"])
     {
         TableViewController *controller = [segue destinationViewController];
-        controller->tblData = tblData33MTCPM;
-    }
-}
-- (IBAction)Go:(id)sender {
-    
-    NSLog(@"Go Button pressed");
-    NSLog(@"iBus is %i", iBus);
-    NSLog(@"iRoute is %i", iRoute);
-    NSLog(@"iTime is %i", iTime);
-    //33 toMtc AM
-    if(iBus == 33 && iRoute == 1 && iTime == 0)
-    {
-        NSLog(@"33 toMtc AM");
-        [self performSegueWithIdentifier:@"seg33ToMtcAM" sender:self];
-    }
-    //33 toMtc PM
-    else if(iBus == 33 && iRoute == 1 && iTime == 1)
-    {
-        NSLog(@"33 toMtc PM");
-        [self performSegueWithIdentifier:@"seg33ToMtcPM" sender:self];
-    }
-    //33 to NYC AM
-    else if(iBus == 33 && iRoute == 0 && iTime == 0)
-    {
-        NSLog(@"33 to NYC AM");
-        [self performSegueWithIdentifier:@"seg33ToNycAM" sender:self];
-    }
-    //33 to NYC PM
-    else if(iBus == 33 && iRoute == 0 && iTime == 1)
-    {
-        NSLog(@"33 to NYC PM");
-        [self performSegueWithIdentifier:@"seg33ToNYCPM" sender:self];
-    }
-    //66 ToMtc AM
-    else if(iBus == 66 && iRoute == 1 && iTime ==0)
-    {
-        NSLog(@"66 ToMtc AM");
-        [self performSegueWithIdentifier:@"seg66ToMtcAM" sender:self];
-    }
+        NSLog(@"Go Button pressed");
+        NSLog(@"iBus is %i", iBus);
+        NSLog(@"iRoute is %i", iRoute);
+        NSLog(@"iTime is %i", iTime);
+        //33 toMtc AM
+        if(iBus == 33 && iRoute == 1 && iTime == 0)
+        {
+            NSLog(@"33 toMtc AM");
+            controller->tblData = tblData33MTCAM;
+        }
+        //33 toMtc PM
+        else if(iBus == 33 && iRoute == 1 && iTime == 1)
+        {
+            NSLog(@"33 toMtc PM");
+            controller->tblData = tblData33MTCPM;
+        }
+        //33 to NYC AM
+        else if(iBus == 33 && iRoute == 0 && iTime == 0)
+        {
+            NSLog(@"33 to NYC AM");
+            controller->tblData = tblData33NYCAM;
+        }
+        //33 to NYC PM
+        else if(iBus == 33 && iRoute == 0 && iTime == 1)
+        {
+            NSLog(@"33 to NYC PM");
+            controller->tblData = tblData33NYCPM;
+        }
+        //66 ToMtc AM
+        else if(iBus == 66 && iRoute == 1 && iTime ==0)
+        {
+            NSLog(@"66 ToMtc AM");
+            controller->tblData = tblData66MTCAM;
+        }
         
-    //66 ToMtc PM
-    else if(iBus == 66 && iRoute == 1 && iTime == 1)
-    {
-        NSLog(@"66 ToMtc PM");
-        [self performSegueWithIdentifier:@"seg66ToMtcPM" sender:self];
-    }
-    //66 toNYC AM
-    else if(iBus == 66 && iRoute == 0 && iTime == 0)
-    {
-        NSLog(@"66 toNYC AM ");
-        [self performSegueWithIdentifier:@"seg66ToNycAM" sender:self];
+        //66 ToMtc PM
+        else if(iBus == 66 && iRoute == 1 && iTime == 1)
+        {
+            NSLog(@"66 ToMtc PM");
+            controller->tblData = tblData66MTCPM;
+        }
+        //66 toNYC AM
+        else if(iBus == 66 && iRoute == 0 && iTime == 0)
+        {
+            NSLog(@"66 toNYC AM ");
+            controller->tblData = tblData33NYCAM;
 
-    }
-    //66 toNYC PM
-    else if(iBus == 66 && iRoute == 0 && iTime == 1)
-    {
-        NSLog(@"66 toNYC PM");
-        [self performSegueWithIdentifier:@"seg66ToNycPM" sender:self];
+        }
+        //66 toNYC PM
+        else if(iBus == 66 && iRoute == 0 && iTime == 1)
+        {
+            NSLog(@"66 toNYC PM");
+            controller->tblData = tblData33NYCPM;
+        }
     }
 }
 
