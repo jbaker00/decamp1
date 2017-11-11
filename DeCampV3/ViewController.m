@@ -82,50 +82,57 @@
         {
             NSLog(@"33 toMtc AM");
             controller->tblData = tblData33MTCAM;
+            controller->tblSectionName = @"#33 NYC to MTC AM";
         }
         //33 toMtc PM
         else if(iBus == 33 && iRoute == 1 && iTime == 1)
         {
             NSLog(@"33 toMtc PM");
             controller->tblData = tblData33MTCPM;
+            controller->tblSectionName = @"#33 NYC to MTC PM";
         }
         //33 to NYC AM
         else if(iBus == 33 && iRoute == 0 && iTime == 0)
         {
             NSLog(@"33 to NYC AM");
             controller->tblData = tblData33NYCAM;
+            controller->tblSectionName = @"#33 MTC to NYC AM";
         }
         //33 to NYC PM
         else if(iBus == 33 && iRoute == 0 && iTime == 1)
         {
             NSLog(@"33 to NYC PM");
             controller->tblData = tblData33NYCPM;
+            controller->tblSectionName = @"#33 MTC to NYC PM";
         }
         //66 ToMtc AM
         else if(iBus == 66 && iRoute == 1 && iTime ==0)
         {
             NSLog(@"66 ToMtc AM");
             controller->tblData = tblData66MTCAM;
+            controller->tblSectionName = @"#66 NYC to MTC AM";
         }
-        
         //66 ToMtc PM
         else if(iBus == 66 && iRoute == 1 && iTime == 1)
         {
             NSLog(@"66 ToMtc PM");
             controller->tblData = tblData66MTCPM;
+            controller->tblSectionName = @"#66 NYC to MTC PM";
         }
         //66 toNYC AM
         else if(iBus == 66 && iRoute == 0 && iTime == 0)
         {
             NSLog(@"66 toNYC AM ");
-            controller->tblData = tblData33NYCAM;
+            controller->tblData = tblData66NYCAM;
+            controller->tblSectionName = @"#66 MTC to NYC AM";
 
         }
         //66 toNYC PM
         else if(iBus == 66 && iRoute == 0 && iTime == 1)
         {
             NSLog(@"66 toNYC PM");
-            controller->tblData = tblData33NYCPM;
+            controller->tblData = tblData66NYCPM;
+            controller->tblSectionName = @"#66 MTC to NYC PM";
         }
     }
 }

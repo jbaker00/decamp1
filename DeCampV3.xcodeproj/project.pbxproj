@@ -48,6 +48,7 @@
 		AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51BFBE1FB5177C00FE707E /* TableViewController.m */; };
 		ADE776F01FB6BC010056386A /* iTunesArtwork2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE776EF1FB6BC000056386A /* iTunesArtwork2x.png */; };
 		ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE776F11FB6BDEF0056386A /* iTunesArtwork@1x.png */; };
+		ADE776F61FB6D0330056386A /* new_decamp_bus.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		AD51BFBE1FB5177C00FE707E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		ADE776EF1FB6BC000056386A /* iTunesArtwork2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork2x.png; sourceTree = "<group>"; };
 		ADE776F11FB6BDEF0056386A /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_decamp_bus.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			children = (
 				AD51BF881FB4F5C500FE707E /* icons */,
 				AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */,
+				ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */,
 				AD51BF841FB4F36500FE707E /* new decamp bus.jpg */,
 				AD51BF821FB4F31700FE707E /* old decamp bus.jpg */,
 				AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */,
@@ -371,6 +374,7 @@
 				AD51BFAC1FB4F5E700FE707E /* Icon-App-76x76@2x.png in Resources */,
 				AD51BFAA1FB4F5E700FE707E /* Icon-App-60x60@1x.png in Resources */,
 				AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */,
+				ADE776F61FB6D0330056386A /* new_decamp_bus.jpeg in Resources */,
 				AD51BFA81FB4F5E700FE707E /* Icon-App-72x72@1x.png in Resources */,
 				AD51BFA41FB4F5E700FE707E /* Icon-App-40x40@2x.png in Resources */,
 				AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */,

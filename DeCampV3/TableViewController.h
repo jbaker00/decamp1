@@ -11,5 +11,6 @@
 @interface TableViewController : UITableViewController
 {
     @public NSArray *tblData;
+    @public NSString *tblSectionName;
 }
 @end

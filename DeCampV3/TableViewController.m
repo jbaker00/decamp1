@@ -44,13 +44,18 @@
     return tblData.count;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+ 
+    return tblSectionName;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     cell.textLabel.text = tblData[indexPath.row];
-
+    cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
     return cell;
 }
 
