@@ -15,11 +15,12 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segBus;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segRoute;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segTime;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segWeek;
 
 - (IBAction)segBusTapped:(id)sender;
 - (IBAction)segRouteTapped:(id)sender;
 - (IBAction)segTimeTapped:(id)sender;
-
+- (IBAction)segWeekTapped:(id)sender;
 
 
 

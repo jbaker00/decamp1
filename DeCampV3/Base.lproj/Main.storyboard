@@ -108,7 +108,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOU-HT-8Es">
-                                <rect key="frame" x="136" y="372" width="121" height="27"/>
+                                <rect key="frame" x="136" y="409" width="121" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.26165972903561568" green="0.55677218264248707" blue="0.23943744378460316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -117,6 +117,25 @@
                                     <segue destination="QYk-zj-GST" kind="show" identifier="tableOutput" id="eCM-MA-GGg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-S2-vCT">
+                                <rect key="frame" x="24" y="356" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j4U-eS-8dK">
+                                <rect key="frame" x="136" y="349" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Yes"/>
+                                    <segment title="No"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segTimeTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="pY1-3d-hZg"/>
+                                    <action selector="segWeekTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="qTT-3X-OqI"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -125,6 +144,7 @@
                         <outlet property="segBus" destination="jmB-PY-SGS" id="Ivw-zh-ar9"/>
                         <outlet property="segRoute" destination="3eO-Jl-Q62" id="gBl-0k-755"/>
                         <outlet property="segTime" destination="F3m-co-wta" id="cEm-i1-wTj"/>
+                        <outlet property="segWeek" destination="j4U-eS-8dK" id="rha-ej-b0d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
