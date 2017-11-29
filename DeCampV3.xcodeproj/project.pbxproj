@@ -17,6 +17,7 @@
 		AD067CA01F9E71B5000C0630 /* DeCampV3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C9F1F9E71B5000C0630 /* DeCampV3UITests.m */; };
 		AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */; };
 		AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CEE1F9E740E000C0630 /* bus_pic.jpg */; };
+		AD23AD641FCF58270056021E /* TextInputViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23AD631FCF58270056021E /* TextInputViewViewController.m */; };
 		AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */; };
 		AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */; };
 		AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF821FB4F31700FE707E /* old decamp bus.jpg */; };
@@ -87,6 +88,8 @@
 		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decamp logo small.jpeg"; sourceTree = "<group>"; };
 		AD067CEE1F9E740E000C0630 /* bus_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus_pic.jpg; sourceTree = "<group>"; };
+		AD23AD621FCF58270056021E /* TextInputViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextInputViewViewController.h; path = ../TextInputViewViewController.h; sourceTree = "<group>"; };
+		AD23AD631FCF58270056021E /* TextInputViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextInputViewViewController.m; path = ../TextInputViewViewController.m; sourceTree = "<group>"; };
 		AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus33Schedule.txt; sourceTree = "<group>"; };
 		AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus66Schedule.txt; sourceTree = "<group>"; };
 		AD51BF821FB4F31700FE707E /* old decamp bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old decamp bus.jpg"; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				AD067C831F9E71B5000C0630 /* Main.storyboard */,
 				AD51BFBD1FB5177C00FE707E /* TableViewController.h */,
 				AD51BFBE1FB5177C00FE707E /* TableViewController.m */,
+				AD23AD621FCF58270056021E /* TextInputViewViewController.h */,
+				AD23AD631FCF58270056021E /* TextInputViewViewController.m */,
 				AD067C861F9E71B5000C0630 /* Assets.xcassets */,
 				AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */,
 				AD067C8B1F9E71B5000C0630 /* Info.plist */,
@@ -421,6 +426,7 @@
 			files = (
 				AD067C821F9E71B5000C0630 /* ViewController.m in Sources */,
 				AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */,
+				AD23AD641FCF58270056021E /* TextInputViewViewController.m in Sources */,
 				AD067C7C1F9E71B5000C0630 /* main.m in Sources */,
 				AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */,
 			);
