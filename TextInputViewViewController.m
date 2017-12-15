@@ -51,12 +51,15 @@
     // Do any additional setup after loading the view.
     
     _btnFromField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-
+    _btnFromField.layer.borderWidth = .5f;
+    _btnFromField.layer.borderColor = [[UIColor blackColor]CGColor];
     _btnFromField.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
 
     _btnToField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    
+    _btnToField.layer.borderWidth = .5f;
+    _btnToField.layer.borderColor = [[UIColor blackColor]CGColor];
     _btnToField.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    
     //[self placeTextBorder:self.FromField];
     //[self placeTextBorder:self.ToField];
     

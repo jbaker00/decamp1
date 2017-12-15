@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *DayType;
 
 - (IBAction)FindBus:(id)sender;
-- (void)placeTextBorder:(UITextField*)textField;
+//- (void)placeTextBorder:(UITextField*)textField;
 @property (weak, nonatomic) IBOutlet UIButton *btnFromField;
 @property (weak, nonatomic) IBOutlet UIButton *btnToField;
 
