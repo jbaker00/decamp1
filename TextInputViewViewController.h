@@ -15,5 +15,7 @@
 
 - (IBAction)FindBus:(id)sender;
 - (void)placeTextBorder:(UITextField*)textField;
+@property (weak, nonatomic) IBOutlet UIButton *btnFromField;
+@property (weak, nonatomic) IBOutlet UIButton *btnToField;
 
 @end

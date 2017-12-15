@@ -18,8 +18,14 @@
 {
     //Check From Field input for the from location and the To location and return back the array for the table from the dictionary that has all the bus routes for that time period
 }
+- (IBAction)btnFromField:(id)sender {
+    NSLog(@"touch up inside From Field Button");
+}
+- (IBAction)btnToField:(id)sender {
+    NSLog(@"touch up inside To Field Button");
+}
 
--(void)placeTextBorder:(UITextField*)textField
+/*-(void)placeTextBorder:(UITextField*)textField
 {
     //Bottom border textField
     CALayer *bottomBorderFrom = [CALayer layer];
@@ -38,14 +44,21 @@
     rightBorderFrom.frame = CGRectMake(textField.frame.size.width-1, 20.0f, 1.0f, textField.frame.size.height-20);
     rightBorderFrom.backgroundColor = [UIColor blackColor].CGColor;
     [textField.layer addSublayer:rightBorderFrom];
-}
+}*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self placeTextBorder:self.FromField];
-    [self placeTextBorder:self.ToField];
+    _btnFromField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+
+    _btnFromField.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+
+    _btnToField.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    
+    _btnToField.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    //[self placeTextBorder:self.FromField];
+    //[self placeTextBorder:self.ToField];
     
   
 }
