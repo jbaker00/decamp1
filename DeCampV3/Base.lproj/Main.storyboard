@@ -250,7 +250,7 @@
                                         <state key="normal" title="Port Authorty, NY"/>
                                         <connections>
                                             <action selector="btnToField:" destination="bfp-1c-yeD" eventType="touchUpInside" id="BAG-qT-Iqj"/>
-                                            <segue destination="0Pm-Gs-Kvn" kind="show" identifier="segwayShowToField" id="kPS-Q0-YAH"/>
+                                            <action selector="btnToPressed:" destination="bfp-1c-yeD" eventType="touchUpInside" id="Koq-Vg-bHF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -262,16 +262,17 @@
                         <outlet property="DayType" destination="okj-3m-tbO" id="gcF-kq-DnE"/>
                         <outlet property="btnFromField" destination="qL2-3i-hqY" id="C8z-rV-ma5"/>
                         <outlet property="btnToField" destination="D5u-8S-DDW" id="nWS-eR-eeB"/>
+                        <outlet property="fromTime" destination="tXV-Bw-aQP" id="GCx-Qg-xHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0B-Hu-RXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="919.79010494752629"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller From Select-->
         <scene sceneID="Lgg-wS-E7F">
             <objects>
-                <tableViewController id="cxd-Vd-yga" sceneMemberID="viewController">
+                <tableViewController id="cxd-Vd-yga" customClass="TableViewControllerFromSelect" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0ZQ-dp-YN1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,34 +296,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pB8-S7-9Lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1462" y="827"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="hMP-gQ-udL">
-            <objects>
-                <tableViewController id="0Pm-Gs-Kvn" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rSS-52-3Vh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="toCells" id="2KE-wk-zgO">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2KE-wk-zgO" id="9oj-kF-x3a">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="0Pm-Gs-Kvn" id="ClQ-Go-0hn"/>
-                            <outlet property="delegate" destination="0Pm-Gs-Kvn" id="NtJ-ha-ECX"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R9P-BH-nJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1482" y="1506"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LvN-EL-Vjn">

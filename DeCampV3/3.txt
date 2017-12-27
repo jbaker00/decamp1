@@ -1,0 +1,293 @@
+3,33,W. CALDWELL: Kirkpatrick Lane,5:30
+4,33,W. CALDWELL: Kirkpatrick Lane,5:50
+8,33,W. CALDWELL: Kirkpatrick Lane,6:20
+13,33,W. CALDWELL: Kirkpatrick Lane,6:40
+16,33,W. CALDWELL: Kirkpatrick Lane,7:00
+20,33,W. CALDWELL: Kirkpatrick Lane,7:20
+23,33,W. CALDWELL: Kirkpatrick Lane,7:40
+26,33,W. CALDWELL: Kirkpatrick Lane,7:55
+28,33,W. CALDWELL: Kirkpatrick Lane,8:15
+29,33,W. CALDWELL: Kirkpatrick Lane,8:35
+31,33,W. CALDWELL: Kirkpatrick Lane,8:55
+32,33,W. CALDWELL: Kirkpatrick Lane,9:40
+34,33,W. CALDWELL: Kirkpatrick Lane,10:25
+35,33,W. CALDWELL: Kirkpatrick Lane,11:25
+36,33,W. CALDWELL: Kirkpatrick Lane,12:25
+37,33,W. CALDWELL: Kirkpatrick Lane,13:25
+38,33,W. CALDWELL: Kirkpatrick Lane,14:25
+39,33,W. CALDWELL: Kirkpatrick Lane,15:25
+40,33,W. CALDWELL: Kirkpatrick Lane,16:25
+41,33,W. CALDWELL: Kirkpatrick Lane,17:25
+42,33,W. CALDWELL: Kirkpatrick Lane,18:30
+43,33,W. CALDWELL: Kirkpatrick Lane,19:30
+44,33,W. CALDWELL: Kirkpatrick Lane,20:30
+45,33,W. CALDWELL: Kirkpatrick Lane,21:30
+46,33,W. CALDWELL: Kirkpatrick Lane,22:30
+3,33,CALDWELL: Roseland & Bloomfield,5:35
+4,33,CALDWELL: Roseland & Bloomfield,5:55
+8,33,CALDWELL: Roseland & Bloomfield,6:25
+13,33,CALDWELL: Roseland & Bloomfield,6:45
+16,33,CALDWELL: Roseland & Bloomfield,7:05
+20,33,CALDWELL: Roseland & Bloomfield,7:25
+23,33,CALDWELL: Roseland & Bloomfield,7:45
+26,33,CALDWELL: Roseland & Bloomfield,8:00
+28,33,CALDWELL: Roseland & Bloomfield,8:20
+29,33,CALDWELL: Roseland & Bloomfield,8:40
+31,33,CALDWELL: Roseland & Bloomfield,9:00
+32,33,CALDWELL: Roseland & Bloomfield,9:45
+34,33,CALDWELL: Roseland & Bloomfield,10:30
+35,33,CALDWELL: Roseland & Bloomfield,11:30
+36,33,CALDWELL: Roseland & Bloomfield,12:30
+37,33,CALDWELL: Roseland & Bloomfield,13:30
+38,33,CALDWELL: Roseland & Bloomfield,14:30
+39,33,CALDWELL: Roseland & Bloomfield,15:30
+40,33,CALDWELL: Roseland & Bloomfield,16:30
+41,33,CALDWELL: Roseland & Bloomfield,17:30
+42,33,CALDWELL: Roseland & Bloomfield,18:34
+43,33,CALDWELL: Roseland & Bloomfield,19:34
+44,33,CALDWELL: Roseland & Bloomfield,20:34
+45,33,CALDWELL: Roseland & Bloomfield,21:34
+46,33,CALDWELL: Roseland & Bloomfield,22:34
+3,33,VERONA: Lakeside Ave,5:40
+4,33,VERONA: Lakeside Ave,6:00
+7,33,VERONA: Lakeside Ave,6:17
+8,33,VERONA: Lakeside Ave,6:30
+9,33,VERONA: Lakeside Ave,6:34
+12,33,VERONA: Lakeside Ave,6:52
+13,33,VERONA: Lakeside Ave,6:50
+15,33,VERONA: Lakeside Ave,7:10
+16,33,VERONA: Lakeside Ave,7:10
+18,33,VERONA: Lakeside Ave,7:25
+20,33,VERONA: Lakeside Ave,7:30
+22,33,VERONA: Lakeside Ave,7:40
+23,33,VERONA: Lakeside Ave,7:50
+25,33,VERONA: Lakeside Ave,8:00
+26,33,VERONA: Lakeside Ave,8:05
+28,33,VERONA: Lakeside Ave,8:25
+29,33,VERONA: Lakeside Ave,8:45
+31,33,VERONA: Lakeside Ave,9:05
+32,33,VERONA: Lakeside Ave,9:50
+34,33,VERONA: Lakeside Ave,10:35
+35,33,VERONA: Lakeside Ave,11:35
+36,33,VERONA: Lakeside Ave,12:35
+37,33,VERONA: Lakeside Ave,13:35
+38,33,VERONA: Lakeside Ave,14:35
+39,33,VERONA: Lakeside Ave,15:35
+40,33,VERONA: Lakeside Ave,16:35
+41,33,VERONA: Lakeside Ave,17:35
+42,33,VERONA: Lakeside Ave,18:38
+43,33,VERONA: Lakeside Ave,19:38
+44,33,VERONA: Lakeside Ave,20:38
+45,33,VERONA: Lakeside Ave,21:38
+46,33,VERONA: Lakeside Ave,22:38
+8,33,W. ORANGE: Pleasantdale Ctr,6:38
+13,33,W. ORANGE: Pleasantdale Ctr,6:58
+16,33,W. ORANGE: Pleasantdale Ctr,7:18
+20,33,W. ORANGE: Pleasantdale Ctr,7:38
+23,33,W. ORANGE: Pleasantdale Ctr,7:58
+26,33,W. ORANGE: Pleasantdale Ctr,8:13
+1,33,MONTCLAIR: Gates & Bloomfield,5:30
+2,33,MONTCLAIR: Gates & Bloomfield,5:50
+3,33,MONTCLAIR: Gates & Bloomfield,5:50
+4,33,MONTCLAIR: Gates & Bloomfield,6:10
+5,33,MONTCLAIR: Gates & Bloomfield,6:10
+6,33,MONTCLAIR: Gates & Bloomfield,6:20
+7,33,MONTCLAIR: Gates & Bloomfield,6:27
+9,33,MONTCLAIR: Gates & Bloomfield,6:44
+10,33,MONTCLAIR: Gates & Bloomfield,6:50
+11,33,MONTCLAIR: Gates & Bloomfield,7:00
+12,33,MONTCLAIR: Gates & Bloomfield,7:02
+14,33,MONTCLAIR: Gates & Bloomfield,7:10
+15,33,MONTCLAIR: Gates & Bloomfield,7:20
+17,33,MONTCLAIR: Gates & Bloomfield,7:30
+18,33,MONTCLAIR: Gates & Bloomfield,7:35
+19,33,MONTCLAIR: Gates & Bloomfield,7:40
+21,33,MONTCLAIR: Gates & Bloomfield,7:50
+22,33,MONTCLAIR: Gates & Bloomfield,7:50
+24,33,MONTCLAIR: Gates & Bloomfield,8:00
+25,33,MONTCLAIR: Gates & Bloomfield,8:10
+27,33,MONTCLAIR: Gates & Bloomfield,8:25
+28,33,MONTCLAIR: Gates & Bloomfield,8:35
+29,33,MONTCLAIR: Gates & Bloomfield,8:55
+30,33,MONTCLAIR: Gates & Bloomfield,8:45
+31,33,MONTCLAIR: Gates & Bloomfield,9:15
+32,33,MONTCLAIR: Gates & Bloomfield,10:00
+33,33,MONTCLAIR: Gates & Bloomfield,9:34
+34,33,MONTCLAIR: Gates & Bloomfield,10:45
+35,33,MONTCLAIR: Gates & Bloomfield,11:45
+36,33,MONTCLAIR: Gates & Bloomfield,12:45
+37,33,MONTCLAIR: Gates & Bloomfield,13:45
+38,33,MONTCLAIR: Gates & Bloomfield,14:45
+39,33,MONTCLAIR: Gates & Bloomfield,15:45
+40,33,MONTCLAIR: Gates & Bloomfield,16:45
+41,33,MONTCLAIR: Gates & Bloomfield,17:45
+42,33,MONTCLAIR: Gates & Bloomfield,18:45
+43,33,MONTCLAIR: Gates & Bloomfield,19:45
+44,33,MONTCLAIR: Gates & Bloomfield,20:45
+45,33,MONTCLAIR: Gates & Bloomfield,21:45
+46,33,MONTCLAIR: Gates & Bloomfield,22:45
+3,33,MONTCLAIR: Grove & Watchung,5:55
+4,33,MONTCLAIR: Grove & Watchung,6:15
+7,33,MONTCLAIR: Grove & Watchung,6:32
+9,33,MONTCLAIR: Grove & Watchung,6:49
+12,33,MONTCLAIR: Grove & Watchung,7:07
+15,33,MONTCLAIR: Grove & Watchung,7:25
+18,33,MONTCLAIR: Grove & Watchung,7:40
+22,33,MONTCLAIR: Grove & Watchung,7:55
+25,33,MONTCLAIR: Grove & Watchung,8:15
+28,33,MONTCLAIR: Grove & Watchung,8:40
+29,33,MONTCLAIR: Grove & Watchung,9:00
+33,33,MONTCLAIR: Grove & Watchung,9:39
+3,33,MONTCLAIR: Grove & Bellvue,5:59
+4,33,MONTCLAIR: Grove & Bellvue,6:19
+7,33,MONTCLAIR: Grove & Bellvue,6:36
+9,33,MONTCLAIR: Grove & Bellvue,6:53
+12,33,MONTCLAIR: Grove & Bellvue,7:11
+15,33,MONTCLAIR: Grove & Bellvue,7:29
+18,33,MONTCLAIR: Grove & Bellvue,7:44
+22,33,MONTCLAIR: Grove & Bellvue,7:59
+25,33,MONTCLAIR: Grove & Bellvue,8:19
+28,33,MONTCLAIR: Grove & Bellvue,8:44
+29,33,MONTCLAIR: Grove & Bellvue,9:04
+3,33,CLIFTON: Vincent Dr & Groove St,6:02
+4,33,CLIFTON: Vincent Dr & Groove St,6:22
+7,33,CLIFTON: Vincent Dr & Groove St,6:39
+9,33,CLIFTON: Vincent Dr & Groove St,6:56
+12,33,CLIFTON: Vincent Dr & Groove St,7:14
+15,33,CLIFTON: Vincent Dr & Groove St,7:32
+18,33,CLIFTON: Vincent Dr & Groove St,7:47
+22,33,CLIFTON: Vincent Dr & Groove St,8:02
+25,33,CLIFTON: Vincent Dr & Groove St,8:22
+28,33,CLIFTON: Vincent Dr & Groove St,8:47
+29,33,CLIFTON: Vincent Dr & Groove St,9:07
+33,33,CLIFTON: Vincent Dr & Groove St,9:46
+1,33,BLOOMFIELD: Broad & Liberty,5:35
+2,33,BLOOMFIELD: Broad & Liberty,5:55
+5,33,BLOOMFIELD: Broad & Liberty,6:15
+6,33,BLOOMFIELD: Broad & Liberty,6:25
+10,33,BLOOMFIELD: Broad & Liberty,6:55
+11,33,BLOOMFIELD: Broad & Liberty,7:05
+14,33,BLOOMFIELD: Broad & Liberty,7:15
+17,33,BLOOMFIELD: Broad & Liberty,7:35
+19,33,BLOOMFIELD: Broad & Liberty,7:45
+21,33,BLOOMFIELD: Broad & Liberty,7:55
+24,33,BLOOMFIELD: Broad & Liberty,8:05
+27,33,BLOOMFIELD: Broad & Liberty,8:30
+30,33,BLOOMFIELD: Broad & Liberty,8:50
+31,33,BLOOMFIELD: Broad & Liberty,9:19
+32,33,BLOOMFIELD: Broad & Liberty,10:04
+34,33,BLOOMFIELD: Broad & Liberty,10:49
+35,33,BLOOMFIELD: Broad & Liberty,11:49
+36,33,BLOOMFIELD: Broad & Liberty,12:49
+37,33,BLOOMFIELD: Broad & Liberty,13:49
+38,33,BLOOMFIELD: Broad & Liberty,14:49
+39,33,BLOOMFIELD: Broad & Liberty,15:49
+40,33,BLOOMFIELD: Broad & Liberty,16:49
+41,33,BLOOMFIELD: Broad & Liberty,17:49
+42,33,BLOOMFIELD: Broad & Liberty,18:49
+43,33,BLOOMFIELD: Broad & Liberty,19:49
+44,33,BLOOMFIELD: Broad & Liberty,20:49
+45,33,BLOOMFIELD: Broad & Liberty,21:49
+46,33,BLOOMFIELD: Broad & Liberty,22:49
+1,33,BLOOMFIELD: Broad & Watchung,5:42
+2,33,BLOOMFIELD: Broad & Watchung,6:02
+5,33,BLOOMFIELD: Broad & Watchung,6:22
+6,33,BLOOMFIELD: Broad & Watchung,6:32
+10,33,BLOOMFIELD: Broad & Watchung,7:02
+11,33,BLOOMFIELD: Broad & Watchung,7:12
+14,33,BLOOMFIELD: Broad & Watchung,7:22
+17,33,BLOOMFIELD: Broad & Watchung,7:42
+19,33,BLOOMFIELD: Broad & Watchung,7:52
+21,33,BLOOMFIELD: Broad & Watchung,8:02
+24,33,BLOOMFIELD: Broad & Watchung,8:12
+27,33,BLOOMFIELD: Broad & Watchung,8:37
+30,33,BLOOMFIELD: Broad & Watchung,8:57
+31,33,BLOOMFIELD: Broad & Watchung,9:26
+32,33,BLOOMFIELD: Broad & Watchung,10:11
+34,33,BLOOMFIELD: Broad & Watchung,10:56
+35,33,BLOOMFIELD: Broad & Watchung,11:56
+36,33,BLOOMFIELD: Broad & Watchung,12:56
+37,33,BLOOMFIELD: Broad & Watchung,13:56
+38,33,BLOOMFIELD: Broad & Watchung,14:56
+39,33,BLOOMFIELD: Broad & Watchung,15:56
+40,33,BLOOMFIELD: Broad & Watchung,16:56
+41,33,BLOOMFIELD: Broad & Watchung,17:56
+42,33,BLOOMFIELD: Broad & Watchung,18:56
+43,33,BLOOMFIELD: Broad & Watchung,19:56
+44,33,BLOOMFIELD: Broad & Watchung,20:56
+45,33,BLOOMFIELD: Broad & Watchung,21:56
+46,33,BLOOMFIELD: Broad & Watchung,22:56
+1,33,NUTLEY: W. Passaic & Darling,5:46
+2,33,NUTLEY: W. Passaic & Darling,6:06
+5,33,NUTLEY: W. Passaic & Darling,6:26
+6,33,NUTLEY: W. Passaic & Darling,6:36
+10,33,NUTLEY: W. Passaic & Darling,7:06
+11,33,NUTLEY: W. Passaic & Darling,7:16
+14,33,NUTLEY: W. Passaic & Darling,7:26
+17,33,NUTLEY: W. Passaic & Darling,7:46
+19,33,NUTLEY: W. Passaic & Darling,7:56
+21,33,NUTLEY: W. Passaic & Darling,8:06
+24,33,NUTLEY: W. Passaic & Darling,8:16
+27,33,NUTLEY: W. Passaic & Darling,8:41
+30,33,NUTLEY: W. Passaic & Darling,9:01
+31,33,NUTLEY: W. Passaic & Darling,9:30
+32,33,NUTLEY: W. Passaic & Darling,10:15
+34,33,NUTLEY: W. Passaic & Darling,11:00
+35,33,NUTLEY: W. Passaic & Darling,12:00
+36,33,NUTLEY: W. Passaic & Darling,13:00
+37,33,NUTLEY: W. Passaic & Darling,14:00
+38,33,NUTLEY: W. Passaic & Darling,15:00
+39,33,NUTLEY: W. Passaic & Darling,16:00
+40,33,NUTLEY: W. Passaic & Darling,17:00
+41,33,NUTLEY: W. Passaic & Darling,18:00
+42,33,NUTLEY: W. Passaic & Darling,19:00
+43,33,NUTLEY: W. Passaic & Darling,20:00
+44,33,NUTLEY: W. Passaic & Darling,21:00
+45,33,NUTLEY: W. Passaic & Darling,22:00
+46,33,NUTLEY: W. Passaic & Darling,23:00
+1,33,NYC_P/A Bus Terminal,6:07
+2,33,NYC_P/A Bus Terminal,6:27
+3,33,NYC_P/A Bus Terminal,6:32
+4,33,NYC_P/A Bus Terminal,6:52
+5,33,NYC_P/A Bus Terminal,6:47
+6,33,NYC_P/A Bus Terminal,6:57
+7,33,NYC_P/A Bus Terminal,7:09
+8,33,NYC_P/A Bus Terminal,7:15
+9,33,NYC_P/A Bus Terminal,7:26
+10,33,NYC_P/A Bus Terminal,7:27
+11,33,NYC_P/A Bus Terminal,7:37
+12,33,NYC_P/A Bus Terminal,7:44
+13,33,NYC_P/A Bus Terminal,7:35
+14,33,NYC_P/A Bus Terminal,7:47
+15,33,NYC_P/A Bus Terminal,8:02
+16,33,NYC_P/A Bus Terminal,7:55
+17,33,NYC_P/A Bus Terminal,8:07
+18,33,NYC_P/A Bus Terminal,8:17
+19,33,NYC_P/A Bus Terminal,8:17
+20,33,NYC_P/A Bus Terminal,8:15
+21,33,NYC_P/A Bus Terminal,8:27
+22,33,NYC_P/A Bus Terminal,8:32
+23,33,NYC_P/A Bus Terminal,8:35
+24,33,NYC_P/A Bus Terminal,8:37
+25,33,NYC_P/A Bus Terminal,8:52
+26,33,NYC_P/A Bus Terminal,8:50
+27,33,NYC_P/A Bus Terminal,9:02
+28,33,NYC_P/A Bus Terminal,9:17
+29,33,NYC_P/A Bus Terminal,9:37
+30,33,NYC_P/A Bus Terminal,9:22
+31,33,NYC_P/A Bus Terminal,9:51
+32,33,NYC_P/A Bus Terminal,10:36
+33,33,NYC_P/A Bus Terminal,10:13
+34,33,NYC_P/A Bus Terminal,11:21
+35,33,NYC_P/A Bus Terminal,12:21
+36,33,NYC_P/A Bus Terminal,13:21
+37,33,NYC_P/A Bus Terminal,14:21
+38,33,NYC_P/A Bus Terminal,15:21
+39,33,NYC_P/A Bus Terminal,16:21
+40,33,NYC_P/A Bus Terminal,17:21
+41,33,NYC_P/A Bus Terminal,18:21
+42,33,NYC_P/A Bus Terminal,19:20
+43,33,NYC_P/A Bus Terminal,20:20
+44,33,NYC_P/A Bus Terminal,21:20
+45,33,NYC_P/A Bus Terminal,22:20
+46,33,NYC_P/A Bus Terminal,23:20

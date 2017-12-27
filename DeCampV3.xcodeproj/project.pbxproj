@@ -47,6 +47,9 @@
 		AD51BFB41FB4F5E700FE707E /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF9E1FB4F5E700FE707E /* Icon-App-60x60@3x.png */; };
 		AD51BFBB1FB4F68800FE707E /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BFB71FB4F68800FE707E /* iTunesArtwork@3x.png */; };
 		AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51BFBE1FB5177C00FE707E /* TableViewController.m */; };
+		ADB22B461FF2D1400053D616 /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 3.txt */; };
+		ADB22B481FF2D2000053D616 /* 3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 3.txt */; };
+		ADB22B4B1FF2D5C30053D616 /* TableViewControllerFromSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */; };
 		ADE776F01FB6BC010056386A /* iTunesArtwork2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE776EF1FB6BC000056386A /* iTunesArtwork2x.png */; };
 		ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE776F11FB6BDEF0056386A /* iTunesArtwork@1x.png */; };
 		ADE776F61FB6D0330056386A /* new_decamp_bus.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */; };
@@ -68,6 +71,19 @@
 			remoteInfo = DeCampV3;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADB22B471FF2D1960053D616 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				ADB22B481FF2D2000053D616 /* 3.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD067C771F9E71B5000C0630 /* DeCampV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCampV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +136,9 @@
 		AD51BFB71FB4F68800FE707E /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		AD51BFBD1FB5177C00FE707E /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		AD51BFBE1FB5177C00FE707E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		ADB22B451FF2D1400053D616 /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
+		ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerFromSelect.h; sourceTree = "<group>"; };
+		ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerFromSelect.m; sourceTree = "<group>"; };
 		ADE776EF1FB6BC000056386A /* iTunesArtwork2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork2x.png; sourceTree = "<group>"; };
 		ADE776F11FB6BDEF0056386A /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
 		ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new_decamp_bus.jpeg; sourceTree = "<group>"; };
@@ -173,11 +192,14 @@
 		AD067C791F9E71B5000C0630 /* DeCampV3 */ = {
 			isa = PBXGroup;
 			children = (
+				ADB22B451FF2D1400053D616 /* 3.txt */,
 				AD067C7D1F9E71B5000C0630 /* AppDelegate.h */,
 				AD067C7E1F9E71B5000C0630 /* AppDelegate.m */,
 				AD067C801F9E71B5000C0630 /* ViewController.h */,
 				AD067C811F9E71B5000C0630 /* ViewController.m */,
 				AD067C831F9E71B5000C0630 /* Main.storyboard */,
+				ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */,
+				ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */,
 				AD51BFBD1FB5177C00FE707E /* TableViewController.h */,
 				AD51BFBE1FB5177C00FE707E /* TableViewController.m */,
 				AD23AD621FCF58270056021E /* TextInputViewViewController.h */,
@@ -267,6 +289,7 @@
 				AD067C731F9E71B5000C0630 /* Sources */,
 				AD067C741F9E71B5000C0630 /* Frameworks */,
 				AD067C751F9E71B5000C0630 /* Resources */,
+				ADB22B471FF2D1960053D616 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -384,6 +407,7 @@
 				AD51BFA41FB4F5E700FE707E /* Icon-App-40x40@2x.png in Resources */,
 				AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */,
 				AD51BFAE1FB4F5E700FE707E /* Icon-App-76x76@3x.png in Resources */,
+				ADB22B461FF2D1400053D616 /* 3.txt in Resources */,
 				AD51BF851FB4F36500FE707E /* new decamp bus.jpg in Resources */,
 				AD51BFA31FB4F5E700FE707E /* Icon-App-20x20@2x.png in Resources */,
 				AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */,
@@ -427,6 +451,7 @@
 				AD067C821F9E71B5000C0630 /* ViewController.m in Sources */,
 				AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */,
 				AD23AD641FCF58270056021E /* TextInputViewViewController.m in Sources */,
+				ADB22B4B1FF2D5C30053D616 /* TableViewControllerFromSelect.m in Sources */,
 				AD067C7C1F9E71B5000C0630 /* main.m in Sources */,
 				AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */,
 			);

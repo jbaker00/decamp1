@@ -7,12 +7,13 @@
 //
 
 #import "TextInputViewViewController.h"
+#import "TableViewControllerFromSelect.h"
 
 @interface TextInputViewViewController ()
-
 @end
 
 @implementation TextInputViewViewController
+NSArray *tblFromSelection;
 
 - (IBAction)FindBus:(id)sender
 {
@@ -63,7 +64,25 @@
     //[self placeTextBorder:self.FromField];
     //[self placeTextBorder:self.ToField];
     
+    //Array of the input for the from seletion
+    tblFromSelection = @[@"W. CALDWELL: Kirkpatrick Lane",@"CALDWELL: Roseland & Bloomfield",@"VERONA: Lakeside Ave",@"W. ORANGE: Pleasantdale Ctr",@"MONTCLAIR: Gates & Bloomfield",@"MONTCLAIR: Grove & Bellvue",@"CLIFTON: Vincent Dr & Groove St",@"BLOOMFIELD: Broad & Liberty",@"BLOOMFIELD: Broad & Watchung",@"NUTLEY: W. Passaic & Darling",@"NYC_P/A Bus Terminal"];
   
+}
+- (IBAction)btnToPressed:(id)sender {
+    [self performSegueWithIdentifier:@"segwayShowFromTable" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
+    {
+        TableViewControllerFromSelect *controller = [segue destinationViewController];
+
+
+   
+            controller->tblFromData = tblFromSelection;
+            controller->tblFromSectionName = @"Select Origination";
+    }
 }
 
 - (void)didReceiveMemoryWarning {

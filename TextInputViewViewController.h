@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface TextInputViewViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *FromField;
-@property (weak, nonatomic) IBOutlet UITextField *ToField;
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *DayType;
 
 - (IBAction)FindBus:(id)sender;
 //- (void)placeTextBorder:(UITextField*)textField;
+
 @property (weak, nonatomic) IBOutlet UIButton *btnFromField;
 @property (weak, nonatomic) IBOutlet UIButton *btnToField;
 
