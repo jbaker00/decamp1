@@ -19,4 +19,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnToField;
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *departureTime;
+@property (nonatomic, assign) BOOL from;
 @end

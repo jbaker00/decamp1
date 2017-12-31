@@ -104,8 +104,8 @@
 		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decamp logo small.jpeg"; sourceTree = "<group>"; };
 		AD067CEE1F9E740E000C0630 /* bus_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus_pic.jpg; sourceTree = "<group>"; };
-		AD23AD621FCF58270056021E /* TextInputViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextInputViewViewController.h; path = ../TextInputViewViewController.h; sourceTree = "<group>"; };
-		AD23AD631FCF58270056021E /* TextInputViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextInputViewViewController.m; path = ../TextInputViewViewController.m; sourceTree = "<group>"; };
+		AD23AD621FCF58270056021E /* TextInputViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputViewViewController.h; sourceTree = "<group>"; };
+		AD23AD631FCF58270056021E /* TextInputViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputViewViewController.m; sourceTree = "<group>"; };
 		AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus33Schedule.txt; sourceTree = "<group>"; };
 		AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus66Schedule.txt; sourceTree = "<group>"; };
 		AD51BF821FB4F31700FE707E /* old decamp bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old decamp bus.jpg"; sourceTree = "<group>"; };
@@ -169,6 +169,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EE012F11FF8437F008CA6E1 /* MainViewControllerOutput */ = {
+			isa = PBXGroup;
+			children = (
+				AD51BFBD1FB5177C00FE707E /* TableViewController.h */,
+				AD51BFBE1FB5177C00FE707E /* TableViewController.m */,
+			);
+			name = MainViewControllerOutput;
+			sourceTree = "<group>";
+		};
+		4EE012F21FF8446D008CA6E1 /* MainFirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C801F9E71B5000C0630 /* ViewController.h */,
+				AD067C811F9E71B5000C0630 /* ViewController.m */,
+			);
+			name = MainFirstViewController;
+			sourceTree = "<group>";
+		};
+		4EE012F31FF8449C008CA6E1 /* BetaViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD23AD621FCF58270056021E /* TextInputViewViewController.h */,
+				AD23AD631FCF58270056021E /* TextInputViewViewController.m */,
+			);
+			name = BetaViewController;
+			sourceTree = "<group>";
+		};
+		4EE012F41FF844CF008CA6E1 /* BetaViewControllerOutput */ = {
+			isa = PBXGroup;
+			children = (
+				ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */,
+				ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */,
+			);
+			name = BetaViewControllerOutput;
+			sourceTree = "<group>";
+		};
+		4EE012F51FF8451C008CA6E1 /* BusData */ = {
+			isa = PBXGroup;
+			children = (
+				ADB22B451FF2D1400053D616 /* 3.txt */,
+			);
+			name = BusData;
+			sourceTree = "<group>";
+		};
 		AD067C6E1F9E71B5000C0630 = {
 			isa = PBXGroup;
 			children = (
@@ -192,18 +236,14 @@
 		AD067C791F9E71B5000C0630 /* DeCampV3 */ = {
 			isa = PBXGroup;
 			children = (
-				ADB22B451FF2D1400053D616 /* 3.txt */,
+				4EE012F51FF8451C008CA6E1 /* BusData */,
+				4EE012F41FF844CF008CA6E1 /* BetaViewControllerOutput */,
+				4EE012F31FF8449C008CA6E1 /* BetaViewController */,
+				4EE012F21FF8446D008CA6E1 /* MainFirstViewController */,
+				4EE012F11FF8437F008CA6E1 /* MainViewControllerOutput */,
 				AD067C7D1F9E71B5000C0630 /* AppDelegate.h */,
 				AD067C7E1F9E71B5000C0630 /* AppDelegate.m */,
-				AD067C801F9E71B5000C0630 /* ViewController.h */,
-				AD067C811F9E71B5000C0630 /* ViewController.m */,
 				AD067C831F9E71B5000C0630 /* Main.storyboard */,
-				ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */,
-				ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */,
-				AD51BFBD1FB5177C00FE707E /* TableViewController.h */,
-				AD51BFBE1FB5177C00FE707E /* TableViewController.m */,
-				AD23AD621FCF58270056021E /* TextInputViewViewController.h */,
-				AD23AD631FCF58270056021E /* TextInputViewViewController.m */,
 				AD067C861F9E71B5000C0630 /* Assets.xcassets */,
 				AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */,
 				AD067C8B1F9E71B5000C0630 /* Info.plist */,

@@ -224,7 +224,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Gates Ave, Montclair"/>
                                 <connections>
-                                    <segue destination="cxd-Vd-yga" kind="show" identifier="segwayShowFromTable" id="wvg-PD-zu1"/>
+                                    <action selector="btnFromPressed:" destination="uyQ-cs-2zb" eventType="touchUpInside" id="0KR-db-yfe"/>
+                                    <segue destination="cxd-Vd-yga" kind="show" identifier="segwayShowFromTable" id="cWn-KY-U7n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-8S-DDW">
@@ -284,10 +285,14 @@
                             <outlet property="delegate" destination="cxd-Vd-yga" id="rbq-4A-VXk"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="JjC-s8-858" kind="unwind" identifier="busSelected" unwindAction="unwindFromStopSelectViewController:" id="AoU-xd-SDK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pB8-S7-9Lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="JjC-s8-858" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1462" y="827"/>
+            <point key="canvasLocation" x="738" y="920"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LvN-EL-Vjn">

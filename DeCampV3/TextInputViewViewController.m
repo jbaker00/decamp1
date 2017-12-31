@@ -68,7 +68,36 @@ NSArray *tblFromSelection;
     tblFromSelection = @[@"W. CALDWELL: Kirkpatrick Lane",@"CALDWELL: Roseland & Bloomfield",@"VERONA: Lakeside Ave",@"W. ORANGE: Pleasantdale Ctr",@"MONTCLAIR: Gates & Bloomfield",@"MONTCLAIR: Grove & Bellvue",@"CLIFTON: Vincent Dr & Groove St",@"BLOOMFIELD: Broad & Liberty",@"BLOOMFIELD: Broad & Watchung",@"NUTLEY: W. Passaic & Darling",@"NYC_P/A Bus Terminal"];
   
 }
+
+- (IBAction)unwindFromStopSelectViewController:(UIStoryboardSegue *)segue
+{
+    TableViewControllerFromSelect *controller = segue.sourceViewController;
+    //Check to see if anything was selected, if nothing then lets just exit
+    if(controller->tblFromSectionName)
+    {
+        if(controller.from == YES)
+        {
+            [_btnFromField setTitle: controller->tblFromSectionName forState:UIControlStateNormal];
+
+        }
+        else
+        {
+            [_btnToField setTitle: controller->tblFromSectionName forState:UIControlStateNormal];
+
+        }
+    }
+
+
+}
+- (IBAction)btnFromPressed:(id)sender {
+    //this is thew from button
+    [self setFrom:YES];
+}
+
 - (IBAction)btnToPressed:(id)sender {
+    //this is the to button
+    [self setFrom:NO];
+    //call out to segway
     [self performSegueWithIdentifier:@"segwayShowFromTable" sender:self];
 }
 
@@ -76,12 +105,22 @@ NSArray *tblFromSelection;
 {
     if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
     {
+        //Grab the view controller
         TableViewControllerFromSelect *controller = [segue destinationViewController];
-
-
-   
-            controller->tblFromData = tblFromSelection;
-            controller->tblFromSectionName = @"Select Origination";
+        
+        //set the NSArrary for the table to be filled
+        controller->tblFromData = tblFromSelection;
+        
+        if(self.from == YES)
+        {
+            controller->tblFromSectionName = @"Orignation";
+            [controller setFrom:YES];
+        }
+        else
+        {
+            controller->tblFromSectionName = @"Destination";
+            [controller setFrom:NO];
+        }
     }
 }
 

@@ -10,7 +10,14 @@
 
 @interface TableViewControllerFromSelect : TableViewController
 {
-@public NSArray *tblFromData;
-@public NSString *tblFromSectionName;
+    //Array of bus stops
+    @public NSArray *tblFromData;
+    //Name of the bus selected
+    @public  NSString *tblFromSectionName;
 }
+//Name of bus selected in property
+//@property (strong, nonatomic) NSString *selectedBus;
+@property (nonatomic) bool from;
+
+
 @end
