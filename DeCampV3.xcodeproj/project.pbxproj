@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E00A98920012693006920D7 /* 33WeekdayToNYCSchedule.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */; };
+		4EE69B65201800070027902D /* 33stopsToNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EE69B64201800070027902D /* 33stopsToNYC.txt */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -86,6 +88,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33WeekdayToNYCSchedule.csv; sourceTree = "<group>"; };
+		4EE69B64201800070027902D /* 33stopsToNYC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33stopsToNYC.txt; sourceTree = "<group>"; };
 		AD067C771F9E71B5000C0630 /* DeCampV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCampV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD067C7D1F9E71B5000C0630 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -208,7 +212,9 @@
 		4EE012F51FF8451C008CA6E1 /* BusData */ = {
 			isa = PBXGroup;
 			children = (
+				4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */,
 				ADB22B451FF2D1400053D616 /* 3.txt */,
+				4EE69B64201800070027902D /* 33stopsToNYC.txt */,
 			);
 			name = BusData;
 			sourceTree = "<group>";
@@ -456,6 +462,7 @@
 				AD51BFA21FB4F5E700FE707E /* Icon-App-60x60@2x.png in Resources */,
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
 				AD51BFB01FB4F5E700FE707E /* Icon-App-83.5x83.5@2x.png in Resources */,
+				4E00A98920012693006920D7 /* 33WeekdayToNYCSchedule.csv in Resources */,
 				AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */,
 				AD51BFB31FB4F5E700FE707E /* Icon-App-40x40@3x.png in Resources */,
 				AD51BFB41FB4F5E700FE707E /* Icon-App-60x60@3x.png in Resources */,
@@ -463,6 +470,7 @@
 				ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */,
 				AD51BFA01FB4F5E700FE707E /* Icon-App-76x76@1x.png in Resources */,
 				AD51BFA51FB4F5E700FE707E /* Icon-App-57x57@2x.png in Resources */,
+				4EE69B65201800070027902D /* 33stopsToNYC.txt in Resources */,
 				AD51BFA61FB4F5E700FE707E /* Icon-App-29x29@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

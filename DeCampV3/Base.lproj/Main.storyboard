@@ -256,6 +256,7 @@
                         <outlet property="btnFromField" destination="qL2-3i-hqY" id="h0e-nV-h8V"/>
                         <outlet property="btnToField" destination="D5u-8S-DDW" id="Yjg-da-7sI"/>
                         <outlet property="departureTime" destination="tXV-Bw-aQP" id="NDg-AN-94r"/>
+                        <outlet property="segWeekend" destination="okj-3m-tbO" id="7q4-JX-Qah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ZC-FL-5Yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
