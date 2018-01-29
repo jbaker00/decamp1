@@ -15,8 +15,58 @@
 @implementation TextInputViewViewController
 NSArray *tblFromSelection;
 
+//- (NSMutableArray*)getBusStops:(NSString*)busStop forTime:(NSSTimeInterval*)timeInterval;
+//Function to load strings into an array from a file
+-(NSMutableArray*)loadFromFile:(NSString*)fileName //add a 2nd value of an array name
+{
+    //Set the error Variable to NIL that we will check later
+    NSError *error = nil;
+    //Setup the bundle so we can read the file
+    NSBundle *main =[NSBundle mainBundle];
+    //Setup the file name in the bundlle
+    NSString *path = [main pathForResource:fileName ofType:@"txt"];
+    //Load the file contents into a string
+    NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    
+    //Check for the error code to see if the file read worked
+    if(nil != error)
+    {
+        NSLog(@"Error Resding URL with error %@", error.localizedDescription);
+    }
+    
+    //Look at the contents of the file loaded into the string and parse it for the columns per row
+    //Set the row seperator
+    NSArray* rows = [fileContents componentsSeparatedByString:@"\n"];
+   
+    NSMutableArray *stopArray = [[NSMutableArray alloc]initWithCapacity:1];; //string to store the output of the stops
+    
+    int i = 0; //counter for the string array
+    
+    for (NSString *row in rows){
+        if(![row isEqualToString:@""])
+        {
+
+            NSLog(@"adding %@ into the stopArray at location [%i]",row, i);
+            [stopArray addObject:row];
+        }
+        else
+        {
+            NSLog(@"We found a blank line");
+        }
+        i++;
+    }
+    return(stopArray);
+}
+
 - (IBAction)FindBus:(id)sender
  {
+     //Assume there was a lookup of the from field and the bus number  and we got back 33 :)
+
+    //Load the Array with info on which stops are at which index for the 33 bus file
+    //-(NSMutableArray*)loadFromFile:(NSString*)fileName
+     
+     
+     //Load the file of the 33 to NYC info
      int i,j; //ints for the loops
      NSString *busArray[50][12];
      
@@ -66,17 +116,34 @@ NSArray *tblFromSelection;
          i++;
      }
      NSLog(@"exiting the fill in loop");
-     //Assume there was a lookup of the from field and the bus number  and we got back 33 :) 
      
+     //look up the specific index in the table (now array busArray) that matches the _btnFromField.titleLAbel.text
      
-     //look up the specific index in the table (now array busArray) that matches the _btnFromField.titleLAbel.txt
-     
+     int iBusStart = 4; //fake for now we know the index and its 5 and since we are base 0 its 4 (using gates Ave
+     int iBusStop = 12;
      
      //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
-     int l;
-     for(l=0; l<rows.count; l++)
+     for(i=0; i<rows.count; i++)
      {
          //check the index that fits for the specific stop
+        if(busArray[i][iBusStart] == _btnFromField.titleLabel.text)
+        {
+            NSLog(@"Starting stop name is %@", _btnFromField.titleLabel.text);
+            NSLog(@"Index of the starting stop name in the array is %i", iBusStart);
+            NSLog(@"Starting stop time is %@", busArray[i][iBusStart]);
+            NSLog(@"Stopping stop name is %@", _btnToField.titleLabel.text);
+            NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
+            NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
+            //Take the Start name = _btnFromField.titleLabel.text
+            //Take the Start time in the array  = busArray[i][iBusStart]
+            //Take the Stop name = _btnToField.titleLabel.text
+            //Take the Stop time in the array = busArray[i][iBusStop]
+            //and
+            //Put them in one string and add that string into a new array
+            
+            
+        }
+         //Assign that new array to a table view controller that is the next ending segway
      }
  }
 
