@@ -60,21 +60,31 @@ NSArray *tblFromSelection;
 
 - (IBAction)FindBus:(id)sender
  {
+     //move this full function to prepare for segway to load the table we are going to use for output
+     
      //Assume there was a lookup of the from field and the bus number  and we got back 33 :)
-
-    //Load the Array with info on which stops are at which index for the 33 bus file
-    //-(NSMutableArray*)loadFromFile:(NSString*)fileName
-     
-     
-     //Load the file of the 33 to NYC info
-     int i,j; //ints for the loops
-     NSString *busArray[50][12];
+     NSString *strBusNumber = @"33";
      
      NSLog(@"from location is, %@",_btnFromField.titleLabel.text);
      NSLog(@"to location is , %@", _btnToField.titleLabel.text);
      NSLog(@"weekend is set to, , %i", _segWeekend.selected);
      NSLog(@"time of day is set to, %@", _departureTime.date);
+     NSLog(@"Bus number is %@", strBusNumber);
+
+     //$$TODO$$ make this a function that will return back the index of the stop name passed in.
+     //Load the Array with info on which stops are at which index for the 33 bus file
+     //-(NSMutableArray*)loadFromFile:(NSString*)fileName
+     //look up the specific index in the table (now array busArray) that matches the _btnFromField.titleLAbel.text
+     int iBusStart = 4; //fake for now we know the index and its 5 and since we are base 0 its 4 (using gates Ave
+     int iBusStop = 12;
+     //$$TODO$$ make this a function that will return back the index of the stop name passed in.
+
      
+     //$$TODO$$ make this a function that takes in the file name and returns back a mutable array of strings or a fixed large multidimentional array of the max size of the bus arrays.
+     //Load the file of the 33 to NYC info
+     int i,j; //ints for the loops
+     NSString *busArray[50][12];
+
      //Set the error Variable to NIL that we will check later
      NSError *error = nil;
      //Setup the bundle so we can read the file
@@ -116,12 +126,24 @@ NSArray *tblFromSelection;
          i++;
      }
      NSLog(@"exiting the fill in loop");
+     //$$TODO$$ make this a function that takes in the file name and returns back a mutable array of strings or a fixed large multidimentional array of the max size of the bus arrays.
+
+
+     //Fill ou the header row
+     NSMutableString *stringTitle = [NSMutableString stringWithString:strBusNumber];
+     [stringTitle appendString:@" Bus "];
+     [stringTitle appendString:_btnFromField.titleLabel.text];
+     [stringTitle appendString:@" to "];
+     [stringTitle appendString:_btnToField.titleLabel.text];
+     NSLog(@"The string of the title is %@", stringTitle);
      
-     //look up the specific index in the table (now array busArray) that matches the _btnFromField.titleLAbel.text
      
-     int iBusStart = 4; //fake for now we know the index and its 5 and since we are base 0 its 4 (using gates Ave
-     int iBusStop = 12;
      
+     //define nsmutable array for the fill here
+     NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];
+     //define nsmutable string here for the temp var for the fill here
+     NSMutableArray *outputArray = [NSMutableArray arrayWithCapacity:1];
+
      //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
      for(i=0; i<rows.count; i++)
      {
@@ -134,17 +156,22 @@ NSArray *tblFromSelection;
             NSLog(@"Stopping stop name is %@", _btnToField.titleLabel.text);
             NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
             NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
-            //Take the Start name = _btnFromField.titleLabel.text
-            //Take the Start time in the array  = busArray[i][iBusStart]
-            //Take the Stop name = _btnToField.titleLabel.text
-            //Take the Stop time in the array = busArray[i][iBusStop]
-            //and
-            //Put them in one string and add that string into a new array
+          
+            //Take the row info and place it in one string
+            [stringBody appendString:busArray[i][iBusStart]];
+            [stringBody appendString:@" - "];
+            [stringBody appendString:busArray[i][iBusStop]];
             
-            
+            //Add the string to an output array
+            [outputArray addObject:stringBody];
+       
+            //clear out string for next placement in of new string
+            stringBody = [NSMutableString stringWithString:@""];
         }
-         //Assign that new array to a table view controller that is the next ending segway
+
      }
+     NSLog(@"%@",outputArray);
+     //Assign that new array to a table view controller that is the next ending segway
  }
 
 /*- (IBAction)FindBus:(id)sender
