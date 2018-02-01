@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E00A98920012693006920D7 /* 33WeekdayToNYCSchedule.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */; };
 		4EE69B65201800070027902D /* 33stopsToNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EE69B64201800070027902D /* 33stopsToNYC.txt */; };
+		4EED663320226A7300348DAF /* 33stopsToNYC.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EE69B64201800070027902D /* 33stopsToNYC.txt */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -81,6 +82,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				4EED663320226A7300348DAF /* 33stopsToNYC.txt in CopyFiles */,
 				ADB22B481FF2D2000053D616 /* 3.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

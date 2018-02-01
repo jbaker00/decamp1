@@ -13,6 +13,10 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *DayType;
 
 - (IBAction)FindBus:(id)sender;
+-(NSMutableArray*)loadStopsFromFile:(NSString*)fileName;
+-(NSMutableArray*)loadStopIndexFromFile:(NSString*)fileName; //add a 2nd value of an array name
+
+
 //- (void)placeTextBorder:(UITextField*)textField;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFromField;
