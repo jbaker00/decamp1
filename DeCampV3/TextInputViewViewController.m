@@ -137,81 +137,104 @@ NSArray *tblFromSelection;
     return strBusNumber;
 }
 
-- (IBAction)FindBus:(id)sender
- {
-     //$$TODO$$
-     //move this full function to prepare for segway to load the table we are going to use for output
-     
-     
-     //Lookup Bus Number
-     NSString * strBusNumber = [self loadBusNumber:_btnFromField.titleLabel.text];
-     NSLog(@"The Bus number returned fromt eh loadBusNumber lookup was %@", strBusNumber);
-     
-     //Debug info
-     NSLog(@"from location is, %@",_btnFromField.titleLabel.text);
-     NSLog(@"to location is , %@", _btnToField.titleLabel.text);
-     NSLog(@"weekend is set to, , %i", _segWeekend.selected);
-     NSLog(@"time of day is set to, %@", _departureTime.date);
-     NSLog(@"Bus number is %@", strBusNumber);
-     
-     //$$TODO$$ make this a function that will return back the index of the stop name passed in. use the 33 file in this case since we hard code it
-     //NSMutableArray* stopIndexes = [self loadStopIndexFromFile:@"33stopsToNYC"];
-     int iBusStart = 4;
-     int iBusStop = 12;
-     
-    
-     //Load the file of the 33 to NYC info
-     NSMutableArray *busArray = [self loadStopsFromFile:@"3"];
-     //NSLog(@"Debug output of the mutable array bus start time is %@", [[busArray objectAtIndex:6] objectAtIndex:iBusStart]);
-     NSLog(@"Debug output of the mutable array bus start time is %@", busArray[7][iBusStart]);
-     //NSLog(@"Debug output of the mutable array bus stop time is %@", [[busArray objectAtIndex:6] objectAtIndex:iBusStop]);
-     NSLog(@"Debug output of the mutable array bus stop time is %@", busArray[7][iBusStop]);
+- (void)printDebugInfo:(NSString *)strBusNumber {
+    NSLog(@"from location is, %@",_btnFromField.titleLabel.text);
+    NSLog(@"to location is , %@", _btnToField.titleLabel.text);
+    NSLog(@"weekend is set to, , %i", _segWeekend.selected);
+    NSLog(@"time of day is set to, %@", _departureTime.date);
+    NSLog(@"Bus number is %@", strBusNumber);
+}
 
-     //Fill ou the header row
-     NSString *stringTitle = [self fillTableHeader:strBusNumber];
-     NSLog(@"Title for the header row returned fromt the fillTableHeader function is %@", stringTitle);
-     
-     
-   /*
-    //define nsMutableArray for the fill here
-     NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];
-     
-     //define nsmutable string here for the temp var for the fill here
-     NSMutableArray *outputArray = [NSMutableArray arrayWithCapacity:1];
-
-     //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
-     for(int i=0; i<rows.count; i++)
-     {
-         //check the index that fits for the specific stop
-         if(![busArray[i][iBusStart] isEqualToString:@""])
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
+    {
+        //Grab the view controller
+        TableViewControllerFromSelect *controller = [segue destinationViewController];
+        
+        //set the NSArrary for the table to be filled
+        controller->tblFromData = tblFromSelection;
+        
+        if(self.from == YES)
         {
-            NSLog(@"Starting stop name is %@", _btnFromField.titleLabel.text);
-            NSLog(@"Index of the starting stop name in the array is %i", iBusStart);
-            NSLog(@"Starting stop time is %@", busArray[i][iBusStart]);
-            NSLog(@"Stopping stop name is %@", _btnToField.titleLabel.text);
-            NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
-            NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
-          
-            //Take the row info and place it in one string
-            [stringBody appendString:busArray[i][iBusStart]];
-            [stringBody appendString:@" - "];
-            [stringBody appendString:busArray[i][iBusStop]];
-            
-            NSLog(@"The output for the table will be %@", stringBody);
-            
-            //Add the string to an output array
-            [outputArray addObject:stringBody];
-       
-            //clear out string for next placement in of new string
-            stringBody = [NSMutableString stringWithString:@""];
+            controller->tblFromSectionName = @"Orignation";
+            [controller setFrom:YES];
         }
-
-     }
-     NSLog(@"%@",outputArray);
-     //Assign that new array to a table view controller that is the next ending segway*/
- }
-
-
+        else
+        {
+            controller->tblFromSectionName = @"Destination";
+            [controller setFrom:NO];
+        }
+    }
+    else if ([[segue identifier] isEqualToString:@"showRoutes"])
+    {
+        //Get the destination view controller
+        TableViewController *controller = [segue destinationViewController];
+        
+        //Lookup Bus Number
+        NSString * strBusNumber = [self loadBusNumber:_btnFromField.titleLabel.text];
+        NSLog(@"The Bus number returned fromt eh loadBusNumber lookup was %@", strBusNumber);
+        
+        //Debug info
+        [self printDebugInfo:strBusNumber];
+        
+        //$$TODO$$ make this a function that will return back the index of the stop name passed in. use the 33 file in this case since we hard code it
+        //NSMutableArray* stopIndexes = [self loadStopIndexFromFile:@"33stopsToNYC"];
+        int iBusStart = 4;
+        int iBusStop = 12;
+        
+        
+        //Load the file of the 33 to NYC info
+        NSMutableArray *busArray = [self loadStopsFromFile:@"3"];
+        NSLog(@"Debug output of the mutable array bus start time is %@", busArray[7][iBusStart]);
+        NSLog(@"Debug output of the mutable array bus stop time is %@", busArray[7][iBusStop]);
+        
+        //Fill ou the header row
+        NSString *stringTitle = [self fillTableHeader:strBusNumber];
+        NSLog(@"Title for the header row returned fromt the fillTableHeader function is %@", stringTitle);
+        
+        //define nsMutableArray for the fill here
+        NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];
+        
+         //define nsmutable string here for the temp var for the fill here
+         NSMutableArray *outputArray = [NSMutableArray arrayWithCapacity:1];
+         
+         //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
+         for(int i=0; i<busArray.count; i++)
+         {
+             //check the index that fits for the specific stop
+             if(![busArray[i][iBusStart] isEqualToString:@""])
+             {
+                 NSLog(@"Starting stop name is %@", _btnFromField.titleLabel.text);
+                 NSLog(@"Index of the starting stop name in the array is %i", iBusStart);
+                 NSLog(@"Starting stop time is %@", busArray[i][iBusStart]);
+                 NSLog(@"Stopping stop name is %@", _btnToField.titleLabel.text);
+                 NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
+                 NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
+                 
+                 //Take the row info and place it in one string
+                 [stringBody appendString:busArray[i][iBusStart]];
+                 [stringBody appendString:@" - "];
+                 [stringBody appendString:busArray[i][iBusStop]];
+                 NSLog(@"The output for the table will be %@", stringBody);
+                 
+                 //Add the string to an output array
+                 [outputArray addObject:stringBody];
+                 
+                 //clear out string for next placement in of new string
+                 stringBody = [NSMutableString stringWithString:@""];
+             }
+         
+         }
+         NSLog(@"%@",outputArray);
+        
+        //Assign that new array to a table view controller that is the next ending segway
+        controller->tblData = outputArray;
+        
+        //Assign the header row
+        controller->tblSectionName = strBusNumber;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -267,28 +290,7 @@ NSArray *tblFromSelection;
     [self performSegueWithIdentifier:@"segwayShowFromTable" sender:self];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
-    {
-        //Grab the view controller
-        TableViewControllerFromSelect *controller = [segue destinationViewController];
-        
-        //set the NSArrary for the table to be filled
-        controller->tblFromData = tblFromSelection;
-        
-        if(self.from == YES)
-        {
-            controller->tblFromSectionName = @"Orignation";
-            [controller setFrom:YES];
-        }
-        else
-        {
-            controller->tblFromSectionName = @"Destination";
-            [controller setFrom:NO];
-        }
-    }
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

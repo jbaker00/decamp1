@@ -175,50 +175,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4EE012F11FF8437F008CA6E1 /* MainViewControllerOutput */ = {
+		4EE012F11FF8437F008CA6E1 /* MainVCOutput */ = {
 			isa = PBXGroup;
 			children = (
 				AD51BFBD1FB5177C00FE707E /* TableViewController.h */,
 				AD51BFBE1FB5177C00FE707E /* TableViewController.m */,
 			);
-			name = MainViewControllerOutput;
+			name = MainVCOutput;
 			sourceTree = "<group>";
 		};
-		4EE012F21FF8446D008CA6E1 /* MainFirstViewController */ = {
+		4EE012F21FF8446D008CA6E1 /* MainFirstVC */ = {
 			isa = PBXGroup;
 			children = (
 				AD067C801F9E71B5000C0630 /* ViewController.h */,
 				AD067C811F9E71B5000C0630 /* ViewController.m */,
 			);
-			name = MainFirstViewController;
+			name = MainFirstVC;
 			sourceTree = "<group>";
 		};
-		4EE012F31FF8449C008CA6E1 /* BetaViewController */ = {
+		4EE012F31FF8449C008CA6E1 /* BetaVC */ = {
 			isa = PBXGroup;
 			children = (
 				AD23AD621FCF58270056021E /* TextInputViewViewController.h */,
 				AD23AD631FCF58270056021E /* TextInputViewViewController.m */,
 			);
-			name = BetaViewController;
+			name = BetaVC;
 			sourceTree = "<group>";
 		};
-		4EE012F41FF844CF008CA6E1 /* BetaViewControllerOutput */ = {
+		4EE012F41FF844CF008CA6E1 /* BetaVCStopSelectOutput */ = {
 			isa = PBXGroup;
 			children = (
 				ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */,
 				ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */,
 			);
-			name = BetaViewControllerOutput;
+			name = BetaVCStopSelectOutput;
 			sourceTree = "<group>";
 		};
-		4EE012F51FF8451C008CA6E1 /* BusData */ = {
+		4EE012F51FF8451C008CA6E1 /* BetaVCOutput */ = {
 			isa = PBXGroup;
 			children = (
-				4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */,
-				ADB22B451FF2D1400053D616 /* 3.txt */,
-				4EE69B64201800070027902D /* 33stopsToNYC.txt */,
 			);
-			name = BusData;
+			name = BetaVCOutput;
 			sourceTree = "<group>";
 		};
 		AD067C6E1F9E71B5000C0630 = {
@@ -244,16 +241,14 @@
 		AD067C791F9E71B5000C0630 /* DeCampV3 */ = {
 			isa = PBXGroup;
 			children = (
-				4EE012F51FF8451C008CA6E1 /* BusData */,
-				4EE012F41FF844CF008CA6E1 /* BetaViewControllerOutput */,
-				4EE012F31FF8449C008CA6E1 /* BetaViewController */,
-				4EE012F21FF8446D008CA6E1 /* MainFirstViewController */,
-				4EE012F11FF8437F008CA6E1 /* MainViewControllerOutput */,
+				AD62D4852023AED200F32EF5 /* GUI */,
+				4EE012F51FF8451C008CA6E1 /* BetaVCOutput */,
+				4EE012F41FF844CF008CA6E1 /* BetaVCStopSelectOutput */,
+				4EE012F31FF8449C008CA6E1 /* BetaVC */,
+				4EE012F21FF8446D008CA6E1 /* MainFirstVC */,
+				4EE012F11FF8437F008CA6E1 /* MainVCOutput */,
 				AD067C7D1F9E71B5000C0630 /* AppDelegate.h */,
 				AD067C7E1F9E71B5000C0630 /* AppDelegate.m */,
-				AD067C831F9E71B5000C0630 /* Main.storyboard */,
-				AD067C861F9E71B5000C0630 /* Assets.xcassets */,
-				AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */,
 				AD067C8B1F9E71B5000C0630 /* Info.plist */,
 				AD067C7A1F9E71B5000C0630 /* Supporting Files */,
 			);
@@ -263,6 +258,9 @@
 		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */,
+				ADB22B451FF2D1400053D616 /* 3.txt */,
+				4EE69B64201800070027902D /* 33stopsToNYC.txt */,
 				AD51BF881FB4F5C500FE707E /* icons */,
 				AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */,
 				ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */,
@@ -325,6 +323,16 @@
 				AD51BF911FB4F5E500FE707E /* Icon-Small-50x50@2x.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		AD62D4852023AED200F32EF5 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C861F9E71B5000C0630 /* Assets.xcassets */,
+				AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */,
+				AD067C831F9E71B5000C0630 /* Main.storyboard */,
+			);
+			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
