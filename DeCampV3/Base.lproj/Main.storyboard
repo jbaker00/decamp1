@@ -296,10 +296,10 @@
             </objects>
             <point key="canvasLocation" x="738" y="920"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller Bus List-->
         <scene sceneID="nB7-eS-thl">
             <objects>
-                <tableViewController id="0Wf-pJ-2lG" sceneMemberID="viewController">
+                <tableViewController id="0Wf-pJ-2lG" customClass="TableViewControllerBusList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FrI-Cs-wfw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

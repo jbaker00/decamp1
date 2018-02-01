@@ -50,6 +50,7 @@
 		AD51BFB41FB4F5E700FE707E /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF9E1FB4F5E700FE707E /* Icon-App-60x60@3x.png */; };
 		AD51BFBB1FB4F68800FE707E /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BFB71FB4F68800FE707E /* iTunesArtwork@3x.png */; };
 		AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51BFBE1FB5177C00FE707E /* TableViewController.m */; };
+		AD62D4882023B92800F32EF5 /* TableViewControllerBusList.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62D4872023B92800F32EF5 /* TableViewControllerBusList.m */; };
 		ADB22B461FF2D1400053D616 /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 3.txt */; };
 		ADB22B481FF2D2000053D616 /* 3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 3.txt */; };
 		ADB22B4B1FF2D5C30053D616 /* TableViewControllerFromSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */; };
@@ -142,6 +143,8 @@
 		AD51BFB71FB4F68800FE707E /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		AD51BFBD1FB5177C00FE707E /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		AD51BFBE1FB5177C00FE707E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		AD62D4862023B92800F32EF5 /* TableViewControllerBusList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerBusList.h; sourceTree = "<group>"; };
+		AD62D4872023B92800F32EF5 /* TableViewControllerBusList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerBusList.m; sourceTree = "<group>"; };
 		ADB22B451FF2D1400053D616 /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
 		ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerFromSelect.h; sourceTree = "<group>"; };
 		ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerFromSelect.m; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 		4EE012F51FF8451C008CA6E1 /* BetaVCOutput */ = {
 			isa = PBXGroup;
 			children = (
+				AD62D4862023B92800F32EF5 /* TableViewControllerBusList.h */,
+				AD62D4872023B92800F32EF5 /* TableViewControllerBusList.m */,
 			);
 			name = BetaVCOutput;
 			sourceTree = "<group>";
@@ -512,6 +517,7 @@
 				ADB22B4B1FF2D5C30053D616 /* TableViewControllerFromSelect.m in Sources */,
 				AD067C7C1F9E71B5000C0630 /* main.m in Sources */,
 				AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */,
+				AD62D4882023B92800F32EF5 /* TableViewControllerBusList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
