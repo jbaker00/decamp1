@@ -245,7 +245,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="FindBus:" destination="uyQ-cs-2zb" eventType="touchUpInside" id="oGS-g3-mf4"/>
                                     <segue destination="0Wf-pJ-2lG" kind="show" identifier="showRoutes" id="C3B-TC-Rgs"/>
                                 </connections>
                             </button>

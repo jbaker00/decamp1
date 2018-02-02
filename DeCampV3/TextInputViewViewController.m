@@ -8,12 +8,15 @@
 
 #import "TextInputViewViewController.h"
 #import "TableViewControllerFromSelect.h"
+#import "TableViewControllerBusList.h"
 
 @interface TextInputViewViewController ()
 @end
 
 @implementation TextInputViewViewController
 NSArray *tblFromSelection;
+NSMutableArray *outputArray;
+NSString *stringTitle;
 
 
 //- (NSMutableArray*)getBusStops:(NSString*)busStop forTime:(NSSTimeInterval*)timeInterval;
@@ -158,18 +161,18 @@ NSArray *tblFromSelection;
         if(self.from == YES)
         {
             controller->tblFromSectionName = @"Orignation";
-            [controller setFrom:YES];
+            //[controller setFrom:YES];
         }
         else
         {
             controller->tblFromSectionName = @"Destination";
-            [controller setFrom:NO];
+            //[controller setFrom:NO];
         }
     }
     else if ([[segue identifier] isEqualToString:@"showRoutes"])
     {
         //Get the destination view controller
-        TableViewController *controller = [segue destinationViewController];
+        TableViewControllerBusList *controllerOut = [segue destinationViewController];
         
         //Lookup Bus Number
         NSString * strBusNumber = [self loadBusNumber:_btnFromField.titleLabel.text];
@@ -180,7 +183,7 @@ NSArray *tblFromSelection;
         
         //$$TODO$$ make this a function that will return back the index of the stop name passed in. use the 33 file in this case since we hard code it
         //NSMutableArray* stopIndexes = [self loadStopIndexFromFile:@"33stopsToNYC"];
-        int iBusStart = 4;
+        int iBusStart = 5;
         int iBusStop = 12;
         
         
@@ -190,14 +193,14 @@ NSArray *tblFromSelection;
         NSLog(@"Debug output of the mutable array bus stop time is %@", busArray[7][iBusStop]);
         
         //Fill ou the header row
-        NSString *stringTitle = [self fillTableHeader:strBusNumber];
+        stringTitle = [self fillTableHeader:strBusNumber];
         NSLog(@"Title for the header row returned fromt the fillTableHeader function is %@", stringTitle);
         
         //define nsMutableArray for the fill here
         NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];
         
-         //define nsmutable string here for the temp var for the fill here
-         NSMutableArray *outputArray = [NSMutableArray arrayWithCapacity:1];
+        //define nsmutable string here for the temp var for the fill here
+        outputArray = [NSMutableArray arrayWithCapacity:1];
          
          //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
          for(int i=0; i<busArray.count; i++)
@@ -229,10 +232,15 @@ NSArray *tblFromSelection;
          NSLog(@"%@",outputArray);
         
         //Assign that new array to a table view controller that is the next ending segway
-        controller->tblData = outputArray;
+        controllerOut->tblData = outputArray;
+        NSLog(@"local variable for the table data is set to  %@", outputArray);
+        NSLog(@"remote variable for the table data is set to  %@", controllerOut->tblData);
         
         //Assign the header row
-        controller->tblSectionName = strBusNumber;
+        controllerOut->tblSectionName = stringTitle;
+        NSLog(@"local variable for the table title is set to %@", stringTitle);
+        NSLog(@"remote variable for the table title is set to %@", controllerOut->tblSectionName);
+        
     }
 }
 
