@@ -33,7 +33,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self->tblFromSectionName = self->tblFromData[indexPath.row];
+    self->tblFromSectionName = self->tblFromData[indexPath.row][0];
     [self performSegueWithIdentifier:@"busSelected" sender:self];
 }
 /*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,7 +64,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"fromCells" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = tblFromData[indexPath.row];
+    cell.textLabel.text = tblFromData[indexPath.row][0];
     cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
     return cell;
 }

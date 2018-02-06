@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *DayType;
 
 -(NSMutableArray*)loadStopsFromFile:(NSString*)fileName;
--(NSMutableArray*)loadStopIndexFromFile:(NSString*)fileName; //add a 2nd value of an array name
 
 
 //- (void)placeTextBorder:(UITextField*)textField;

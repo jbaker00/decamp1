@@ -1,0 +1,9 @@
+﻿pecial_Info,ORANGE: Scotland Rd & Central Ave,E.ORANGE: Evergreen Pl & Central Ave,E.ORANGE: Prospect and Williams Sts.,BLOOMFIELD: Prospect St & Dodd St,BLOOMFIELD: Broad & Liberty St,BLOOMFIELD: Broad & Watchung Ave,NUTLEY: W. Passaic & Darling Ave,BELLEVILLE: Washington & Rutgers,N. ARLINGTON: Ridge Rd & Harding Ave,LYNDHURST: Valley Brook Ridge,NYC P/A Bus Terminal
+,,,,,,,,,,,
+,Via ,Williams ,6:27AM ,6:31AM ,6:35AM ,6:42AM ,6:46AM ,,,,7:07AM 
+,7:08AM ,7:13AM ,7:17AM ,7:21AM ,7:25AM ,7:32AM ,7:36 AM,,,,7:57AM 
+,Via ,Williams ,8:12AM ,8:16AM ,8:20AM ,8:27AM ,8:31AM ,,,,8:52AM 
+,Via ,Williams ,2:12PM ,2:16PM ,2:20PM ,2:27PM ,2:31PM ,,,,2:52PM 
+,Via ,Williams ,3:12PM ,3:16PM ,3:20PM ,3:27PM ,3:31PM ,,,,3:52PM 
+,Via ,Williams ,4:12PM ,4:16PM ,4:20PM ,4:27PM ,4:31PM ,,,,4:52PM 
+,Via ,Williams ,5:12PM ,5:16PM ,5:20PM ,5:27PM ,5:31PM ,,,,5:52PM 

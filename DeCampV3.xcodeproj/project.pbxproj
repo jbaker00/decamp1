@@ -7,9 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E00A98920012693006920D7 /* 33WeekdayToNYCSchedule.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */; };
-		4EE69B65201800070027902D /* 33stopsToNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EE69B64201800070027902D /* 33stopsToNYC.txt */; };
-		4EED663320226A7300348DAF /* 33stopsToNYC.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EE69B64201800070027902D /* 33stopsToNYC.txt */; };
+		4ED2B1A12028FB3B00F2C5F8 /* BusListNew.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ED2B19F2028FA9A00F2C5F8 /* BusListNew.txt */; };
+		4ED2B1DA202A40D400F2C5F8 /* 32toNYCWeekdays.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ED2B1C5202A342000F2C5F8 /* 32toNYCWeekdays.txt */; };
+		4ED2B1E9202A4F7000F2C5F8 /* 32toNYC.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ED2B1A4202A2FDE00F2C5F8 /* 32toNYC.txt */; };
+		4ED2B1EB202A4F7000F2C5F8 /* 33toNYC.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4ED2B1AA202A2FDF00F2C5F8 /* 33toNYC.txt */; };
+		4ED2B1F6202A526600F2C5F8 /* 33toNYCWeekdays.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 33toNYCWeekdays.txt */; };
+		4ED2B1F7202A5E0700F2C5F8 /* BusListNew.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B19F2028FA9A00F2C5F8 /* BusListNew.txt */; };
+		4ED2B1F8202A5E0700F2C5F8 /* 32fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A6202A2FDF00F2C5F8 /* 32fromNYC.txt */; };
+		4ED2B1F9202A5E0700F2C5F8 /* 32toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A4202A2FDE00F2C5F8 /* 32toNYC.txt */; };
+		4ED2B1FA202A5E0700F2C5F8 /* 33fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A9202A2FDF00F2C5F8 /* 33fromNYC.txt */; };
+		4ED2B1FB202A5E0700F2C5F8 /* 33toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1AA202A2FDF00F2C5F8 /* 33toNYC.txt */; };
+		4ED2B1FC202A5E0700F2C5F8 /* 44fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A3202A2FDE00F2C5F8 /* 44fromNYC.txt */; };
+		4ED2B1FD202A5E0700F2C5F8 /* 44toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1AD202A2FDF00F2C5F8 /* 44toNYC.txt */; };
+		4ED2B1FE202A5E0700F2C5F8 /* 66fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1AB202A2FDF00F2C5F8 /* 66fromNYC.txt */; };
+		4ED2B1FF202A5E0700F2C5F8 /* 66toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1AC202A2FDF00F2C5F8 /* 66toNYC.txt */; };
+		4ED2B200202A5E0700F2C5F8 /* 88fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A5202A2FDE00F2C5F8 /* 88fromNYC.txt */; };
+		4ED2B201202A5E0700F2C5F8 /* 88toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A8202A2FDF00F2C5F8 /* 88toNYC.txt */; };
+		4ED2B202202A5E0700F2C5F8 /* 99fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1AF202A2FE000F2C5F8 /* 99fromNYC.txt */; };
+		4ED2B203202A5E0700F2C5F8 /* 99toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A2202A2FDE00F2C5F8 /* 99toNYC.txt */; };
+		4ED2B204202A5E0700F2C5F8 /* BuListNew.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1A7202A2FDF00F2C5F8 /* BuListNew.txt */; };
+		4ED2B205202A5E2C00F2C5F8 /* 32fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1CB202A342200F2C5F8 /* 32fromNYCWeekdays.txt */; };
+		4ED2B206202A5E2C00F2C5F8 /* 32toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C5202A342000F2C5F8 /* 32toNYCWeekdays.txt */; };
+		4ED2B207202A5E2C00F2C5F8 /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C4202A342000F2C5F8 /* 33fromNYCWeekdays.txt */; };
+		4ED2B208202A5E2C00F2C5F8 /* 33fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C6202A342100F2C5F8 /* 33fromNYCWeekend.txt */; };
+		4ED2B209202A5E2C00F2C5F8 /* 33toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C7202A342100F2C5F8 /* 33toNYCWeekend.txt */; };
+		4ED2B20A202A5E2C00F2C5F8 /* 44fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C2202A342000F2C5F8 /* 44fromNYCWeekdays.txt */; };
+		4ED2B20B202A5E2C00F2C5F8 /* 44fromNYCWeekends.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C3202A342000F2C5F8 /* 44fromNYCWeekends.txt */; };
+		4ED2B20C202A5E2C00F2C5F8 /* 44toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1BE202A341F00F2C5F8 /* 44toNYCWeekdays.txt */; };
+		4ED2B20D202A5E2C00F2C5F8 /* 44toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C1202A341F00F2C5F8 /* 44toNYCWeekend.txt */; };
+		4ED2B20E202A5E2C00F2C5F8 /* 66fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C9202A342100F2C5F8 /* 66fromNYCWeekdays.txt */; };
+		4ED2B20F202A5E2C00F2C5F8 /* 66fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1CA202A342200F2C5F8 /* 66fromNYCWeekend.txt */; };
+		4ED2B210202A5E2C00F2C5F8 /* 66toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C8202A342100F2C5F8 /* 66toNYCWeekdays.txt */; };
+		4ED2B211202A5E2C00F2C5F8 /* 66toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1BF202A341F00F2C5F8 /* 66toNYCWeekend.txt */; };
+		4ED2B212202A5E2C00F2C5F8 /* 88fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2B1C0202A341F00F2C5F8 /* 88fromNYCWeekdays.txt */; };
+		4ED2B213202A5E2C00F2C5F8 /* 33toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 33toNYCWeekdays.txt */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -21,8 +52,6 @@
 		AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */; };
 		AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CEE1F9E740E000C0630 /* bus_pic.jpg */; };
 		AD23AD641FCF58270056021E /* TextInputViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23AD631FCF58270056021E /* TextInputViewViewController.m */; };
-		AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */; };
-		AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */; };
 		AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF821FB4F31700FE707E /* old decamp bus.jpg */; };
 		AD51BF851FB4F36500FE707E /* new decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF841FB4F36500FE707E /* new decamp bus.jpg */; };
 		AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */; };
@@ -51,8 +80,6 @@
 		AD51BFBB1FB4F68800FE707E /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BFB71FB4F68800FE707E /* iTunesArtwork@3x.png */; };
 		AD51BFBF1FB5177C00FE707E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51BFBE1FB5177C00FE707E /* TableViewController.m */; };
 		AD62D4882023B92800F32EF5 /* TableViewControllerBusList.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62D4872023B92800F32EF5 /* TableViewControllerBusList.m */; };
-		ADB22B461FF2D1400053D616 /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 3.txt */; };
-		ADB22B481FF2D2000053D616 /* 3.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADB22B451FF2D1400053D616 /* 3.txt */; };
 		ADB22B4B1FF2D5C30053D616 /* TableViewControllerFromSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */; };
 		ADE776F01FB6BC010056386A /* iTunesArtwork2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE776EF1FB6BC000056386A /* iTunesArtwork2x.png */; };
 		ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE776F11FB6BDEF0056386A /* iTunesArtwork@1x.png */; };
@@ -79,20 +106,49 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		ADB22B471FF2D1960053D616 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				4EED663320226A7300348DAF /* 33stopsToNYC.txt in CopyFiles */,
-				ADB22B481FF2D2000053D616 /* 3.txt in CopyFiles */,
+				4ED2B1F6202A526600F2C5F8 /* 33toNYCWeekdays.txt in CopyFiles */,
+				4ED2B1E9202A4F7000F2C5F8 /* 32toNYC.txt in CopyFiles */,
+				4ED2B1EB202A4F7000F2C5F8 /* 33toNYC.txt in CopyFiles */,
+				4ED2B1DA202A40D400F2C5F8 /* 32toNYCWeekdays.txt in CopyFiles */,
+				4ED2B1A12028FB3B00F2C5F8 /* BusListNew.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33WeekdayToNYCSchedule.csv; sourceTree = "<group>"; };
-		4EE69B64201800070027902D /* 33stopsToNYC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33stopsToNYC.txt; sourceTree = "<group>"; };
+		4ED2B19F2028FA9A00F2C5F8 /* BusListNew.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BusListNew.txt; path = ../../../Stops/BusListNew.txt; sourceTree = "<group>"; };
+		4ED2B1A2202A2FDE00F2C5F8 /* 99toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 99toNYC.txt; sourceTree = "<group>"; };
+		4ED2B1A3202A2FDE00F2C5F8 /* 44fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 44fromNYC.txt; sourceTree = "<group>"; };
+		4ED2B1A4202A2FDE00F2C5F8 /* 32toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 32toNYC.txt; sourceTree = "<group>"; };
+		4ED2B1A5202A2FDE00F2C5F8 /* 88fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 88fromNYC.txt; sourceTree = "<group>"; };
+		4ED2B1A6202A2FDF00F2C5F8 /* 32fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 32fromNYC.txt; sourceTree = "<group>"; };
+		4ED2B1A7202A2FDF00F2C5F8 /* BuListNew.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BuListNew.txt; sourceTree = "<group>"; };
+		4ED2B1A8202A2FDF00F2C5F8 /* 88toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 88toNYC.txt; sourceTree = "<group>"; };
+		4ED2B1A9202A2FDF00F2C5F8 /* 33fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33fromNYC.txt; sourceTree = "<group>"; };
+		4ED2B1AA202A2FDF00F2C5F8 /* 33toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33toNYC.txt; sourceTree = "<group>"; };
+		4ED2B1AB202A2FDF00F2C5F8 /* 66fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 66fromNYC.txt; sourceTree = "<group>"; };
+		4ED2B1AC202A2FDF00F2C5F8 /* 66toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 66toNYC.txt; sourceTree = "<group>"; };
+		4ED2B1AD202A2FDF00F2C5F8 /* 44toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 44toNYC.txt; sourceTree = "<group>"; };
+		4ED2B1AF202A2FE000F2C5F8 /* 99fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 99fromNYC.txt; sourceTree = "<group>"; };
+		4ED2B1BE202A341F00F2C5F8 /* 44toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 44toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1BF202A341F00F2C5F8 /* 66toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 66toNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2B1C0202A341F00F2C5F8 /* 88fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 88fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1C1202A341F00F2C5F8 /* 44toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 44toNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2B1C2202A342000F2C5F8 /* 44fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 44fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1C3202A342000F2C5F8 /* 44fromNYCWeekends.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 44fromNYCWeekends.txt; sourceTree = "<group>"; };
+		4ED2B1C4202A342000F2C5F8 /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1C5202A342000F2C5F8 /* 32toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 32toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1C6202A342100F2C5F8 /* 33fromNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33fromNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2B1C7202A342100F2C5F8 /* 33toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33toNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2B1C8202A342100F2C5F8 /* 66toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 66toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1C9202A342100F2C5F8 /* 66fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 66fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2B1CA202A342200F2C5F8 /* 66fromNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 66fromNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2B1CB202A342200F2C5F8 /* 32fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 32fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		AD067C771F9E71B5000C0630 /* DeCampV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCampV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD067C7D1F9E71B5000C0630 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -145,7 +201,7 @@
 		AD51BFBE1FB5177C00FE707E /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		AD62D4862023B92800F32EF5 /* TableViewControllerBusList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerBusList.h; sourceTree = "<group>"; };
 		AD62D4872023B92800F32EF5 /* TableViewControllerBusList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerBusList.m; sourceTree = "<group>"; };
-		ADB22B451FF2D1400053D616 /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
+		ADB22B451FF2D1400053D616 /* 33toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33toNYCWeekdays.txt; sourceTree = "<group>"; };
 		ADB22B491FF2D5C30053D616 /* TableViewControllerFromSelect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewControllerFromSelect.h; sourceTree = "<group>"; };
 		ADB22B4A1FF2D5C30053D616 /* TableViewControllerFromSelect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerFromSelect.m; sourceTree = "<group>"; };
 		ADE776EF1FB6BC000056386A /* iTunesArtwork2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork2x.png; sourceTree = "<group>"; };
@@ -178,6 +234,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EA687B020261603009D71DD /* ScheduleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2B1CB202A342200F2C5F8 /* 32fromNYCWeekdays.txt */,
+				4ED2B1C5202A342000F2C5F8 /* 32toNYCWeekdays.txt */,
+				4ED2B1C4202A342000F2C5F8 /* 33fromNYCWeekdays.txt */,
+				4ED2B1C6202A342100F2C5F8 /* 33fromNYCWeekend.txt */,
+				4ED2B1C7202A342100F2C5F8 /* 33toNYCWeekend.txt */,
+				4ED2B1C2202A342000F2C5F8 /* 44fromNYCWeekdays.txt */,
+				4ED2B1C3202A342000F2C5F8 /* 44fromNYCWeekends.txt */,
+				4ED2B1BE202A341F00F2C5F8 /* 44toNYCWeekdays.txt */,
+				4ED2B1C1202A341F00F2C5F8 /* 44toNYCWeekend.txt */,
+				4ED2B1C9202A342100F2C5F8 /* 66fromNYCWeekdays.txt */,
+				4ED2B1CA202A342200F2C5F8 /* 66fromNYCWeekend.txt */,
+				4ED2B1C8202A342100F2C5F8 /* 66toNYCWeekdays.txt */,
+				4ED2B1BF202A341F00F2C5F8 /* 66toNYCWeekend.txt */,
+				4ED2B1C0202A341F00F2C5F8 /* 88fromNYCWeekdays.txt */,
+				ADB22B451FF2D1400053D616 /* 33toNYCWeekdays.txt */,
+			);
+			path = ScheduleFiles;
+			sourceTree = "<group>";
+		};
+		4EA687B12026174E009D71DD /* StopFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2B19F2028FA9A00F2C5F8 /* BusListNew.txt */,
+				4ED2B1A6202A2FDF00F2C5F8 /* 32fromNYC.txt */,
+				4ED2B1A4202A2FDE00F2C5F8 /* 32toNYC.txt */,
+				4ED2B1A9202A2FDF00F2C5F8 /* 33fromNYC.txt */,
+				4ED2B1AA202A2FDF00F2C5F8 /* 33toNYC.txt */,
+				4ED2B1A3202A2FDE00F2C5F8 /* 44fromNYC.txt */,
+				4ED2B1AD202A2FDF00F2C5F8 /* 44toNYC.txt */,
+				4ED2B1AB202A2FDF00F2C5F8 /* 66fromNYC.txt */,
+				4ED2B1AC202A2FDF00F2C5F8 /* 66toNYC.txt */,
+				4ED2B1A5202A2FDE00F2C5F8 /* 88fromNYC.txt */,
+				4ED2B1A8202A2FDF00F2C5F8 /* 88toNYC.txt */,
+				4ED2B1AF202A2FE000F2C5F8 /* 99fromNYC.txt */,
+				4ED2B1A2202A2FDE00F2C5F8 /* 99toNYC.txt */,
+				4ED2B1A7202A2FDF00F2C5F8 /* BuListNew.txt */,
+			);
+			path = StopFiles;
+			sourceTree = "<group>";
+		};
 		4EE012F11FF8437F008CA6E1 /* MainVCOutput */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,9 +362,8 @@
 		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4E00A98820012693006920D7 /* 33WeekdayToNYCSchedule.csv */,
-				ADB22B451FF2D1400053D616 /* 3.txt */,
-				4EE69B64201800070027902D /* 33stopsToNYC.txt */,
+				4EA687B12026174E009D71DD /* StopFiles */,
+				4EA687B020261603009D71DD /* ScheduleFiles */,
 				AD51BF881FB4F5C500FE707E /* icons */,
 				AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */,
 				ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */,
@@ -448,14 +546,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED2B205202A5E2C00F2C5F8 /* 32fromNYCWeekdays.txt in Resources */,
+				4ED2B206202A5E2C00F2C5F8 /* 32toNYCWeekdays.txt in Resources */,
+				4ED2B207202A5E2C00F2C5F8 /* 33fromNYCWeekdays.txt in Resources */,
+				4ED2B208202A5E2C00F2C5F8 /* 33fromNYCWeekend.txt in Resources */,
+				4ED2B209202A5E2C00F2C5F8 /* 33toNYCWeekend.txt in Resources */,
+				4ED2B20A202A5E2C00F2C5F8 /* 44fromNYCWeekdays.txt in Resources */,
+				4ED2B20B202A5E2C00F2C5F8 /* 44fromNYCWeekends.txt in Resources */,
+				4ED2B20C202A5E2C00F2C5F8 /* 44toNYCWeekdays.txt in Resources */,
+				4ED2B20D202A5E2C00F2C5F8 /* 44toNYCWeekend.txt in Resources */,
+				4ED2B20E202A5E2C00F2C5F8 /* 66fromNYCWeekdays.txt in Resources */,
+				4ED2B20F202A5E2C00F2C5F8 /* 66fromNYCWeekend.txt in Resources */,
+				4ED2B210202A5E2C00F2C5F8 /* 66toNYCWeekdays.txt in Resources */,
+				4ED2B211202A5E2C00F2C5F8 /* 66toNYCWeekend.txt in Resources */,
+				4ED2B212202A5E2C00F2C5F8 /* 88fromNYCWeekdays.txt in Resources */,
+				4ED2B213202A5E2C00F2C5F8 /* 33toNYCWeekdays.txt in Resources */,
+				4ED2B1F7202A5E0700F2C5F8 /* BusListNew.txt in Resources */,
+				4ED2B1F8202A5E0700F2C5F8 /* 32fromNYC.txt in Resources */,
+				4ED2B1F9202A5E0700F2C5F8 /* 32toNYC.txt in Resources */,
+				4ED2B1FA202A5E0700F2C5F8 /* 33fromNYC.txt in Resources */,
+				4ED2B1FB202A5E0700F2C5F8 /* 33toNYC.txt in Resources */,
+				4ED2B1FC202A5E0700F2C5F8 /* 44fromNYC.txt in Resources */,
+				4ED2B1FD202A5E0700F2C5F8 /* 44toNYC.txt in Resources */,
+				4ED2B1FE202A5E0700F2C5F8 /* 66fromNYC.txt in Resources */,
+				4ED2B1FF202A5E0700F2C5F8 /* 66toNYC.txt in Resources */,
+				4ED2B200202A5E0700F2C5F8 /* 88fromNYC.txt in Resources */,
+				4ED2B201202A5E0700F2C5F8 /* 88toNYC.txt in Resources */,
+				4ED2B202202A5E0700F2C5F8 /* 99fromNYC.txt in Resources */,
+				4ED2B203202A5E0700F2C5F8 /* 99toNYC.txt in Resources */,
+				4ED2B204202A5E0700F2C5F8 /* BuListNew.txt in Resources */,
 				AD51BFAD1FB4F5E700FE707E /* Icon-App-40x40@1x.png in Resources */,
 				AD51BFBB1FB4F68800FE707E /* iTunesArtwork@3x.png in Resources */,
 				ADE776F01FB6BC010056386A /* iTunesArtwork2x.png in Resources */,
-				AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */,
 				AD51BFA11FB4F5E700FE707E /* Icon-App-57x57@1x.png in Resources */,
 				AD51BFA91FB4F5E700FE707E /* Icon-App-29x29@3x.png in Resources */,
 				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
-				AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */,
 				AD51BFA71FB4F5E700FE707E /* Icon-Small-50x50@2x.png in Resources */,
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
 				AD51BFAB1FB4F5E700FE707E /* Icon-App-72x72@2x.png in Resources */,
@@ -468,7 +593,6 @@
 				AD51BFA41FB4F5E700FE707E /* Icon-App-40x40@2x.png in Resources */,
 				AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */,
 				AD51BFAE1FB4F5E700FE707E /* Icon-App-76x76@3x.png in Resources */,
-				ADB22B461FF2D1400053D616 /* 3.txt in Resources */,
 				AD51BF851FB4F36500FE707E /* new decamp bus.jpg in Resources */,
 				AD51BFA31FB4F5E700FE707E /* Icon-App-20x20@2x.png in Resources */,
 				AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */,
@@ -477,7 +601,6 @@
 				AD51BFA21FB4F5E700FE707E /* Icon-App-60x60@2x.png in Resources */,
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
 				AD51BFB01FB4F5E700FE707E /* Icon-App-83.5x83.5@2x.png in Resources */,
-				4E00A98920012693006920D7 /* 33WeekdayToNYCSchedule.csv in Resources */,
 				AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */,
 				AD51BFB31FB4F5E700FE707E /* Icon-App-40x40@3x.png in Resources */,
 				AD51BFB41FB4F5E700FE707E /* Icon-App-60x60@3x.png in Resources */,
@@ -485,7 +608,6 @@
 				ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */,
 				AD51BFA01FB4F5E700FE707E /* Icon-App-76x76@1x.png in Resources */,
 				AD51BFA51FB4F5E700FE707E /* Icon-App-57x57@2x.png in Resources */,
-				4EE69B65201800070027902D /* 33stopsToNYC.txt in Resources */,
 				AD51BFA61FB4F5E700FE707E /* Icon-App-29x29@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

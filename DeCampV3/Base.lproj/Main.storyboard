@@ -222,7 +222,7 @@
                                 <rect key="frame" x="21" y="246" width="303" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Gates Ave, Montclair"/>
+                                <state key="normal" title="MONTCLAIR: Gates &amp; Bloomfield"/>
                                 <connections>
                                     <action selector="btnFromPressed:" destination="uyQ-cs-2zb" eventType="touchUpInside" id="0KR-db-yfe"/>
                                     <segue destination="cxd-Vd-yga" kind="show" identifier="segwayShowFromTable" id="cWn-KY-U7n"/>
@@ -231,7 +231,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-8S-DDW">
                                 <rect key="frame" x="21" y="318" width="303" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Port Authorty, NY"/>
+                                <state key="normal" title="NYC_P/A Bus Terminal"/>
                                 <connections>
                                     <action selector="btnToPressed:" destination="uyQ-cs-2zb" eventType="touchUpInside" id="eCq-4r-CRw"/>
                                 </connections>

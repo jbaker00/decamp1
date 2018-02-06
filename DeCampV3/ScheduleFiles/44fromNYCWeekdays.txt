@@ -1,0 +1,15 @@
+﻿Special_Info,NYC.P/A: Bus Terminal,LYNDHURST: Ridge Rd & Valley Brook (E),Nutley Park Ave & Washington Ave (E),N.ARLINGTON: Harding & Ridge (E),N.ARLINGTON Ross Lane & Bell Tnpk (E),KEARNY: Bergen Ave. & Kearny Ave,HARRISON: F. Rodgers Blvd. & Cleveland Ave.,BELLEVILLE: Washington & Rutgers (E),N.NEWARK: Heller Pky & Clifton Ave.,BLOOMFIELD: Montgomery & Franklin (E)
+,,,,,,,,,,
+44 ,07:30AM ,07:55AM ,,8:00AM ,,,,8:03AM ,8:10AM ,8:17AM 
+44 ,8:30AM ,8:55AM ,,9:00AM ,,,,9:03AM ,9:10AM ,9:17AM 
+44 ,9:35AM ,10:00AM ,,10:05AM ,,,,10:08AM ,10:15AM ,10:22AM 
+44 ,11:35AM ,12:00PM ,,12:05PM ,,,,12:08PM ,12:15PM ,12:22PM 
+44 ,1:35PM ,2:00PM ,,2:05PM ,,,,2:08PM ,2:15PM ,2:22PM 
+44 ,3:30PM ,3:55PM ,,4:02PM ,,,,4:05PM ,4:12PM ,4:19PM 
+44 ,4:35PM ,5:00PM ,,5:07PM ,,,,5:10PM ,5:17PM ,5:24PM 
+44 ,5:20PM ,5:45PM ,,5:52PM ,,,,5:55PM ,6:02PM ,6:09PM 
+44 ,6:00PM ,6:25PM ,,6:32PM ,,,,6:35PM ,6:42PM ,6:49PM 
+44 ,6:40PM ,7:05PM ,,7:12PM ,,,,7:15PM ,7:22PM ,7:29PM 
+44 ,7:30PM ,7:50PM ,,7:57PM ,,,,8:00PM ,8:07PM ,8:14PM 
+44 ,9:30PM ,9:50PM ,,9:57PM ,,,,10:00PM ,10:07PM ,10:14PM 
+44 - R/T ,11:30PM ,11:50PM ,,11:57PM ,,,,12:00AM ,12:07AM ,12:14AM 
