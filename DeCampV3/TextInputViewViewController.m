@@ -343,7 +343,7 @@ NSString *busRoutes;
     //tblFromSelection = @[@"W. CALDWELL: Kirkpatrick Lane",@"CALDWELL: Roseland & Bloomfield",@"VERONA: Lakeside Ave",@"W. ORANGE: Pleasantdale Ctr",@"MONTCLAIR: Gates & Bloomfield",@"MONTCLAIR: Grove & Bellvue",@"CLIFTON: Vincent Dr & Groove St",@"BLOOMFIELD: Broad & Liberty",@"BLOOMFIELD: Broad & Watchung",@"NUTLEY: W. Passaic & Darling",@"NYC_P/A Bus Terminal"];
     
     //load the file of stops and take #1 from array and place in array
-    tblFromSelection = [self loadStopsFromFile:@"BuListNew"];
+    tblFromSelection = [self loadStopsFromFile:@"BusListNew"];
     [tblFromSelection addObject:@"NYC_P/A Bus Terminal"];
     //tblFromSelection = busNumArray;
     /*for(int i=0; i<busNumArray.count;i++)
