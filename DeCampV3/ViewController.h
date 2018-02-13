@@ -10,22 +10,13 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextView *lblOutput;
+@property (weak, nonatomic) IBOutlet UIButton *btnFrom;
+@property (weak, nonatomic) IBOutlet UIButton *btnTo;
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segBus;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segRoute;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segTime;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segWeek;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segWeekday;
+@property (weak, nonatomic) IBOutlet UIDatePicker *departureTime;
 
-
-
-
-- (IBAction)segBusTapped:(id)sender;
-- (IBAction)segRouteTapped:(id)sender;
-- (IBAction)segTimeTapped:(id)sender;
-- (IBAction)segWeekTapped:(id)sender;
-
-
+@property (nonatomic, assign) BOOL from;
 
 @end
 
