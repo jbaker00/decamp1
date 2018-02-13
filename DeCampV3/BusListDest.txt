@@ -1,3 +1,5 @@
+MONTCLAIR: Gates & Bloomfield (E),33
+MONTCLAIR: YMCA on Park,66
 UNION CITY: 32nd & Bergenline Ave,32
 SECAUCUS: Secaucus Plaza,32
 LYNDHURST: Valley Brook Ave & Ridge Rd,32
@@ -6,7 +8,6 @@ NUTLEY: Franklin & Centre St.,32
 NUTLEY: Darling Ave & Kingsland Rd
 NUTLEY: Darling & Kingsland (E),33
 BLOOMFIELD: Broad & Liberty (E),33
-MONTCLAIR: Gates & Bloomfield (E),33
 VERONA: Lakeside Ave (E),33
 W. CALDWELL: Kirkpatrick Lane (E),33
 LYNDHURST: Ridge Rd & Valley Brook (E),44
@@ -22,7 +23,6 @@ MONTCLAIR University Campus Bus Stop,66
 CLIFTON: Haddonfield & Grove St.,66
 UPPER_MTC: Bellevue Plaza,66
 UPPER_MNCL: Watchung Plaza,66
-MONTCLAIR: YMCA on Park,66
 W.ORANGE Mississippi & Harrison,66
 W.ORANGE Eagle Rock Avenue & Prospect,66
 W.ORANGE Pleasantdale Ctr.,66

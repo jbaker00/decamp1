@@ -1,3 +1,5 @@
+MONTCLAIR: Gates & Bloomfield,33
+MONTCLAIR: YMCA on PARK ST,66
 NUTLEY: Darling Ave & Kingsland Rd,32
 NUTLEY: Franklin & Centre St.,32
 NUTLEY: Park Ave & River Rd,32
@@ -10,7 +12,6 @@ W. CALDWELL: Kirkpatrick Lane,33
 CALDWELL: Roseland & Bloomfield,33
 VERONA: Lakeside Ave,33
 W. ORANGE: Pleasantdale Ctr,33
-MONTCLAIR: Gates & Bloomfield,33
 MONTCLAIR: Grove & Watchung,33
 MONTCLAIR: Grove & Bellvue,33
 CLIFTON: Vincent Dr & Groove St,33
@@ -34,7 +35,6 @@ ROSELAND Center,66
 Pleasantdale Center,66
 W.ORANGE Eagle Rock & Prospect,66
 W.ORANGE Mississippi & Harrison,66
-MONTCLAIR: YMCA on PARK ST,66
 UPPER_MTC: Watchung & PARK ST,66
 UPPER_MTC: Valley Rd & Bellevue,66
 UPPER_MTC: Valley Rd & Nassau Pl (Montclair Univ),66

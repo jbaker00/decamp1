@@ -69,12 +69,15 @@ NSString *busRoutes;
     
     //Load the list of Source Bus Stops (From Stops)
     tblBusSrc = [self loadStopsFromFile:@"BusListSrc"];
+    // Put the port authorty at top of list
     [tblBusSrc addObject:@"NYC_P/A Bus Terminal"];
-    
+
+
     //Load the list of Deestination Bus Stops (To Stops)
     tblBusDest = [self loadStopsFromFile:@"BusListDest"];
+    // Put the port authorty at top of list
     [tblBusDest addObject:@"NYC_P/A Bus Terminal"];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,12 +112,21 @@ NSString *busRoutes;
     {
         if(controller.from == YES)
         {
+            //Set the From Title of the From button
             [_btnFrom setTitle: controller->tblFromSectionName forState:UIControlStateNormal];
-            
+            if(![controller->tblFromSectionName  isEqualToString:@"NYC_P/A Bus Terminal"])
+            {
+                [_btnTo setTitle: @"NYC_P/A Bus Terminal" forState:UIControlStateNormal];
+            }
         }
         else
         {
+            //Set the To Title of the To button
             [_btnTo setTitle: controller->tblFromSectionName forState:UIControlStateNormal];
+            if(![controller->tblFromSectionName  isEqualToString:@"NYC_P/A Bus Terminal"])
+            {
+                [_btnFrom setTitle: @"NYC_P/A Bus Terminal" forState:UIControlStateNormal];
+            }
             
         }
     }
@@ -182,7 +194,7 @@ NSString *busRoutes;
 }
 
 - (NSString *)loadBusNumber:(NSString *)startStop destStop:(NSString *)destStop{
-    NSString *strBusNumber;// = @"33"; //hard coded to fake things out
+    NSString *strBusNumber;
     
     //Load the bus array of busses and stops
     NSLog(@"loading the bus stop list and bus numbers into an array");
