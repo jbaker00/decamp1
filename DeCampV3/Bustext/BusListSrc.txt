@@ -1,4 +1,4 @@
-NYC_P/A Bus Terminal,NONE
+NYC_P/A Bus Terminal,NA
 MONTCLAIR: Gates & Bloomfield,33
 MONTCLAIR: YMCA on PARK ST,66
 NUTLEY: Darling Ave & Kingsland Rd,32
