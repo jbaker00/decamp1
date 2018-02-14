@@ -375,6 +375,11 @@ NSString *busRoutes;
         }
         
     }
+    if(outputArray.count == 0)
+    {
+        //Add the string to an output array
+        [outputArray addObject:@"No Bus Schedule Available for Route"];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
