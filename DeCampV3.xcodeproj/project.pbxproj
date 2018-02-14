@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3FA06D2034111C0021E022 /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA06C2034111B0021E022 /* 33fromNYCWeekdays.txt */; };
 		4ED266F9202EA51800540D97 /* scheduleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266F8202EA51800540D97 /* scheduleTableVC.m */; };
 		4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266FE202FE19700540D97 /* StopsTableVC.m */; };
 		4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267002030B03E00540D97 /* BusListSrc.txt */; };
@@ -40,7 +41,6 @@
 		4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267432032C27300540D97 /* 88fromNYC.txt */; };
 		4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */; };
 		4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267492032C6CB00540D97 /* BusListDest.txt */; };
-		4ED2674C2033BE0500540D97 /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2674B2033BE0500540D97 /* 33fromNYCWeekdays.txt */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -100,6 +100,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E3FA06C2034111B0021E022 /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4E3FA073203414660021E022 /* DeCampV3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeCampV3.entitlements; sourceTree = "<group>"; };
 		4ED266F7202EA51800540D97 /* scheduleTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scheduleTableVC.h; sourceTree = "<group>"; };
 		4ED266F8202EA51800540D97 /* scheduleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scheduleTableVC.m; sourceTree = "<group>"; };
 		4ED266FD202FE19700540D97 /* StopsTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopsTableVC.h; sourceTree = "<group>"; };
@@ -135,7 +137,6 @@
 		4ED267432032C27300540D97 /* 88fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYC.txt; path = Bustext/88fromNYC.txt; sourceTree = "<group>"; };
 		4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYCWeekdays.txt; path = Bustext/88fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED267492032C6CB00540D97 /* BusListDest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusListDest.txt; sourceTree = "<group>"; };
-		4ED2674B2033BE0500540D97 /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		AD067C771F9E71B5000C0630 /* DeCampV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCampV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD067C7D1F9E71B5000C0630 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,6 +211,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E3FA0702034136F0021E022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4ED266FA202EAAE700540D97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,7 +274,7 @@
 				4ED2670A2030B6D000540D97 /* 33toNYCWeekdays.txt */,
 				4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */,
 				4ED267082030B6D000540D97 /* 33fromNYCWeekend.txt */,
-				4ED2674B2033BE0500540D97 /* 33fromNYCWeekdays.txt */,
+				4E3FA06C2034111B0021E022 /* 33fromNYCWeekdays.txt */,
 			);
 			name = 33;
 			sourceTree = "<group>";
@@ -326,6 +334,7 @@
 				AD067C931F9E71B5000C0630 /* DeCampV3Tests */,
 				AD067C9E1F9E71B5000C0630 /* DeCampV3UITests */,
 				AD067C781F9E71B5000C0630 /* Products */,
+				4E3FA0702034136F0021E022 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,6 +351,7 @@
 		AD067C791F9E71B5000C0630 /* DeCampV3 */ = {
 			isa = PBXGroup;
 			children = (
+				4E3FA073203414660021E022 /* DeCampV3.entitlements */,
 				4ED266FB202EAB0600540D97 /* GUI */,
 				4ED266FA202EAAE700540D97 /* Controllers */,
 				AD067C7D1F9E71B5000C0630 /* AppDelegate.h */,
@@ -488,6 +498,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = G3P9A8Z2NP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					AD067C8F1F9E71B5000C0630 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -552,7 +570,6 @@
 				AD51BFAA1FB4F5E700FE707E /* Icon-App-60x60@1x.png in Resources */,
 				AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */,
 				4ED2673E2032C21D00540D97 /* 99toNYC.txt in Resources */,
-				4ED2674C2033BE0500540D97 /* 33fromNYCWeekdays.txt in Resources */,
 				ADE776F61FB6D0330056386A /* new_decamp_bus.jpeg in Resources */,
 				AD51BFA81FB4F5E700FE707E /* Icon-App-72x72@1x.png in Resources */,
 				AD51BFA41FB4F5E700FE707E /* Icon-App-40x40@2x.png in Resources */,
@@ -591,6 +608,7 @@
 				ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */,
 				AD51BFA01FB4F5E700FE707E /* Icon-App-76x76@1x.png in Resources */,
 				AD51BFA51FB4F5E700FE707E /* Icon-App-57x57@2x.png in Resources */,
+				4E3FA06D2034111C0021E022 /* 33fromNYCWeekdays.txt in Resources */,
 				AD51BFA61FB4F5E700FE707E /* Icon-App-29x29@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -787,7 +805,7 @@
 				DEVELOPMENT_TEAM = G3P9A8Z2NP;
 				INFOPLIST_FILE = DeCampV3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3;
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCamp.Beta3v10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -800,7 +818,7 @@
 				DEVELOPMENT_TEAM = G3P9A8Z2NP;
 				INFOPLIST_FILE = DeCampV3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3;
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCamp.Beta3v10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

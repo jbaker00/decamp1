@@ -1,4 +1,4 @@
-NYC_P/A Bus Terminal,NONE
+NYC_P/A Bus Terminal,NA
 MONTCLAIR: Gates & Bloomfield (E),33
 MONTCLAIR: YMCA on Park,66
 UNION CITY: 32nd & Bergenline Ave,32
