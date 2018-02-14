@@ -27,7 +27,7 @@
 		4ED267292032BA1800540D97 /* 66fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267232032BA1800540D97 /* 66fromNYCWeekend.txt */; };
 		4ED267312032C14500540D97 /* 44toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672B2032C14500540D97 /* 44toNYCWeekdays.txt */; };
 		4ED267322032C14500540D97 /* 44toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672C2032C14500540D97 /* 44toNYCWeekend.txt */; };
-		4ED267332032C14500540D97 /* 44fromNYCWeekends.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672D2032C14500540D97 /* 44fromNYCWeekends.txt */; };
+		4ED267332032C14500540D97 /* 44fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672D2032C14500540D97 /* 44fromNYCWeekend.txt */; };
 		4ED267342032C14500540D97 /* 44toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672E2032C14500540D97 /* 44toNYC.txt */; };
 		4ED267352032C14500540D97 /* 44fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672F2032C14500540D97 /* 44fromNYC.txt */; };
 		4ED267362032C14500540D97 /* 44fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267302032C14500540D97 /* 44fromNYCWeekdays.txt */; };
@@ -52,8 +52,6 @@
 		AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */; };
 		AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CEE1F9E740E000C0630 /* bus_pic.jpg */; };
 		AD23AD641FCF58270056021E /* TextInputViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23AD631FCF58270056021E /* TextInputViewViewController.m */; };
-		AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */; };
-		AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */; };
 		AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF821FB4F31700FE707E /* old decamp bus.jpg */; };
 		AD51BF851FB4F36500FE707E /* new decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF841FB4F36500FE707E /* new decamp bus.jpg */; };
 		AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */; };
@@ -125,7 +123,7 @@
 		4ED267232032BA1800540D97 /* 66fromNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66fromNYCWeekend.txt; path = Bustext/66fromNYCWeekend.txt; sourceTree = "<group>"; };
 		4ED2672B2032C14500540D97 /* 44toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44toNYCWeekdays.txt; path = Bustext/44toNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED2672C2032C14500540D97 /* 44toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44toNYCWeekend.txt; path = Bustext/44toNYCWeekend.txt; sourceTree = "<group>"; };
-		4ED2672D2032C14500540D97 /* 44fromNYCWeekends.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYCWeekends.txt; path = Bustext/44fromNYCWeekends.txt; sourceTree = "<group>"; };
+		4ED2672D2032C14500540D97 /* 44fromNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYCWeekend.txt; path = Bustext/44fromNYCWeekend.txt; sourceTree = "<group>"; };
 		4ED2672E2032C14500540D97 /* 44toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44toNYC.txt; path = Bustext/44toNYC.txt; sourceTree = "<group>"; };
 		4ED2672F2032C14500540D97 /* 44fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYC.txt; path = Bustext/44fromNYC.txt; sourceTree = "<group>"; };
 		4ED267302032C14500540D97 /* 44fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYCWeekdays.txt; path = Bustext/44fromNYCWeekdays.txt; sourceTree = "<group>"; };
@@ -158,8 +156,6 @@
 		AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decamp logo small.jpeg"; sourceTree = "<group>"; };
 		AD067CEE1F9E740E000C0630 /* bus_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus_pic.jpg; sourceTree = "<group>"; };
 		AD23AD631FCF58270056021E /* TextInputViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextInputViewViewController.m; path = ../TextInputViewViewController.m; sourceTree = "<group>"; };
-		AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus33Schedule.txt; sourceTree = "<group>"; };
-		AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus66Schedule.txt; sourceTree = "<group>"; };
 		AD51BF821FB4F31700FE707E /* old decamp bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old decamp bus.jpg"; sourceTree = "<group>"; };
 		AD51BF841FB4F36500FE707E /* new decamp bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new decamp bus.jpg"; sourceTree = "<group>"; };
 		AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = old_decamp_bus_P6w_icon.ico; sourceTree = "<group>"; };
@@ -298,7 +294,7 @@
 				4ED2672B2032C14500540D97 /* 44toNYCWeekdays.txt */,
 				4ED267302032C14500540D97 /* 44fromNYCWeekdays.txt */,
 				4ED2672C2032C14500540D97 /* 44toNYCWeekend.txt */,
-				4ED2672D2032C14500540D97 /* 44fromNYCWeekends.txt */,
+				4ED2672D2032C14500540D97 /* 44fromNYCWeekend.txt */,
 			);
 			name = 44;
 			sourceTree = "<group>";
@@ -369,8 +365,6 @@
 				ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */,
 				AD51BF841FB4F36500FE707E /* new decamp bus.jpg */,
 				AD51BF821FB4F31700FE707E /* old decamp bus.jpg */,
-				AD507ACE1FAED2F7000B59D4 /* Bus33Schedule.txt */,
-				AD507ACF1FAED2F7000B59D4 /* Bus66Schedule.txt */,
 				AD067CEE1F9E740E000C0630 /* bus_pic.jpg */,
 				AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */,
 				AD067C7B1F9E71B5000C0630 /* main.m */,
@@ -541,14 +535,12 @@
 				AD51BFAD1FB4F5E700FE707E /* Icon-App-40x40@1x.png in Resources */,
 				AD51BFBB1FB4F68800FE707E /* iTunesArtwork@3x.png in Resources */,
 				ADE776F01FB6BC010056386A /* iTunesArtwork2x.png in Resources */,
-				AD507AD01FAED2F8000B59D4 /* Bus33Schedule.txt in Resources */,
 				AD51BFA11FB4F5E700FE707E /* Icon-App-57x57@1x.png in Resources */,
-				4ED267332032C14500540D97 /* 44fromNYCWeekends.txt in Resources */,
+				4ED267332032C14500540D97 /* 44fromNYCWeekend.txt in Resources */,
 				AD51BFA91FB4F5E700FE707E /* Icon-App-29x29@3x.png in Resources */,
 				4ED2670F2030B6D000540D97 /* 33toNYC.txt in Resources */,
 				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
 				4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */,
-				AD507AD11FAED2F8000B59D4 /* Bus66Schedule.txt in Resources */,
 				4ED267342032C14500540D97 /* 44toNYC.txt in Resources */,
 				AD51BFA71FB4F5E700FE707E /* Icon-Small-50x50@2x.png in Resources */,
 				4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */,
