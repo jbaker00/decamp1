@@ -76,13 +76,13 @@ NSString *busRoutes;
     //Load the list of Source Bus Stops (From Stops)
     tblBusSrc = [self loadStopsFromFile:@"BusListSrc"];
     // Put the port authorty at top of list
-    [tblBusSrc addObject:@"NYC_P/A Bus Terminal"];
+    //[tblBusSrc addObject:@"NYC_P/A Bus Terminal"];
 
 
     //Load the list of Deestination Bus Stops (To Stops)
     tblBusDest = [self loadStopsFromFile:@"BusListDest"];
     // Put the port authorty at top of list
-    [tblBusDest addObject:@"NYC_P/A Bus Terminal"];
+    //[tblBusDest addObject:@"NYC_P/A Bus Terminal"];
 
 }
 
@@ -204,12 +204,15 @@ NSString *busRoutes;
     
     //Load the bus array of busses and stops
     NSLog(@"loading the bus stop list and bus numbers into an array");
-    NSMutableArray *busNumArray = [self loadStopsFromFile:@"BusListSrc"];
+
     
     
     //check the start Stop to see if it's NYP if so then use the destination to look up the bus based on that stop
     if(![startStop isEqualToString:@"NYC_P/A Bus Terminal"])
     {
+        //Load the Stop file with the src since the src is not NYPA
+        NSMutableArray *busNumArray = [self loadStopsFromFile:@"BusListSrc"];
+        
         //Look up bus number based off the startStop
         for(int i=0; i<busNumArray.count;i++)
         {
@@ -221,12 +224,15 @@ NSString *busRoutes;
     }
     else
     {
+        //Load the Stop file with the src since the src is NYPA
+        NSMutableArray *busNumArray = [self loadStopsFromFile:@"BusListDest"];
+       
         //Look up the bus number based off the destStop
         for(int i=0; i<busNumArray.count;i++)
         {
             if([busNumArray[i][0] isEqualToString:destStop])
             {
-                strBusNumber = busNumArray[1];
+                strBusNumber = busNumArray[i][1];
             }
         }
     }
@@ -249,7 +255,7 @@ NSString *busRoutes;
     [fileNameBody appendString:strBusNumber];//append the bus number
     
     //append to or from NYC
-    if([_btnFrom.titleLabel.text isEqualToString:@"NYC P/A Bus Terminal"])
+    if([_btnFrom.titleLabel.text isEqualToString:@"NYC_P/A Bus Terminal"])
     {
         [fileNameBody appendString:@"fromNYC"]; //append the to for from NYC
     }
@@ -290,7 +296,7 @@ NSString *busRoutes;
     [fileNameBody appendString:strBusNumber];//append the bus number
     
     //append to or from NYC
-    if([_btnFrom.titleLabel.text isEqualToString:@"NYC P/A Bus Terminal"])
+    if([_btnFrom.titleLabel.text isEqualToString:@"NYC_P/A Bus Terminal"])
     {
         [fileNameBody appendString:@"fromNYC"]; //append the to for from NYC
     }
@@ -345,24 +351,27 @@ NSString *busRoutes;
         //check the index that fits for the specific stop
         if(![busArray[i][iBusStart] isEqualToString:@""])
         {
-            NSLog(@"Starting stop name is %@", _btnFrom.titleLabel.text);
-            NSLog(@"Index of the starting stop name in the array is %i", iBusStart);
-            NSLog(@"Starting stop time is %@", busArray[i][iBusStart]);
-            NSLog(@"Stopping stop name is %@", _btnTo.titleLabel.text);
-            NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
-            NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
-            
-            //Take the row info and place it in one string
-            [*stringBody appendString:busArray[i][iBusStart]];
-            [*stringBody appendString:@" - "];
-            [*stringBody appendString:busArray[i][iBusStop]];
-            NSLog(@"The output for the table will be %@", *stringBody);
-            
-            //Add the string to an output array
-            [outputArray addObject:*stringBody];
-            
-            //clear out string for next placement in of new string
-            *stringBody = [NSMutableString stringWithString:@""];
+            if(![busArray[i][iBusStop] isEqualToString:@""])
+            {
+                NSLog(@"Starting stop name is %@", _btnFrom.titleLabel.text);
+                NSLog(@"Index of the starting stop name in the array is %i", iBusStart);
+                NSLog(@"Starting stop time is %@", busArray[i][iBusStart]);
+                NSLog(@"Stopping stop name is %@", _btnTo.titleLabel.text);
+                NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
+                NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
+                
+                //Take the row info and place it in one string
+                [*stringBody appendString:busArray[i][iBusStart]];
+                [*stringBody appendString:@" - "];
+                [*stringBody appendString:busArray[i][iBusStop]];
+                NSLog(@"The output for the table will be %@", *stringBody);
+                
+                //Add the string to an output array
+                [outputArray addObject:*stringBody];
+                
+                //clear out string for next placement in of new string
+                *stringBody = [NSMutableString stringWithString:@""];
+            }
         }
         
     }
@@ -402,7 +411,7 @@ NSString *busRoutes;
         scheduleTableVC *controllerOut = [segue destinationViewController];
         
         //Lookup Bus Number
-        NSString * strBusNumber = [self loadBusNumber:_btnFrom.titleLabel.text destStop:_btnTo.titleLabel.text];
+        NSString *strBusNumber = [self loadBusNumber:_btnFrom.titleLabel.text destStop:_btnTo.titleLabel.text];
         NSLog(@"The Bus number returned fromt the loadBusNumber lookup was %@", strBusNumber);
         
         //Debug info
@@ -429,7 +438,6 @@ NSString *busRoutes;
         //Get the to(aka. destination) stop index in the file
         int iBusStop = [self loadStopIndexFromFile:fileStopIndexNameBody busStopName:_btnTo.titleLabel.text];
         NSLog(@"Stopping bus stop index is %i", iBusStop);
-        
         
         //define NSMutableString for the title in the output schedule here
         NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];

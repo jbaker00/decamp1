@@ -1,6 +1,5 @@
 MONTCLAIR: Gates & Bloomfield,33
 MONTCLAIR: YMCA on PARK ST,66
-E.ORANGE: Evergreen Pl & Central Ave,88
 NUTLEY: Darling Ave & Kingsland Rd,32
 NUTLEY: Franklin & Centre St.,32
 NUTLEY: Park Ave & River Rd,32
@@ -41,6 +40,7 @@ UPPER_MTC: Valley Rd & Bellevue,66
 UPPER_MTC: Valley Rd & Nassau Pl (Montclair Univ),66
 Montclair Univ Campus Bus Stop,66
 VINCENT DR & GROVE ST, Clifton,66
+E.ORANGE: Evergreen Pl & Central Ave,88
 ORANGE: Scotland Rd & Central Ave,88
 ORANGE: Scotland Rd & Central Ave,88
 E.ORANGE: Prospect and Williams Sts.,88
