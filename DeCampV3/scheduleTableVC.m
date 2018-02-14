@@ -52,7 +52,7 @@
     
     // Configure the cell...
     cell.textLabel.text = tblFromData[indexPath.row];//[0];
-    cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
+    cell.imageView.image = [UIImage imageNamed:@"CartoonbusBusPNG.png"];
     
     return cell;
 }

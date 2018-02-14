@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="decamp logo small.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="1FD-aC-wMA">
-                                <rect key="frame" x="24" y="70" width="323" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CartoonbusBusPNG.png" translatesAutoresizingMaskIntoConstraints="NO" id="1FD-aC-wMA">
+                                <rect key="frame" x="24" y="70" width="323" height="118"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZE-nZ-wXK">
@@ -179,6 +179,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="decamp logo small.jpeg" width="426" height="142"/>
+        <image name="CartoonbusBusPNG.png" width="436" height="156"/>
     </resources>
 </document>
