@@ -1,5 +1,6 @@
 MONTCLAIR: Gates & Bloomfield,33
 MONTCLAIR: YMCA on PARK ST,66
+E.ORANGE: Evergreen Pl & Central Ave,88
 NUTLEY: Darling Ave & Kingsland Rd,32
 NUTLEY: Franklin & Centre St.,32
 NUTLEY: Park Ave & River Rd,32
@@ -41,7 +42,7 @@ UPPER_MTC: Valley Rd & Nassau Pl (Montclair Univ),66
 Montclair Univ Campus Bus Stop,66
 VINCENT DR & GROVE ST, Clifton,66
 ORANGE: Scotland Rd & Central Ave,88
-E.ORANGE: Evergreen Pl & Central Ave,88
+ORANGE: Scotland Rd & Central Ave,88
 E.ORANGE: Prospect and Williams Sts.,88
 BLOOMFIELD: Prospect St & Dodd St,88
 BLOOMFIELD: Broad & Liberty St,88
@@ -50,6 +51,7 @@ NUTLEY: W. Passaic & Darling Ave,88
 BELLEVILLE: Washington & Rutgers,88
 N. ARLINGTON: Ridge Rd & Harding Ave,88
 LYNDHURST: Valley Brook Ridge,88
+HARRISON: F. Rodgers Blvd. & Cleveland Ave.,99
 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,99
 KEARNY: Bergen & Kearny,99
 N.ARLINGTON RossLane & Bell Tnpk,99

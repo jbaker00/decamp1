@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -37,8 +37,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self->tblFromSectionName = self->tblStopData[indexPath.row][0];
-    [self performSegueWithIdentifier:@"busSelected" sender:self];
+    if(![self->tblStopData[indexPath.row][0] isEqual:nil])
+    {
+        self->tblFromSectionName = self->tblStopData[indexPath.row][0];
+        [self performSegueWithIdentifier:@"busSelected" sender:self];
+    }
 }
 
 
