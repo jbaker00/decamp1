@@ -10,7 +10,6 @@
 		4ED266F9202EA51800540D97 /* scheduleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266F8202EA51800540D97 /* scheduleTableVC.m */; };
 		4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266FE202FE19700540D97 /* StopsTableVC.m */; };
 		4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267002030B03E00540D97 /* BusListSrc.txt */; };
-		4ED2670D2030B6D000540D97 /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267032030B6CF00540D97 /* 33fromNYCWeekdays.txt */; };
 		4ED2670E2030B6D000540D97 /* 32fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267042030B6CF00540D97 /* 32fromNYCWeekdays.txt */; };
 		4ED2670F2030B6D000540D97 /* 33toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267052030B6CF00540D97 /* 33toNYC.txt */; };
 		4ED267102030B6D000540D97 /* 33toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */; };
@@ -41,6 +40,7 @@
 		4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267432032C27300540D97 /* 88fromNYC.txt */; };
 		4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */; };
 		4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267492032C6CB00540D97 /* BusListDest.txt */; };
+		4ED2674C2033BE0500540D97 /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2674B2033BE0500540D97 /* 33fromNYCWeekdays.txt */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -108,7 +108,6 @@
 		4ED266FD202FE19700540D97 /* StopsTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopsTableVC.h; sourceTree = "<group>"; };
 		4ED266FE202FE19700540D97 /* StopsTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopsTableVC.m; sourceTree = "<group>"; };
 		4ED267002030B03E00540D97 /* BusListSrc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BusListSrc.txt; path = Bustext/BusListSrc.txt; sourceTree = "<group>"; };
-		4ED267032030B6CF00540D97 /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33fromNYCWeekdays.txt; path = Bustext/33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED267042030B6CF00540D97 /* 32fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 32fromNYCWeekdays.txt; path = Bustext/32fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED267052030B6CF00540D97 /* 33toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33toNYC.txt; path = Bustext/33toNYC.txt; sourceTree = "<group>"; };
 		4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33toNYCWeekend.txt; path = Bustext/33toNYCWeekend.txt; sourceTree = "<group>"; };
@@ -139,6 +138,7 @@
 		4ED267432032C27300540D97 /* 88fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYC.txt; path = Bustext/88fromNYC.txt; sourceTree = "<group>"; };
 		4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYCWeekdays.txt; path = Bustext/88fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED267492032C6CB00540D97 /* BusListDest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusListDest.txt; sourceTree = "<group>"; };
+		4ED2674B2033BE0500540D97 /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		AD067C771F9E71B5000C0630 /* DeCampV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeCampV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD067C7D1F9E71B5000C0630 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -271,8 +271,8 @@
 				4ED2670B2030B6D000540D97 /* 33fromNYC.txt */,
 				4ED2670A2030B6D000540D97 /* 33toNYCWeekdays.txt */,
 				4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */,
-				4ED267032030B6CF00540D97 /* 33fromNYCWeekdays.txt */,
 				4ED267082030B6D000540D97 /* 33fromNYCWeekend.txt */,
+				4ED2674B2033BE0500540D97 /* 33fromNYCWeekdays.txt */,
 			);
 			name = 33;
 			sourceTree = "<group>";
@@ -555,7 +555,6 @@
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
 				4ED267272032BA1800540D97 /* 66fromNYCWeekdays.txt in Resources */,
 				4ED267402032C21D00540D97 /* 99fromNYCWeekdays.txt in Resources */,
-				4ED2670D2030B6D000540D97 /* 33fromNYCWeekdays.txt in Resources */,
 				AD51BFAB1FB4F5E700FE707E /* Icon-App-72x72@2x.png in Resources */,
 				AD51BFB11FB4F5E700FE707E /* Icon-App-20x20@1x.png in Resources */,
 				AD51BFAC1FB4F5E700FE707E /* Icon-App-76x76@2x.png in Resources */,
@@ -564,6 +563,7 @@
 				AD51BFAA1FB4F5E700FE707E /* Icon-App-60x60@1x.png in Resources */,
 				AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */,
 				4ED2673E2032C21D00540D97 /* 99toNYC.txt in Resources */,
+				4ED2674C2033BE0500540D97 /* 33fromNYCWeekdays.txt in Resources */,
 				ADE776F61FB6D0330056386A /* new_decamp_bus.jpeg in Resources */,
 				AD51BFA81FB4F5E700FE707E /* Icon-App-72x72@1x.png in Resources */,
 				AD51BFA41FB4F5E700FE707E /* Icon-App-40x40@2x.png in Resources */,
