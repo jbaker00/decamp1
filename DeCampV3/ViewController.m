@@ -67,6 +67,12 @@ NSString *busRoutes;
     [self placeTextBorder:self.btnTo];
     [self placeTextBorder:self.btnFrom];
     
+    
+    //allocate space in the array
+    tblBusDest = [NSMutableArray arrayWithCapacity:1];
+    //allocate space in the array
+    tblBusSrc = [NSMutableArray arrayWithCapacity:1];
+    
     //Load the list of Source Bus Stops (From Stops)
     tblBusSrc = [self loadStopsFromFile:@"BusListSrc"];
     // Put the port authorty at top of list
