@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4E3FA06D2034111C0021E022 /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA06C2034111B0021E022 /* 33fromNYCWeekdays.txt */; };
+		4E3FA07520342CA00021E022 /* busincity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA07420342C9F0021E022 /* busincity.jpg */; };
+		4E3FA07720342CF00021E022 /* bus1024x1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA07620342CF00021E022 /* bus1024x1024.jpg */; };
+		4E3FA07920342D0E0021E022 /* CartoonGreenBus2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA07820342D0E0021E022 /* CartoonGreenBus2.png */; };
+		4E3FA07B20342E670021E022 /* CartoonbusBusPNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E3FA07A20342E670021E022 /* CartoonbusBusPNG.png */; };
 		4ED266F9202EA51800540D97 /* scheduleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266F8202EA51800540D97 /* scheduleTableVC.m */; };
 		4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266FE202FE19700540D97 /* StopsTableVC.m */; };
 		4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267002030B03E00540D97 /* BusListSrc.txt */; };
@@ -49,11 +53,6 @@
 		AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */; };
 		AD067C951F9E71B5000C0630 /* DeCampV3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C941F9E71B5000C0630 /* DeCampV3Tests.m */; };
 		AD067CA01F9E71B5000C0630 /* DeCampV3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C9F1F9E71B5000C0630 /* DeCampV3UITests.m */; };
-		AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */; };
-		AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD067CEE1F9E740E000C0630 /* bus_pic.jpg */; };
-		AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF821FB4F31700FE707E /* old decamp bus.jpg */; };
-		AD51BF851FB4F36500FE707E /* new decamp bus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF841FB4F36500FE707E /* new decamp bus.jpg */; };
-		AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */; };
 		AD51BF9F1FB4F5E700FE707E /* Icon-Small-50x50@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF891FB4F5E400FE707E /* Icon-Small-50x50@1x.png */; };
 		AD51BFA01FB4F5E700FE707E /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF8A1FB4F5E400FE707E /* Icon-App-76x76@1x.png */; };
 		AD51BFA11FB4F5E700FE707E /* Icon-App-57x57@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD51BF8B1FB4F5E500FE707E /* Icon-App-57x57@1x.png */; };
@@ -102,6 +101,10 @@
 /* Begin PBXFileReference section */
 		4E3FA06C2034111B0021E022 /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4E3FA073203414660021E022 /* DeCampV3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeCampV3.entitlements; sourceTree = "<group>"; };
+		4E3FA07420342C9F0021E022 /* busincity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = busincity.jpg; sourceTree = "<group>"; };
+		4E3FA07620342CF00021E022 /* bus1024x1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus1024x1024.jpg; sourceTree = "<group>"; };
+		4E3FA07820342D0E0021E022 /* CartoonGreenBus2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartoonGreenBus2.png; sourceTree = "<group>"; };
+		4E3FA07A20342E670021E022 /* CartoonbusBusPNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartoonbusBusPNG.png; sourceTree = "<group>"; };
 		4ED266F7202EA51800540D97 /* scheduleTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scheduleTableVC.h; sourceTree = "<group>"; };
 		4ED266F8202EA51800540D97 /* scheduleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scheduleTableVC.m; sourceTree = "<group>"; };
 		4ED266FD202FE19700540D97 /* StopsTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopsTableVC.h; sourceTree = "<group>"; };
@@ -153,11 +156,6 @@
 		AD067C9B1F9E71B5000C0630 /* DeCampV3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeCampV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C9F1F9E71B5000C0630 /* DeCampV3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeCampV3UITests.m; sourceTree = "<group>"; };
 		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "decamp logo small.jpeg"; sourceTree = "<group>"; };
-		AD067CEE1F9E740E000C0630 /* bus_pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bus_pic.jpg; sourceTree = "<group>"; };
-		AD51BF821FB4F31700FE707E /* old decamp bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old decamp bus.jpg"; sourceTree = "<group>"; };
-		AD51BF841FB4F36500FE707E /* new decamp bus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "new decamp bus.jpg"; sourceTree = "<group>"; };
-		AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = old_decamp_bus_P6w_icon.ico; sourceTree = "<group>"; };
 		AD51BF891FB4F5E400FE707E /* Icon-Small-50x50@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50x50@1x.png"; sourceTree = "<group>"; };
 		AD51BF8A1FB4F5E400FE707E /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
 		AD51BF8B1FB4F5E500FE707E /* Icon-App-57x57@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-57x57@1x.png"; sourceTree = "<group>"; };
@@ -366,14 +364,13 @@
 		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E3FA07A20342E670021E022 /* CartoonbusBusPNG.png */,
+				4E3FA07820342D0E0021E022 /* CartoonGreenBus2.png */,
+				ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */,
+				4E3FA07620342CF00021E022 /* bus1024x1024.jpg */,
+				4E3FA07420342C9F0021E022 /* busincity.jpg */,
 				4ED266FC202EAB1800540D97 /* Schedules */,
 				AD51BF881FB4F5C500FE707E /* icons */,
-				AD51BF861FB4F44800FE707E /* old_decamp_bus_P6w_icon.ico */,
-				ADE776F51FB6D0330056386A /* new_decamp_bus.jpeg */,
-				AD51BF841FB4F36500FE707E /* new decamp bus.jpg */,
-				AD51BF821FB4F31700FE707E /* old decamp bus.jpg */,
-				AD067CEE1F9E740E000C0630 /* bus_pic.jpg */,
-				AD067CAD1F9E7234000C0630 /* decamp logo small.jpeg */,
 				AD067C7B1F9E71B5000C0630 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -559,6 +556,7 @@
 				4ED267342032C14500540D97 /* 44toNYC.txt in Resources */,
 				AD51BFA71FB4F5E700FE707E /* Icon-Small-50x50@2x.png in Resources */,
 				4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */,
+				4E3FA07720342CF00021E022 /* bus1024x1024.jpg in Resources */,
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
 				4ED267272032BA1800540D97 /* 66fromNYCWeekdays.txt in Resources */,
 				4ED267402032C21D00540D97 /* 99fromNYCWeekdays.txt in Resources */,
@@ -568,21 +566,17 @@
 				4ED267452032C27300540D97 /* 88toNYC.txt in Resources */,
 				4ED267312032C14500540D97 /* 44toNYCWeekdays.txt in Resources */,
 				AD51BFAA1FB4F5E700FE707E /* Icon-App-60x60@1x.png in Resources */,
-				AD51BF831FB4F31800FE707E /* old decamp bus.jpg in Resources */,
 				4ED2673E2032C21D00540D97 /* 99toNYC.txt in Resources */,
 				ADE776F61FB6D0330056386A /* new_decamp_bus.jpeg in Resources */,
 				AD51BFA81FB4F5E700FE707E /* Icon-App-72x72@1x.png in Resources */,
 				AD51BFA41FB4F5E700FE707E /* Icon-App-40x40@2x.png in Resources */,
 				4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */,
-				AD51BF871FB4F44900FE707E /* old_decamp_bus_P6w_icon.ico in Resources */,
 				AD51BFAE1FB4F5E700FE707E /* Icon-App-76x76@3x.png in Resources */,
 				4ED26718203299A300540D97 /* 32toNYCWeekdays.txt in Resources */,
-				AD51BF851FB4F36500FE707E /* new decamp bus.jpg in Resources */,
 				4ED267292032BA1800540D97 /* 66fromNYCWeekend.txt in Resources */,
 				4ED267102030B6D000540D97 /* 33toNYCWeekend.txt in Resources */,
 				AD51BFA31FB4F5E700FE707E /* Icon-App-20x20@2x.png in Resources */,
 				4ED267262032BA1800540D97 /* 66fromNYC.txt in Resources */,
-				AD067CAE1F9E7234000C0630 /* decamp logo small.jpeg in Resources */,
 				4ED2673F2032C21D00540D97 /* 99toNYCWeekdays.txt in Resources */,
 				4ED2671A20329BA200540D97 /* 32toNYC.txt in Resources */,
 				4ED267462032C27300540D97 /* 88toNYCWeekdays.txt in Resources */,
@@ -600,15 +594,17 @@
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
 				AD51BFB01FB4F5E700FE707E /* Icon-App-83.5x83.5@2x.png in Resources */,
 				4ED267142030B6D000540D97 /* 33toNYCWeekdays.txt in Resources */,
-				AD067CEF1F9E740E000C0630 /* bus_pic.jpg in Resources */,
+				4E3FA07B20342E670021E022 /* CartoonbusBusPNG.png in Resources */,
 				AD51BFB31FB4F5E700FE707E /* Icon-App-40x40@3x.png in Resources */,
 				AD51BFB41FB4F5E700FE707E /* Icon-App-60x60@3x.png in Resources */,
 				4ED267322032C14500540D97 /* 44toNYCWeekend.txt in Resources */,
+				4E3FA07920342D0E0021E022 /* CartoonGreenBus2.png in Resources */,
 				AD51BFAF1FB4F5E700FE707E /* Icon-App-20x20@3x.png in Resources */,
 				ADE776F21FB6BDEF0056386A /* iTunesArtwork@1x.png in Resources */,
 				AD51BFA01FB4F5E700FE707E /* Icon-App-76x76@1x.png in Resources */,
 				AD51BFA51FB4F5E700FE707E /* Icon-App-57x57@2x.png in Resources */,
 				4E3FA06D2034111C0021E022 /* 33fromNYCWeekdays.txt in Resources */,
+				4E3FA07520342CA00021E022 /* busincity.jpg in Resources */,
 				AD51BFA61FB4F5E700FE707E /* Icon-App-29x29@1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
