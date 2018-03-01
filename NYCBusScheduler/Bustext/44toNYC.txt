@@ -1,0 +1,14 @@
+Special_Info
+44 BLOOMFIELD: Congers & Glenwood
+44 BLOOMFIELD: Montgomery & Franklin
+44 N.NEWARK: Heller Pky & Clifton Ave.
+44 BELLEVILE: Union & Belleville
+44 BELLEVILLE: Washington & Rutgers
+44 NUTLEY: Park Ave & Washington Ave
+44 HARRISON: F. Rodgers Blvd. & Cleveland Ave.
+44 KEARNY: Bergen & Kearny
+44 N.ARLINGTON RossLane & Bell Tnpk
+44 N.ARLINGTON: Harding & Ridge
+44 LYNDHURST: Ridge Rd & Valley Brook
+44 RUTHERFOORD: Rutherford Ave & Orient Way
+NYC_P/A Bus Terminal
