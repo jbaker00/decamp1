@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CEE8FE20D308AB92587463B /* libPods-NYCBusScheduler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */; };
+		4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */; };
+		4EB358272038FABD00B6A622 /* 1200px-Lincolntunnel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */; };
+		4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582A2038FE4100B6A622 /* title2.jpeg */; };
+		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
+		4EB358312039208100B6A622 /* CartoonbusBus.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358302039208100B6A622 /* CartoonbusBus.PNG */; };
+		4EB358332039224F00B6A622 /* 33fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358322039224F00B6A622 /* 33fromNYCWeekend.txt */; };
+		4ED266F9202EA51800540D97 /* scheduleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266F8202EA51800540D97 /* scheduleTableVC.m */; };
+		4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266FE202FE19700540D97 /* StopsTableVC.m */; };
+		4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267002030B03E00540D97 /* BusListSrc.txt */; };
+		4ED2670E2030B6D000540D97 /* 32fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267042030B6CF00540D97 /* 32fromNYCWeekdays.txt */; };
+		4ED2670F2030B6D000540D97 /* 33toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267052030B6CF00540D97 /* 33toNYC.txt */; };
+		4ED267102030B6D000540D97 /* 33toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */; };
+		4ED267112030B6D000540D97 /* 32fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267072030B6D000540D97 /* 32fromNYC.txt */; };
+		4ED267142030B6D000540D97 /* 33toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2670A2030B6D000540D97 /* 33toNYCWeekdays.txt */; };
+		4ED267152030B6D000540D97 /* 33fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2670B2030B6D000540D97 /* 33fromNYC.txt */; };
+		4ED26718203299A300540D97 /* 32toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED26717203299A300540D97 /* 32toNYCWeekdays.txt */; };
+		4ED2671A20329BA200540D97 /* 32toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2671920329BA200540D97 /* 32toNYC.txt */; };
+		4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2671E2032BA1700540D97 /* 66toNYCWeekend.txt */; };
+		4ED267252032BA1800540D97 /* 66toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2671F2032BA1800540D97 /* 66toNYC.txt */; };
+		4ED267262032BA1800540D97 /* 66fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267202032BA1800540D97 /* 66fromNYC.txt */; };
+		4ED267272032BA1800540D97 /* 66fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267212032BA1800540D97 /* 66fromNYCWeekdays.txt */; };
+		4ED267282032BA1800540D97 /* 66toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267222032BA1800540D97 /* 66toNYCWeekdays.txt */; };
+		4ED267292032BA1800540D97 /* 66fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267232032BA1800540D97 /* 66fromNYCWeekend.txt */; };
+		4ED267312032C14500540D97 /* 44toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672B2032C14500540D97 /* 44toNYCWeekdays.txt */; };
+		4ED267322032C14500540D97 /* 44toNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672C2032C14500540D97 /* 44toNYCWeekend.txt */; };
+		4ED267332032C14500540D97 /* 44fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672D2032C14500540D97 /* 44fromNYCWeekend.txt */; };
+		4ED267342032C14500540D97 /* 44toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672E2032C14500540D97 /* 44toNYC.txt */; };
+		4ED267352032C14500540D97 /* 44fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2672F2032C14500540D97 /* 44fromNYC.txt */; };
+		4ED267362032C14500540D97 /* 44fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267302032C14500540D97 /* 44fromNYCWeekdays.txt */; };
+		4ED2673D2032C21D00540D97 /* 99fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267392032C21D00540D97 /* 99fromNYC.txt */; };
+		4ED2673E2032C21D00540D97 /* 99toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2673A2032C21D00540D97 /* 99toNYC.txt */; };
+		4ED2673F2032C21D00540D97 /* 99toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2673B2032C21D00540D97 /* 99toNYCWeekdays.txt */; };
+		4ED267402032C21D00540D97 /* 99fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED2673C2032C21D00540D97 /* 99fromNYCWeekdays.txt */; };
+		4ED267452032C27300540D97 /* 88toNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267412032C27300540D97 /* 88toNYC.txt */; };
+		4ED267462032C27300540D97 /* 88toNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267422032C27300540D97 /* 88toNYCWeekdays.txt */; };
+		4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267432032C27300540D97 /* 88fromNYC.txt */; };
+		4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */; };
+		4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267492032C6CB00540D97 /* BusListDest.txt */; };
+		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
+		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
+		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
+		AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD067C831F9E71B5000C0630 /* Main.storyboard */; };
+		AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD067C861F9E71B5000C0630 /* Assets.xcassets */; };
+		AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */; };
+		AD067C951F9E71B5000C0630 /* NYCBusSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C941F9E71B5000C0630 /* NYCBusSchedulerTests.m */; };
+		AD067CA01F9E71B5000C0630 /* NYCBusSchedulerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C9F1F9E71B5000C0630 /* NYCBusSchedulerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD067C911F9E71B5000C0630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD067C6F1F9E71B5000C0630 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD067C761F9E71B5000C0630;
+			remoteInfo = DeCampV3;
+		};
+		AD067C9C1F9E71B5000C0630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD067C6F1F9E71B5000C0630 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD067C761F9E71B5000C0630;
+			remoteInfo = DeCampV3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYCBusScheduler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NYCBusScheduler.entitlements; sourceTree = "<group>"; };
+		4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1200px-Lincolntunnel.jpg"; path = "../../../../Downloads/1200px-Lincolntunnel.jpg"; sourceTree = "<group>"; };
+		4EB3582A2038FE4100B6A622 /* title2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title2.jpeg; sourceTree = "<group>"; };
+		4EB3582E20391BBB00B6A622 /* bus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-32.png"; sourceTree = "<group>"; };
+		4EB358302039208100B6A622 /* CartoonbusBus.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartoonbusBus.PNG; sourceTree = "<group>"; };
+		4EB358322039224F00B6A622 /* 33fromNYCWeekend.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED266F7202EA51800540D97 /* scheduleTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scheduleTableVC.h; sourceTree = "<group>"; };
+		4ED266F8202EA51800540D97 /* scheduleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scheduleTableVC.m; sourceTree = "<group>"; };
+		4ED266FD202FE19700540D97 /* StopsTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopsTableVC.h; sourceTree = "<group>"; };
+		4ED266FE202FE19700540D97 /* StopsTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopsTableVC.m; sourceTree = "<group>"; };
+		4ED267002030B03E00540D97 /* BusListSrc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BusListSrc.txt; path = Bustext/BusListSrc.txt; sourceTree = "<group>"; };
+		4ED267042030B6CF00540D97 /* 32fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 32fromNYCWeekdays.txt; path = Bustext/32fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267052030B6CF00540D97 /* 33toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33toNYC.txt; path = Bustext/33toNYC.txt; sourceTree = "<group>"; };
+		4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33toNYCWeekend.txt; path = Bustext/33toNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED267072030B6D000540D97 /* 32fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 32fromNYC.txt; path = Bustext/32fromNYC.txt; sourceTree = "<group>"; };
+		4ED2670A2030B6D000540D97 /* 33toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33toNYCWeekdays.txt; path = Bustext/33toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2670B2030B6D000540D97 /* 33fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 33fromNYC.txt; path = Bustext/33fromNYC.txt; sourceTree = "<group>"; };
+		4ED26717203299A300540D97 /* 32toNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 32toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2671920329BA200540D97 /* 32toNYC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 32toNYC.txt; sourceTree = "<group>"; };
+		4ED2671E2032BA1700540D97 /* 66toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66toNYCWeekend.txt; path = Bustext/66toNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2671F2032BA1800540D97 /* 66toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66toNYC.txt; path = Bustext/66toNYC.txt; sourceTree = "<group>"; };
+		4ED267202032BA1800540D97 /* 66fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66fromNYC.txt; path = Bustext/66fromNYC.txt; sourceTree = "<group>"; };
+		4ED267212032BA1800540D97 /* 66fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66fromNYCWeekdays.txt; path = Bustext/66fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267222032BA1800540D97 /* 66toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66toNYCWeekdays.txt; path = Bustext/66toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267232032BA1800540D97 /* 66fromNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 66fromNYCWeekend.txt; path = Bustext/66fromNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2672B2032C14500540D97 /* 44toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44toNYCWeekdays.txt; path = Bustext/44toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2672C2032C14500540D97 /* 44toNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44toNYCWeekend.txt; path = Bustext/44toNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2672D2032C14500540D97 /* 44fromNYCWeekend.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYCWeekend.txt; path = Bustext/44fromNYCWeekend.txt; sourceTree = "<group>"; };
+		4ED2672E2032C14500540D97 /* 44toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44toNYC.txt; path = Bustext/44toNYC.txt; sourceTree = "<group>"; };
+		4ED2672F2032C14500540D97 /* 44fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYC.txt; path = Bustext/44fromNYC.txt; sourceTree = "<group>"; };
+		4ED267302032C14500540D97 /* 44fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 44fromNYCWeekdays.txt; path = Bustext/44fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267392032C21D00540D97 /* 99fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 99fromNYC.txt; path = Bustext/99fromNYC.txt; sourceTree = "<group>"; };
+		4ED2673A2032C21D00540D97 /* 99toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 99toNYC.txt; path = Bustext/99toNYC.txt; sourceTree = "<group>"; };
+		4ED2673B2032C21D00540D97 /* 99toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 99toNYCWeekdays.txt; path = Bustext/99toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED2673C2032C21D00540D97 /* 99fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 99fromNYCWeekdays.txt; path = Bustext/99fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267412032C27300540D97 /* 88toNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88toNYC.txt; path = Bustext/88toNYC.txt; sourceTree = "<group>"; };
+		4ED267422032C27300540D97 /* 88toNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88toNYCWeekdays.txt; path = Bustext/88toNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267432032C27300540D97 /* 88fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYC.txt; path = Bustext/88fromNYC.txt; sourceTree = "<group>"; };
+		4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYCWeekdays.txt; path = Bustext/88fromNYCWeekdays.txt; sourceTree = "<group>"; };
+		4ED267492032C6CB00540D97 /* BusListDest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusListDest.txt; sourceTree = "<group>"; };
+		7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYCBusScheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler.release.xcconfig"; sourceTree = "<group>"; };
+		AD067C771F9E71B5000C0630 /* NYCBusScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCBusScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD067C7D1F9E71B5000C0630 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD067C7E1F9E71B5000C0630 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD067C801F9E71B5000C0630 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD067C811F9E71B5000C0630 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD067C841F9E71B5000C0630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD067C861F9E71B5000C0630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD067C891F9E71B5000C0630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD067C8B1F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD067C901F9E71B5000C0630 /* NYCBusSchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCBusSchedulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067C941F9E71B5000C0630 /* NYCBusSchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCBusSchedulerTests.m; sourceTree = "<group>"; };
+		AD067C961F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD067C9B1F9E71B5000C0630 /* NYCBusSchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCBusSchedulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD067C9F1F9E71B5000C0630 /* NYCBusSchedulerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCBusSchedulerUITests.m; sourceTree = "<group>"; };
+		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC4D847B3E41C8A6987FAEE /* Pods-NYCBusScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYCBusScheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD067C741F9E71B5000C0630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CEE8FE20D308AB92587463B /* libPods-NYCBusScheduler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067C8D1F9E71B5000C0630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067C981F9E71B5000C0630 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082ACD8AD5DE6145F4127A25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEC4D847B3E41C8A6987FAEE /* Pods-NYCBusScheduler.debug.xcconfig */,
+				7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E3FA0702034136F0021E022 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4ED266FA202EAAE700540D97 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C801F9E71B5000C0630 /* ViewController.h */,
+				AD067C811F9E71B5000C0630 /* ViewController.m */,
+				4ED266FD202FE19700540D97 /* StopsTableVC.h */,
+				4ED266FE202FE19700540D97 /* StopsTableVC.m */,
+				4ED266F7202EA51800540D97 /* scheduleTableVC.h */,
+				4ED266F8202EA51800540D97 /* scheduleTableVC.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4ED266FB202EAB0600540D97 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C831F9E71B5000C0630 /* Main.storyboard */,
+				AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		4ED266FC202EAB1800540D97 /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2671B2032B82500540D97 /* 32 */,
+				4ED2671C2032B94200540D97 /* 33 */,
+				4ED2672A2032C13500540D97 /* 44 */,
+				4ED2671D2032B96E00540D97 /* 66 */,
+				4ED267372032C15800540D97 /* 88 */,
+				4ED267382032C17600540D97 /* 99 */,
+				4ED267002030B03E00540D97 /* BusListSrc.txt */,
+				4ED267492032C6CB00540D97 /* BusListDest.txt */,
+			);
+			name = Schedules;
+			sourceTree = "<group>";
+		};
+		4ED2671B2032B82500540D97 /* 32 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2671920329BA200540D97 /* 32toNYC.txt */,
+				4ED267072030B6D000540D97 /* 32fromNYC.txt */,
+				4ED26717203299A300540D97 /* 32toNYCWeekdays.txt */,
+				4ED267042030B6CF00540D97 /* 32fromNYCWeekdays.txt */,
+			);
+			name = 32;
+			sourceTree = "<group>";
+		};
+		4ED2671C2032B94200540D97 /* 33 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED267052030B6CF00540D97 /* 33toNYC.txt */,
+				4ED2670B2030B6D000540D97 /* 33fromNYC.txt */,
+				4ED2670A2030B6D000540D97 /* 33toNYCWeekdays.txt */,
+				4ED267062030B6CF00540D97 /* 33toNYCWeekend.txt */,
+				4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */,
+				4EB358322039224F00B6A622 /* 33fromNYCWeekend.txt */,
+			);
+			name = 33;
+			sourceTree = "<group>";
+		};
+		4ED2671D2032B96E00540D97 /* 66 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2671F2032BA1800540D97 /* 66toNYC.txt */,
+				4ED267202032BA1800540D97 /* 66fromNYC.txt */,
+				4ED267212032BA1800540D97 /* 66fromNYCWeekdays.txt */,
+				4ED267232032BA1800540D97 /* 66fromNYCWeekend.txt */,
+				4ED267222032BA1800540D97 /* 66toNYCWeekdays.txt */,
+				4ED2671E2032BA1700540D97 /* 66toNYCWeekend.txt */,
+			);
+			name = 66;
+			sourceTree = "<group>";
+		};
+		4ED2672A2032C13500540D97 /* 44 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2672E2032C14500540D97 /* 44toNYC.txt */,
+				4ED2672F2032C14500540D97 /* 44fromNYC.txt */,
+				4ED2672B2032C14500540D97 /* 44toNYCWeekdays.txt */,
+				4ED267302032C14500540D97 /* 44fromNYCWeekdays.txt */,
+				4ED2672C2032C14500540D97 /* 44toNYCWeekend.txt */,
+				4ED2672D2032C14500540D97 /* 44fromNYCWeekend.txt */,
+			);
+			name = 44;
+			sourceTree = "<group>";
+		};
+		4ED267372032C15800540D97 /* 88 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED267412032C27300540D97 /* 88toNYC.txt */,
+				4ED267432032C27300540D97 /* 88fromNYC.txt */,
+				4ED267422032C27300540D97 /* 88toNYCWeekdays.txt */,
+				4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */,
+			);
+			name = 88;
+			sourceTree = "<group>";
+		};
+		4ED267382032C17600540D97 /* 99 */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2673A2032C21D00540D97 /* 99toNYC.txt */,
+				4ED267392032C21D00540D97 /* 99fromNYC.txt */,
+				4ED2673B2032C21D00540D97 /* 99toNYCWeekdays.txt */,
+				4ED2673C2032C21D00540D97 /* 99fromNYCWeekdays.txt */,
+			);
+			name = 99;
+			sourceTree = "<group>";
+		};
+		AD067C6E1F9E71B5000C0630 = {
+			isa = PBXGroup;
+			children = (
+				AD067C791F9E71B5000C0630 /* NYCBusScheduler */,
+				AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */,
+				AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
+				AD067C781F9E71B5000C0630 /* Products */,
+				4E3FA0702034136F0021E022 /* Frameworks */,
+				082ACD8AD5DE6145F4127A25 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AD067C781F9E71B5000C0630 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C771F9E71B5000C0630 /* NYCBusScheduler.app */,
+				AD067C901F9E71B5000C0630 /* NYCBusSchedulerTests.xctest */,
+				AD067C9B1F9E71B5000C0630 /* NYCBusSchedulerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD067C791F9E71B5000C0630 /* NYCBusScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */,
+				4ED266FB202EAB0600540D97 /* GUI */,
+				4ED266FA202EAAE700540D97 /* Controllers */,
+				AD067C7D1F9E71B5000C0630 /* AppDelegate.h */,
+				AD067C7E1F9E71B5000C0630 /* AppDelegate.m */,
+				AD067C861F9E71B5000C0630 /* Assets.xcassets */,
+				AD067C8B1F9E71B5000C0630 /* Info.plist */,
+				AD067C7A1F9E71B5000C0630 /* Supporting Files */,
+			);
+			path = NYCBusScheduler;
+			sourceTree = "<group>";
+		};
+		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EB3582E20391BBB00B6A622 /* bus-32.png */,
+				4EB3582A2038FE4100B6A622 /* title2.jpeg */,
+				4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */,
+				4EB358302039208100B6A622 /* CartoonbusBus.PNG */,
+				4ED266FC202EAB1800540D97 /* Schedules */,
+				AD51BF881FB4F5C500FE707E /* icons */,
+				AD067C7B1F9E71B5000C0630 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C941F9E71B5000C0630 /* NYCBusSchedulerTests.m */,
+				AD067C961F9E71B5000C0630 /* Info.plist */,
+			);
+			path = NYCBusSchedulerTests;
+			sourceTree = "<group>";
+		};
+		AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD067C9F1F9E71B5000C0630 /* NYCBusSchedulerUITests.m */,
+				AD067CA11F9E71B5000C0630 /* Info.plist */,
+			);
+			path = NYCBusSchedulerUITests;
+			sourceTree = "<group>";
+		};
+		AD51BF881FB4F5C500FE707E /* icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD067C761F9E71B5000C0630 /* NYCBusScheduler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067CA41F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusScheduler" */;
+			buildPhases = (
+				5F3EAEE193D4F11F74441288 /* [CP] Check Pods Manifest.lock */,
+				AD067C731F9E71B5000C0630 /* Sources */,
+				AD067C741F9E71B5000C0630 /* Frameworks */,
+				AD067C751F9E71B5000C0630 /* Resources */,
+				AFBCCED9D8585FBC164B7614 /* [CP] Embed Pods Frameworks */,
+				8A9F242B9EF07E9059748D74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYCBusScheduler;
+			productName = DeCampV3;
+			productReference = AD067C771F9E71B5000C0630 /* NYCBusScheduler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD067C8F1F9E71B5000C0630 /* NYCBusSchedulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067CA71F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusSchedulerTests" */;
+			buildPhases = (
+				AD067C8C1F9E71B5000C0630 /* Sources */,
+				AD067C8D1F9E71B5000C0630 /* Frameworks */,
+				AD067C8E1F9E71B5000C0630 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD067C921F9E71B5000C0630 /* PBXTargetDependency */,
+			);
+			name = NYCBusSchedulerTests;
+			productName = DeCampV3Tests;
+			productReference = AD067C901F9E71B5000C0630 /* NYCBusSchedulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD067C9A1F9E71B5000C0630 /* NYCBusSchedulerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD067CAA1F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusSchedulerUITests" */;
+			buildPhases = (
+				AD067C971F9E71B5000C0630 /* Sources */,
+				AD067C981F9E71B5000C0630 /* Frameworks */,
+				AD067C991F9E71B5000C0630 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD067C9D1F9E71B5000C0630 /* PBXTargetDependency */,
+			);
+			name = NYCBusSchedulerUITests;
+			productName = DeCampV3UITests;
+			productReference = AD067C9B1F9E71B5000C0630 /* NYCBusSchedulerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD067C6F1F9E71B5000C0630 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Baker, James";
+				TargetAttributes = {
+					AD067C761F9E71B5000C0630 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G3P9A8Z2NP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					AD067C8F1F9E71B5000C0630 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD067C761F9E71B5000C0630;
+					};
+					AD067C9A1F9E71B5000C0630 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD067C761F9E71B5000C0630;
+					};
+				};
+			};
+			buildConfigurationList = AD067C721F9E71B5000C0630 /* Build configuration list for PBXProject "NYCBusScheduler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD067C6E1F9E71B5000C0630;
+			productRefGroup = AD067C781F9E71B5000C0630 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD067C761F9E71B5000C0630 /* NYCBusScheduler */,
+				AD067C8F1F9E71B5000C0630 /* NYCBusSchedulerTests */,
+				AD067C9A1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD067C751F9E71B5000C0630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */,
+				4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */,
+				4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */,
+				4EB358272038FABD00B6A622 /* 1200px-Lincolntunnel.jpg in Resources */,
+				4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */,
+				4ED267332032C14500540D97 /* 44fromNYCWeekend.txt in Resources */,
+				4ED2670F2030B6D000540D97 /* 33toNYC.txt in Resources */,
+				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
+				4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */,
+				4ED267342032C14500540D97 /* 44toNYC.txt in Resources */,
+				4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */,
+				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
+				4ED267272032BA1800540D97 /* 66fromNYCWeekdays.txt in Resources */,
+				4ED267402032C21D00540D97 /* 99fromNYCWeekdays.txt in Resources */,
+				4ED267452032C27300540D97 /* 88toNYC.txt in Resources */,
+				4ED267312032C14500540D97 /* 44toNYCWeekdays.txt in Resources */,
+				4ED2673E2032C21D00540D97 /* 99toNYC.txt in Resources */,
+				4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */,
+				4ED26718203299A300540D97 /* 32toNYCWeekdays.txt in Resources */,
+				4ED267292032BA1800540D97 /* 66fromNYCWeekend.txt in Resources */,
+				4ED267102030B6D000540D97 /* 33toNYCWeekend.txt in Resources */,
+				4ED267262032BA1800540D97 /* 66fromNYC.txt in Resources */,
+				4ED2673F2032C21D00540D97 /* 99toNYCWeekdays.txt in Resources */,
+				4EB358332039224F00B6A622 /* 33fromNYCWeekend.txt in Resources */,
+				4ED2671A20329BA200540D97 /* 32toNYC.txt in Resources */,
+				4ED267462032C27300540D97 /* 88toNYCWeekdays.txt in Resources */,
+				4ED2670E2030B6D000540D97 /* 32fromNYCWeekdays.txt in Resources */,
+				4ED2673D2032C21D00540D97 /* 99fromNYC.txt in Resources */,
+				4ED267282032BA1800540D97 /* 66toNYCWeekdays.txt in Resources */,
+				4ED267362032C14500540D97 /* 44fromNYCWeekdays.txt in Resources */,
+				4ED267112030B6D000540D97 /* 32fromNYC.txt in Resources */,
+				4EB358312039208100B6A622 /* CartoonbusBus.PNG in Resources */,
+				4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */,
+				4ED267352032C14500540D97 /* 44fromNYC.txt in Resources */,
+				4ED267152030B6D000540D97 /* 33fromNYC.txt in Resources */,
+				4ED267252032BA1800540D97 /* 66toNYC.txt in Resources */,
+				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
+				4ED267142030B6D000540D97 /* 33toNYCWeekdays.txt in Resources */,
+				4ED267322032C14500540D97 /* 44toNYCWeekend.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067C8E1F9E71B5000C0630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067C991F9E71B5000C0630 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F3EAEE193D4F11F74441288 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYCBusScheduler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A9F242B9EF07E9059748D74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFBCCED9D8585FBC164B7614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD067C731F9E71B5000C0630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067C821F9E71B5000C0630 /* ViewController.m in Sources */,
+				AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */,
+				AD067C7C1F9E71B5000C0630 /* main.m in Sources */,
+				4ED266F9202EA51800540D97 /* scheduleTableVC.m in Sources */,
+				4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067C8C1F9E71B5000C0630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067C951F9E71B5000C0630 /* NYCBusSchedulerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD067C971F9E71B5000C0630 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD067CA01F9E71B5000C0630 /* NYCBusSchedulerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD067C921F9E71B5000C0630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD067C761F9E71B5000C0630 /* NYCBusScheduler */;
+			targetProxy = AD067C911F9E71B5000C0630 /* PBXContainerItemProxy */;
+		};
+		AD067C9D1F9E71B5000C0630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD067C761F9E71B5000C0630 /* NYCBusScheduler */;
+			targetProxy = AD067C9C1F9E71B5000C0630 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD067C831F9E71B5000C0630 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD067C841F9E71B5000C0630 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD067C891F9E71B5000C0630 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD067CA21F9E71B5000C0630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD067CA31F9E71B5000C0630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD067CA51F9E71B5000C0630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC4D847B3E41C8A6987FAEE /* Pods-NYCBusScheduler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = G3P9A8Z2NP;
+				INFOPLIST_FILE = "$(SRCROOT)/NYCBusScheduler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.SurburbanNJBusScheduler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD067CA61F9E71B5000C0630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = G3P9A8Z2NP;
+				INFOPLIST_FILE = "$(SRCROOT)/NYCBusScheduler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.SurburbanNJBusScheduler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD067CA81F9E71B5000C0630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeCampV3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYCBusScheduler.app/NYCBusScheduler";
+			};
+			name = Debug;
+		};
+		AD067CA91F9E71B5000C0630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeCampV3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYCBusScheduler.app/NYCBusScheduler";
+			};
+			name = Release;
+		};
+		AD067CAB1F9E71B5000C0630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DeCampV3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeCampV3;
+			};
+			name = Debug;
+		};
+		AD067CAC1F9E71B5000C0630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DeCampV3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Baker.DeCampV3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeCampV3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD067C721F9E71B5000C0630 /* Build configuration list for PBXProject "NYCBusScheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067CA21F9E71B5000C0630 /* Debug */,
+				AD067CA31F9E71B5000C0630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067CA41F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusScheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067CA51F9E71B5000C0630 /* Debug */,
+				AD067CA61F9E71B5000C0630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067CA71F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusSchedulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067CA81F9E71B5000C0630 /* Debug */,
+				AD067CA91F9E71B5000C0630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD067CAA1F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusSchedulerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD067CAB1F9E71B5000C0630 /* Debug */,
+				AD067CAC1F9E71B5000C0630 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD067C6F1F9E71B5000C0630 /* Project object */;
+}

@@ -1,0 +1,61 @@
+NYC_P/A Bus Terminal,1 NA
+32 NUTLEY: Darling Ave & Kingsland Rd,32
+32 NUTLEY: Franklin & Centre St.,32
+32 NUTLEY: Park Ave & River Rd,32
+32 LYNDHURST: Valley Brook Ave & Ridge Rd,32
+32 LYNDHURST: Valley Brook Ave & Ridge Rd,32
+32 RUTHERFORD: Rutherford Ave. & Orient Way,32
+32 SECAUCUS: Secaucus Plaza,32
+32 UNION CITY: 32nd & Bergenline Ave,32
+33 W. CALDWELL: Kirkpatrick Lane,33
+33 CALDWELL: Roseland & Bloomfield,33
+33 VERONA: Lakeside Ave,33
+33 W. ORANGE: Pleasantdale Ctr,33
+33 MONTCLAIR: Gates & Bloomfield,33
+33 MONTCLAIR: Grove & Watchung,33
+33 MONTCLAIR: Grove & Bellvue,33
+33 CLIFTON: Vincent Dr & Groove St,33
+33 BLOOMFIELD: Broad & Liberty,33
+33 BLOOMFIELD: Broad & Watchung,33
+33 NUTLEY: W. Passaic & Darling,33
+44 BLOOMFIELD: Congers & Glenwood,44
+44 BLOOMFIELD: Montgomery & Franklin,44
+44 N.NEWARK: Heller Pky & Clifton Ave.,44
+44 BELLEVILE: Union & Belleville,44
+44 BELLEVILLE: Washington & Rutgers,44
+44 NUTLEY: Park Ave & Washington Ave,44
+44 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,44
+44 KEARNY: Bergen & Kearny,44
+44 N.ARLINGTON RossLane & Bell Tnpk,44
+44 N.ARLINGTON: Harding & Ridge,44
+44 LYNDHURST: Ridge Rd & Valley Brook,44
+44 RUTHERFOORD: Rutherford Ave & Orient Way,44
+66 W.CALD_ Kings,66
+66 ROSELAND Center,66
+66 Pleasantdale Center,66
+66 W.ORANGE Eagle Rock & Prospect,66
+66 W.ORANGE Mississippi & Harrison,66
+66 MONTCLAIR: YMCA on PARK ST,66
+66 UPPER_MTC: Watchung & PARK ST,66
+66 UPPER_MTC: Valley Rd & Bellevue,66
+66 UPPER_MTC: Valley Rd & Nassau Pl (Montclair Univ),66
+66 Montclair Univ Campus Bus Stop,66
+66 VINCENT DR & GROVE ST Clifton,66
+88 E.ORANGE: Evergreen Pl & Central Ave,88
+88 ORANGE: Scotland Rd & Central Ave,88
+88 ORANGE: Scotland Rd & Central Ave,88
+88 E.ORANGE: Prospect and Williams Sts.,88
+88 BLOOMFIELD: Prospect St & Dodd St,88
+88 BLOOMFIELD: Broad & Liberty St,88
+88 BLOOMFIELD: Broad & Watchung Ave,88
+88 NUTLEY: W. Passaic & Darling Ave,88
+88 BELLEVILLE: Washington & Rutgers,88
+88 N. ARLINGTON: Ridge Rd & Harding Ave,88
+88 LYNDHURST: Valley Brook Ridge,88
+99 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,99
+99 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,99
+99 KEARNY: Bergen & Kearny,99
+99 N.ARLINGTON RossLane & Bell Tnpk,99
+99 N.ARLINGTON: Harding & Ridge,99
+99 LYNDHURST: Ridge Rd & Valley Brook,99
+99 RUTHERFOORD: Rutherford Ave & Orient Way,99

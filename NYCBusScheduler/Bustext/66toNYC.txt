@@ -1,0 +1,13 @@
+Special_Info
+66 W.CALD_ Kings
+66 ROSELAND Center
+66 Pleasantdale Center
+66 W.ORANGE Eagle Rock & Prospect
+66 W.ORANGE Mississippi & Harrison
+66 MONTCLAIR: YMCA on PARK ST
+66 UPPER_MTC: Watchung & PARK ST
+66 UPPER_MTC: Valley Rd & Bellevue
+66 UPPER_MTC: Valley Rd & Nassau Pl (Montclair Univ)
+66 Montclair Univ Campus Bus Stop
+66 VINCENT DR & GROVE ST, Clifton
+NYC_P/A Bus Terminal
