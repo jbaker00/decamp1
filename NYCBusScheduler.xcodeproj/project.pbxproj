@@ -14,6 +14,7 @@
 		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
 		4EB358312039208100B6A622 /* CartoonbusBus.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358302039208100B6A622 /* CartoonbusBus.PNG */; };
 		4EB358332039224F00B6A622 /* 33fromNYCWeekend.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358322039224F00B6A622 /* 33fromNYCWeekend.txt */; };
+		4EBBC63C2049D7550052A1A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBBC63B2049D7550052A1A8 /* MapKit.framework */; };
 		4ED266F9202EA51800540D97 /* scheduleTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266F8202EA51800540D97 /* scheduleTableVC.m */; };
 		4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED266FE202FE19700540D97 /* StopsTableVC.m */; };
 		4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267002030B03E00540D97 /* BusListSrc.txt */; };
@@ -82,6 +83,7 @@
 		4EB3582E20391BBB00B6A622 /* bus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-32.png"; sourceTree = "<group>"; };
 		4EB358302039208100B6A622 /* CartoonbusBus.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartoonbusBus.PNG; sourceTree = "<group>"; };
 		4EB358322039224F00B6A622 /* 33fromNYCWeekend.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekend.txt; sourceTree = "<group>"; };
+		4EBBC63B2049D7550052A1A8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4ED266F7202EA51800540D97 /* scheduleTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scheduleTableVC.h; sourceTree = "<group>"; };
 		4ED266F8202EA51800540D97 /* scheduleTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scheduleTableVC.m; sourceTree = "<group>"; };
 		4ED266FD202FE19700540D97 /* StopsTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopsTableVC.h; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBBC63C2049D7550052A1A8 /* MapKit.framework in Frameworks */,
 				4CEE8FE20D308AB92587463B /* libPods-NYCBusScheduler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +177,7 @@
 		4E3FA0702034136F0021E022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4EBBC63B2049D7550052A1A8 /* MapKit.framework */,
 				31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */,
 			);
 			name = Frameworks;

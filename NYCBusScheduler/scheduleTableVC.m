@@ -30,6 +30,22 @@
 }
 
 #pragma mark - Table view data source
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    /*UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+                                                                   message:@"This is an alert."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+
+    [self performSegueWithIdentifier:@"showStopMap" sender:self];
+*/
+    NSLog(@"Selected a row in the table");
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
