@@ -14,8 +14,12 @@
 
 @implementation StopsTableVC
 
+
+
+
 - (void)InitBusDictionaries
 {
+    NSLog(@"Entering StopsTableVC::InitBusDictionaries");
     BusDict = [NSMutableDictionary dictionaryWithCapacity:1];
     
     //Load the bus dictionary
@@ -54,11 +58,14 @@
     stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
     //add the string array of the bus stops as well as the key into the array
     [BusDict setObject:stringArrayBusStop forKey:tempLastBusNum];
+    NSLog(@"Exiting StopsTableVC::InitBusDictionaries");
 
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"Entering StopsTableVC::viewDidLoad");
+
 
     //allow the table view to hae autosized rows
     [self.tableView sizeToFit];
@@ -70,10 +77,12 @@
     //self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
-    //Init the dictionaries of buses
+    //Init the dictionaries of buses if the data is not current location but a selected location
     [self InitBusDictionaries];
     
+    
     busSectionTitles = [[BusDict allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSLog(@"Exiting StopsTableVC::viewDidLoad");
 
 }
 
@@ -85,11 +94,18 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    NSLog(@"Entering StopsTableVC::numberOfSectionsInTableView");
+    NSLog(@"Exiting StopsTableVC::numberOfSectionsInTableView");
+
     return BusDict.count;
+    
+
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"Entering tableView::didSelectRowAtIndexPath sub class of StopsTable::");
+
     if(![self->tblStopData[indexPath.row][0] isEqual:nil])
     {
         NSString *sectionTitle = [busSectionTitles objectAtIndex:indexPath.section];
@@ -98,37 +114,51 @@
         self->tblFromSectionName = bus;//tblStopData[indexPath.row][0];
         [self performSegueWithIdentifier:@"busSelected" sender:self];
     }
+    NSLog(@"Exiting tableView::didSelectRowAtIndexPath sub class of StopsTable::");
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"Entering tableView::numberOfRowsInSection sub class of StopsTable::");
+
     // Return the number of rows in the section.
     NSString *sectionTitle = [busSectionTitles objectAtIndex:section];
     NSArray *sectionBus = [BusDict objectForKey:sectionTitle];
+    
+    NSLog(@"Exiting tableView::numberOfRowsInSection sub class of StopsTable::");
     return [sectionBus count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
+    
+    NSLog(@"Entering tableView::titleForHeaderInSection sub class of StopsTable::");
+    NSLog(@"Entering tableView::titleForHeaderInSection sub class of StopsTable::");
+
     return [busSectionTitles objectAtIndex:section];
+    
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSLog(@"Entering tableView::cellForRowAtIndexPath sub class of StopsTable::");
+
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"stopCells" forIndexPath:indexPath];
     
-        // Configure the cell...
-        cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        cell.textLabel.numberOfLines = 0;
-        NSString *sectionTitle = [busSectionTitles objectAtIndex:indexPath.section];
-        NSArray *sectionBus = [BusDict objectForKey:sectionTitle];
-        NSString *bus = [sectionBus objectAtIndex:indexPath.row];
-        cell.textLabel.text = bus;
-        cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
-        return cell;
-}
+    // Configure the cell...
+    cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.textLabel.numberOfLines = 0;
+    NSString *sectionTitle = [busSectionTitles objectAtIndex:indexPath.section];
+    NSArray *sectionBus = [BusDict objectForKey:sectionTitle];
+    NSString *bus = [sectionBus objectAtIndex:indexPath.row];
+    cell.textLabel.text = bus;
+    cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
+    
+    NSLog(@"Exiting tableView::cellForRowAtIndexPath sub class of StopsTable::");
 
+    return cell;
+}
 
 
 /*

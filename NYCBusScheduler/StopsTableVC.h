@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-
 @interface StopsTableVC : UITableViewController
 {
     
@@ -21,6 +20,8 @@
     //public version of the bus numbers
     @public NSMutableArray *tblBusList;
     
+    
+    
     //NSMutableDictionary *NYCPABus;
     //NSMutableDictionary *ThirtyTwoBus;
     //NSMutableDictionary *ThirtyThreeBus;
@@ -30,9 +31,13 @@
     //NSMutableDictionary *NintyNineBus;
     NSMutableDictionary *BusDict;
     
+    //Section titles
     NSArray *busSectionTitles;
     
+    //Bus stops
     NSArray *stringArrayBusStop;
+    
+
     
     
 }

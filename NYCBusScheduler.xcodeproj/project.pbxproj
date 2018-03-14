@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4CEE8FE20D308AB92587463B /* libPods-NYCBusScheduler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */; };
 		4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */; };
+		4E5D680920572CE50014BBA5 /* arrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D680820572CE50014BBA5 /* arrow.jpeg */; };
 		4EB358272038FABD00B6A622 /* 1200px-Lincolntunnel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */; };
 		4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582A2038FE4100B6A622 /* title2.jpeg */; };
 		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
@@ -78,6 +79,7 @@
 		31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYCBusScheduler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NYCBusScheduler.entitlements; sourceTree = "<group>"; };
+		4E5D680820572CE50014BBA5 /* arrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpeg; sourceTree = "<group>"; };
 		4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1200px-Lincolntunnel.jpg"; path = "../../../../Downloads/1200px-Lincolntunnel.jpg"; sourceTree = "<group>"; };
 		4EB3582A2038FE4100B6A622 /* title2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title2.jpeg; sourceTree = "<group>"; };
 		4EB3582E20391BBB00B6A622 /* bus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-32.png"; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 		AD067C7A1F9E71B5000C0630 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E5D680820572CE50014BBA5 /* arrow.jpeg */,
 				4EB3582E20391BBB00B6A622 /* bus-32.png */,
 				4EB3582A2038FE4100B6A622 /* title2.jpeg */,
 				4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */,
@@ -487,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */,
+				4E5D680920572CE50014BBA5 /* arrow.jpeg in Resources */,
 				4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */,
 				4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */,
 				4EB358272038FABD00B6A622 /* 1200px-Lincolntunnel.jpg in Resources */,
@@ -770,6 +774,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = G3P9A8Z2NP;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/NYCBusScheduler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Baker.SurburbanNJBusScheduler;
@@ -784,6 +789,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = G3P9A8Z2NP;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/NYCBusScheduler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Baker.SurburbanNJBusScheduler;

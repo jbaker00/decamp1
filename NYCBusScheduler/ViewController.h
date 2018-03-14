@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
- 
+#import <CoreLocation/CoreLocation.h>
+#import <Mapkit/Mapkit.h>
 
-@interface ViewController : UIViewController 
+
+@interface ViewController : UIViewController  <CLLocationManagerDelegate>
+{
+    CLLocationManager *locationManager;
+    CLLocation *locationMe;
+    CLGeocoder *geocoder;
+    NSString *strMyLoc;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFrom;
 @property (weak, nonatomic) IBOutlet UIButton *btnTo;
@@ -18,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *departureTime;
 
 @property (nonatomic, assign) BOOL from;
+@property (nonatomic, assign) BOOL curLocUsed;
 
 @end
 

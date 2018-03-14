@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface scheduleTableVC : UITableViewController
 {
@@ -15,5 +16,27 @@
     //Name of the bus selected
     @public  NSString *tblFromSectionName;
 
+    //Public version of my location
+    @public  CLLocation *locationMe;
+    
+    //Array of bus stops
+    @public NSArray *tblStopData;
+
+    //Dictionary of busses for the array to show section names if current location selected
+    NSMutableDictionary *BusDict;
+    
+    //Section titles
+    NSArray *busSectionTitles;
+    
+    //Bus stops
+    NSArray *stringArrayBusStop;
+    
+    //array of closest stops
+    NSMutableArray *closestBusStops;
+
+
 }
+
+@property (nonatomic, assign) BOOL curLocUsed;
+
 @end

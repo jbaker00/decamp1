@@ -1,42 +1,42 @@
 NYC_P/A Bus Terminal,1 NA
-32 UNION CITY: 32nd & Bergenline Ave,32
-32 SECAUCUS: Secaucus Plaza,32
-32 LYNDHURST: Valley Brook Ave & Ridge Rd,32
-32 NUTLEY: Park Ave & River Rd,32
-32 NUTLEY: Franklin & Centre St.,32
-32 NUTLEY: Darling Ave & Kingsland Rd,32
-33 NUTLEY: Darling & Kingsland (E),33
-33 BLOOMFIELD: Broad & Liberty (E),33
-33 MONTCLAIR: Gates & Bloomfield (E),33
-33 VERONA: Lakeside Ave (E),33
-33 W. CALDWELL: Kirkpatrick Lane (E),33
-44 LYNDHURST: Ridge Rd & Valley Brook (E),44
-44 Nutley Park Ave & Washington Ave (E),44
-44 N.ARLINGTON: Harding & Ridge (E),44
-44 N.ARLINGTON Ross Lane & Bell Tnpk (E),44
-44 KEARNY: Bergen Ave. & Kearny Ave,44
-44 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,44
-44 BELLEVILLE: Washington & Rutgers (E),44
-44 N.NEWARK: Heller Pky & Clifton Ave.,44
-44 BLOOMFIELD: Montgomery & Franklin (E),44
-66 MONTCLAIR University Campus Bus Stop,66
-66 CLIFTON: Haddonfield & Grove St.,66
-66 UPPER_MTC: Bellevue Plaza,66
-66 UPPER_MNCL: Watchung Plaza,66
-66 MONTCLAIR: YMCA on Park,66
-66 W.ORANGE Mississippi & Harrison,66
-66 W.ORANGE Eagle Rock Avenue & Prospect,66
-66 W.ORANGE Pleasantdale Ctr.,66
-66 ROSELAND Center Hudson City Savings Bank,66
-66 W.CALDWELL KirkPatrick Lane,66
-88 NUTLEY: W. Passaic & Darling Ave,88
-88 BLOOMFIELD: Broad & Liberty (E),88
-88 BLOOMFIELD: Prospect St & Dodd St,88
-88 E.Orange: Prospect & Williams St.,88
-88 ORANGE: Scotland & Central (E),88
-99 LYNDHURST: Ridge Rd & Valley Brook (E),99
-99 Nutley Park Ave & Washington Ave (E),99
-99 N.ARLINGTON: Harding & Ridge (E),99
-99 N.ARLINGTON Ross Lane & Bell Tnpk (E),99
-99 KEARNY: Bergen Ave. & Kearny Ave,99
-99 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,99
+32 UNION CITY: 32nd & Bergenline Ave,32, 40.7720937,-74.02925549999998
+32 SECAUCUS: Secaucus Plaza,32, 40.7860965,-74.04513550000001
+32 LYNDHURST: Valley Brook Ave & Ridge Rd,32, 40.8085932,-74.1185989
+32 NUTLEY: Park Ave & River Rd,32, 40.8112574,-74.13998930000002
+32 NUTLEY: Franklin & Centre St.,32, 40.8151059,-74.16249590000001
+32 NUTLEY: Darling Ave & Kingsland Rd,32, 40.8368268,-74.16321979999998
+33 NUTLEY: Darling & Kingsland (E),33,40.8368268,-74.16321979999998
+33 BLOOMFIELD: Broad & Liberty (E),33, 40.7956235,-74.19743940000001
+33 MONTCLAIR: Gates & Bloomfield (E),33, 40.8110451,-74.21395840000002
+33 VERONA: Lakeside Ave (E),33,40.8278853,-74.2476173
+33 W. CALDWELL: Kirkpatrick Lane (E),33, 40.85065729999999,-74.29918199999997
+44 LYNDHURST: Ridge Rd & Valley Brook (E),44, 40.8085932,-74.1185989
+44 Nutley Park Ave & Washington Ave (E),44, 40.8117932,-74.14508619999998
+44 N.ARLINGTON: Harding & Ridge (E),44, 40.7833732,-74.13724209999998
+44 N.ARLINGTON Ross Lane & Bell Tnpk (E),44, 40.7854777,-74.14541350000002
+44 KEARNY: Bergen Ave. & Kearny Ave,44,40.7593737,-74.15177949999998
+44 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,44,40.7472597,-74.15637549999997
+44 BELLEVILLE: Washington & Rutgers (E),44,40.787369,-74.15287390000003
+44 N.NEWARK: Heller Pky & Clifton Ave.,44,40.7758322,-74.16695229999999
+44 BLOOMFIELD: Montgomery & Franklin (E),44,40.79212,-74.1949439
+66 MONTCLAIR University Campus Bus Stop,66,40.8644792,-74.19855969999998
+66 CLIFTON: Haddonfield & Grove St.,66,40.8577678,-74.18918309999998
+66 UPPER_MTC: Bellevue Plaza,66,40.841206,-74.20878299999998
+66 UPPER_MNCL: Watchung Plaza,66,40.83015150000001,-74.20620400000001
+66 MONTCLAIR: YMCA on Park,66,40.81551899999999,-74.218032
+66 W.ORANGE Mississippi & Harrison,66,40.7934664,-74.23281789999999
+66 W.ORANGE Eagle Rock Avenue & Prospect,66,40.8029401,-74.24776079999998
+66 W.ORANGE Pleasantdale Ctr.,66,40.8169035,-74.26595379999998
+66 ROSELAND Center Hudson City Savings Bank,66,40.8205469,-74.29508650000002
+66 W.CALDWELL KirkPatrick Lane,66,40.85065729999999,-74.29918199999997
+88 NUTLEY: W. Passaic & Darling Ave,88,40.8368268,-74.16321979999998
+88 BLOOMFIELD: Broad & Liberty (E),88,40.7956235,-74.19743940000001
+88 BLOOMFIELD: Prospect St & Dodd St,88,40.7811692,-74.20501179999997
+88 E.Orange: Prospect & Williams St.,88,40.7676636,-74.21703070000001
+88 ORANGE: Scotland & Central (E),88,40.7684358,-74.2407847
+99 LYNDHURST: Ridge Rd & Valley Brook (E),99,40.8085932,-74.1185989
+99 Nutley Park Ave & Washington Ave (E),99,40.8117932,-74.14508619999998
+99 N.ARLINGTON: Harding & Ridge (E),99,40.7833732,-74.13724209999998
+99 N.ARLINGTON Ross Lane & Bell Tnpk (E),99,40.071363,-80.75813470000003
+99 KEARNY: Bergen Ave. & Kearny Ave,99,40.7593737,-74.15177949999998
+99 HARRISON: F. Rodgers Blvd. & Cleveland Ave.,99,40.7472597,-74.15637549999997
