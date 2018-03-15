@@ -244,13 +244,28 @@
     //Try and remove the 1 NA section header from the dictionary
    // [BusDict removeObjectForKey:@"1 NA"];
 
+   
     
-    //do the set of the final bus stop string into an array since we finished building it in the loop
-    stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
-    //add the string array of the bus stops as well as the key into the array
+    if(tempLastBusNum)
+    {
+        //do the set of the final bus stop string into an array since we finished building it in the loop
+        stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
+        //add the string array of the bus stops as well as the key into the array
+    }
+    else
+    {
+        //No busses so set the no busses string
+        tempLastBusNum = @"None";
+        //do it this way so we pass variables to the dictionary set object and we get a nsArray and do not crash when we get to numberofrowsinsection function
+        [BusStopsString setString:@"No Busses within .5 miles of your current location"];
+        stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
+    }
+    
+    //Set the string on the bus stop dictionary and they key
     [BusDict setObject:stringArrayBusStop forKey:tempLastBusNum];
 
     NSLog(@"Exiting scheduleTableVC::InitBusDictionaries");
+
 }
 
 /*
