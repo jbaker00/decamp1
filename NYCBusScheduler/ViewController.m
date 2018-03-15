@@ -655,12 +655,21 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
             NSLog(@"either kCLAuthorizationStatusRestricted or kCLAuthorizationStatusDenied or kCLAuthorizationStatusNotDetermined is set and therefore we need to prompt for user authorization ");
             [locationManager requestWhenInUseAuthorization];
         }
-        NSLog(@"We are already authorized for using location services so lets start using them");
+        NSLog(@"We are  authorized for using location services so lets start using them");
+        
+        //Change the text for the button to say loading
+        [_btnFrom setTitle:@"Loading..." forState:UIControlStateNormal];
+        
+        //refresh the UI to show the button text saying the reverse geo locaiton
+        [_btnFrom setNeedsLayout];
+        [_btnFrom layoutIfNeeded];
+        [self setCurLocUsed:YES];
     }
     else
     {
         NSString *strError = @"pleaase turn on location services";
         NSLog(@"%@", strError);
+        [self setCurLocUsed:NO];
 
     }
     NSLog(@"Entering ViewController::getCurLocation");
@@ -719,44 +728,47 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error)
      {
-         NSLog(@"Entering ViewController::reverseGeocodeLocation");
+            NSLog(@"Entering ViewController::reverseGeocodeLocation");
+            if(self.curLocUsed)
+            {
+                 
+                 NSLog(@"Finding address");
+                 if (error)
+                 {
+                     NSLog(@"Error %@", error.description);
+                 }
+                 else
+                 {
+                     NSLog(@"there are %zd placemarks in the array of placemarks", placemarks.count);
+                     CLPlacemark *placemark = placemarks[0];// [placemarks lastObject];
+                     NSLog(@"%@", placemark.name);
+                     NSLog(@"%@", placemark.ISOcountryCode);
+                     NSLog(@"%@", placemark.country);
+                     NSLog(@"%@", placemark.postalCode);
+                     NSLog(@"%@", placemark.administrativeArea);
+                     NSLog(@"%@", placemark.subAdministrativeArea);
+                     NSLog(@"%@", placemark.locality);
+                     NSLog(@"%@", placemark.subLocality);
+                     NSLog(@"%@", placemark.thoroughfare);
+                     NSLog(@"%@", placemark.subThoroughfare);
+                     NSLog(@"%@", placemark.timeZone);
+                     
+                    strMyLoc = [NSString stringWithFormat:@"%@ %@ %@ %@ ", placemark.subThoroughfare, placemark.thoroughfare, placemark.locality, placemark.administrativeArea];
+                     
+                     //Change the text for the button to say current location
+                     [_btnFrom setTitle:strMyLoc forState:UIControlStateNormal];
 
-         NSLog(@"Finding address");
-         if (error)
-         {
-             NSLog(@"Error %@", error.description);
-         }
-         else
-         {
-             NSLog(@"there are %zd placemarks in the array of placemarks", placemarks.count);
-             CLPlacemark *placemark = placemarks[0];// [placemarks lastObject];
-             NSLog(@"%@", placemark.name);
-             NSLog(@"%@", placemark.ISOcountryCode);
-             NSLog(@"%@", placemark.country);
-             NSLog(@"%@", placemark.postalCode);
-             NSLog(@"%@", placemark.administrativeArea);
-             NSLog(@"%@", placemark.subAdministrativeArea);
-             NSLog(@"%@", placemark.locality);
-             NSLog(@"%@", placemark.subLocality);
-             NSLog(@"%@", placemark.thoroughfare);
-             NSLog(@"%@", placemark.subThoroughfare);
-             NSLog(@"%@", placemark.timeZone);
-             
-            strMyLoc = [NSString stringWithFormat:@"%@ %@ %@ %@ ", placemark.subThoroughfare, placemark.thoroughfare, placemark.locality, placemark.administrativeArea];
-             
-             //Change the text for the button to say current location
-             [_btnFrom setTitle:strMyLoc forState:UIControlStateNormal];
+                     //refresh the UI to show the button text saying the reverse geo locaiton
+                     [_btnFrom setNeedsLayout];
+                     [_btnFrom layoutIfNeeded];
+                     
+                     //set the instance variable to say the current location is being used
+                     [self setCurLocUsed:YES];
 
-             //refresh the UI to show the button text saying the reverse geo locaiton
-             [_btnFrom setNeedsLayout];
-             [_btnFrom layoutIfNeeded];
-             
-             //set the instance variable to say the current location is being used
-             [self setCurLocUsed:YES];
-
-             //_btnFrom.titleLabel.text = strMyLoc;
-         }
-         NSLog(@"Exiting ViewController::reverseGeocodeLocation");
+                     //_btnFrom.titleLabel.text = strMyLoc;
+                 }
+            NSLog(@"Exiting ViewController::reverseGeocodeLocation");
+            }
      }];
     NSLog(@"Exiting ViewController::reverseGeocode");
 
