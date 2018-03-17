@@ -741,31 +741,40 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
                  {
                      NSLog(@"there are %zd placemarks in the array of placemarks", placemarks.count);
                      CLPlacemark *placemark = placemarks[0];// [placemarks lastObject];
-                     NSLog(@"%@", placemark.name);
-                     NSLog(@"%@", placemark.ISOcountryCode);
-                     NSLog(@"%@", placemark.country);
-                     NSLog(@"%@", placemark.postalCode);
-                     NSLog(@"%@", placemark.administrativeArea);
-                     NSLog(@"%@", placemark.subAdministrativeArea);
-                     NSLog(@"%@", placemark.locality);
-                     NSLog(@"%@", placemark.subLocality);
-                     NSLog(@"%@", placemark.thoroughfare);
-                     NSLog(@"%@", placemark.subThoroughfare);
-                     NSLog(@"%@", placemark.timeZone);
+                     NSLog(@"name = %@", placemark.name);
+                     NSLog(@"ISOcountryCode = %@", placemark.ISOcountryCode);
+                     NSLog(@"country = %@", placemark.country);
+                     NSLog(@"postalCode = %@", placemark.postalCode);
+                     NSLog(@"administrativeArea = %@", placemark.administrativeArea);
+                     NSLog(@"subAdministrativeArea = %@", placemark.subAdministrativeArea);
+                     NSLog(@"locality = %@", placemark.locality);
+                     NSLog(@"subLocality = %@", placemark.subLocality);
+                     NSLog(@"thoroughfare = %@", placemark.thoroughfare);
+                     NSLog(@"subThoroughfare = %@", placemark.subThoroughfare);
+                     NSLog(@"timeZone = %@", placemark.timeZone);
                      
                     strMyLoc = [NSString stringWithFormat:@"%@ %@ %@ %@ ", placemark.subThoroughfare, placemark.thoroughfare, placemark.locality, placemark.administrativeArea];
                      
-                     //Change the text for the button to say current location
-                     [_btnFrom setTitle:strMyLoc forState:UIControlStateNormal];
+                     //Check to see if this is NYC for state and city and if so switch the start location back to Port Authority and do a popup saying you are in nyc
+                     if([placemark.administrativeArea isEqualToString:@"NY"] && [placemark.subLocality isEqualToString:@"Manhattan"])
+                     {
+                         //Change the text for the button to say current location
+                         [_btnFrom setTitle:@"NYC_P/A Bus Terminal" forState:UIControlStateNormal];
+                         
+                         //set the instance variable to say the current location is being used
+                         [self setCurLocUsed:NO];
+                     }
+                     else
+                     {
+                         //Change the text for the button to say current location
+                         [_btnFrom setTitle:strMyLoc forState:UIControlStateNormal];
 
+                         //set the instance variable to say the current location is being used
+                         [self setCurLocUsed:YES];
+                     }
                      //refresh the UI to show the button text saying the reverse geo locaiton
                      [_btnFrom setNeedsLayout];
                      [_btnFrom layoutIfNeeded];
-                     
-                     //set the instance variable to say the current location is being used
-                     [self setCurLocUsed:YES];
-
-                     //_btnFrom.titleLabel.text = strMyLoc;
                  }
             NSLog(@"Exiting ViewController::reverseGeocodeLocation");
             }
