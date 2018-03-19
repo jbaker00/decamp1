@@ -373,6 +373,8 @@ NSString *busRoutes;
     return returnString;
 }
 
+
+//Is this function even needed $$TODO$$  we return the btn text string we used to have to create the string from the number and the text but they are together now
 - (NSString*)fillTableHeader:(NSString *)strBusNumber
 {
     NSLog(@"Entering ViewController::fillTableHeader");
@@ -448,9 +450,12 @@ NSString *busRoutes;
     return(0);
 }
 
-- (void)findStops:(NSMutableArray *)busArray iBusStart:(int)iBusStart iBusStop:(int)iBusStop stringBody:(NSMutableString **)stringBody
+- (void)findStops:(NSMutableArray *)busArray iBusStart:(int)iBusStart iBusStop:(int)iBusStop
 {
     NSLog(@"Entering ViewController::findStops");
+ 
+    NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];
+    
     for(int i=0; i<busArray.count; i++)
     {
         //check the index that fits for the specific stop
@@ -466,16 +471,16 @@ NSString *busRoutes;
                 NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
                 
                 //Take the row info and place it in one string
-                [*stringBody appendString:busArray[i][iBusStart]];
-                [*stringBody appendString:@" - "];
-                [*stringBody appendString:busArray[i][iBusStop]];
-                NSLog(@"The output for the table will be %@", *stringBody);
+                [stringBody appendString:busArray[i][iBusStart]];
+                [stringBody appendString:@" - "];
+                [stringBody appendString:busArray[i][iBusStop]];
+                NSLog(@"The output for the table will be %@", stringBody);
                 
                 //Add the string to an output array
-                [outputArray addObject:*stringBody];
+                [outputArray addObject:stringBody];
                 
                 //clear out string for next placement in of new string
-                *stringBody = [NSMutableString stringWithString:@""];
+                stringBody = [NSMutableString stringWithString:@""];
             }
         }
         
@@ -531,6 +536,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
         //Grab the view controller
         StopsTableVC *controller = [segue destinationViewController];
         
+        //I do not think this part of the code could ever be hit if self.from == YES
         if(self.from == YES)
         {
             //set the NSArrary for the table to be filled
@@ -574,12 +580,14 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
             NSLog(@"Array containg the bus schedule for the route %@ bus is %@", strBusNumber, busArray);
             
             //Fill ou the header row
-            stringTitle = [self fillTableHeader:strBusNumber];
+            //stringTitle = [self fillTableHeader:strBusNumber];
+            stringTitle = _btnFrom.titleLabel.text;
             NSLog(@"Title for the header row returned fromt the fillTableHeader function is %@", stringTitle);
             
-            //Getting the Start and Stop index within the array
+            //Get the file name of the bus stop index file
             NSString *fileStopIndexNameBody = [self getBusStopIndexFileName:strBusNumber];
             NSLog(@"The file name of the bus stop index is %@", fileStopIndexNameBody);
+            
             //Get the from(aka. start) stop index in the file
             int iBusStart = [self loadStopIndexFromFile:fileStopIndexNameBody busStopName:_btnFrom.titleLabel.text];
             NSLog(@"Starting bus stop index is %i", iBusStart);
@@ -587,13 +595,11 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
             int iBusStop = [self loadStopIndexFromFile:fileStopIndexNameBody busStopName:_btnTo.titleLabel.text];
             NSLog(@"Stopping bus stop index is %i", iBusStop);
             
-            //define NSMutableString for the title in the output schedule here
-            NSMutableString *stringBody = [NSMutableString stringWithCapacity:1];
             //define allocate the output mutable array here string here for the temp var for the fill here
             outputArray = [NSMutableArray arrayWithCapacity:1];
             
             //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
-            [self findStops:busArray iBusStart:iBusStart iBusStop:iBusStop stringBody:&stringBody];
+            [self findStops:busArray iBusStart:iBusStart iBusStop:iBusStop];
             NSLog(@"Array containing the bus list for the output is %@",outputArray);
             
             //Assign that new array to a table view controller that is the next ending segway
@@ -614,8 +620,14 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
             
             //Pass over my locaiton
             controllerOut->locationMe = locationMe;
+            
             //Using the current locaiton so pass it over
             [controllerOut setCurLocUsed:YES];
+            
+            //pass in our destination
+            controllerOut->strDestination = _btnTo.titleLabel.text;
+            
+            controllerOut->nsiWeekend = _segWeekday.selectedSegmentIndex;
         }
         
     }

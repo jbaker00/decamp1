@@ -94,7 +94,14 @@
         NSString *sectionTitle = [busSectionTitles objectAtIndex:section];
         NSArray *sectionBus = [BusDict objectForKey:sectionTitle];
         NSLog(@"Exiting scheduleTableVC::numberOfRowsInSection");
-        return [sectionBus count];
+        if([sectionTitle isEqualToString:@"NA"])
+        {
+            return 1;
+        }
+        else
+        {
+            return [sectionBus count];
+        }
     }
     else
     {
@@ -121,10 +128,11 @@
 
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellSchedule" forIndexPath:indexPath];
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     NSLog(@"Entering scheduleTableVC::cellForRowAtIndexPath");
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellSchedule" forIndexPath:indexPath];
 
     if(self.curLocUsed == YES)
     {
@@ -133,6 +141,7 @@
         NSString *sectionTitle = [busSectionTitles objectAtIndex:indexPath.section];
         NSArray *sectionBus = [BusDict objectForKey:sectionTitle];
         NSString *bus = [sectionBus objectAtIndex:indexPath.row];
+        //NSString *bus = sectionBus[indexPath.row];
         cell.textLabel.text = bus;
         cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
     }
@@ -155,19 +164,15 @@
      {
          //Create an array of CLLocation items that will store the closest stops
          closestBusStops = [[NSMutableArray alloc] init];
-         //CLLocation *stopLoc = [[CLLocation alloc]init];
+
          //start the loop of the srcBusList looking for the distane between it and current location
          for(int i=0;i<tblStopData.count;i++)
          {
              if(![tblStopData[i][0]  isEqual: @"NYC_P/A Bus Terminal"])
              {
-                 //NSLog(@"Log locaiton from file is %f",[tblStopData[i][2] doubleValue]);
-                 //NSLog(@"Lat location from file is %f",[tblStopData[i][3] doubleValue]);
                  //get the  annotation lat and log into a CLocation
                  CLLocation *stopLoc = [[CLLocation alloc] initWithLatitude:[tblStopData[i][2] doubleValue] longitude:[tblStopData[i][3] doubleValue]];
-                 //stopLoc.coordinate.latitude = [tblStopData[i][2] doubleValue];
-                 //stopLoc.cordiante.longitude = [tblStopData[i][3]doubleValue]];
-                 
+         
                  //Get the distance between current locaiton and the annotation location
                  CLLocationDistance distance = [locationMe distanceFromLocation:stopLoc];
                  
@@ -198,75 +203,320 @@
 {
     NSLog(@"Entering scheduleTableVC::InitBusDictionaries");
 
+    //Initilize the Bus Dictionary so that we can use it for the filling out of the Output table
     BusDict = [NSMutableDictionary dictionaryWithCapacity:1];
     
-
+    //This is the temp variable that we will use to evaluate new sections needed
     NSString *tempLastBusNum;// = @"1 NA";
-    //Load the bus dictionary
-    NSMutableString *BusStopsString = [NSMutableString stringWithCapacity:1];
     
-    //$$TODO$$ could probally do all this in a nsarray from the begining as the value of the nsdictionary instead of using a string and then moving that string into an array and then placing in a nsdictionary
-    //Find the buss lists
+     //Find the buss lists
     for(int i=0;i<closestBusStops.count;i++)
     {
-        //Set the last bus remembered to the current bus number
-        //tempLastBusNum = closestBusStops[i][1];
-        
         //Check to see if the current bus is the same as the last bus in the loop so we can see if we should create a new key or use last key and concatinate the string
-        if(![tempLastBusNum isEqualToString:closestBusStops[i][1]])
+        if(![tempLastBusNum isEqualToString:closestBusStops[i][0]])
         {
             //we need to set the tempLastBusNum to the first bus if its set to "" since its the first time in the loop, we cant do a fwd load of the array or else it will not enter into this loop
-            if(!tempLastBusNum)
-                tempLastBusNum = closestBusStops[i][1];
+            tempLastBusNum = closestBusStops[i][0];
             
             //Load the comma delimited string BusStopString into a string Array so it will store in the dictionary and be dequeued properly
-            stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
+            arrBusStops = [self findStopTimesAtStart:closestBusStops[i][0]];
+    
             //place the key (which is the bus number, and the string array with the stops in the object dictionary
-            [BusDict setObject:stringArrayBusStop forKey:tempLastBusNum];
-            //change the string that has all the comma delimited bus stops to hold the new bus stop from the new bus
-            [BusStopsString setString:closestBusStops[i][0]];
+            [BusDict setObject:arrBusStops forKey:tempLastBusNum];
         }
-        else  //else build out the string
-        {
-            //if there is already a bus stop in the string then place a comma in there
-            if(![BusStopsString isEqualToString:@""])
-            {
-                [BusStopsString appendString:@","]; //place the comma in the string
-            }
-            //place the bus stop in the string
-            [BusStopsString appendString:closestBusStops[i][0]];
-        }
-        
-        //Set the last bus remembered to the current bus number
-        tempLastBusNum = closestBusStops[i][1];
     }
     
-    //Try and remove the 1 NA section header from the dictionary
-   // [BusDict removeObjectForKey:@"1 NA"];
-
-   
-    
-    if(tempLastBusNum)
-    {
-        //do the set of the final bus stop string into an array since we finished building it in the loop
-        stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
-        //add the string array of the bus stops as well as the key into the array
-    }
-    else
+    if(!tempLastBusNum)
     {
         //No busses so set the no busses string
         tempLastBusNum = @"None";
         //do it this way so we pass variables to the dictionary set object and we get a nsArray and do not crash when we get to numberofrowsinsection function
-        [BusStopsString setString:@"No Busses within .5 miles of your current location"];
-        stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
+        NSMutableString *BusStopString = [[NSMutableString alloc] init];
+        [BusStopString setString:@"No Busses within .5 miles of your current location"];
+        
+        //alloc the bus dictionary
+        NSMutableArray *BusStopsArray = [[NSMutableArray alloc] init];;
+        
+        //add our output to the dict
+        [BusStopsArray addObject:BusStopString];
+        
+        //add the no busses to output array
+        [BusDict setObject:BusStopsArray forKey:@"NA"];
+
+        //stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
     }
-    
-    //Set the string on the bus stop dictionary and they key
-    [BusDict setObject:stringArrayBusStop forKey:tempLastBusNum];
+
 
     NSLog(@"Exiting scheduleTableVC::InitBusDictionaries");
-
 }
+
+
+//method to look up the times given the stop name
+- (NSArray*)findStopTimesAtStart:(NSString*)strStart
+{
+    NSLog(@"Entering scheduleTableVC::findStopTimesAtStop");
+    //strStart = start location
+    //strDestination = stop location
+    
+    NSArray *builderArray;
+    
+    //Take the bus number and build out the file name that we need to load
+    //Lookup Bus Number
+    
+    //get the bus number take the strStart and just the text from begining of file till the first space
+    NSArray *arrBusNum = [strStart componentsSeparatedByString:@" "];
+    NSLog(@"The bus number is %@", arrBusNum[0]);
+    
+    //Build out the file name to use to look up the bus info
+    //Get the file name of the bus schedule
+    NSString *fileNameBody = [self getBusScheduleFileName:arrBusNum[0] fromLocation:strStart];
+    NSLog(@"The file name of the bus schedule is %@", fileNameBody);
+    
+    //Load the file of the bus schedule
+    NSMutableArray *busArray = [self loadStopsFromFile:fileNameBody];
+    NSLog(@"Array containg the bus schedule for the route %@ bus is %@", arrBusNum[0], busArray);
+    
+    //Get the file name of the bus stop index file
+    NSString *fileStopIndexNameBody = [self getBusStopIndexFileName:arrBusNum[0] fromLocation:strStart];
+    NSLog(@"The file name of the bus stop index is %@", fileStopIndexNameBody);
+    
+    //Get the from(aka. start) stop index in the file
+    int iBusStart = [self loadStopIndexFromFile:fileStopIndexNameBody busStopName:strStart];
+    NSLog(@"Starting bus stop index is %i", iBusStart);
+    
+    //Get the to(aka. destination) stop index in the file
+    int iBusStop = [self loadStopIndexFromFile:fileStopIndexNameBody busStopName:strDestination];
+    NSLog(@"Stopping bus stop index is %i", iBusStop);
+    
+    //loop through the new array looking for all line numbers that have _btnFromField.titleLabel.text in it and place those lines into a new array
+    builderArray = [self findStops:busArray iBusStart:iBusStart iBusStop:iBusStop];
+    
+    NSLog(@"Exiting scheduleTableVC::findStopTimesAtStop");
+    
+    return builderArray;
+}
+
+-(NSMutableArray*)loadStopsFromFile:(NSString*)fileName
+{
+    NSLog(@"Entering scheduleTableVC::loadStopsFromFile");
+    
+    //Load the file of the fileName
+    //Set the error Variable to NIL that we will check later
+    NSError *error = nil;
+    //Setup the bundle so we can read the file
+    NSBundle *main =[NSBundle mainBundle];
+    //Setup the file name in the bundlle
+    NSString *path = [main pathForResource:fileName ofType:@"txt"];
+    //Load the file contents into a string
+    NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    
+    //Check for the error code to see if the file read worked
+    if(nil != error)
+    {
+        NSLog(@"Error Resding URL with error %@", error.localizedDescription);
+    }
+    
+    
+    //Look at the contents of the file loaded into the string and parse it for the columns per row
+    //Set the row seperator
+    NSArray* rows = [fileContents componentsSeparatedByString:@"\n"];
+    
+    //counters
+    int iRow = 0;
+    int iColumn = 0;
+    
+    
+    //MainArray
+    NSMutableArray *rowArray = [NSMutableArray array];
+    
+    for (NSString *row in rows){
+        {
+            if(![row isEqualToString:@""])
+            {
+                //NSLog(@"Starting off row %i with contents %@", iRow, row);
+                iRow++; //increent the row counter
+                iColumn = 0;
+                NSMutableArray *columnArray = [NSMutableArray array];
+                
+                NSArray* columns = [row componentsSeparatedByString:@","];
+                for(NSString *column in columns)
+                {
+                    //NSLog(@"Adding information to column %i with information %@", iColumn, column);
+                    iColumn++; //increment the column counter
+                    [columnArray addObject:column];
+                }
+                
+                [rowArray addObject:columnArray];
+            }
+            else
+            {
+                //NSLog(@"We found a blank line");
+            }
+        }
+        //NSLog(@"Filled in one row in the table with %i rows and %i columns", iRow, iColumn);
+    }
+    //NSLog(@"Filled in all rows in the table");
+    
+    NSLog(@"Exiting scheduleTableVC::loadStopsFromFile");
+    
+    return rowArray;
+}
+
+- (NSArray *)findStops:(NSMutableArray *)busArray iBusStart:(int)iBusStart iBusStop:(int)iBusStop
+{
+    NSLog(@"Entering scheduleTableVC::findStops");
+    
+    //NSMutableString *returnString = [NSMutableString stringWithCapacity:1];
+    NSMutableArray *stringArray = [[NSMutableArray alloc] init];
+    NSMutableString *stringBuilder = [NSMutableString stringWithCapacity:1];
+    for(int i=0; i<busArray.count; i++)
+    {
+        //check the index that fits for the specific stop
+        if(![busArray[i][iBusStart] isEqualToString:@""])
+        {
+            if(![busArray[i][iBusStop] isEqualToString:@""])
+            {
+                //NSLog(@"Starting stop name is %@", _btnFrom.titleLabel.text);
+                NSLog(@"Index of the starting stop name in the array is %i", iBusStart);
+                NSLog(@"Starting stop time is %@", busArray[i][iBusStart]);
+                //NSLog(@"Stopping stop name is %@", _btnTo.titleLabel.text);
+                NSLog(@"Index of the stopping stop name in the array is %i", iBusStop);
+                NSLog(@"Stopping stop time is %@",busArray[i][iBusStop]);
+                
+                //Take the row info and place it in one string
+                [stringBuilder appendString:busArray[i][iBusStart]];
+                [stringBuilder appendString:@" - "];
+                [stringBuilder appendString:busArray[i][iBusStop]];
+                NSLog(@"The output for the table will be %@", stringBuilder);
+                
+                //add the string to the array
+                [stringArray addObject:stringBuilder];
+                
+                //Add a delimiter to the output string
+                //[returnString stringByAppendingString:@","];
+                //Add the string to an output string
+                //[returnString stringByAppendingString:stringBody];
+                
+                //clear out string for next placement in of new string
+                stringBuilder = [NSMutableString stringWithString:@""];
+            }
+        }
+        
+    }
+    if(!stringArray)
+    {
+        //Add the string to an output array
+        //[stringBody stringByAppendingString:@"No Bus Schedule Available for Route"];
+        [stringArray addObject:@"No Bus Schedule Available for Route"];
+    }
+
+    NSLog(@"Entering scheduleTableVC::findStops");
+    return stringArray;
+}
+
+
+//Function to load strings into an array from a file
+-(int)loadStopIndexFromFile:(NSString*)fileName busStopName:(NSString*)stopName//add a 2nd value of an array name
+{
+    NSLog(@"Entering scheduleTableVC::loadStopIndexFromFile");
+    
+    //Set the error Variable to NIL that we will check later
+    NSError *error = nil;
+    //Setup the bundle so we can read the file
+    NSBundle *main =[NSBundle mainBundle];
+    //Setup the file name in the bundlle
+    NSString *path = [main pathForResource:fileName ofType:@"txt"];
+    //Load the file contents into a string
+    NSString *fileContents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    
+    //Check for the error code to see if the file read worked
+    if(nil != error)
+    {
+        NSLog(@"Error Resding URL with error %@", error.localizedDescription);
+    }
+    
+    //Look at the contents of the file loaded into the string and parse it for the columns per row
+    //Set the row seperator
+    NSArray* rows = [fileContents componentsSeparatedByString:@"\n"];
+    
+    int i = 0; //counter for the string array
+    
+    for (NSString *row in rows)
+    {
+        if([row isEqualToString:stopName])
+        {
+            NSLog(@"Exiting ViewController::loadStopIndexFromFile");
+            return i;
+        }
+        i++;
+    }
+    NSLog(@"Exiting scheduleTableVC::loadStopIndexFromFile");
+    return(0);
+}
+
+- (NSString *)getBusStopIndexFileName:(NSString *)strBusNumber fromLocation:(NSString*)fromStop
+{
+    NSLog(@"Entering scheduleTableVC::getBusStopIndexFileName");
+    
+    NSMutableString *fileNameBody; //string to store the file name
+    
+    fileNameBody = [NSMutableString stringWithCapacity:1];
+    
+    [fileNameBody appendString:strBusNumber];//append the bus number
+    
+    //append to or from NYC
+    if([fromStop isEqualToString:@"NYC_P/A Bus Terminal"])
+    {
+        [fileNameBody appendString:@"fromNYC"]; //append the to for from NYC
+    }
+    else
+    {
+        [fileNameBody appendString:@"toNYC"]; //append the to for from NYC
+    }
+    NSString *returnString = [fileNameBody stringByTrimmingCharactersInSet:
+                              [NSCharacterSet whitespaceCharacterSet]];
+    
+    NSLog(@"Exiting scheduleTableVC::getBusStopIndexFileName");
+    return returnString;
+}
+
+- (NSString *)getBusScheduleFileName:(NSString *)strBusNumber fromLocation:(NSString*)fromStop{
+    NSLog(@"Entering scheduleTableVC::getBusScheduleFileName");
+    
+    
+    NSMutableString *fileNameBody; //string to store the file name
+    
+    fileNameBody = [NSMutableString stringWithCapacity:1];
+    
+    [fileNameBody appendString:strBusNumber];//append the bus number
+    
+    //append to or from NYC
+    if([fromStop isEqualToString:@"NYC_P/A Bus Terminal"])
+    {
+        [fileNameBody appendString:@"fromNYC"]; //append the to for from NYC
+    }
+    else
+    {
+        [fileNameBody appendString:@"toNYC"]; //append the to for from NYC
+    }
+    
+    //append the weekday or weekend to the string
+    if(nsiWeekend == 0)
+    {
+        [fileNameBody appendString:@"Weekdays"];
+    }
+    else
+    {
+        [fileNameBody appendString:@"Weekend"];
+    }
+    NSString *returnString = [fileNameBody stringByTrimmingCharactersInSet:
+                              [NSCharacterSet whitespaceCharacterSet]];
+    
+    NSLog(@"Exiting scheduleTableVC::getBusScheduleFileName");
+    return returnString;
+}
+
+
 
 /*
 // Override to support conditional editing of the table view.
