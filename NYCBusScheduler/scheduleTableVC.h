@@ -31,8 +31,15 @@
     //Bus stops
     NSArray *stringArrayBusStop;
     
+    //Bus stops
+    NSArray *arrBusStops;
+    
     //array of closest stops
     NSMutableArray *closestBusStops;
+    
+    NSString *strDestination;
+    
+    NSInteger nsiWeekend;
 
 
 }
