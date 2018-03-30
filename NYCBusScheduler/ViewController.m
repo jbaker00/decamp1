@@ -10,30 +10,47 @@
 #import "TableViewController.h"
 #import "StopsTableVC.h"
 #import "scheduleTableVC.h"
-@import GoogleMobileAds;
+#import <AmazonAd/AmazonAdView.h>
+#import <AmazonAd/AmazonAdOptions.h>
+#import <AmazonAd/AmazonAdError.h>
+
+//@import GoogleMobileAds;
 
 
-@interface ViewController () <GADBannerViewDelegate>
+/*@interface ViewController () <GADBannerViewDelegate>
 {
 }
 
 @property(nonatomic, strong) GADBannerView *bannerView;
 
 
+@end*/
+
+@interface ViewController () <AmazonAdViewDelegate>
+{
+    
+}
+
+@property (nonatomic, retain) AmazonAdView *amazonAdView;
+
 @end
 
+
+    NSMutableArray *tblBusSrc;
+    NSMutableArray *tblBusDest;
+    NSMutableArray *outputArray;
+    NSString *stringTitle;
+    NSString *busRoutes;
+
+
 @implementation ViewController
-NSMutableArray *tblBusSrc;
-NSMutableArray *tblBusDest;
-NSMutableArray *outputArray;
-NSString *stringTitle;
-NSString *busRoutes;
 
-
+@synthesize amazonAdView;
+@synthesize lastOrientation;
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     return YES;
     
 }
@@ -44,11 +61,11 @@ NSString *busRoutes;
     // Do any additional setup after loading the view, typically from a nib.
     // Initialize Data
     NSLog(@"Entering ViewController::viewDidLoad");
-    
+    /*
     //Add loading
     // In this case, we instantiate the banner with desired ad size.
     self.bannerView = [[GADBannerView alloc]
-                       initWithAdSize:kGADAdSizeLargeBanner /*kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+                       initWithAdSize:kGADAdSizeLargeBanner kGADAdSizeMediumRectangle kGADAdSizeBanner];
     NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
 
     //set the googleAds delegate
@@ -65,7 +82,7 @@ NSString *busRoutes;
     NSLog(@"Calling to load the banner ad into the view");
     [self.bannerView loadRequest:[GADRequest request]];
     NSLog(@"Called to load the banner ad into the view");
-
+*/
     [self placeTextBorder:self.btnTo];
     [self placeTextBorder:self.btnFrom];
     
@@ -89,7 +106,7 @@ NSString *busRoutes;
 
 }
 
-- (void)addBannerViewToView:(UIView *)bannerView {
+/*- (void)addBannerViewToView:(UIView *)bannerView {
     NSLog(@"Entering ViewController::addBannerViewToView");
 
     bannerView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -111,6 +128,39 @@ NSString *busRoutes;
                                                               constant:0]
                                 ]];
     NSLog(@"Exiting ViewController::addBannerViewToView");
+}*/
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self loadAmazonAd];
+}
+
+- (void )loadAmazonAd
+{
+    if (self.amazonAdView) {
+        [self.amazonAdView removeFromSuperview];
+        self.amazonAdView = nil;
+    }
+    // Initialize Auto Ad Size View
+    // const CGRect adFrame = CGRectMake(0.0f, 20.0f, [UIScreen mainScreen].bounds.size.width, 90.0f);
+    //const CGRect adFrame = CGRectMake(0, self.view.frame.size.height - amazonAdView.frame.size.height, [UIScreen mainScreen].bounds.size.width, 90.0f);
+    
+    NSLog(@"Bottom of screen location is %f",[UIScreen mainScreen].bounds.size.height);
+    NSLog(@"Height of the ad is %f",amazonAdView.frame.size.height);
+    //const CGRect adFrame = CGRectMake(0.0f, [UIScreen mainScreen].bounds.size.height - 360, [UIScreen mainScreen].bounds.size.width, 90.0f);
+    const CGRect adFrame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 90, [UIScreen mainScreen].bounds.size.width, 90);
+    self.amazonAdView = [[AmazonAdView alloc] initWithFrame:adFrame];
+    [self.amazonAdView setHorizontalAlignment:AmazonAdHorizontalAlignmentCenter];
+    [self.amazonAdView setVerticalAlignment:AmazonAdVerticalAlignmentBottom];
+    
+    // Register the ViewController with the delegate to receive callbacks.
+    self.amazonAdView.delegate = self;
+    
+    //Set the ad options and load the ad
+    AmazonAdOptions *options = [AmazonAdOptions options];
+    //options.isTestRequest = YES;
+    //options.
+    [self.amazonAdView loadAd:options];
 }
 
 -(void)placeTextBorder:(UIButton*)btnField
@@ -493,6 +543,7 @@ NSString *busRoutes;
     NSLog(@"Entering ViewController::findStops");
 }
 
+/*
 /// Tells the delegate an ad request loaded an ad.
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
     NSLog(@"adViewDidReceiveAd");
@@ -525,7 +576,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
     NSLog(@"adViewWillLeaveApplication");
 }
-
+*/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"Entering ViewController::prepareForSegue");
@@ -793,6 +844,54 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
      }];
     NSLog(@"Exiting ViewController::reverseGeocode");
 
+}
+
+#pragma mark UIContentContainer protocol
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [coordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext> context){
+        // Reload Amazon Ad upon rotation.
+        // Important: Amazon expandable rich media ads target landscape and portrait mode separately.
+        // If your app supports device rotation events, your app must reload the ad when rotating between portrait and landscape mode.
+        [self loadAmazonAd];
+    }];
+}
+
+#pragma mark AmazonAdViewDelegate
+
+- (UIViewController *)viewControllerForPresentingModalView
+{
+    return self;
+}
+
+- (void)adViewDidLoad:(AmazonAdView *)view
+{
+    // Add the newly created Amazon Ad view to our view.
+    [self.view addSubview:view];
+    NSLog(@"Ad loaded");
+}
+
+- (void)adViewDidFailToLoad:(AmazonAdView *)view withError:(AmazonAdError *)error
+{
+    NSLog(@"Ad Failed to load. Error code %d: %@", error.errorCode, error.errorDescription);
+}
+
+- (void)adViewWillExpand:(AmazonAdView *)view
+{
+    NSLog(@"Ad will expand");
+    // Save orientation so when our ad collapses we can reload an ad
+    // Also useful if you need to programmatically rearrange view on orientation change
+    lastOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+}
+
+- (void)adViewDidCollapse:(AmazonAdView *)view
+{
+    NSLog(@"Ad has collapsed");
+    // Check for if the orientation has changed while the view disappeared.
+    if (lastOrientation != [[UIApplication sharedApplication] statusBarOrientation]) {
+        [self loadAmazonAd];
+    }
 }
 
 
