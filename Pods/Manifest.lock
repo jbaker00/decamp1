@@ -1,4 +1,5 @@
 PODS:
+  - AmazonAd (2.2.14)
   - Firebase/AdMob (4.10.1):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (= 7.29.0)
@@ -50,6 +51,7 @@ PODS:
   - Protobuf (3.5.0)
 
 DEPENDENCIES:
+  - AmazonAd (~> 2.2)
   - Firebase/AdMob
   - Firebase/Core
   - Firebase/Crash
@@ -57,6 +59,7 @@ DEPENDENCIES:
   - Google-Mobile-Ads-SDK (~> 7.28)
 
 SPEC CHECKSUMS:
+  AmazonAd: 07087173380fb041e48662c7f0cae36a1000ac98
   Firebase: 92c6ba593e32db0defde464a9adc981d5cb49f97
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseCore: 872307b001bbefda1dfa0dbfffa50a6919023d4a
@@ -70,6 +73,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
 
-PODFILE CHECKSUM: 7cbe8b78f42f36a5cf068200ab8e9aadc028e0bd
+PODFILE CHECKSUM: e588a3e617ad8c90c7c000465b225a3b7090771f
 
 COCOAPODS: 1.4.0

@@ -7,18 +7,24 @@
 //
 
 #import "AppDelegate.h"
+#import <AmazonAd/AmazonAdRegistration.h>
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+@synthesize window = _window;
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Use Firebase library to configure APIs
     [FIRApp configure];
+    [[AmazonAdRegistration sharedRegistration] setAppKey:@"741b109648064f1287a73e84915c7026"];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

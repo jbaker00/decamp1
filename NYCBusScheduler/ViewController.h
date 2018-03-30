@@ -28,5 +28,8 @@
 @property (nonatomic, assign) BOOL from;
 @property (nonatomic, assign) BOOL curLocUsed;
 
+@property (assign, nonatomic) UIInterfaceOrientation lastOrientation;
+
+
 @end
 

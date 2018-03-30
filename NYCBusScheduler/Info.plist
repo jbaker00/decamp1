@@ -30,6 +30,11 @@
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>NYCBusScheduler wants to use your current location</string>
 	<key>UILaunchStoryboardName</key>

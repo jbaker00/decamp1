@@ -7,4 +7,5 @@ target 'NYCBusScheduler' do
   pod 'Firebase/AdMob'
   pod 'Firebase/Crash'
   pod 'Firebase/Performance'
+  pod 'AmazonAd', '~> 2.2'
 end
