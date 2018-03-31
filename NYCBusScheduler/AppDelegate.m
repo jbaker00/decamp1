@@ -23,7 +23,7 @@
     // Override point for customization after application launch.
     // Use Firebase library to configure APIs
     [FIRApp configure];
-    [[AmazonAdRegistration sharedRegistration] setAppKey:@"741b109648064f1287a73e84915c7026"];
+    [[AmazonAdRegistration sharedRegistration] setAppKey:@"34fa1d4c1a054935936df51d6ad30338"];
     [self.window makeKeyAndVisible];
     return YES;
 }
