@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import <AmazonAd/AmazonAdRegistration.h>
 #import "ViewController.h"
+//@import GoogleMobileAds;
+
 
 @interface AppDelegate ()
 
@@ -22,9 +24,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Use Firebase library to configure APIs
+    
+    //Setup firebase
     [FIRApp configure];
+    
+    //Setup Amazon Ads
     [[AmazonAdRegistration sharedRegistration] setAppKey:@"34fa1d4c1a054935936df51d6ad30338"];
     [self.window makeKeyAndVisible];
+    
+    //Setup Google Ads
+    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    //test ID for Google Ads [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/2934735716"];
     return YES;
 }
 
