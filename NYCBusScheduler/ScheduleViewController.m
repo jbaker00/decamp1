@@ -1,19 +1,30 @@
 //
-//  scheduleTableVC.m
-//  DeCampV3
+//  ScheduleViewController.m
+//  NYCBusScheduler
 //
-//  Created by James Baker on 2/9/18.
+//  Created by James Baker on 4/17/18.
 //  Copyright © 2018 Baker, James. All rights reserved.
 //
 
-#import "scheduleTableVC.h"
+#import "ScheduleViewController.h"
+@import GoogleMobileAds;
 
 
-@interface scheduleTableVC ()
+
+@interface ScheduleViewController () <GADBannerViewDelegate>
+
+@property(nonatomic, strong) GADBannerView *bannerView;
 
 @end
 
-@implementation scheduleTableVC
+@implementation ScheduleViewController
+
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    return YES;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,11 +34,41 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+   /* //set the delegates of self for google ads
+    self.bannerView.delegate = self;
+
+    
+    // In this case, we instantiate the banner with desired ad size.
+    self.bannerView = [[GADBannerView alloc]
+                       initWithAdSize:kGADAdSizeBanner];
     
     
-    //Init the dictionaries of buses if the data is not current location but a selected location
-    //[self InitBusDictionaries:tblStopData];
+    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682~2467792962";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
+    [self addBannerViewToView:_bannerView];*/
+
+    //Add loading
+    // In this case, we instantiate the banner with desired ad size.
+    self.bannerView = [[GADBannerView alloc]
+                       initWithAdSize:kGADAdSizeLargeBanner /*kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+    NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
     
+    //set the googleAds delegate
+    self.bannerView.delegate = self;
+    
+    [self addBannerViewToView:_bannerView];
+    NSLog(@"add the banner add to the view with addBannerViewToView:_bannerView]");
+    
+    //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    //NSLog(@"set the ad Unit to the test unit of ca-app-pub-3940256099942544/2934735716");
+    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
+    NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
+    self.bannerView.rootViewController = self;
+    NSLog(@"Calling to load the banner ad into the view");
+    [self.bannerView loadRequest:[GADRequest request]];
+    NSLog(@"Called to load the banner ad into the view");
     
     //Init the dictionaries of buus if the data is from a current location selection
     if(self.curLocUsed == YES)
@@ -41,8 +82,9 @@
     }
     
     NSLog(@"Exiting scheduleTableVC::viewDidLoad");
-
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -53,27 +95,27 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     /*UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
-                                                                   message:@"This is an alert."
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                          handler:^(UIAlertAction * action) {}];
-    
-    [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];
-
-    [self performSegueWithIdentifier:@"showStopMap" sender:self];
-*/
+     message:@"This is an alert."
+     preferredStyle:UIAlertControllerStyleAlert];
+     
+     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+     handler:^(UIAlertAction * action) {}];
+     
+     [alert addAction:defaultAction];
+     [self presentViewController:alert animated:YES completion:nil];
+     
+     [self performSegueWithIdentifier:@"showStopMap" sender:self];
+     */
     NSLog(@"Entering scheduleTableVC::didSelectRowAtIndexPath");
-
+    
     NSLog(@"Selected a row in the table");
     NSLog(@"Exiting scheduleTableVC::didSelectRowAtIndexPath");
-
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSLog(@"Entering scheduleTableVC::numberOfSectionsInTableView");
-
+    
     if(self.curLocUsed == YES)
     {
         NSLog(@"Exiting scheduleTableVC::numberOfSectionsInTableView");
@@ -111,11 +153,10 @@
     }
 }
 
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     NSLog(@"Entering scheduleTableVC::titleForHeaderInSection");
-
+    
     if(self.curLocUsed == YES)
     {
         NSLog(@"Exiting scheduleTableVC::titleForHeaderInSection");
@@ -126,15 +167,19 @@
         NSLog(@"Exiting scheduleTableVC::titleForHeaderInSection");
         return tblFromSectionName;
     }
-
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    static NSString *simpleTableIdentifier = @"cellSchedule";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
     NSLog(@"Entering scheduleTableVC::cellForRowAtIndexPath");
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellSchedule" forIndexPath:indexPath];
-
+    
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellSchedule" forIndexPath:indexPath];
+    
     if(self.curLocUsed == YES)
     {
         cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -155,63 +200,66 @@
         cell.imageView.image = [UIImage imageNamed:@"bus-32.png"];
     }
     NSLog(@"Exiting scheduleTableVC::cellForRowAtIndexPath");
-
+    
     return cell;
+    
 }
 
--(void)findCloseStops:(CLLocation *)location
- {
-     NSLog(@"Entering scheduleTableVC::findCloseStops");
-     if(tblStopData != nil)         //ensure the srcbusList(we only support the src spot for cur location) is loaded from viewDid Load
-     {
-         //Create an array of CLLocation items that will store the closest stops
-         closestBusStops = [[NSMutableArray alloc] init];
+#pragma mark - internal functions
 
-         //start the loop of the srcBusList looking for the distane between it and current location
-         for(int i=0;i<tblStopData.count;i++)
-         {
-             if(![tblStopData[i][0]  isEqual: @"NYC_P/A Bus Terminal"])
-             {
-                 //get the  annotation lat and log into a CLocation
-                 CLLocation *stopLoc = [[CLLocation alloc] initWithLatitude:[tblStopData[i][2] doubleValue] longitude:[tblStopData[i][3] doubleValue]];
-         
-                 //Get the distance between current locaiton and the annotation location
-                 CLLocationDistance distance = [locationMe distanceFromLocation:stopLoc];
-                 
-                 //Check to see if the stop is 1/2 mile 804 meters away from current location and if it is add it to the close bus stop array
-                 if(distance <804)
-                 {
-                     //Add object to our closestBusStops array
-                     NSLog(@"A bus stop was found within 804 meters 1/2 mile its distance away is %f the stop name is %@", distance, tblStopData[i][0]);
-                     [closestBusStops addObject:tblStopData[i]];
-                 }
-             }
-         }
-         
-         //time to build the output table and the section headers with a nie loop of the cloestBusStops Array.
-         if(!closestBusStops)
-         {
+-(void)findCloseStops:(CLLocation *)location
+{
+    NSLog(@"Entering scheduleTableVC::findCloseStops");
+    if(tblStopData != nil)         //ensure the srcbusList(we only support the src spot for cur location) is loaded from viewDid Load
+    {
+        //Create an array of CLLocation items that will store the closest stops
+        closestBusStops = [[NSMutableArray alloc] init];
+        
+        //start the loop of the srcBusList looking for the distane between it and current location
+        for(int i=0;i<tblStopData.count;i++)
+        {
+            if(![tblStopData[i][0]  isEqual: @"NYC_P/A Bus Terminal"])
+            {
+                //get the  annotation lat and log into a CLocation
+                CLLocation *stopLoc = [[CLLocation alloc] initWithLatitude:[tblStopData[i][2] doubleValue] longitude:[tblStopData[i][3] doubleValue]];
+                
+                //Get the distance between current locaiton and the annotation location
+                CLLocationDistance distance = [locationMe distanceFromLocation:stopLoc];
+                
+                //Check to see if the stop is 1/2 mile 804 meters away from current location and if it is add it to the close bus stop array
+                if(distance <804)
+                {
+                    //Add object to our closestBusStops array
+                    NSLog(@"A bus stop was found within 804 meters 1/2 mile its distance away is %f the stop name is %@", distance, tblStopData[i][0]);
+                    [closestBusStops addObject:tblStopData[i]];
+                }
+            }
+        }
+        
+        //time to build the output table and the section headers with a nie loop of the cloestBusStops Array.
+        if(!closestBusStops)
+        {
             //No close bus stops put no close buses within .25 mile in here
             NSLog(@"No close bus stops put no close buses within ..5 mile in here");
-             [closestBusStops addObject:@"No Buses available for your current location"];
-         }
-
-     }
-     NSLog(@"Exiting scheduleTableVC::findCloseStops");
-
+            [closestBusStops addObject:@"No Buses available for your current location"];
+        }
+        
+    }
+    NSLog(@"Exiting scheduleTableVC::findCloseStops");
+    
 }
 
 - (void)InitBusDictionaries
 {
     NSLog(@"Entering scheduleTableVC::InitBusDictionaries");
-
+    
     //Initilize the Bus Dictionary so that we can use it for the filling out of the Output table
     BusDict = [NSMutableDictionary dictionaryWithCapacity:1];
     
     //This is the temp variable that we will use to evaluate new sections needed
     NSString *tempLastBusNum;// = @"1 NA";
     
-     //Find the buss lists
+    //Find the buss lists
     for(int i=0;i<closestBusStops.count;i++)
     {
         //Check to see if the current bus is the same as the last bus in the loop so we can see if we should create a new key or use last key and concatinate the string
@@ -222,7 +270,7 @@
             
             //Load the comma delimited string BusStopString into a string Array so it will store in the dictionary and be dequeued properly
             arrBusStops = [self findStopTimesAtStart:closestBusStops[i][0]];
-    
+            
             //place the key (which is the bus number, and the string array with the stops in the object dictionary
             [BusDict setObject:arrBusStops forKey:tempLastBusNum];
         }
@@ -244,11 +292,11 @@
         
         //add the no busses to output array
         [BusDict setObject:BusStopsArray forKey:@"NA"];
-
+        
         //stringArrayBusStop = [BusStopsString componentsSeparatedByString: @","];
     }
-
-
+    
+    
     NSLog(@"Exiting scheduleTableVC::InitBusDictionaries");
 }
 
@@ -411,7 +459,7 @@
         //[stringBody stringByAppendingString:@"No Bus Schedule Available for Route"];
         [stringArray addObject:@"No Bus Schedule Available for Route"];
     }
-
+    
     NSLog(@"Entering scheduleTableVC::findStops");
     return stringArray;
 }
@@ -518,41 +566,62 @@
     return returnString;
 }
 
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma GoogleAdsCode
+- (void)addBannerViewToView:(UIView *)bannerView {
+    NSLog(@"Entering ViewController::addBannerViewToView");
+    
+    bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:bannerView];
+    [self.view addConstraints:@[
+                                [NSLayoutConstraint constraintWithItem:bannerView
+                                                             attribute:NSLayoutAttributeBottom
+                                                             relatedBy:NSLayoutRelationEqual
+                                                                toItem:self.bottomLayoutGuide
+                                                             attribute:NSLayoutAttributeTop
+                                                            multiplier:1
+                                                              constant:0],
+                                [NSLayoutConstraint constraintWithItem:bannerView
+                                                             attribute:NSLayoutAttributeCenterX
+                                                             relatedBy:NSLayoutRelationEqual
+                                                                toItem:self.view
+                                                             attribute:NSLayoutAttributeCenterX
+                                                            multiplier:1
+                                                              constant:0]
+                                ]];
+    NSLog(@"Exiting ViewController::addBannerViewToView");
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+/// Tells the delegate an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewDidReceiveAd");
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+/// Tells the delegate an ad request failed.
+- (void)adView:(GADBannerView *)adView
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"ScheduleViewController::adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+/// Tells the delegate that a full-screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewWillPresentScreen");
 }
-*/
+
+/// Tells the delegate that the full-screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full-screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewWillLeaveApplication");
+}
 
 /*
 #pragma mark - Navigation

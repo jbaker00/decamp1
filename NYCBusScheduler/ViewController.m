@@ -9,22 +9,10 @@
 #import "ViewController.h"
 #import "TableViewController.h"
 #import "StopsTableVC.h"
-#import "scheduleTableVC.h"
+#import "ScheduleViewController.h"
 #import <AmazonAd/AmazonAdView.h>
 #import <AmazonAd/AmazonAdOptions.h>
 #import <AmazonAd/AmazonAdError.h>
-
-//@import GoogleMobileAds;
-
-
-/*@interface ViewController () <GADBannerViewDelegate>
-{
-}
-
-@property(nonatomic, strong) GADBannerView *bannerView;
-
-
-@end*/
 
 @interface ViewController () <AmazonAdViewDelegate>
 {
@@ -49,9 +37,7 @@
 @synthesize lastOrientation;
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
-    return YES;
+     return YES;
     
 }
 
@@ -61,28 +47,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     // Initialize Data
     NSLog(@"Entering ViewController::viewDidLoad");
-    /*
-    //Add loading
-    // In this case, we instantiate the banner with desired ad size.
-    self.bannerView = [[GADBannerView alloc]
-                       initWithAdSize:kGADAdSizeLargeBanner kGADAdSizeMediumRectangle kGADAdSizeBanner];
-    NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
 
-    //set the googleAds delegate
-    self.bannerView.delegate = self;
-    
-    [self addBannerViewToView:_bannerView];
-    NSLog(@"add the banner add to the view with addBannerViewToView:_bannerView]");
-    
-    //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
-    //NSLog(@"set the ad Unit to the test unit of ca-app-pub-3940256099942544/2934735716");
-    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
-    NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
-    self.bannerView.rootViewController = self;
-    NSLog(@"Calling to load the banner ad into the view");
-    [self.bannerView loadRequest:[GADRequest request]];
-    NSLog(@"Called to load the banner ad into the view");
-*/
     [self placeTextBorder:self.btnTo];
     [self placeTextBorder:self.btnFrom];
     
@@ -106,30 +71,6 @@
 
 }
 
-/*- (void)addBannerViewToView:(UIView *)bannerView {
-    NSLog(@"Entering ViewController::addBannerViewToView");
-
-    bannerView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:bannerView];
-    [self.view addConstraints:@[
-                                [NSLayoutConstraint constraintWithItem:bannerView
-                                                             attribute:NSLayoutAttributeBottom
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:self.bottomLayoutGuide
-                                                             attribute:NSLayoutAttributeTop
-                                                            multiplier:1
-                                                              constant:0],
-                                [NSLayoutConstraint constraintWithItem:bannerView
-                                                             attribute:NSLayoutAttributeCenterX
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:self.view
-                                                             attribute:NSLayoutAttributeCenterX
-                                                            multiplier:1
-                                                              constant:0]
-                                ]];
-    NSLog(@"Exiting ViewController::addBannerViewToView");
-}*/
-
 - (void)viewDidAppear:(BOOL)animated
 {
     [self loadAmazonAd];
@@ -141,13 +82,10 @@
         [self.amazonAdView removeFromSuperview];
         self.amazonAdView = nil;
     }
-    // Initialize Auto Ad Size View
-    // const CGRect adFrame = CGRectMake(0.0f, 20.0f, [UIScreen mainScreen].bounds.size.width, 90.0f);
-    //const CGRect adFrame = CGRectMake(0, self.view.frame.size.height - amazonAdView.frame.size.height, [UIScreen mainScreen].bounds.size.width, 90.0f);
-    
+
     NSLog(@"Bottom of screen location is %f",[UIScreen mainScreen].bounds.size.height);
     NSLog(@"Height of the ad is %f",amazonAdView.frame.size.height);
-    //const CGRect adFrame = CGRectMake(0.0f, [UIScreen mainScreen].bounds.size.height - 360, [UIScreen mainScreen].bounds.size.width, 90.0f);
+
     const CGRect adFrame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 90, [UIScreen mainScreen].bounds.size.width, 90);
     self.amazonAdView = [[AmazonAdView alloc] initWithFrame:adFrame];
     [self.amazonAdView setHorizontalAlignment:AmazonAdHorizontalAlignmentCenter];
@@ -158,8 +96,10 @@
     
     //Set the ad options and load the ad
     AmazonAdOptions *options = [AmazonAdOptions options];
-    //options.isTestRequest = YES;
-    //options.
+    
+    //Turn on if running tests
+    options.isTestRequest = YES;
+
     [self.amazonAdView loadAd:options];
 }
 
@@ -168,7 +108,6 @@
     NSLog(@"Entering ViewController::placeTextBorder");
 
     //Bottom border textField
-    
     btnField.layer.borderColor = [[UIColor grayColor] CGColor];
     btnField.layer.borderWidth = 1.0;
     btnField.layer.cornerRadius = 8;
@@ -543,40 +482,7 @@
     NSLog(@"Entering ViewController::findStops");
 }
 
-/*
-/// Tells the delegate an ad request loaded an ad.
-- (void)adViewDidReceiveAd:(GADBannerView *)adView {
-    NSLog(@"adViewDidReceiveAd");
-}
 
-/// Tells the delegate an ad request failed.
-- (void)adView:(GADBannerView *)adView
-didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"*******adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
-}
-
-/// Tells the delegate that a full-screen view will be presented in response
-/// to the user clicking on an ad.
-- (void)adViewWillPresentScreen:(GADBannerView *)adView {
-    NSLog(@"adViewWillPresentScreen");
-}
-
-/// Tells the delegate that the full-screen view will be dismissed.
-- (void)adViewWillDismissScreen:(GADBannerView *)adView {
-    NSLog(@"adViewWillDismissScreen");
-}
-
-/// Tells the delegate that the full-screen view has been dismissed.
-- (void)adViewDidDismissScreen:(GADBannerView *)adView {
-    NSLog(@"adViewDidDismissScreen");
-}
-
-/// Tells the delegate that a user click will open another app (such as
-/// the App Store), backgrounding the current app.
-- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
-    NSLog(@"adViewWillLeaveApplication");
-}
-*/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"Entering ViewController::prepareForSegue");
@@ -611,7 +517,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     {
         NSLog(@"Calling Segway for showSchedule");
         //Get the destination view controller
-        scheduleTableVC *controllerOut = [segue destinationViewController];
+        ScheduleViewController *controllerOut = [segue destinationViewController];
         
         if(!self.curLocUsed)
         {
@@ -816,13 +722,13 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
                      NSLog(@"subThoroughfare = %@", placemark.subThoroughfare);
                      NSLog(@"timeZone = %@", placemark.timeZone);
                      
-                    strMyLoc = [NSString stringWithFormat:@"%@ %@ %@ %@ ", placemark.subThoroughfare, placemark.thoroughfare, placemark.locality, placemark.administrativeArea];
+                     self->strMyLoc = [NSString stringWithFormat:@"%@ %@ %@ %@ ", placemark.subThoroughfare, placemark.thoroughfare, placemark.locality, placemark.administrativeArea];
                      
                      //Check to see if this is NYC for state and city and if so switch the start location back to Port Authority and do a popup saying you are in nyc
                      if([placemark.administrativeArea isEqualToString:@"NY"] && [placemark.subLocality isEqualToString:@"Manhattan"])
                      {
                          //Change the text for the button to say current location
-                         [_btnFrom setTitle:@"NYC_P/A Bus Terminal" forState:UIControlStateNormal];
+                         [self->_btnFrom setTitle:@"NYC_P/A Bus Terminal" forState:UIControlStateNormal];
                          
                          //set the instance variable to say the current location is being used
                          [self setCurLocUsed:NO];
@@ -830,14 +736,14 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
                      else
                      {
                          //Change the text for the button to say current location
-                         [_btnFrom setTitle:strMyLoc forState:UIControlStateNormal];
+                         [self->_btnFrom setTitle:self->strMyLoc forState:UIControlStateNormal];
 
                          //set the instance variable to say the current location is being used
                          [self setCurLocUsed:YES];
                      }
                      //refresh the UI to show the button text saying the reverse geo locaiton
-                     [_btnFrom setNeedsLayout];
-                     [_btnFrom layoutIfNeeded];
+                     [self->_btnFrom setNeedsLayout];
+                     [self->_btnFrom layoutIfNeeded];
                  }
             NSLog(@"Exiting ViewController::reverseGeocodeLocation");
             }
@@ -895,12 +801,6 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 }
 
 
-/*-(void)setAnAnnotation:(CLLocationDegrees)Lat Log:(CLLocationDegrees)Log strSubTitle:(NSString *)strSubTitle strTitle:(NSString *)strTitle {
-    MKPointAnnotation *myAnnotation = [[MKPointAnnotation alloc] init];
-    myAnnotation.coordinate = CLLocationCoordinate2DMake(Lat, Log);
-    myAnnotation.title = strTitle;
-    myAnnotation.subtitle = strSubTitle;
-    [self.mapView addAnnotation:myAnnotation];
-}*/
+
 
 @end
