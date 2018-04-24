@@ -708,7 +708,7 @@
                  }
                  else
                  {
-                     NSLog(@"there are %zd placemarks in the array of placemarks", placemarks.count);
+                     NSLog(@"there are %lu placemarks in the array of placemarks", (unsigned long)placemarks.count);
                      CLPlacemark *placemark = placemarks[0];// [placemarks lastObject];
                      NSLog(@"name = %@", placemark.name);
                      NSLog(@"ISOcountryCode = %@", placemark.ISOcountryCode);
