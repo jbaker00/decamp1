@@ -29,46 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Entering scheduleTableVC::viewDidLoad");
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-   /* //set the delegates of self for google ads
-    self.bannerView.delegate = self;
-
-    
-    // In this case, we instantiate the banner with desired ad size.
-    self.bannerView = [[GADBannerView alloc]
-                       initWithAdSize:kGADAdSizeBanner];
-    
-    
-    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682~2467792962";
-    self.bannerView.rootViewController = self;
-    [self.bannerView loadRequest:[GADRequest request]];
-    [self addBannerViewToView:_bannerView];*/
-
-    //Add loading
-    // In this case, we instantiate the banner with desired ad size.
-    self.bannerView = [[GADBannerView alloc]
-                       initWithAdSize:kGADAdSizeLargeBanner /*kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
-    NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
-    
-    //set the googleAds delegate
-    self.bannerView.delegate = self;
-    
-    [self addBannerViewToView:_bannerView];
-    NSLog(@"add the banner add to the view with addBannerViewToView:_bannerView]");
-    
-    //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
-    //NSLog(@"set the ad Unit to the test unit of ca-app-pub-3940256099942544/2934735716");
-    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
-    NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
-    self.bannerView.rootViewController = self;
-    NSLog(@"Calling to load the banner ad into the view");
-    [self.bannerView loadRequest:[GADRequest request]];
-    NSLog(@"Called to load the banner ad into the view");
+    [self loadGoogleAd];
     
     //Init the dictionaries of buus if the data is from a current location selection
     if(self.curLocUsed == YES)
@@ -85,7 +47,29 @@
     
 }
 
-
+-(void) loadGoogleAd
+{
+    self.bannerView = [[GADBannerView alloc]
+                       initWithAdSize:kGADAdSizeLargeBanner/*kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+    NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
+    
+    //set the googleAds delegate
+    self.bannerView.delegate = self;
+    
+    [self addBannerViewToView:_bannerView];
+    NSLog(@"add the banner add to the view with addBannerViewToView:_bannerView]");
+    
+    //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    //NSLog(@"set the ad Unit to the test unit of ca-app-pub-3940256099942544/2934735716");
+    
+    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
+    NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
+    self.bannerView.rootViewController = self;
+    NSLog(@"Calling to load the banner ad into the view");
+    [self.bannerView loadRequest:[GADRequest request]];
+    NSLog(@"Called to load the banner ad into the view");
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
