@@ -10,16 +10,20 @@
 #import "TableViewController.h"
 #import "StopsTableVC.h"
 #import "ScheduleViewController.h"
-#import <AmazonAd/AmazonAdView.h>
-#import <AmazonAd/AmazonAdOptions.h>
-#import <AmazonAd/AmazonAdError.h>
+//#import <AmazonAd/AmazonAdView.h>
+//#import <AmazonAd/AmazonAdOptions.h>
+//#import <AmazonAd/AmazonAdError.h>
+@import GoogleMobileAds;
 
-@interface ViewController () <AmazonAdViewDelegate>
+//Use <AmazonAdViewDelegate> if using Amazon ads
+@interface ViewController () <GADBannerViewDelegate>
 {
     
 }
 
-@property (nonatomic, retain) AmazonAdView *amazonAdView;
+//@property (nonatomic, retain) AmazonAdView *amazonAdView;
+@property(nonatomic, strong) GADBannerView *bannerView;
+
 
 @end
 
@@ -33,13 +37,17 @@
 
 @implementation ViewController
 
-@synthesize amazonAdView;
-@synthesize lastOrientation;
-
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-     return YES;
+    // Override point for customization after application launch.
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    return YES;
     
 }
+
+/*for amazon Ads
+@synthesize amazonAdView;
+@synthesize lastOrientation;
+*/
 
 
 - (void)viewDidLoad {
@@ -73,11 +81,37 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self loadAmazonAd];
+    //[self loadAmazonAd];
+    [self loadGoogleAd];
 }
 
-- (void )loadAmazonAd
+-(void) loadGoogleAd
 {
+    self.bannerView = [[GADBannerView alloc]
+                       initWithAdSize:kGADAdSizeMediumRectangle/*kGADAdSizeLargeBanner kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+    NSLog(@"Set the banner add with size kGADAdSizeMediumRectangle");
+    
+    //set the googleAds delegate
+    self.bannerView.delegate = self;
+    
+    [self addBannerViewToView:_bannerView];
+    NSLog(@"add the banner add to the view with addBannerViewToView:_bannerView]");
+    
+    //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    //NSLog(@"set the ad Unit to the test unit of ca-app-pub-3940256099942544/2934735716");
+    
+    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
+    NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
+    self.bannerView.rootViewController = self;
+    NSLog(@"Calling to load the banner ad into the view");
+    [self.bannerView loadRequest:[GADRequest request]];
+    NSLog(@"Called to load the banner ad into the view");
+    
+}
+
+/*- (void )loadAmazonAd
+{
+    //Bannar AD
     if (self.amazonAdView) {
         [self.amazonAdView removeFromSuperview];
         self.amazonAdView = nil;
@@ -87,7 +121,11 @@
     NSLog(@"Height of the ad is %f",amazonAdView.frame.size.height);
 
     const CGRect adFrame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 90, [UIScreen mainScreen].bounds.size.width, 90);
+    //const CGRect adFrame = CGRectMake(0.0f, 200.0f, [UIScreen mainScreen].bounds.size.width, 90.0f);
+
     self.amazonAdView = [[AmazonAdView alloc] initWithFrame:adFrame];
+    //self.amazonAdView = [AmazonAdView amazonAdViewWithAdSize:AmazonAdSize_320x50];
+
     [self.amazonAdView setHorizontalAlignment:AmazonAdHorizontalAlignmentCenter];
     [self.amazonAdView setVerticalAlignment:AmazonAdVerticalAlignmentBottom];
     
@@ -98,10 +136,12 @@
     AmazonAdOptions *options = [AmazonAdOptions options];
     
     //Turn on if running tests
-    options.isTestRequest = YES;
+    options.isTestRequest = NO;
 
     [self.amazonAdView loadAd:options];
-}
+    
+    
+}*/
 
 -(void)placeTextBorder:(UIButton*)btnField
 {
@@ -752,7 +792,65 @@
 
 }
 
-#pragma mark UIContentContainer protocol
+#pragma GoogleAdsCode
+- (void)addBannerViewToView:(UIView *)bannerView {
+    NSLog(@"Entering ViewController::addBannerViewToView");
+    
+    bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:bannerView];
+    [self.view addConstraints:@[
+                                [NSLayoutConstraint constraintWithItem:bannerView
+                                                             attribute:NSLayoutAttributeBottom
+                                                             relatedBy:NSLayoutRelationEqual
+                                                                toItem:self.bottomLayoutGuide
+                                                             attribute:NSLayoutAttributeTop
+                                                            multiplier:1
+                                                              constant:0],
+                                [NSLayoutConstraint constraintWithItem:bannerView
+                                                             attribute:NSLayoutAttributeCenterX
+                                                             relatedBy:NSLayoutRelationEqual
+                                                                toItem:self.view
+                                                             attribute:NSLayoutAttributeCenterX
+                                                            multiplier:1
+                                                              constant:0]
+                                ]];
+    NSLog(@"Exiting ViewController::addBannerViewToView");
+}
+/// Tells the delegate an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewDidReceiveAd");
+}
+
+/// Tells the delegate an ad request failed.
+- (void)adView:(GADBannerView *)adView
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"ScheduleViewController::adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
+}
+
+/// Tells the delegate that a full-screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full-screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full-screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"ScheduleViewController::adViewWillLeaveApplication");
+}
+
+
+/*#pragma mark UIContentContainer protocol For Amazon Ads
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
@@ -799,7 +897,7 @@
         [self loadAmazonAd];
     }
 }
-
+*/
 
 
 
