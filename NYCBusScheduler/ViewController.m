@@ -128,16 +128,16 @@
     NSString* deviceName = [smallDevices objectForKey:code];
     
     if(!deviceName)
-        bReturn = NO; //Device name found therefore its not a large device
+        bReturn = YES; //Device name found therefore its not a large device
     else
-        bReturn = YES; //Device name not found there its a large device
+        bReturn = NO; //Device name not found there its a large device
     
     
     NSLog(@"Exiting ViewController::isLargeDevice");
     return bReturn;
 }
 
-- (NSString*)findDeviceName
+/*- (NSString*)findDeviceName
 {
     NSLog(@"Entering ViewController::findDeviceName");
 
@@ -227,14 +227,14 @@
     NSLog(@"Exiting ViewController::findDeviceName");
 
     return deviceName;
-}
+}*/
 
 
 -(void) loadGoogleAd
 {
     NSLog(@"Entering ViewController::loadGoogleAd");
-    NSString* deviceType = [self findDeviceName];
-    NSLog(@"Device type is %@", deviceType);
+    //NSString* deviceType = [self findDeviceName];
+    //NSLog(@"Device type is %@", deviceType);
     
     if([self isLargeDevice])
     {
@@ -890,6 +890,7 @@
 
 }
 
+//Get the location name from lat and long
 - (void)reverseGeocode:(CLLocation *)location
 {
     NSLog(@"Entering ViewController::reverseGeocode");
