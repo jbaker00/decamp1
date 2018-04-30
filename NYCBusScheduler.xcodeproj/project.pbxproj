@@ -11,6 +11,7 @@
 		4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */; };
 		4E5D680920572CE50014BBA5 /* arrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D680820572CE50014BBA5 /* arrow.jpeg */; };
 		4E62ED102086EE9E009D2260 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */; };
+		4E97975820954D8700D271B5 /* TravelTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E97975720954D8700D271B5 /* TravelTimeViewController.m */; };
 		4EB358272038FABD00B6A622 /* 1200px-Lincolntunnel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */; };
 		4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582A2038FE4100B6A622 /* title2.jpeg */; };
 		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
@@ -84,6 +85,8 @@
 		4E5D680820572CE50014BBA5 /* arrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpeg; sourceTree = "<group>"; };
 		4E62ED0E2086EE9E009D2260 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		4E97975620954D8700D271B5 /* TravelTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelTimeViewController.h; sourceTree = "<group>"; };
+		4E97975720954D8700D271B5 /* TravelTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelTimeViewController.m; sourceTree = "<group>"; };
 		4EB358262038FABC00B6A622 /* 1200px-Lincolntunnel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "1200px-Lincolntunnel.jpg"; path = "../../../../Downloads/1200px-Lincolntunnel.jpg"; sourceTree = "<group>"; };
 		4EB3582A2038FE4100B6A622 /* title2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title2.jpeg; sourceTree = "<group>"; };
 		4EB3582E20391BBB00B6A622 /* bus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-32.png"; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 			children = (
 				AD067C801F9E71B5000C0630 /* ViewController.h */,
 				AD067C811F9E71B5000C0630 /* ViewController.m */,
+				4E97975620954D8700D271B5 /* TravelTimeViewController.h */,
+				4E97975720954D8700D271B5 /* TravelTimeViewController.m */,
 				4E62ED0E2086EE9E009D2260 /* ScheduleViewController.h */,
 				4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */,
 				4ED266FD202FE19700540D97 /* StopsTableVC.h */,
@@ -617,6 +622,7 @@
 				AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */,
 				AD067C7C1F9E71B5000C0630 /* main.m in Sources */,
 				4ED266FF202FE19700540D97 /* StopsTableVC.m in Sources */,
+				4E97975820954D8700D271B5 /* TravelTimeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
