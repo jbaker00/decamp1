@@ -771,6 +771,10 @@
             
             //set the NSArrary for the table to be filled
             controllerOut->tblStopData = tblBusSrc;
+            
+            //set the destination for the bus to be used in looking up ETA of transit
+            controllerOut->strDestination = _btnTo.titleLabel.text;
+
         }
         else
         {

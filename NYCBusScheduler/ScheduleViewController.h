@@ -15,14 +15,26 @@
     //Array of bus stops
     @public NSArray *tblFromData;
     
-    //Name of the bus selected
+    //Source Name of the bus selected
     @public  NSString *tblFromSectionName;
+    
+    //Destination
+    @public NSString *strDestination;
     
     //Public version of my location
     @public  CLLocation *locationMe;
     
     //Array of bus stops
     @public NSArray *tblStopData;
+    
+    //Source Lat/Long
+    CLLocationCoordinate2D srcPoint;
+    
+    //Destination Lat/Long
+    CLLocationCoordinate2D destPoint;
+    
+    //Time of chosen departure
+    @public NSString *strDepartureTime;
     
     //Dictionary of busses for the array to show section names if current location selected
     NSMutableDictionary *BusDict;
@@ -39,7 +51,6 @@
     //array of closest stops
     NSMutableArray *closestBusStops;
     
-    NSString *strDestination;
     
     NSInteger nsiWeekend;
     

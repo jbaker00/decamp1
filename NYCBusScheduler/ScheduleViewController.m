@@ -7,6 +7,7 @@
 //
 
 #import "ScheduleViewController.h"
+#import "TravelTimeViewController.h"
 @import GoogleMobileAds;
 
 
@@ -78,21 +79,35 @@
 #pragma mark - Table view data source
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
-     message:@"This is an alert."
-     preferredStyle:UIAlertControllerStyleAlert];
-     
-     UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-     handler:^(UIAlertAction * action) {}];
-     
-     [alert addAction:defaultAction];
-     [self presentViewController:alert animated:YES completion:nil];
-     
-     [self performSegueWithIdentifier:@"showStopMap" sender:self];
-     */
+
     NSLog(@"Entering scheduleTableVC::didSelectRowAtIndexPath");
-    
     NSLog(@"Selected a row in the table");
+    
+    //Get the departure time from the row name
+    NSArray *rowItems = [tblFromData[indexPath.row] componentsSeparatedByString:@" "];
+    self->strDepartureTime = rowItems[0];
+    
+    //Get the lat/long of the source
+    if(self.curLocUsed == YES)
+    {
+        //if using current location then get the section title name which is the source chosen since it can be multiple buss stops close
+        self->srcPoint = [self findLatLong:tblFromSectionName];//[busSectionTitles objectAtIndex:section];
+    }
+    else
+    {
+        //if not using current location then get the section title name that is the one bus chosen for the source
+        self->srcPoint = [self findLatLong:tblFromSectionName]; //[busSectionTitles objectAtIndex:section];
+    }
+    
+    //find the lat/long of the destination
+    self->destPoint = [self findLatLong:strDestination];
+    
+    
+    [self performSegueWithIdentifier:@"showTime" sender:self];
+
+    
+    
+    
     NSLog(@"Exiting scheduleTableVC::didSelectRowAtIndexPath");
     
 }
@@ -549,6 +564,44 @@
     NSLog(@"Exiting scheduleTableVC::getBusScheduleFileName");
     return returnString;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"Entering ScheduleViewController::prepareForSegue");
+    
+    if ([[segue identifier] isEqualToString:@"showTime"])
+    {
+        //Grab the view controller
+        TravelTimeViewController *controller = [segue destinationViewController];
+
+        controller->destPoint = self->destPoint;
+        controller->sourcePoint = self->srcPoint;
+        controller->strDepartureTime = self->strDepartureTime;
+    }
+    NSLog(@"Exiting ScheduleViewController::prepareForSegue");
+
+}
+
+//Function to find the lat and long of any given point
+-(CLLocationCoordinate2D)findLatLong:(NSString*)StopName
+{
+    NSLog(@"Entering ScheduleViewController::findLatLong");
+    CLLocationCoordinate2D returnLocation = kCLLocationCoordinate2DInvalid;
+    //start the loop of the sourceName looking for the distane between it and current location
+    for(int i=0;i<tblStopData.count;i++)
+    {
+        if([tblStopData[i][0]  isEqual:StopName])
+        {
+            //get the  annotation lat and log into a CLocation
+            returnLocation = CLLocationCoordinate2DMake([tblStopData[i][2] doubleValue], [tblStopData[i][3] doubleValue]);
+            
+        }
+    }
+    
+    NSLog(@"Exiting ScheduleViewController::findLatLong");
+    return returnLocation;
+}
+
 
 #pragma GoogleAdsCode
 - (void)addBannerViewToView:(UIView *)bannerView {
