@@ -23,7 +23,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="UA7-9E-hXg">
                                 <rect key="frame" x="16" y="20" width="343" height="156"/>
-                                <autoresizingMask key="autoresizingMask" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1200px-Lincolntunnel.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OUL-hk-PgZ">
                                 <rect key="frame" x="16" y="184" width="343" height="213"/>

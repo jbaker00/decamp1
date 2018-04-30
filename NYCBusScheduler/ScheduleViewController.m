@@ -102,14 +102,9 @@
     //find the lat/long of the destination
     self->destPoint = [self findLatLong:strDestination];
     
-    
     [self performSegueWithIdentifier:@"showTime" sender:self];
 
-    
-    
-    
     NSLog(@"Exiting scheduleTableVC::didSelectRowAtIndexPath");
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -574,9 +569,11 @@
         //Grab the view controller
         TravelTimeViewController *controller = [segue destinationViewController];
 
-        controller->destPoint = self->destPoint;
         controller->sourcePoint = self->srcPoint;
+        controller->destPoint = self->destPoint;
         controller->strDepartureTime = self->strDepartureTime;
+        controller->strSourceName = tblFromSectionName;
+        controller->strDestName = strDestination;
     }
     NSLog(@"Exiting ScheduleViewController::prepareForSegue");
 
