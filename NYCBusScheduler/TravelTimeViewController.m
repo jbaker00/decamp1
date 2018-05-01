@@ -56,6 +56,7 @@
     NSLog(@"Exiting TravelTimeViewController::viewDidLoad");
 }
 
+//$$TODO$$ Cleanup code - Make this into multiple functions too much in one function
 -(void)findBusETA  //(CLLocationCoordinate2DIsValid*)source end:(CLLocationCoordinate2DIsValid*)destination
 {
     MKPlacemark *placemarkSrc = [[MKPlacemark alloc] initWithCoordinate:self->sourcePoint addressDictionary:nil];
@@ -69,10 +70,32 @@
     [request setSource:mapItemSrc];
     [request setDestination:mapItemDest];
     [request setTransportType:MKDirectionsTransportTypeAutomobile];
-    //convert stored time to military time
+    
+    //Get current date
+    //NSString *currentDateString = "";
+    NSDateFormatter *currentDateFormatter =[[NSDateFormatter alloc] init];
+    currentDateFormatter.dateFormat = @"yyyy-MM-dd";
+    NSString *strCurrentDate = [currentDateFormatter stringFromDate:[NSDate date]];
+    
+    //Put a space before the time
+    
+    
     //put current date and specified tie into a NSDate
+    NSMutableString *dateString = [NSMutableString stringWithString:strCurrentDate];
+    [dateString appendString:@" "];
+    [dateString appendString:strDepartureTime];
+    NSLog(@"The appended string si %@",dateString);
+    
+    //swap in strDepartureTime but add a space before the 3rd char from the end 06:10PM format is in the stirng and needs to move to 06:10 PM format
+    //Prepend the strCurrentDate to date string and put a space
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd hh:mma";
+    NSDate *currentDate = [dateFormatter dateFromString:dateString];
+    NSLog(@"Current date set is %@", currentDate);
+    
     //set the departure time
-    //[request setDepartureDate:<#(NSDate * _Nullable)#>]
+    [request setDepartureDate:currentDate];
+    
     request.requestsAlternateRoutes = NO;
     
     MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
