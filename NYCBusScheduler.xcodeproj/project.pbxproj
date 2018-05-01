@@ -600,7 +600,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../MyGit/Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFBCCED9D8585FBC164B7614 /* [CP] Embed Pods Frameworks */ = {
@@ -615,7 +615,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../MyGit/Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
