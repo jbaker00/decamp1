@@ -87,6 +87,9 @@
     NSArray *rowItems = [tblFromData[indexPath.row] componentsSeparatedByString:@" "];
     self->strDepartureTime = rowItems[0];
     
+    //set the arrival time
+    self->strArrivalTime = rowItems[2];
+    
     //Get the lat/long of the source
     if(self.curLocUsed == YES)
     {
@@ -572,6 +575,7 @@
         controller->sourcePoint = self->srcPoint;
         controller->destPoint = self->destPoint;
         controller->strDepartureTime = self->strDepartureTime;
+        controller->strArrivalTime = self->strArrivalTime;
         controller->strSourceName = tblFromSectionName;
         controller->strDestName = strDestination;
     }

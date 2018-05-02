@@ -21,6 +21,8 @@
     //Departure Date/Time
     @public NSString *strDepartureTime;
     
+    @public NSString *strArrivalTime;
+    
     //Src Name String
     @public NSString *strSourceName;
     
@@ -34,10 +36,12 @@
 #pragma Output properties on screen
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UILabel *outputStartName;
+@property (weak, nonatomic) IBOutlet UILabel *outputScheduledTime;
 @property (weak, nonatomic) IBOutlet UILabel *outputExpectedTravelTime;
 @property (weak, nonatomic) IBOutlet UILabel *outputDistance;
+@property (weak, nonatomic) IBOutlet UILabel *outputScheduledArrivalTime;
 @property (weak, nonatomic) IBOutlet UILabel *outputArrivalDate;
-@property (weak, nonatomic) IBOutlet UILabel *outputStartName;
 @property (weak, nonatomic) IBOutlet UILabel *outputEndName;
 
 @end

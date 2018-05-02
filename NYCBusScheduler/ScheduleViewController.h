@@ -34,7 +34,9 @@
     CLLocationCoordinate2D destPoint;
     
     //Time of chosen departure
-    @public NSString *strDepartureTime;
+    NSString *strDepartureTime;
+    
+    NSString *strArrivalTime;
     
     //Dictionary of busses for the array to show section names if current location selected
     NSMutableDictionary *BusDict;
