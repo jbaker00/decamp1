@@ -52,7 +52,6 @@
 		4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */; };
 		4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267492032C6CB00540D97 /* BusListDest.txt */; };
 		4EEC9070205EC98C002774AD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEC906F205EC98B002774AD /* AdSupport.framework */; };
-		4EECAEDC20990FE900A66933 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EECAEDB20990FE900A66933 /* GoogleService-Info.plist */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -130,7 +129,6 @@
 		4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYCWeekdays.txt; path = Bustext/88fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED267492032C6CB00540D97 /* BusListDest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusListDest.txt; sourceTree = "<group>"; };
 		4EEC906F205EC98B002774AD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		4EECAEDB20990FE900A66933 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../DeCampBeta3/decamp1/NYCBusScheduler/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYCBusScheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler.release.xcconfig"; sourceTree = "<group>"; };
 		AD067C771F9E71B5000C0630 /* NYCBusScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCBusScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -312,7 +310,6 @@
 		AD067C6E1F9E71B5000C0630 = {
 			isa = PBXGroup;
 			children = (
-				4EECAEDB20990FE900A66933 /* GoogleService-Info.plist */,
 				AD067C791F9E71B5000C0630 /* NYCBusScheduler */,
 				AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */,
 				AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
@@ -546,7 +543,6 @@
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
 				4E814B052099110200CCB909 /* EndBluePin.png in Resources */,
 				4ED267142030B6D000540D97 /* 33toNYCWeekdays.txt in Resources */,
-				4EECAEDC20990FE900A66933 /* GoogleService-Info.plist in Resources */,
 				4E814B042099110200CCB909 /* 1200px-Lincolntunnel.jpg in Resources */,
 				4ED267322032C14500540D97 /* 44toNYCWeekend.txt in Resources */,
 				4E814B062099110200CCB909 /* StartRedPin.png in Resources */,
