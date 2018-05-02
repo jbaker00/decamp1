@@ -88,7 +88,7 @@
     self->strDepartureTime = rowItems[0];
     
     //set the arrival time
-    self->strArrivalTime = rowItems[2];
+    self->strArrivalTime = rowItems[2]; 
     
     //Get the lat/long of the source
     if(self.curLocUsed == YES)

@@ -23,7 +23,7 @@
     
     //Public version of my location
     @public  CLLocation *locationMe;
-    
+     
     //Array of bus stops
     @public NSArray *tblStopData;
     

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface StopsTableVC : UITableViewController
+@interface StopsTableVC : UITableViewController 
 {
     
     //Array of bus stops

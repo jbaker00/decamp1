@@ -768,7 +768,7 @@
             //Assign the header row
             controllerOut->tblFromSectionName = stringTitle;
             NSLog(@"remote variable for the table title is set to %@", controllerOut->tblFromSectionName);
-            
+             
             //set the NSArrary for the table to be filled
             controllerOut->tblStopData = tblBusSrc;
             
