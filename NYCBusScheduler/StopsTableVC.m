@@ -8,7 +8,7 @@
 
 #import "StopsTableVC.h"
 
-@interface StopsTableVC ()
+@interface StopsTableVC () 
 
 @end
 

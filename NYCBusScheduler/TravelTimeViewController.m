@@ -119,7 +119,7 @@
              NSLog(@"The expected Departure time is %@", formattedDepartDateString);
              
              //Output the ExpectedTravelTime
-             NSTimeInterval busExpectedTravelTime = response.expectedTravelTime;
+             NSTimeInterval busExpectedTravelTime = response.expectedTravelTime; 
              NSInteger busTravelTimeInt = [[NSString stringWithFormat:@"%f", busExpectedTravelTime] integerValue];
              busTravelTimeInt = busTravelTimeInt / 60;
              self->_outputExpectedTravelTime.text = [NSString stringWithFormat:@"%li Minutes", (long)busTravelTimeInt];

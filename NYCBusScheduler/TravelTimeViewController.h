@@ -21,7 +21,7 @@
     //Departure Date/Time
     @public NSString *strDepartureTime;
     
-    @public NSString *strArrivalTime;
+    @public NSString *strArrivalTime; 
     
     //Src Name String
     @public NSString *strSourceName;
