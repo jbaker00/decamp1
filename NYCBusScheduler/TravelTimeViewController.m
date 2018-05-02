@@ -27,6 +27,13 @@
     //Set the output label for the End name
     self->_outputEndName.text = strDestName;
     
+    //Set the scheduled departure time
+    self->_outputScheduledTime.text = strDepartureTime;
+    
+    //Set the scheduled arrival time
+    self->_outputScheduledArrivalTime.text = strArrivalTime;
+    
+    
     //set the center of the map to lincoln tunnel
     CLLocationCoordinate2D mapPortAuth = CLLocationCoordinate2DMake(40.760128, -74.003065);
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(mapPortAuth, 6000, 6000);
@@ -115,7 +122,7 @@
              NSTimeInterval busExpectedTravelTime = response.expectedTravelTime;
              NSInteger busTravelTimeInt = [[NSString stringWithFormat:@"%f", busExpectedTravelTime] integerValue];
              busTravelTimeInt = busTravelTimeInt / 60;
-             self->_outputExpectedTravelTime.text = [NSString stringWithFormat:@"%li", (long)busTravelTimeInt];
+             self->_outputExpectedTravelTime.text = [NSString stringWithFormat:@"%li Minutes", (long)busTravelTimeInt];
              NSLog(@"The expected Travel time is %f seconds", busExpectedTravelTime);
              NSLog(@"The expected Travel time is %@ minutes",  self->_outputExpectedTravelTime.text);
 
@@ -129,7 +136,7 @@
              CLLocationDistance busDistance = response.distance;
              NSInteger busTravelDistance = [[NSString stringWithFormat:@"%f", busDistance] integerValue];
              busTravelDistance = busTravelDistance * 0.000621371;
-             self->_outputDistance.text = [NSString stringWithFormat:@"%li", (long)busTravelDistance];
+             self->_outputDistance.text = [NSString stringWithFormat:@"%li Miles", (long)busTravelDistance];
              NSLog(@"The travel distance is %f meters", busDistance);
              NSLog(@"The travel distance is %@ miles", self->_outputDistance.text);
 
