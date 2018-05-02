@@ -15,6 +15,7 @@
 		4E814B052099110200CCB909 /* EndBluePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E814B022099110200CCB909 /* EndBluePin.png */; };
 		4E814B062099110200CCB909 /* StartRedPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E814B032099110200CCB909 /* StartRedPin.png */; };
 		4E97975820954D8700D271B5 /* TravelTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E97975720954D8700D271B5 /* TravelTimeViewController.m */; };
+		4EAB0A35209939C600EB20EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EAB0A34209939C600EB20EE /* GoogleService-Info.plist */; };
 		4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582A2038FE4100B6A622 /* title2.jpeg */; };
 		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
 		4EB358312039208100B6A622 /* CartoonbusBus.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358302039208100B6A622 /* CartoonbusBus.PNG */; };
@@ -91,6 +92,7 @@
 		4E814B032099110200CCB909 /* StartRedPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartRedPin.png; path = ../../../Desktop/StartRedPin.png; sourceTree = "<group>"; };
 		4E97975620954D8700D271B5 /* TravelTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelTimeViewController.h; sourceTree = "<group>"; };
 		4E97975720954D8700D271B5 /* TravelTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelTimeViewController.m; sourceTree = "<group>"; };
+		4EAB0A34209939C600EB20EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EB3582A2038FE4100B6A622 /* title2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title2.jpeg; sourceTree = "<group>"; };
 		4EB3582E20391BBB00B6A622 /* bus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-32.png"; sourceTree = "<group>"; };
 		4EB358302039208100B6A622 /* CartoonbusBus.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartoonbusBus.PNG; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 		AD067C791F9E71B5000C0630 /* NYCBusScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				4EAB0A34209939C600EB20EE /* GoogleService-Info.plist */,
 				4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */,
 				4ED266FB202EAB0600540D97 /* GUI */,
 				4ED266FA202EAAE700540D97 /* Controllers */,
@@ -514,6 +517,7 @@
 				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
 				4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */,
 				4ED267342032C14500540D97 /* 44toNYC.txt in Resources */,
+				4EAB0A35209939C600EB20EE /* GoogleService-Info.plist in Resources */,
 				4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */,
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
 				4ED267272032BA1800540D97 /* 66fromNYCWeekdays.txt in Resources */,
