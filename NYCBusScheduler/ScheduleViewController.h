@@ -24,8 +24,11 @@
     //Public version of my location
     @public  CLLocation *locationMe;
      
-    //Array of bus stops
+    //Array of bus stops Sources
     @public NSArray *tblStopData;
+    
+    //Array of bus stops Destinations
+    @public NSArray *tblDestStopData;
     
     //Source Lat/Long
     CLLocationCoordinate2D srcPoint;

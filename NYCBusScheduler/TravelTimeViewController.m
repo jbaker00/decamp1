@@ -22,6 +22,24 @@
     NSLog(@"Entering TravelTimeViewController::viewDidLoad");
     
     //Set the output label for the Start name
+    [self fillScreenViewValues];
+    
+    //set the center of the map to lincoln tunnel
+    [self centerMapView];
+    
+    //make sure we have a valid source point first before pusing it out to a log of the output
+    if([self verifyLocationVariables])
+    {
+        //find the eta
+        [self findBusETA];
+    }
+    NSLog(@"Exiting TravelTimeViewController::viewDidLoad");
+}
+
+- (void)fillScreenViewValues
+{
+    NSLog(@"Entering TravelTimeViewController::fillScreenViewValues");
+
     self->_outputStartName.text = strSourceName;
     
     //Set the output label for the End name
@@ -33,19 +51,38 @@
     //Set the scheduled arrival time
     self->_outputScheduledArrivalTime.text = strArrivalTime;
     
-    
-    //set the center of the map to lincoln tunnel
+    NSLog(@"Exiting TravelTimeViewController::fillScreenViewValues");
+
+}
+
+- (void)centerMapView
+{
+    NSLog(@"Entering TravelTimeViewController::centerMapView");
+
     CLLocationCoordinate2D mapPortAuth = CLLocationCoordinate2DMake(40.760128, -74.003065);
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(mapPortAuth, 6000, 6000);
     MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:viewRegion];
     [self.mapView setRegion:adjustedRegion animated:YES];
     self.mapView.showsUserLocation = YES;
     
-    //make sure we have a valid source point first before pusing it out to a log of the output
+    NSLog(@"Exiting TravelTimeViewController::centerMapView");
+}
+
+- (BOOL)verifyLocationVariables
+{
+    NSLog(@"Entering TravelTimeViewController::verifyLocationVariables");
+    
+    BOOL bReturn = YES;
+    
     if(CLLocationCoordinate2DIsValid(sourcePoint))
     {
         NSLog(@"Source location Latitude is %f", self->sourcePoint.latitude);
         NSLog(@"Source location Longitude is %f", self->sourcePoint.longitude);
+    }
+    else
+    {
+        NSLog(@"SourcePoint is invalid");
+        bReturn = NO;
     }
     
     //make sure we have a valid desitnation point first before pusing it out to a log of the output
@@ -54,18 +91,33 @@
         NSLog(@"Destination location Latitude is %f", self->destPoint.latitude);
         NSLog(@"Destination location Longitude is %f", self->destPoint.longitude);
     }
+    else
+    {
+        NSLog(@"DestinationPoint is invalid");
+        bReturn = NO;
+    }
     
     //log out the departure time
-    NSLog(@"Departure time is %@", strDepartureTime);
+    if(strDepartureTime)
+    {
+        NSLog(@"Departure time is %@", strDepartureTime);
+    }
+    else
+    {
+        NSLog(@"Departure time does not exist");
+        bReturn = NO;
+    }
 
-    //find the eta
-    [self findBusETA];
-    NSLog(@"Exiting TravelTimeViewController::viewDidLoad");
+    NSLog(@"Exiting TravelTimeViewController::verifyLocationVariables");
+    
+    return bReturn;
+
 }
-
 //$$TODO$$ Cleanup code - Make this into multiple functions too much in one function
--(void)findBusETA  //(CLLocationCoordinate2DIsValid*)source end:(CLLocationCoordinate2DIsValid*)destination
+-(void)findBusETA
 {
+    NSLog(@"Entering TravelTimeViewController::findBusETA");
+
     MKPlacemark *placemarkSrc = [[MKPlacemark alloc] initWithCoordinate:self->sourcePoint addressDictionary:nil];
     MKMapItem *mapItemSrc = [[MKMapItem alloc] initWithPlacemark:placemarkSrc];
     MKPlacemark *placemarkDest = [[MKPlacemark alloc] initWithCoordinate:self->destPoint addressDictionary:nil];
@@ -109,6 +161,8 @@
     
     [directions calculateETAWithCompletionHandler:
      ^(MKETAResponse *response, NSError *error) {
+         NSLog(@"Entering TravelTimeViewController::findBusETA:caculatETAWithCompleationHandler");
+
          if (error) {
              // Handle Error
              NSLog(@"Erroroed out the calculateETAWithCompletionHandler with error code %ldd and userInfo %@",(long)error.code, error.userInfo);
@@ -149,7 +203,10 @@
              //MKDirectionsTransportTypeAny
              
          }
+         NSLog(@"Entering TravelTimeViewController::findBusETA:caculatETAWithCompleationHandler");
+
      }];
+    NSLog(@"Exiting TravelTimeViewController::findBusETA");
 
 }
 

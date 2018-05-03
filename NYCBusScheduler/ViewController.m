@@ -698,8 +698,9 @@
         //I do not think this part of the code could ever be hit if self.from == YES
         if(self.from == YES)
         {
-            //set the NSArrary for the table to be filled
+            //set the NSArrary for the table to be filled for the source bus stops
             controller->tblStopData = tblBusSrc;
+            
             //set the section name
             controller->tblFromSectionName = @"Orignation";
             //tell the table view controller on other side of segway this is the origination/src/from bus stop
@@ -769,8 +770,11 @@
             controllerOut->tblFromSectionName = stringTitle;
             NSLog(@"remote variable for the table title is set to %@", controllerOut->tblFromSectionName);
              
-            //set the NSArrary for the table to be filled
+            //set the NSArrary for the table to be filled of source bus stops
             controllerOut->tblStopData = tblBusSrc;
+            
+            //set the NSArray of the Destination stops
+            controllerOut->tblDestStopData = tblBusDest;
             
             //set the destination for the bus to be used in looking up ETA of transit
             controllerOut->strDestination = _btnTo.titleLabel.text;
@@ -778,8 +782,11 @@
         }
         else
         {
-            //set the NSArrary for the table to be filled
+            //set the NSArrary for the table to be filled or source stops
             controllerOut->tblStopData = tblBusSrc;
+            
+            //set the NSArray of the Destination stops
+            controllerOut->tblDestStopData = tblBusDest;
             
             //Pass over my locaiton
             controllerOut->locationMe = locationMe;

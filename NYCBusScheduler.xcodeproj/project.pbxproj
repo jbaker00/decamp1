@@ -313,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				4EAECD2020993AB100DD72E8 /* GoogleService-Info.plist */,
+				AD067C8B1F9E71B5000C0630 /* Info.plist */,
 				AD067C791F9E71B5000C0630 /* NYCBusScheduler */,
 				AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */,
 				AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
@@ -341,7 +342,6 @@
 				AD067C7D1F9E71B5000C0630 /* AppDelegate.h */,
 				AD067C7E1F9E71B5000C0630 /* AppDelegate.m */,
 				AD067C861F9E71B5000C0630 /* Assets.xcassets */,
-				AD067C8B1F9E71B5000C0630 /* Info.plist */,
 				AD067C7A1F9E71B5000C0630 /* Supporting Files */,
 			);
 			path = NYCBusScheduler;
