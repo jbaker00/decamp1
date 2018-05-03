@@ -23,7 +23,7 @@
     BusDict = [NSMutableDictionary dictionaryWithCapacity:1];
     
     //Load the bus dictionary
-    NSString *tempLastBusNum = @"1 NA";
+    NSString *tempLastBusNum = @"1";
     NSMutableString *BusStopsString = [NSMutableString stringWithCapacity:1];
     
     //$$TODO$$ could probally do all this in a nsarray from the begining as the value of the nsdictionary instead of using a string and then moving that string into an array and then placing in a nsdictionary

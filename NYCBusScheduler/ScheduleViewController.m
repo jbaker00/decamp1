@@ -83,27 +83,38 @@
     NSLog(@"Entering scheduleTableVC::didSelectRowAtIndexPath");
     NSLog(@"Selected a row in the table");
     
-    //Get the departure time from the row name
-    NSArray *rowItems = [tblFromData[indexPath.row] componentsSeparatedByString:@" "];
-    self->strDepartureTime = rowItems[0];
-    
-    //set the arrival time
-    self->strArrivalTime = rowItems[2]; 
+
     
     //Get the lat/long of the source
     if(self.curLocUsed == YES)
     {
         //if using current location then get the section title name which is the source chosen since it can be multiple buss stops close
-        self->srcPoint = [self findLatLong:tblFromSectionName];//[busSectionTitles objectAtIndex:section];
+        self->srcPoint = [self findLatLongSrc:[busSectionTitles objectAtIndex:indexPath.section]];//[busSectionTitles objectAtIndex:section];
+        
+        NSString *sectionTitle = [busSectionTitles objectAtIndex:indexPath.section];
+        NSArray *sectionBus = [BusDict objectForKey:sectionTitle];
+        NSString *bus = [sectionBus objectAtIndex:indexPath.row];
+        NSArray *rowItems = [bus componentsSeparatedByString:@" "];
+        self->strDepartureTime = rowItems[0];
+        
+        //set the arrival time
+        self->strArrivalTime = rowItems[2];
     }
     else
     {
         //if not using current location then get the section title name that is the one bus chosen for the source
-        self->srcPoint = [self findLatLong:tblFromSectionName]; //[busSectionTitles objectAtIndex:section];
+        self->srcPoint = [self findLatLongSrc:tblFromSectionName]; //[busSectionTitles objectAtIndex:section];
+        
+        //Get the departure time from the row name
+        NSArray *rowItems = [tblFromData[indexPath.row] componentsSeparatedByString:@" "];
+        self->strDepartureTime = rowItems[0];
+        
+        //set the arrival time
+        self->strArrivalTime = rowItems[2];
     }
     
     //find the lat/long of the destination
-    self->destPoint = [self findLatLong:strDestination];
+    self->destPoint = [self findLatLongDest:strDestination];
     
     [self performSegueWithIdentifier:@"showTime" sender:self];
 
@@ -186,7 +197,7 @@
         NSString *bus = [sectionBus objectAtIndex:indexPath.row];
         //NSString *bus = sectionBus[indexPath.row];
         cell.textLabel.text = bus;
-        cell.imageView.image = [UIImage imageNamed:@"new_decamp_bus.jpeg"];
+        cell.imageView.image = [UIImage imageNamed:@"bus-32.png"];
     }
     else
     {
@@ -583,10 +594,10 @@
 
 }
 
-//Function to find the lat and long of any given point
--(CLLocationCoordinate2D)findLatLong:(NSString*)StopName
+//Function to find the lat and long of any given point from the src location list
+-(CLLocationCoordinate2D)findLatLongSrc:(NSString*)StopName
 {
-    NSLog(@"Entering ScheduleViewController::findLatLong");
+    NSLog(@"Entering ScheduleViewController::findLatLongSrc");
     CLLocationCoordinate2D returnLocation = kCLLocationCoordinate2DInvalid;
     //start the loop of the sourceName looking for the distane between it and current location
     for(int i=0;i<tblStopData.count;i++)
@@ -599,10 +610,29 @@
         }
     }
     
-    NSLog(@"Exiting ScheduleViewController::findLatLong");
+    NSLog(@"Exiting ScheduleViewController::findLatLongSrc");
     return returnLocation;
 }
 
+//Function to find the lat and long of any given point from the src location list
+-(CLLocationCoordinate2D)findLatLongDest:(NSString*)StopName
+{
+    NSLog(@"Entering ScheduleViewController::findLatLongDest");
+    CLLocationCoordinate2D returnLocation = kCLLocationCoordinate2DInvalid;
+    //start the loop of the sourceName looking for the distane between it and current location
+    for(int i=0;i<tblDestStopData.count;i++)
+    {
+        if([tblDestStopData[i][0]  isEqual:StopName])
+        {
+            //get the  annotation lat and log into a CLocation
+            returnLocation = CLLocationCoordinate2DMake([tblDestStopData[i][2] doubleValue], [tblDestStopData[i][3] doubleValue]);
+            
+        }
+    }
+    
+    NSLog(@"Exiting ScheduleViewController::findLatLongDest");
+    return returnLocation;
+}
 
 #pragma GoogleAdsCode
 - (void)addBannerViewToView:(UIView *)bannerView {
