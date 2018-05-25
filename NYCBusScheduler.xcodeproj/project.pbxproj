@@ -313,7 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				4EAECD2020993AB100DD72E8 /* GoogleService-Info.plist */,
-				AD067C8B1F9E71B5000C0630 /* Info.plist */,
 				AD067C791F9E71B5000C0630 /* NYCBusScheduler */,
 				AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */,
 				AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
@@ -336,6 +335,7 @@
 		AD067C791F9E71B5000C0630 /* NYCBusScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				AD067C8B1F9E71B5000C0630 /* Info.plist */,
 				4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */,
 				4ED266FB202EAB0600540D97 /* GUI */,
 				4ED266FA202EAAE700540D97 /* Controllers */,
