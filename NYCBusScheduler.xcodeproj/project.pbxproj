@@ -15,6 +15,9 @@
 		4E4D11912098F72C00A203E0 /* 1200px-Lincolntunnel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D11902098F72C00A203E0 /* 1200px-Lincolntunnel.jpg */; };
 		4E5D680920572CE50014BBA5 /* arrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D680820572CE50014BBA5 /* arrow.jpeg */; };
 		4E62ED102086EE9E009D2260 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */; };
+		4E759A7C20B7A4FC004AA409 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E759A7B20B7A4FC004AA409 /* GoogleService-Info.plist */; };
+		4E759A7E20B7A513004AA409 /* StartRedPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E759A7D20B7A513004AA409 /* StartRedPin.png */; };
+		4E759A8020B7A524004AA409 /* EndBluePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E759A7F20B7A524004AA409 /* EndBluePin.png */; };
 		4E97975820954D8700D271B5 /* TravelTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E97975720954D8700D271B5 /* TravelTimeViewController.m */; };
 		4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582A2038FE4100B6A622 /* title2.jpeg */; };
 		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
@@ -91,6 +94,9 @@
 		4E5D680820572CE50014BBA5 /* arrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpeg; sourceTree = "<group>"; };
 		4E62ED0E2086EE9E009D2260 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		4E759A7B20B7A4FC004AA409 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4E759A7D20B7A513004AA409 /* StartRedPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartRedPin.png; sourceTree = "<group>"; };
+		4E759A7F20B7A524004AA409 /* EndBluePin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EndBluePin.png; sourceTree = "<group>"; };
 		4E97975620954D8700D271B5 /* TravelTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravelTimeViewController.h; sourceTree = "<group>"; };
 		4E97975720954D8700D271B5 /* TravelTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravelTimeViewController.m; sourceTree = "<group>"; };
 		4EB3582A2038FE4100B6A622 /* title2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title2.jpeg; sourceTree = "<group>"; };
@@ -313,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				4E4D118A2098F54A00A203E0 /* GoogleService-Info.plist */,
+				4E759A7B20B7A4FC004AA409 /* GoogleService-Info.plist */,
 				AD067C791F9E71B5000C0630 /* NYCBusScheduler */,
 				AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */,
 				AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
@@ -351,14 +358,15 @@
 			isa = PBXGroup;
 			children = (
 				4E4D118E2098F63600A203E0 /* StartRedPin.png */,
+				4E759A7D20B7A513004AA409 /* StartRedPin.png */,
 				4E4D118C2098F61300A203E0 /* EndBluePin.png */,
+				4E759A7F20B7A524004AA409 /* EndBluePin.png */,
 				4E5D680820572CE50014BBA5 /* arrow.jpeg */,
 				4EB3582E20391BBB00B6A622 /* bus-32.png */,
 				4EB3582A2038FE4100B6A622 /* title2.jpeg */,
 				4E4D11902098F72C00A203E0 /* 1200px-Lincolntunnel.jpg */,
 				4EB358302039208100B6A622 /* CartoonbusBus.PNG */,
 				4ED266FC202EAB1800540D97 /* Schedules */,
-				AD51BF881FB4F5C500FE707E /* icons */,
 				AD067C7B1F9E71B5000C0630 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -380,13 +388,6 @@
 				AD067CA11F9E71B5000C0630 /* Info.plist */,
 			);
 			path = NYCBusSchedulerUITests;
-			sourceTree = "<group>";
-		};
-		AD51BF881FB4F5C500FE707E /* icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +539,7 @@
 				4ED2673D2032C21D00540D97 /* 99fromNYC.txt in Resources */,
 				4ED267282032BA1800540D97 /* 66toNYCWeekdays.txt in Resources */,
 				4ED267362032C14500540D97 /* 44fromNYCWeekdays.txt in Resources */,
+				4E759A8020B7A524004AA409 /* EndBluePin.png in Resources */,
 				4ED267112030B6D000540D97 /* 32fromNYC.txt in Resources */,
 				4EB358312039208100B6A622 /* CartoonbusBus.PNG in Resources */,
 				4E4D118F2098F63600A203E0 /* StartRedPin.png in Resources */,
@@ -548,6 +550,8 @@
 				AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */,
 				4ED267142030B6D000540D97 /* 33toNYCWeekdays.txt in Resources */,
 				4E4D118B2098F54A00A203E0 /* GoogleService-Info.plist in Resources */,
+				4E759A7C20B7A4FC004AA409 /* GoogleService-Info.plist in Resources */,
+				4E759A7E20B7A513004AA409 /* StartRedPin.png in Resources */,
 				4ED267322032C14500540D97 /* 44toNYCWeekend.txt in Resources */,
 				4E4D118D2098F61300A203E0 /* EndBluePin.png in Resources */,
 			);
