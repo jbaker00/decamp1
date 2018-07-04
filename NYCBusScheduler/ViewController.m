@@ -86,6 +86,7 @@
     [self loadGoogleAd];
 }
 
+//Code to figure out if the device is a large screen device or if its a small screen device
 - (BOOL)isLargeDevice
 {
     NSLog(@"Entering ViewController::isLargeDevice");
@@ -134,7 +135,7 @@
     
     
     NSLog(@"Exiting ViewController::isLargeDevice");
-    return bReturn;
+    return NO;
 }
 
 /*- (NSString*)findDeviceName
