@@ -235,7 +235,8 @@
     NSLog(@"Entering ViewController::loadGoogleAd");
     //NSString* deviceType = [self findDeviceName];
     //NSLog(@"Device type is %@", deviceType);
-    
+   
+    //Checking to see if the screen is large or small for the display ad
     if([self isLargeDevice])
     {
         self.bannerView = [[GADBannerView alloc]

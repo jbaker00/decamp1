@@ -2,7 +2,7 @@ PODS:
   - AmazonAd (2.2.14)
   - Crashlytics (3.9.3):
     - Fabric (~> 1.7.2)
-  - Fabric (1.7.6)
+  - Fabric (1.7.7)
   - Firebase/AdMob (4.13.0):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (= 7.30.0)
@@ -59,7 +59,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AmazonAd: 07087173380fb041e48662c7f0cae36a1000ac98
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
-  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
   FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
   FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
