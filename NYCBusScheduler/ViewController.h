@@ -11,9 +11,9 @@
 #import <Mapkit/Mapkit.h> 
 
 
-@interface ViewController : UIViewController  <CLLocationManagerDelegate>
+@interface ViewController : UIViewController  <CLLocationManagerDelegate> 
 {
-    CLLocationManager *locationManager;
+    CLLocationManager *locationManager; 
     CLLocation *locationMe;
     CLGeocoder *geocoder;
     NSString *strMyLoc;
