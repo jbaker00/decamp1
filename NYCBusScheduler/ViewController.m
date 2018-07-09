@@ -83,6 +83,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     //[self loadAmazonAd];
+    [super viewDidAppear:NO];
     [self loadGoogleAd];
 }
 
@@ -128,13 +129,14 @@
     NSString* deviceName = [smallDevices objectForKey:code];
     
     if(!deviceName)
-        bReturn = YES; //Device name found therefore its not a large device
+        bReturn = YES; //Device name not found there its a large device
     else
-        bReturn = NO; //Device name not found there its a large device
+        bReturn = NO;     //Device name found therefore its not a large device
+
     
     
     NSLog(@"Exiting ViewController::isLargeDevice");
-    return bReturn;
+    return NO;  //returning True so that we can do small ads for everyone.  Change YES to bReturn once we fix the detection of small devices or when apple no longer supports iphone 5s
 }
 
 /*- (NSString*)findDeviceName

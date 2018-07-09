@@ -287,7 +287,7 @@
     if(!tempLastBusNum)
     {
         //No busses so set the no busses string
-        tempLastBusNum = @"None";
+        //tempLastBusNum = @"None";
         //do it this way so we pass variables to the dictionary set object and we get a nsArray and do not crash when we get to numberofrowsinsection function
         NSMutableString *BusStopString = [[NSMutableString alloc] init];
         [BusStopString setString:@"No Busses within .5 miles of your current location"];
