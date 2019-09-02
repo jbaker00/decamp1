@@ -1,5 +1,4 @@
 PODS:
-  - AmazonAd (2.2.14)
   - Crashlytics (3.9.3):
     - Fabric (~> 1.7.2)
   - Fabric (1.7.8)
@@ -15,10 +14,10 @@ PODS:
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.20):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
   - FirebasePerformance (1.1.3):
@@ -27,7 +26,7 @@ PODS:
     - FirebaseSwizzlingUtilities/ISASwizzling (~> 1.0)
     - FirebaseSwizzlingUtilities/MethodSwizzling (~> 1.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - GTMSessionFetcher/Core (~> 1.1)
     - Protobuf (~> 3.5)
   - FirebaseSwizzlingUtilities/ISASwizzling (1.0.1)
@@ -37,7 +36,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.4)
   - GoogleToolboxForMac/Logger (2.1.4):
     - GoogleToolboxForMac/Defines (= 2.1.4)
-  - GoogleToolboxForMac/NSData+zlib (2.1.4):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - GTMSessionFetcher/Core (1.1.15)
   - nanopb (0.3.8):
@@ -48,7 +47,6 @@ PODS:
   - Protobuf (3.6.0)
 
 DEPENDENCIES:
-  - AmazonAd (~> 2.2)
   - Crashlytics (~> 3.9.3)
   - Fabric (~> 1.7.2)
   - Firebase/AdMob
@@ -56,8 +54,23 @@ DEPENDENCIES:
   - Firebase/Performance
   - Google-Mobile-Ads-SDK (~> 7.28)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebasePerformance
+    - FirebaseSwizzlingUtilities
+    - Google-Mobile-Ads-SDK
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+    - nanopb
+    - Protobuf
+
 SPEC CHECKSUMS:
-  AmazonAd: 07087173380fb041e48662c7f0cae36a1000ac98
   Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   Fabric: fba4684a95df789565b0b27fc5b6e68f1755af32
   Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
@@ -72,6 +85,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
 
-PODFILE CHECKSUM: 0b666a965e980c3442a4f443f9e4af281e89c4cb
+PODFILE CHECKSUM: 02286b3052924b19e4f43dec8f0a6468d6bb4f08
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.1

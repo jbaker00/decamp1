@@ -400,8 +400,6 @@
 				AD067C731F9E71B5000C0630 /* Sources */,
 				AD067C741F9E71B5000C0630 /* Frameworks */,
 				AD067C751F9E71B5000C0630 /* Resources */,
-				AFBCCED9D8585FBC164B7614 /* [CP] Embed Pods Frameworks */,
-				8A9F242B9EF07E9059748D74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -487,6 +485,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -586,36 +585,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8A9F242B9EF07E9059748D74 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"/Users/jbaker/code/decamp11/pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFBCCED9D8585FBC164B7614 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"/Users/jbaker/code/decamp11/pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -817,8 +786,6 @@
 					"-framework",
 					"\"AdSupport\"",
 					"-framework",
-					"\"AmazonAd\"",
-					"-framework",
 					"\"AudioToolbox\"",
 					"-framework",
 					"\"CFNetwork\"",
@@ -917,8 +884,6 @@
 					"\"AVFoundation\"",
 					"-framework",
 					"\"AdSupport\"",
-					"-framework",
-					"\"AmazonAd\"",
 					"-framework",
 					"\"AudioToolbox\"",
 					"-framework",
