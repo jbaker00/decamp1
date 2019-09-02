@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <AmazonAd/AmazonAdRegistration.h>
 #import "ViewController.h"
 //@import GoogleMobileAds;
 
@@ -27,10 +26,6 @@
     
     //Setup firebase
     [FIRApp configure];
-    
-    //Setup Amazon Ads
-    [[AmazonAdRegistration sharedRegistration] setAppKey:@"34fa1d4c1a054935936df51d6ad30338"];
-    [self.window makeKeyAndVisible];
     
     //Setup Google Ads
     //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];

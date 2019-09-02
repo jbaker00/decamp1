@@ -10,19 +10,14 @@
 #import "TableViewController.h"
 #import "StopsTableVC.h"
 #import "ScheduleViewController.h"
-//#import <AmazonAd/AmazonAdView.h>
-//#import <AmazonAd/AmazonAdOptions.h>
-//#import <AmazonAd/AmazonAdError.h>
 @import GoogleMobileAds;
 #import <sys/utsname.h>
 
-//Use <AmazonAdViewDelegate> if using Amazon ads
 @interface ViewController () <GADBannerViewDelegate>
 {
     
 }
 
-//@property (nonatomic, retain) AmazonAdView *amazonAdView;
 @property(nonatomic, strong) GADBannerView *bannerView;
 
 
@@ -44,12 +39,6 @@
     return YES;
     
 }
-
-/*for amazon Ads
-@synthesize amazonAdView;
-@synthesize lastOrientation;
-*/
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -82,7 +71,6 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    //[self loadAmazonAd];
     [super viewDidAppear:NO];
     [self loadGoogleAd];
 }
@@ -271,42 +259,6 @@
 
 }
 
-/*- (void )loadAmazonAd
-{
-    NSLog(@"Entering ViewController::loadAmazonAd");
-
-    //Bannar AD
-    if (self.amazonAdView) {
-        [self.amazonAdView removeFromSuperview];
-        self.amazonAdView = nil;
-    }
-
-    NSLog(@"Bottom of screen location is %f",[UIScreen mainScreen].bounds.size.height);
-    NSLog(@"Height of the ad is %f",amazonAdView.frame.size.height);
-
-    const CGRect adFrame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 90, [UIScreen mainScreen].bounds.size.width, 90);
-    //const CGRect adFrame = CGRectMake(0.0f, 200.0f, [UIScreen mainScreen].bounds.size.width, 90.0f);
-
-    self.amazonAdView = [[AmazonAdView alloc] initWithFrame:adFrame];
-    //self.amazonAdView = [AmazonAdView amazonAdViewWithAdSize:AmazonAdSize_320x50];
-
-    [self.amazonAdView setHorizontalAlignment:AmazonAdHorizontalAlignmentCenter];
-    [self.amazonAdView setVerticalAlignment:AmazonAdVerticalAlignmentBottom];
-    
-    // Register the ViewController with the delegate to receive callbacks.
-    self.amazonAdView.delegate = self;
-    
-    //Set the ad options and load the ad
-    AmazonAdOptions *options = [AmazonAdOptions options];
-    
-    //Turn on if running tests
-    options.isTestRequest = NO;
-
-    [self.amazonAdView loadAd:options];
-    
- NSLog(@"Exiting ViewController::loadAmazonAd");
-
-}*/
 
 -(void)placeTextBorder:(UIButton*)btnField
 {
@@ -1025,57 +977,5 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewWillLeaveApplication");
 }
-
-
-/*#pragma mark UIContentContainer protocol For Amazon Ads
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
-{
-    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    [coordinator animateAlongsideTransition:nil completion:^(id<UIViewControllerTransitionCoordinatorContext> context){
-        // Reload Amazon Ad upon rotation.
-        // Important: Amazon expandable rich media ads target landscape and portrait mode separately.
-        // If your app supports device rotation events, your app must reload the ad when rotating between portrait and landscape mode.
-        [self loadAmazonAd];
-    }];
-}
-
-#pragma mark AmazonAdViewDelegate
-
-- (UIViewController *)viewControllerForPresentingModalView
-{
-    return self;
-}
-
-- (void)adViewDidLoad:(AmazonAdView *)view
-{
-    // Add the newly created Amazon Ad view to our view.
-    [self.view addSubview:view];
-    NSLog(@"Ad loaded");
-}
-
-- (void)adViewDidFailToLoad:(AmazonAdView *)view withError:(AmazonAdError *)error
-{
-    NSLog(@"Ad Failed to load. Error code %d: %@", error.errorCode, error.errorDescription);
-}
-
-- (void)adViewWillExpand:(AmazonAdView *)view
-{
-    NSLog(@"Ad will expand");
-    // Save orientation so when our ad collapses we can reload an ad
-    // Also useful if you need to programmatically rearrange view on orientation change
-    lastOrientation = [[UIApplication sharedApplication] statusBarOrientation];
-}
-
-- (void)adViewDidCollapse:(AmazonAdView *)view
-{
-    NSLog(@"Ad has collapsed");
-    // Check for if the orientation has changed while the view disappeared.
-    if (lastOrientation != [[UIApplication sharedApplication] statusBarOrientation]) {
-        [self loadAmazonAd];
-    }
-}
-*/
-
-
 
 @end
