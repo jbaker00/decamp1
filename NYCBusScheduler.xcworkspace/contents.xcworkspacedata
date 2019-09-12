@@ -5,9 +5,6 @@
       location = "group:NYCBusScheduler.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:../DeCampBeta3/decamp1/NYCBusScheduler.xcodeproj">
    </FileRef>
    <FileRef
