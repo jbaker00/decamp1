@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CEE8FE20D308AB92587463B /* libPods-NYCBusScheduler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */; };
 		4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */; };
 		4E5D680920572CE50014BBA5 /* arrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D680820572CE50014BBA5 /* arrow.jpeg */; };
 		4E62ED102086EE9E009D2260 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */; };
@@ -15,7 +14,6 @@
 		4EA81A1220993F0000AA421A /* EndBluePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA81A1120993F0000AA421A /* EndBluePin.png */; };
 		4EA81A1420993F0800AA421A /* StartRedPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA81A1320993F0800AA421A /* StartRedPin.png */; };
 		4EA81A1620993F1200AA421A /* 1200px-Lincolntunnel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA81A1520993F1200AA421A /* 1200px-Lincolntunnel.jpg */; };
-		4EAECD2120993AB100DD72E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EAECD2020993AB100DD72E8 /* GoogleService-Info.plist */; };
 		4EB3582B2038FE4100B6A622 /* title2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582A2038FE4100B6A622 /* title2.jpeg */; };
 		4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB3582E20391BBB00B6A622 /* bus-32.png */; };
 		4EB358312039208100B6A622 /* CartoonbusBus.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 4EB358302039208100B6A622 /* CartoonbusBus.PNG */; };
@@ -52,7 +50,6 @@
 		4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267432032C27300540D97 /* 88fromNYC.txt */; };
 		4ED267482032C27300540D97 /* 88fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */; };
 		4ED2674A2032C6CB00540D97 /* BusListDest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4ED267492032C6CB00540D97 /* BusListDest.txt */; };
-		4EEC9070205EC98C002774AD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEC906F205EC98B002774AD /* AdSupport.framework */; };
 		AD067C7C1F9E71B5000C0630 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7B1F9E71B5000C0630 /* main.m */; };
 		AD067C7F1F9E71B5000C0630 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C7E1F9E71B5000C0630 /* AppDelegate.m */; };
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
@@ -81,7 +78,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYCBusScheduler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NYCBusScheduler.entitlements; sourceTree = "<group>"; };
 		4E5D680820572CE50014BBA5 /* arrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpeg; sourceTree = "<group>"; };
@@ -92,7 +88,6 @@
 		4EA81A1120993F0000AA421A /* EndBluePin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EndBluePin.png; sourceTree = "<group>"; };
 		4EA81A1320993F0800AA421A /* StartRedPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartRedPin.png; sourceTree = "<group>"; };
 		4EA81A1520993F1200AA421A /* 1200px-Lincolntunnel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1200px-Lincolntunnel.jpg"; sourceTree = "<group>"; };
-		4EAECD2020993AB100DD72E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "NYCBusScheduler/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4EB3582A2038FE4100B6A622 /* title2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = title2.jpeg; sourceTree = "<group>"; };
 		4EB3582E20391BBB00B6A622 /* bus-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bus-32.png"; sourceTree = "<group>"; };
 		4EB358302039208100B6A622 /* CartoonbusBus.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartoonbusBus.PNG; sourceTree = "<group>"; };
@@ -130,8 +125,6 @@
 		4ED267432032C27300540D97 /* 88fromNYC.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYC.txt; path = Bustext/88fromNYC.txt; sourceTree = "<group>"; };
 		4ED267442032C27300540D97 /* 88fromNYCWeekdays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 88fromNYCWeekdays.txt; path = Bustext/88fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4ED267492032C6CB00540D97 /* BusListDest.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusListDest.txt; sourceTree = "<group>"; };
-		4EEC906F205EC98B002774AD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYCBusScheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler.release.xcconfig"; sourceTree = "<group>"; };
 		AD067C771F9E71B5000C0630 /* NYCBusScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCBusScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C7B1F9E71B5000C0630 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD067C7D1F9E71B5000C0630 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,7 +141,6 @@
 		AD067C9B1F9E71B5000C0630 /* NYCBusSchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCBusSchedulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C9F1F9E71B5000C0630 /* NYCBusSchedulerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCBusSchedulerUITests.m; sourceTree = "<group>"; };
 		AD067CA11F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEC4D847B3E41C8A6987FAEE /* Pods-NYCBusScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYCBusScheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYCBusScheduler/Pods-NYCBusScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,9 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EEC9070205EC98C002774AD /* AdSupport.framework in Frameworks */,
 				4EBBC63C2049D7550052A1A8 /* MapKit.framework in Frameworks */,
-				4CEE8FE20D308AB92587463B /* libPods-NYCBusScheduler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,21 +169,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		082ACD8AD5DE6145F4127A25 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AEC4D847B3E41C8A6987FAEE /* Pods-NYCBusScheduler.debug.xcconfig */,
-				7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4E3FA0702034136F0021E022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4EEC906F205EC98B002774AD /* AdSupport.framework */,
 				4EBBC63B2049D7550052A1A8 /* MapKit.framework */,
-				31CA6E575115CB0F7D0992E2 /* libPods-NYCBusScheduler.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,13 +291,11 @@
 		AD067C6E1F9E71B5000C0630 = {
 			isa = PBXGroup;
 			children = (
-				4EAECD2020993AB100DD72E8 /* GoogleService-Info.plist */,
 				AD067C791F9E71B5000C0630 /* NYCBusScheduler */,
 				AD067C931F9E71B5000C0630 /* NYCBusSchedulerTests */,
 				AD067C9E1F9E71B5000C0630 /* NYCBusSchedulerUITests */,
 				AD067C781F9E71B5000C0630 /* Products */,
 				4E3FA0702034136F0021E022 /* Frameworks */,
-				082ACD8AD5DE6145F4127A25 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,7 +373,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD067CA41F9E71B5000C0630 /* Build configuration list for PBXNativeTarget "NYCBusScheduler" */;
 			buildPhases = (
-				5F3EAEE193D4F11F74441288 /* [CP] Check Pods Manifest.lock */,
 				AD067C731F9E71B5000C0630 /* Sources */,
 				AD067C741F9E71B5000C0630 /* Frameworks */,
 				AD067C751F9E71B5000C0630 /* Resources */,
@@ -452,7 +428,7 @@
 		AD067C6F1F9E71B5000C0630 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Baker, James";
 				TargetAttributes = {
 					AD067C761F9E71B5000C0630 = {
@@ -517,7 +493,6 @@
 				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
 				4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */,
 				4ED267342032C14500540D97 /* 44toNYC.txt in Resources */,
-				4EAECD2120993AB100DD72E8 /* GoogleService-Info.plist in Resources */,
 				4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */,
 				AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */,
 				4ED267272032BA1800540D97 /* 66fromNYCWeekdays.txt in Resources */,
@@ -567,27 +542,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5F3EAEE193D4F11F74441288 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NYCBusScheduler-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD067C731F9E71B5000C0630 /* Sources */ = {
@@ -658,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -703,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -715,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -754,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -764,7 +720,6 @@
 		};
 		AD067CA51F9E71B5000C0630 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEC4D847B3E41C8A6987FAEE /* Pods-NYCBusScheduler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -774,11 +729,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
-					"-l\"GTMSessionFetcher\"",
-					"-l\"GoogleToolboxForMac\"",
 					"-l\"Protobuf\"",
 					"-l\"c++\"",
-					"-l\"nanopb\"",
 					"-l\"sqlite3\"",
 					"-l\"z\"",
 					"-framework",
@@ -802,33 +754,11 @@
 					"-framework",
 					"\"CoreVideo\"",
 					"-framework",
-					"\"Crashlytics\"",
-					"-framework",
 					"\"EventKit\"",
 					"-framework",
 					"\"EventKitUI\"",
 					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseISASwizzler\"",
-					"-framework",
-					"\"FirebaseInstanceID\"",
-					"-framework",
-					"\"FirebaseMethodSwizzler\"",
-					"-framework",
-					"\"FirebaseNanoPB\"",
-					"-framework",
-					"\"FirebasePerformance\"",
-					"-framework",
 					"\"GLKit\"",
-					"-framework",
-					"\"GoogleMobileAds\"",
 					"-framework",
 					"\"MediaPlayer\"",
 					"-framework",
@@ -863,7 +793,6 @@
 		};
 		AD067CA61F9E71B5000C0630 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A8EFE2DB5CF9F4EF6D052C5 /* Pods-NYCBusScheduler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -874,7 +803,6 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"GTMSessionFetcher\"",
-					"-l\"GoogleToolboxForMac\"",
 					"-l\"Protobuf\"",
 					"-l\"c++\"",
 					"-l\"nanopb\"",
@@ -901,33 +829,11 @@
 					"-framework",
 					"\"CoreVideo\"",
 					"-framework",
-					"\"Crashlytics\"",
-					"-framework",
 					"\"EventKit\"",
 					"-framework",
 					"\"EventKitUI\"",
 					"-framework",
-					"\"Fabric\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseISASwizzler\"",
-					"-framework",
-					"\"FirebaseInstanceID\"",
-					"-framework",
-					"\"FirebaseMethodSwizzler\"",
-					"-framework",
-					"\"FirebaseNanoPB\"",
-					"-framework",
-					"\"FirebasePerformance\"",
-					"-framework",
 					"\"GLKit\"",
-					"-framework",
-					"\"GoogleMobileAds\"",
 					"-framework",
 					"\"MediaPlayer\"",
 					"-framework",

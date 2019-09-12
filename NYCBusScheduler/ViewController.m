@@ -10,18 +10,18 @@
 #import "TableViewController.h"
 #import "StopsTableVC.h"
 #import "ScheduleViewController.h"
-@import GoogleMobileAds;
+//@import GoogleMobileAds;
 #import <sys/utsname.h>
 
-@interface ViewController () <GADBannerViewDelegate>
+/*@interface ViewController () <GADBannerViewDelegate>
 {
     
-}
+}*/
 
-@property(nonatomic, strong) GADBannerView *bannerView;
+//@property(nonatomic, strong) GADBannerView *bannerView;
 
 
-@end
+//@end
 
 
     NSMutableArray *tblBusSrc;
@@ -35,7 +35,7 @@
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     return YES;
     
 }
@@ -72,7 +72,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:NO];
-    [self loadGoogleAd];
+    //[self loadGoogleAd];
 }
 
 - (BOOL)isLargeDevice
@@ -220,7 +220,7 @@
 }*/
 
 
--(void) loadGoogleAd
+/*-(void) loadGoogleAd
 {
     NSLog(@"Entering ViewController::loadGoogleAd");
     //NSString* deviceType = [self findDeviceName];
@@ -230,13 +230,13 @@
     if([self isLargeDevice])
     {
         self.bannerView = [[GADBannerView alloc]
-                           initWithAdSize:kGADAdSizeMediumRectangle/*kGADAdSizeLargeBanner kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+                           initWithAdSize:kGADAdSizeMediumRectangle];
         NSLog(@"Set the banner add with size kGADAdSizeMediumRectangle");
     }
     else
     {
         self.bannerView = [[GADBannerView alloc]
-                           initWithAdSize:kGADAdSizeLargeBanner/* kGADAdSizeMediumRectangle kGADAdSizeLargeBanner kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+                           initWithAdSize:kGADAdSizeLargeBanner];
         NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
     }
     //set the googleAds delegate
@@ -257,7 +257,7 @@
   
     NSLog(@"Exiting ViewController::loadGoogleAd");
 
-}
+}*/
 
 
 -(void)placeTextBorder:(UIButton*)btnField
@@ -945,6 +945,7 @@
                                 ]];
     NSLog(@"Exiting ViewController::addBannerViewToView");
 }
+/*
 /// Tells the delegate an ad request loaded an ad.
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewDidReceiveAd");
@@ -977,5 +978,5 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewWillLeaveApplication");
 }
-
+*/
 @end
