@@ -10,19 +10,7 @@
 #import "TableViewController.h"
 #import "StopsTableVC.h"
 #import "ScheduleViewController.h"
-//@import GoogleMobileAds;
 #import <sys/utsname.h>
-
-/*@interface ViewController () <GADBannerViewDelegate>
-{
-    
-}*/
-
-//@property(nonatomic, strong) GADBannerView *bannerView;
-
-
-//@end
-
 
     NSMutableArray *tblBusSrc;
     NSMutableArray *tblBusDest;
@@ -46,6 +34,16 @@
     // Initialize Data
     NSLog(@"Entering ViewController::viewDidLoad");
 
+    //Prod Ads
+    self.interstitial = [[GADInterstitial alloc]
+                         initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+    //Test Ads
+    //self.interstitial = [[GADInterstitial alloc]
+    //                     initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+    
+    GADRequest *request = [GADRequest request];
+    [self.interstitial loadRequest:request];
+    
     [self placeTextBorder:self.btnTo];
     [self placeTextBorder:self.btnFrom];
     
@@ -74,6 +72,7 @@
     [super viewDidAppear:NO];
     //[self loadGoogleAd];
 }
+
 
 - (BOOL)isLargeDevice
 {
@@ -643,7 +642,15 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"Entering ViewController::prepareForSegue");
-
+    
+    NSLog(@"Loading interstitial Ad");
+    if (self.interstitial.isReady) {
+        [self.interstitial presentFromRootViewController:self];
+        NSLog(@"Showing interstitial AD");
+    } else {
+        NSLog(@"Ad wasn't ready");
+    }
+    
     if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
     {
         NSLog(@"Calling Segway for segwayShowFromTable");
