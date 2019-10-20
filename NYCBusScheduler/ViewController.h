@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Mapkit/Mapkit.h> 
-
+@import GoogleMobileAds;
 
 @interface ViewController : UIViewController  <CLLocationManagerDelegate> 
 {
@@ -18,6 +18,9 @@
     CLGeocoder *geocoder;
     NSString *strMyLoc;
 }
+
+@property (nonatomic, strong) GADInterstitial *interstitial;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFrom;
 @property (weak, nonatomic) IBOutlet UIButton *btnTo;
