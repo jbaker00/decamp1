@@ -23,7 +23,7 @@
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     return YES;
     
 }
@@ -36,10 +36,11 @@
 
     //Prod Ads
     self.interstitial = [[GADInterstitial alloc]
-                         initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+                        initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+    
     //Test Ads
     //self.interstitial = [[GADInterstitial alloc]
-    //                     initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+    //                    initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
     
     GADRequest *request = [GADRequest request];
     [self.interstitial loadRequest:request];
@@ -649,7 +650,7 @@
         NSLog(@"Showing interstitial AD");
     } else {
         NSLog(@"Ad wasn't ready");
-    }
+   }
     
     if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
     {
