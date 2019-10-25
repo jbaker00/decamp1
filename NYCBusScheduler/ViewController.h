@@ -32,6 +32,7 @@
 @property (nonatomic, assign) BOOL curLocUsed;
 
 @property (assign, nonatomic) UIInterfaceOrientation lastOrientation;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 
 @end
