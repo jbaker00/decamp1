@@ -300,7 +300,6 @@
 				D8B051BCCE2FCC6232C8A822 /* Pods-NYCBusScheduler.debug.xcconfig */,
 				6CF5CF5D1F31634C2BD25B7F /* Pods-NYCBusScheduler.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
