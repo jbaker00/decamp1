@@ -47,12 +47,14 @@
     [self.interstitial loadRequest:request];
     
     //Load the twitter feed at the bottomo of the screen
-    NSString *stringUrl= @"https://twitter.com/DeCampBusLines/status/1186956728539201536";
-    NSURL *URL = [NSURL URLWithString:stringUrl];
-    NSURLRequest *requestURL = [NSURLRequest requestWithURL:URL];
-    [self.webView loadRequest: requestURL];
+    //NSString *stringUrl= @"https://twitter.com/DeCampBusLines/status/1186956728539201536";
+    //NSURL *URL = [NSURL URLWithString:stringUrl];
+    //NSURLRequest *requestURL = [NSURLRequest requestWithURL:URL];
+    //[self.webView loadRequest: requestURL];
     
-
+    //Load a html file in the app
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"my" withExtension:@"html"];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     
     //border set for the to and from location
     [self placeTextBorder:self.btnTo];
