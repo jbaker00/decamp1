@@ -30,7 +30,7 @@
     //Setup Google Ads
     //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     //test ID for Google Ads [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/2934735716"];
-    //[[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
 
     return YES;
 }

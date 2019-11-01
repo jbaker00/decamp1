@@ -23,7 +23,7 @@
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     return YES;
     
 }
@@ -35,16 +35,24 @@
     NSLog(@"Entering ViewController::viewDidLoad");
 
     //Prod Ads
-    self.interstitial = [[GADInterstitial alloc]
-                        initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+    //self.interstitial = [[GADInterstitial alloc]
+    //                    initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
     
     //Test Ads
     //self.interstitial = [[GADInterstitial alloc]
     //                    initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
     
     //Load the request with the request object
-    GADRequest *request = [GADRequest request];
-    [self.interstitial loadRequest:request];
+    //GADRequest *request = [GADRequest request];
+    //[self.interstitial loadRequest:request];
+   
+    //Reset the Ad Shown count to 0 so we will show ads
+    self.iAdNotShownCount = 0;
+    
+    //Load the ads into the cache
+    self.interstitial = [self createAndLoadInterstitial];
+
+    
     
     //Load the twitter feed at the bottomo of the screen
     //NSString *stringUrl= @"https://twitter.com/DeCampBusLines/status/1186956728539201536";
@@ -78,6 +86,26 @@
     //[tblBusDest addObject:@"NYC_P/A Bus Terminal"];
     NSLog(@"Exiting ViewController::viewDidLoad");
 
+}
+
+- (GADInterstitial *)createAndLoadInterstitial {
+  
+    //Prod Adsd
+    GADInterstitial *interstitial =
+      [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+    
+    //Test Ads
+    //Test Ads
+    //GADInterstitial *interstitial = [[GADInterstitial alloc]
+    //                    initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+
+  interstitial.delegate = self;
+  [interstitial loadRequest:[GADRequest request]];
+  return interstitial;
+}
+
+- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
+  self.interstitial = [self createAndLoadInterstitial];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -286,6 +314,7 @@
     bottomBorderFrom.backgroundColor = [UIColor blackColor].CGColor;
     [btnField.layer addSublayer:bottomBorderFrom];
     
+    /*
     // Left border FromField
     CALayer *leftBorderFrom = [CALayer layer];
     leftBorderFrom.frame = CGRectMake(0.0f, 20.0f, 1.0f, btnField.frame.size.height-20);
@@ -302,7 +331,8 @@
     btnField.layer.borderWidth = .5f;
     btnField.layer.borderColor = [[UIColor blackColor]CGColor];
     btnField.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-    
+    */
+     
     NSLog(@"Exiting ViewController::placeTextBorder");
 
 }
@@ -656,14 +686,23 @@
 {
     NSLog(@"Entering ViewController::prepareForSegue");
     
-    NSLog(@"Loading interstitial Ad");
-    if (self.interstitial.isReady) {
-        [self.interstitial presentFromRootViewController:self];
-        NSLog(@"Showing interstitial AD");
-    } else {
-        NSLog(@"Ad wasn't ready");
-   }
-    
+    //Check to see how many times we have not displayed the ad already
+    if(self.iAdNotShownCount != 0)
+    {
+        self.iAdNotShownCount ++;
+    }
+    else //show the ad we have not shown it in a while as defined in the if statement above
+    {
+        NSLog(@"Loading interstitial Ad");
+        if (self.interstitial.isReady) {
+            [self.interstitial presentFromRootViewController:self];
+            NSLog(@"Showing interstitial AD");
+        } else {
+            NSLog(@"Ad wasn't ready");
+        }
+        //Reset the ad show count to 0 so it will show again
+        self.iAdNotShownCount = 0;
+    }
     if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
     {
         NSLog(@"Calling Segway for segwayShowFromTable");
