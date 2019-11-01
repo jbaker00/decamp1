@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18EE29602363EC370070D056 /* my.html in Resources */ = {isa = PBXBuildFile; fileRef = 18EE295F2363EC370070D056 /* my.html */; };
+		4CE8D1FD236BCB6200C97518 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CE8D1FC236BCB6200C97518 /* Launch Screen.storyboard */; };
 		4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */; };
 		4E5D680920572CE50014BBA5 /* arrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4E5D680820572CE50014BBA5 /* arrow.jpeg */; };
 		4E62ED102086EE9E009D2260 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E62ED0F2086EE9E009D2260 /* ScheduleViewController.m */; };
@@ -56,7 +57,6 @@
 		AD067C821F9E71B5000C0630 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C811F9E71B5000C0630 /* ViewController.m */; };
 		AD067C851F9E71B5000C0630 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD067C831F9E71B5000C0630 /* Main.storyboard */; };
 		AD067C871F9E71B5000C0630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD067C861F9E71B5000C0630 /* Assets.xcassets */; };
-		AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */; };
 		AD067C951F9E71B5000C0630 /* NYCBusSchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C941F9E71B5000C0630 /* NYCBusSchedulerTests.m */; };
 		AD067CA01F9E71B5000C0630 /* NYCBusSchedulerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD067C9F1F9E71B5000C0630 /* NYCBusSchedulerUITests.m */; };
 		FEE9D995F1A4F5051DAA98DD /* libPods-NYCBusScheduler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3424C1C2DC200E253B37DC75 /* libPods-NYCBusScheduler.a */; };
@@ -82,6 +82,8 @@
 /* Begin PBXFileReference section */
 		18EE295F2363EC370070D056 /* my.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = my.html; sourceTree = "<group>"; };
 		3424C1C2DC200E253B37DC75 /* libPods-NYCBusScheduler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYCBusScheduler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C33AAA7236A8E5C009B9B97 /* libGoogleUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE8D1FC236BCB6200C97518 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4E00E5F5203672A60056B6BE /* 33fromNYCWeekdays.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = 33fromNYCWeekdays.txt; sourceTree = "<group>"; };
 		4E3FA073203414660021E022 /* NYCBusScheduler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NYCBusScheduler.entitlements; sourceTree = "<group>"; };
 		4E5D680820572CE50014BBA5 /* arrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow.jpeg; sourceTree = "<group>"; };
@@ -138,7 +140,6 @@
 		AD067C811F9E71B5000C0630 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD067C841F9E71B5000C0630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD067C861F9E71B5000C0630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD067C891F9E71B5000C0630 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD067C8B1F9E71B5000C0630 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD067C901F9E71B5000C0630 /* NYCBusSchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCBusSchedulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD067C941F9E71B5000C0630 /* NYCBusSchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCBusSchedulerTests.m; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		4E3FA0702034136F0021E022 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C33AAA7236A8E5C009B9B97 /* libGoogleUtilities.a */,
 				4EBBC63B2049D7550052A1A8 /* MapKit.framework */,
 				3424C1C2DC200E253B37DC75 /* libPods-NYCBusScheduler.a */,
 			);
@@ -203,8 +205,8 @@
 		4ED266FB202EAB0600540D97 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				4CE8D1FC236BCB6200C97518 /* Launch Screen.storyboard */,
 				AD067C831F9E71B5000C0630 /* Main.storyboard */,
-				AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -507,10 +509,10 @@
 				4ED267012030B03F00540D97 /* BusListSrc.txt in Resources */,
 				4E00E5F6203672A60056B6BE /* 33fromNYCWeekdays.txt in Resources */,
 				4EB3582F20391BBB00B6A622 /* bus-32.png in Resources */,
+				4CE8D1FD236BCB6200C97518 /* Launch Screen.storyboard in Resources */,
 				4ED267332032C14500540D97 /* 44fromNYCWeekend.txt in Resources */,
 				4ED2670F2030B6D000540D97 /* 33toNYC.txt in Resources */,
 				4EA81A1620993F1200AA421A /* 1200px-Lincolntunnel.jpg in Resources */,
-				AD067C8A1F9E71B5000C0630 /* LaunchScreen.storyboard in Resources */,
 				4ED267472032C27300540D97 /* 88fromNYC.txt in Resources */,
 				4ED267342032C14500540D97 /* 44toNYC.txt in Resources */,
 				4ED267242032BA1800540D97 /* 66toNYCWeekend.txt in Resources */,
@@ -642,14 +644,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AD067C881F9E71B5000C0630 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD067C891F9E71B5000C0630 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -770,13 +764,12 @@
 			baseConfigurationReference = D8B051BCCE2FCC6232C8A822 /* Pods-NYCBusScheduler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = G3P9A8Z2NP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/NYCBusScheduler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 5.2;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Baker.SurburbanNJBusScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -788,13 +781,12 @@
 			baseConfigurationReference = 6CF5CF5D1F31634C2BD25B7F /* Pods-NYCBusScheduler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = G3P9A8Z2NP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/NYCBusScheduler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 5.2;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Baker.SurburbanNJBusScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";

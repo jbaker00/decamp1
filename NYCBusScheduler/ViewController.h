@@ -11,7 +11,7 @@
 #import <Mapkit/Mapkit.h> 
 @import GoogleMobileAds;
 
-@interface ViewController : UIViewController  <CLLocationManagerDelegate> 
+@interface ViewController : UIViewController  <CLLocationManagerDelegate,GADInterstitialDelegate>
 {
     CLLocationManager *locationManager; 
     CLLocation *locationMe;
@@ -21,6 +21,7 @@
 
 @property (nonatomic, strong) GADInterstitial *interstitial;
  
+@property (nonatomic) int iAdNotShownCount;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFrom;
 @property (weak, nonatomic) IBOutlet UIButton *btnTo;
