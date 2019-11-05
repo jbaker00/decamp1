@@ -17,11 +17,12 @@
     CLLocation *locationMe;
     CLGeocoder *geocoder;
     NSString *strMyLoc;
+    int iAdCounter;
 }
 
 @property (nonatomic, strong) GADInterstitial *interstitial;
  
-@property (nonatomic) int iAdNotShownCount;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFrom;
 @property (weak, nonatomic) IBOutlet UIButton *btnTo;

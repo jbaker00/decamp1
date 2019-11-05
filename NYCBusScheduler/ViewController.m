@@ -47,7 +47,7 @@
     //[self.interstitial loadRequest:request];
    
     //Reset the Ad Shown count to 0 so we will show ads
-    self.iAdNotShownCount = 0;
+    self->iAdCounter = 3;
     
     //Load the ads into the cache
     self.interstitial = [self createAndLoadInterstitial];
@@ -687,21 +687,21 @@
     NSLog(@"Entering ViewController::prepareForSegue");
     
     //Check to see how many times we have not displayed the ad already
-    if(self.iAdNotShownCount != 0)
+    if(self->iAdCounter != 3)
     {
-        self.iAdNotShownCount ++;
+        self->iAdCounter ++;
     }
     else //show the ad we have not shown it in a while as defined in the if statement above
     {
         NSLog(@"Loading interstitial Ad");
         if (self.interstitial.isReady) {
-            [self.interstitial presentFromRootViewController:self];
+            [self.interstitial presentFromRootViewController:self]; 
             NSLog(@"Showing interstitial AD");
         } else {
             NSLog(@"Ad wasn't ready");
         }
         //Reset the ad show count to 0 so it will show again
-        self.iAdNotShownCount = 0;
+        self->iAdCounter = 0;
     }
     if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
     {
