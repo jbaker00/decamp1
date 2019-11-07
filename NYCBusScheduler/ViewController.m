@@ -10,19 +10,7 @@
 #import "TableViewController.h"
 #import "StopsTableVC.h"
 #import "ScheduleViewController.h"
-@import GoogleMobileAds;
 #import <sys/utsname.h>
-
-@interface ViewController () <GADBannerViewDelegate>
-{
-    
-}
-
-@property(nonatomic, strong) GADBannerView *bannerView;
-
-
-@end
-
 
     NSMutableArray *tblBusSrc;
     NSMutableArray *tblBusDest;
@@ -35,7 +23,7 @@
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     return YES;
     
 }
@@ -46,6 +34,37 @@
     // Initialize Data
     NSLog(@"Entering ViewController::viewDidLoad");
 
+    //Prod Ads
+    //self.interstitial = [[GADInterstitial alloc]
+    //                    initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+    
+    //Test Ads
+    //self.interstitial = [[GADInterstitial alloc]
+    //                    initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+    
+    //Load the request with the request object
+    //GADRequest *request = [GADRequest request];
+    //[self.interstitial loadRequest:request];
+   
+    //Reset the Ad Shown count to 0 so we will show ads
+    self->iAdCounter = 3;
+    
+    //Load the ads into the cache
+    self.interstitial = [self createAndLoadInterstitial];
+
+    
+    
+    //Load the twitter feed at the bottomo of the screen
+    //NSString *stringUrl= @"https://twitter.com/DeCampBusLines/status/1186956728539201536";
+    //NSURL *URL = [NSURL URLWithString:stringUrl];
+    //NSURLRequest *requestURL = [NSURLRequest requestWithURL:URL];
+    //[self.webView loadRequest: requestURL];
+    
+    //Load a html file in the app
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"my" withExtension:@"html"];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    //border set for the to and from location
     [self placeTextBorder:self.btnTo];
     [self placeTextBorder:self.btnFrom];
     
@@ -69,11 +88,32 @@
 
 }
 
+- (GADInterstitial *)createAndLoadInterstitial {
+  
+    //Prod Adsd
+    GADInterstitial *interstitial =
+      [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
+    
+    //Test Ads
+    //Test Ads
+    //GADInterstitial *interstitial = [[GADInterstitial alloc]
+    //                    initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
+
+  interstitial.delegate = self;
+  [interstitial loadRequest:[GADRequest request]];
+  return interstitial;
+}
+
+- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
+  self.interstitial = [self createAndLoadInterstitial];
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:NO];
-    [self loadGoogleAd];
+    //[self loadGoogleAd];
 }
+
 
 - (BOOL)isLargeDevice
 {
@@ -220,7 +260,7 @@
 }*/
 
 
--(void) loadGoogleAd
+/*-(void) loadGoogleAd
 {
     NSLog(@"Entering ViewController::loadGoogleAd");
     //NSString* deviceType = [self findDeviceName];
@@ -230,13 +270,13 @@
     if([self isLargeDevice])
     {
         self.bannerView = [[GADBannerView alloc]
-                           initWithAdSize:kGADAdSizeMediumRectangle/*kGADAdSizeLargeBanner kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+                           initWithAdSize:kGADAdSizeMediumRectangle];
         NSLog(@"Set the banner add with size kGADAdSizeMediumRectangle");
     }
     else
     {
         self.bannerView = [[GADBannerView alloc]
-                           initWithAdSize:kGADAdSizeLargeBanner/* kGADAdSizeMediumRectangle kGADAdSizeLargeBanner kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
+                           initWithAdSize:kGADAdSizeLargeBanner];
         NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
     }
     //set the googleAds delegate
@@ -257,7 +297,7 @@
   
     NSLog(@"Exiting ViewController::loadGoogleAd");
 
-}
+}*/
 
 
 -(void)placeTextBorder:(UIButton*)btnField
@@ -274,6 +314,7 @@
     bottomBorderFrom.backgroundColor = [UIColor blackColor].CGColor;
     [btnField.layer addSublayer:bottomBorderFrom];
     
+    /*
     // Left border FromField
     CALayer *leftBorderFrom = [CALayer layer];
     leftBorderFrom.frame = CGRectMake(0.0f, 20.0f, 1.0f, btnField.frame.size.height-20);
@@ -290,7 +331,8 @@
     btnField.layer.borderWidth = .5f;
     btnField.layer.borderColor = [[UIColor blackColor]CGColor];
     btnField.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-    
+    */
+     
     NSLog(@"Exiting ViewController::placeTextBorder");
 
 }
@@ -643,7 +685,24 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"Entering ViewController::prepareForSegue");
-
+    
+    //Check to see how many times we have not displayed the ad already
+    if(self->iAdCounter != 3)
+    {
+        self->iAdCounter ++;
+    }
+    else //show the ad we have not shown it in a while as defined in the if statement above
+    {
+        NSLog(@"Loading interstitial Ad");
+        if (self.interstitial.isReady) {
+            [self.interstitial presentFromRootViewController:self]; 
+            NSLog(@"Showing interstitial AD");
+        } else {
+            NSLog(@"Ad wasn't ready");
+        }
+        //Reset the ad show count to 0 so it will show again
+        self->iAdCounter = 0;
+    }
     if ([[segue identifier] isEqualToString:@"segwayShowFromTable"])
     {
         NSLog(@"Calling Segway for segwayShowFromTable");
@@ -945,6 +1004,7 @@
                                 ]];
     NSLog(@"Exiting ViewController::addBannerViewToView");
 }
+/*
 /// Tells the delegate an ad request loaded an ad.
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewDidReceiveAd");
@@ -977,5 +1037,5 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewWillLeaveApplication");
 }
-
+*/
 @end

@@ -8,21 +8,21 @@
 
 #import "ScheduleViewController.h"
 #import "TravelTimeViewController.h"
-@import GoogleMobileAds;
+//@import GoogleMobileAds;
 
 
 
-@interface ScheduleViewController () <GADBannerViewDelegate>
+//@interface ScheduleViewController () <GADBannerViewDelegate>
 
-@property(nonatomic, strong) GADBannerView *bannerView;
+//@property(nonatomic, strong) GADBannerView *bannerView;
 
-@end
+//@end
 
 @implementation ScheduleViewController
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
+    //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     return YES;
     
 }
@@ -31,7 +31,7 @@
     [super viewDidLoad];
     NSLog(@"Entering scheduleTableVC::viewDidLoad");
 
-    [self loadGoogleAd];
+    //[self loadGoogleAd];
     
     //Init the dictionaries of buus if the data is from a current location selection
     if(self.curLocUsed == YES)
@@ -48,29 +48,29 @@
     
 }
 
--(void) loadGoogleAd
+/*-(void) loadGoogleAd
 {
     self.bannerView = [[GADBannerView alloc]
-                       initWithAdSize:kGADAdSizeLargeBanner/*kGADAdSizeFluid kGADAdSizeMediumRectangle kGADAdSizeBanner*/];
-    NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
-    
+                       initWithAdSize:kGADAdSizeLargeBanner  ];
+   NSLog(@"Set the banner add with size kGADAdSizeLargeBanner");
+ 
     //set the googleAds delegate
-    self.bannerView.delegate = self;
-    
+    // self.bannerView.delegate = self;
+
     [self addBannerViewToView:_bannerView];
     NSLog(@"add the banner add to the view with addBannerViewToView:_bannerView]");
     
     //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
     //NSLog(@"set the ad Unit to the test unit of ca-app-pub-3940256099942544/2934735716");
     
-    self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
-    NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
-    self.bannerView.rootViewController = self;
-    NSLog(@"Calling to load the banner ad into the view");
-    [self.bannerView loadRequest:[GADRequest request]];
-    NSLog(@"Called to load the banner ad into the view");
+    // self.bannerView.adUnitID = @"ca-app-pub-7871017136061682/5356722325";
+    //NSLog(@"set the ad Unit to the prod unit of ca-app-pub-7871017136061682/5356722325");
+    // self.bannerView.rootViewController = self;
+    // NSLog(@"Calling to load the banner ad into the view");
+    // [self.bannerView loadRequest:[GADRequest request]];
+    // NSLog(@"Called to load the banner ad into the view");
     
-}
+}  */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -658,6 +658,8 @@
                                 ]];
     NSLog(@"Exiting ViewController::addBannerViewToView");
 }
+
+/*
 /// Tells the delegate an ad request loaded an ad.
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewDidReceiveAd");
@@ -690,7 +692,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 - (void)adViewWillLeaveApplication:(GADBannerView *)adView {
     NSLog(@"ScheduleViewController::adViewWillLeaveApplication");
 }
-
+*/
 /*
 #pragma mark - Navigation
 

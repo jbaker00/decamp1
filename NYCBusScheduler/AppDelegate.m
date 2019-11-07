@@ -25,11 +25,13 @@
     // Use Firebase library to configure APIs
     
     //Setup firebase
-    [FIRApp configure];
+    //[FIRApp configure];
     
     //Setup Google Ads
     //[GADMobileAds configureWithApplicationID:@"ca-app-pub-7871017136061682~2467792962"];
     //test ID for Google Ads [GADMobileAds configureWithApplicationID:@"ca-app-pub-3940256099942544/2934735716"];
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
+
     return YES;
 }
 
