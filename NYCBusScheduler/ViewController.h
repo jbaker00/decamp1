@@ -9,15 +9,20 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Mapkit/Mapkit.h> 
+@import GoogleMobileAds;
 
-
-@interface ViewController : UIViewController  <CLLocationManagerDelegate> 
+@interface ViewController : UIViewController  <CLLocationManagerDelegate,GADInterstitialDelegate>
 {
     CLLocationManager *locationManager; 
     CLLocation *locationMe;
     CLGeocoder *geocoder;
     NSString *strMyLoc;
+    int iAdCounter;
 }
+
+@property (nonatomic, strong) GADInterstitial *interstitial;
+ 
+
 
 @property (weak, nonatomic) IBOutlet UIButton *btnFrom;
 @property (weak, nonatomic) IBOutlet UIButton *btnTo;
@@ -29,6 +34,7 @@
 @property (nonatomic, assign) BOOL curLocUsed;
 
 @property (assign, nonatomic) UIInterfaceOrientation lastOrientation;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 
 @end
