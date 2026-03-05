@@ -50,7 +50,7 @@
     self->iAdCounter = 3;
     
     //Load the ads into the cache
-    self.interstitial = [self createAndLoadInterstitial];
+    [self loadInterstitialAd];
 
     
     
@@ -88,24 +88,22 @@
 
 }
 
-- (GADInterstitial *)createAndLoadInterstitial {
-  
-    //Prod Adsd
-    GADInterstitial *interstitial =
-      [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"];
-    
-    //Test Ads
-    //Test Ads
-    //GADInterstitial *interstitial = [[GADInterstitial alloc]
-    //                    initWithAdUnitID:@"ca-app-pub-3940256099942544/4411468910"];
-
-  interstitial.delegate = self;
-  [interstitial loadRequest:[GADRequest request]];
-  return interstitial;
+- (void)loadInterstitialAd {
+    [GADInterstitialAd loadWithAdUnitID:@"ca-app-pub-7871017136061682/3420811043"
+                                request:[GADRequest request]
+                      completionHandler:^(GADInterstitialAd *ad, NSError *error) {
+        if (error) {
+            NSLog(@"Failed to load interstitial ad: %@", error);
+            return;
+        }
+        self.interstitial = ad;
+        self.interstitial.fullScreenContentDelegate = self;
+    }];
 }
 
-- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
-  self.interstitial = [self createAndLoadInterstitial];
+- (void)adDidDismissFullScreenContent:(id<GADFullScreenPresentingAd>)ad {
+    self.interstitial = nil;
+    [self loadInterstitialAd];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -694,7 +692,7 @@
     else //show the ad we have not shown it in a while as defined in the if statement above
     {
         NSLog(@"Loading interstitial Ad");
-        if (self.interstitial.isReady) {
+        if (self.interstitial) {
             [self.interstitial presentFromRootViewController:self]; 
             NSLog(@"Showing interstitial AD");
         } else {
@@ -990,8 +988,8 @@
                                 [NSLayoutConstraint constraintWithItem:bannerView
                                                              attribute:NSLayoutAttributeBottom
                                                              relatedBy:NSLayoutRelationEqual
-                                                                toItem:self.bottomLayoutGuide
-                                                             attribute:NSLayoutAttributeTop
+                                                                toItem:self.view.safeAreaLayoutGuide
+                                                             attribute:NSLayoutAttributeBottom
                                                             multiplier:1
                                                               constant:0],
                                 [NSLayoutConstraint constraintWithItem:bannerView

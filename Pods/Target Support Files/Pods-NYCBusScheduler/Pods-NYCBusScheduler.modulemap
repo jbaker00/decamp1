@@ -1,0 +1,6 @@
+module Pods_NYCBusScheduler {
+  umbrella header "Pods-NYCBusScheduler-umbrella.h"
+
+  export *
+  module * { export * }
+}

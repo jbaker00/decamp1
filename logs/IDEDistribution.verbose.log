@@ -1,0 +1,737 @@
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodMacAppStoreDistribution: 0xc22a80200> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Accepted distribution method <IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodTVOSAppStoreDistribution: 0xc22a80910> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodAppStoreDistributionVisionOS: 0xc22a80b50> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodAdHocVisionOS: 0xc22a809c0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodWatchOSAdHoc: 0xc22a80970> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodMacAdHoc: 0xc22a808b0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodTVOSAdHoc: 0xc22a819e0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Accepted distribution method <IDEDistributionMethodiOSAdHoc: 0xc22a81b90>
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodTVOSEnterprise: 0xc22a809b0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodWatchOSEnterprise: 0xc22a80960> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodEnterpriseVisionOS: 0xc22a80920> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Accepted distribution method <IDEDistributionMethodiOSEnterprise: 0xc22a81a90>
+2026-02-24 03:59:50 +0000 [MT] Accepted distribution method <IDEDistributionMethodDevelopmentSigned: 0xc22a80310>
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodDevelopmentSignedVisionOS: 0xc22a80950> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodWatchOSDevelopmentSigned: 0xc22a80930> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodTVOSDevelopmentSigned: 0xc22a808f0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodDeveloperIDNotarizedApp: 0xc22a809a0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodDeveloperID: 0xc22a808c0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodSaveBuiltProducts: 0xc22a80990> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodDevelopmentSignedMac: 0xc22a80270> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodMacApplication: 0xc22a80190> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodTVOSAppStoreValidation: 0xc22a802f0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodAppStoreValidationVisionOS: 0xc22a80940> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodMacAppStoreValidation: 0xc22a81ad0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodiOSAppStoreValidation: 0xc22a80be0> because it doesn't support distributing archive
+2026-02-24 03:59:50 +0000 [MT] Rejected distribution method <IDEDistributionMethodExportArchive: 0xc22a80980> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacAppStoreDistribution: 0xc22a80200> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSAppStoreDistribution: 0xc22a80910> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodAppStoreDistributionVisionOS: 0xc22a80b50> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodAdHocVisionOS: 0xc22a809c0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodWatchOSAdHoc: 0xc22a80970> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacAdHoc: 0xc22a808b0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSAdHoc: 0xc22a819e0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodiOSAdHoc: 0xc22a81b90>
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSEnterprise: 0xc22a809b0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodWatchOSEnterprise: 0xc22a80960> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodEnterpriseVisionOS: 0xc22a80920> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodiOSEnterprise: 0xc22a81a90>
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodDevelopmentSigned: 0xc22a80310>
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDevelopmentSignedVisionOS: 0xc22a80950> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodWatchOSDevelopmentSigned: 0xc22a80930> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSDevelopmentSigned: 0xc22a808f0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDeveloperIDNotarizedApp: 0xc22a809a0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDeveloperID: 0xc22a808c0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodSaveBuiltProducts: 0xc22a80990> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDevelopmentSignedMac: 0xc22a80270> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacApplication: 0xc22a80190> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSAppStoreValidation: 0xc22a802f0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodAppStoreValidationVisionOS: 0xc22a80940> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacAppStoreValidation: 0xc22a81ad0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodiOSAppStoreValidation: 0xc22a80be0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodExportArchive: 0xc22a80980> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Available distribution methods: {(
+    <IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>,
+    <IDEDistributionMethodiOSAdHoc: 0xc22a81b90>,
+    <IDEDistributionMethodiOSEnterprise: 0xc22a81a90>,
+    <IDEDistributionMethodDevelopmentSigned: 0xc22a80310>
+)}
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacAppStoreDistribution: 0xc22a80200> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSAppStoreDistribution: 0xc22a80910> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodAppStoreDistributionVisionOS: 0xc22a80b50> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodAdHocVisionOS: 0xc22a809c0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodWatchOSAdHoc: 0xc22a80970> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacAdHoc: 0xc22a808b0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSAdHoc: 0xc22a819e0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodiOSAdHoc: 0xc22a81b90>
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSEnterprise: 0xc22a809b0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodWatchOSEnterprise: 0xc22a80960> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodEnterpriseVisionOS: 0xc22a80920> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodiOSEnterprise: 0xc22a81a90>
+2026-02-24 03:59:53 +0000  Accepted distribution method <IDEDistributionMethodDevelopmentSigned: 0xc22a80310>
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDevelopmentSignedVisionOS: 0xc22a80950> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodWatchOSDevelopmentSigned: 0xc22a80930> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSDevelopmentSigned: 0xc22a808f0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDeveloperIDNotarizedApp: 0xc22a809a0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDeveloperID: 0xc22a808c0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodSaveBuiltProducts: 0xc22a80990> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodDevelopmentSignedMac: 0xc22a80270> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacApplication: 0xc22a80190> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodTVOSAppStoreValidation: 0xc22a802f0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodAppStoreValidationVisionOS: 0xc22a80940> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodMacAppStoreValidation: 0xc22a81ad0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodiOSAppStoreValidation: 0xc22a80be0> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Rejected distribution method <IDEDistributionMethodExportArchive: 0xc22a80980> because it doesn't support distributing archive
+2026-02-24 03:59:53 +0000  Available distribution methods: {(
+    <IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>,
+    <IDEDistributionMethodiOSAdHoc: 0xc22a81b90>,
+    <IDEDistributionMethodiOSEnterprise: 0xc22a81a90>,
+    <IDEDistributionMethodDevelopmentSigned: 0xc22a80310>
+)}
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Can't have a profile, not a bundle at <DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>
+2026-02-24 03:59:53 +0000  IDEDistributionItem init <DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>
+2026-02-24 03:59:53 +0000  Set distributionItems on context: (
+    "<IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59\U202fPM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539cf00; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(\n    \"1.2.840.113635.100.6.1.12\",\n    \"1.2.840.113635.100.6.1.2\"\n), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{\n    \"application-identifier\" = \"4PDB3TQD2G.Baker.SurburbanNJBusScheduler\";\n    \"com.apple.developer.team-identifier\" = G3P9A8Z2NP;\n    \"get-task-allow\" = 1;\n}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59\U202fPM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'>"
+)
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib are []
+2026-02-24 03:59:53 +0000  Archs to thin for item /Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib are []
+2026-02-24 03:59:53 +0000  [OPTIONAL] Found platform <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>> and cert <DVTSigningCertificate: 0xc0539cf00; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''> for <DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>
+2026-02-24 03:59:53 +0000  [OPTIONAL] Profile <DVTEmbeddedProvisioningProfile 0xc0539cf00: name: iOS Team Provisioning Profile: *, UUID: 74cbe4ad-2498-463f-8e77-5778672fed20, teamName: James Baker, teamIdentifierPrefixes: (
+    G3P9A8Z2NP
+), entitlements: {
+    "application-identifier" = "4PDB3TQD2G.*";
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "4PDB3TQD2G.*",
+        "com.apple.token"
+    );
+}, appIdentifierName: jbiOS, applicationIdentifierPrefixes: (
+    4PDB3TQD2G
+), dateCreated: 2026-01-25 19:50:56 +0000, dateExpired: 2027-01-25 19:50:56 +0000, certificateKinds: {(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+)}, certificateSHA1Hashes: {(
+    DFFD70937E172C20739CFBC4F6A4397C8A6200BB
+)}, supportedUDIDs: {(
+    "00008130-001c1036342a001c",
+    "00008103-000131321a87001e"
+)}, isUniversal: 0, isXcodeManaged: 1, platforms: {(
+    <DVTPlatform:0xc0d627f00:'com.apple.platform.xros':<DVTFilePath:0xc0d4e8d20:'/Applications/Xcode.app/Contents/Developer/Platforms/XROS.platform'>>,
+    <DVTPlatform:0xc0d627e00:'com.apple.platform.watchos':<DVTFilePath:0xc0d660540:'/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform'>>,
+    <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>
+)}, filePath: <DVTFilePath:0xc2508a920:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/embedded.mobileprovision'>> for <DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'> was an automatic profile
+2026-02-24 03:59:53 +0000  Distributable's provisioning style is Automatic
+2026-02-24 03:59:54 +0000  App Store Connect request for store configuration response: <DVTITunesConnectConfigurationResponse: 0xc1d648ec0; isSuccessful='1', configuration='{
+    G3P9A8Z2NP =     {
+        "com.apple.platform.appletvos" =         {
+            architectures =             {
+                defaultArch =                 {
+                    defaultProductType =                     {
+                        format =                         {
+                            bitCode =                             {
+                                supportLevel = unsupported;
+                            };
+                            compiledCode =                             {
+                                supportLevel = required;
+                            };
+                        };
+                    };
+                };
+            };
+            iconSource =             {
+                largeAppIcon = carInBinary;
+                primaryIcons = carInBinary;
+            };
+            onDemandResources =             {
+                sizeLimits =                 {
+                    assetPack = 512000000;
+                    prioritizedTotal = 2000000000;
+                    total = 20000000000;
+                };
+                supportLevel = supported;
+            };
+        };
+        "com.apple.platform.iphoneos" =         {
+            architectures =             {
+                defaultArch =                 {
+                    defaultProductType =                     {
+                        format =                         {
+                            bitCode =                             {
+                                supportLevel = unsupported;
+                            };
+                            compiledCode =                             {
+                                supportLevel = required;
+                            };
+                        };
+                    };
+                };
+            };
+            iconSource =             {
+                largeAppIcon = unsupported;
+                primaryIcons = pngInBinary;
+            };
+            onDemandResources =             {
+                sizeLimits =                 {
+                    assetPack = 512000000;
+                    total = 20000000000;
+                };
+                supportLevel = supported;
+            };
+        };
+        "com.apple.platform.macosx" =         {
+            architectures =             {
+                defaultArch =                 {
+                    defaultProductType =                     {
+                        format =                         {
+                            bitCode =                             {
+                                supportLevel = unsupported;
+                            };
+                            compiledCode =                             {
+                                supportLevel = required;
+                            };
+                        };
+                    };
+                };
+            };
+            iconSource =             {
+                largeAppIcon = pngInBinary;
+                primaryIcons = pngInBinary;
+            };
+            onDemandResources =             {
+                supportLevel = unsupported;
+            };
+        };
+        "com.apple.platform.watchos" =         {
+            architectures =             {
+                defaultArch =                 {
+                    defaultProductType =                     {
+                        format =                         {
+                            bitCode =                             {
+                                supportLevel = unsupported;
+                            };
+                            compiledCode =                             {
+                                supportLevel = required;
+                            };
+                        };
+                    };
+                };
+            };
+            iconSource =             {
+                largeAppIcon = unsupported;
+                primaryIcons = pngInBinary;
+            };
+            onDemandResources =             {
+                supportLevel = unsupported;
+            };
+        };
+        "com.apple.platform.xros" =         {
+            architectures =             {
+                defaultArch =                 {
+                    defaultProductType =                     {
+                        format =                         {
+                            bitCode =                             {
+                                supportLevel = unsupported;
+                            };
+                            compiledCode =                             {
+                                supportLevel = required;
+                            };
+                        };
+                    };
+                };
+            };
+            iconSource =             {
+                largeAppIcon = carInBinary;
+                primaryIcons = carInBinary;
+            };
+            onDemandResources =             {
+                supportLevel = unsupported;
+            };
+        };
+        configModelVersion = "1.1";
+    };
+    preflight =     (
+        G3P9A8Z2NP
+    );
+}', alertMessage='(null)', errors='(null)', warnings='(null)', infoMessages='(null)'>
+2026-02-24 03:59:54 +0000  App Store Connect team IDs for account (null) are (
+    G3P9A8Z2NP
+)
+2026-02-24 03:59:55 +0000  Starting evaluation for distribution items:
+(
+    "<IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59\U202fPM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539ce40; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(\n    \"1.2.840.113635.100.6.1.12\",\n    \"1.2.840.113635.100.6.1.2\"\n), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{\n    \"application-identifier\" = \"4PDB3TQD2G.Baker.SurburbanNJBusScheduler\";\n    \"com.apple.developer.team-identifier\" = G3P9A8Z2NP;\n    \"get-task-allow\" = 1;\n}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59\U202fPM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'>"
+)
+2026-02-24 03:59:55 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252aa300; distributionItem='<IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539e880; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{
+    "application-identifier" = "4PDB3TQD2G.Baker.SurburbanNJBusScheduler";
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 1;
+}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e816b0>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80ea0>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e83b40>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e83390>"
+)'> with overrides <IDEProvisionableOverrides 0xc0539e700: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a2120>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539e880; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{
+    "application-identifier" = "4PDB3TQD2G.Baker.SurburbanNJBusScheduler";
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 1;
+}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e816b0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539e880; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{
+    "application-identifier" = "4PDB3TQD2G.Baker.SurburbanNJBusScheduler";
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 1;
+}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80ea0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539e880; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{
+    "application-identifier" = "4PDB3TQD2G.Baker.SurburbanNJBusScheduler";
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 1;
+}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e83b40>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47420; bundleID='Baker.SurburbanNJBusScheduler', path='<DVTFilePath:0xc2508bf00:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45da0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc0539e880; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='{
+    "application-identifier" = "4PDB3TQD2G.Baker.SurburbanNJBusScheduler";
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 1;
+}', teamID='G3P9A8Z2NP', identifier='Baker.SurburbanNJBusScheduler', executablePath='<DVTFilePath:0xc250df6c0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/NYCBusScheduler'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e83390>: {
+    "application-identifier" = "$(AppIdentifierPrefix)Baker.SurburbanNJBusScheduler";
+}
+2026-02-24 03:59:55 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252a8f80; distributionItem='<IDEDistributionItem: 0xc24d47960; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45980; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02cc5440; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e830f0>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e83570>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e81680>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e832d0>"
+)'> with overrides <IDEProvisionableOverrides 0xc02cc4c00: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a00f0>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47960; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45980; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02cc5440; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e830f0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47960; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45980; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02cc5440; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e83570>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47960; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45980; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02cc5440; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e81680>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d47960; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45980; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02cc5440; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0xc25089ea0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e832d0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252a9000; distributionItem='<IDEDistributionItem: 0xc24d44e40; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d46d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02ce89c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e83360>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80cc0>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e819b0>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e82fa0>"
+)'> with overrides <IDEProvisionableOverrides 0xc02ce9200: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a2de0>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44e40; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d46d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02ce89c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e83360>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44e40; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d46d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02ce89c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80cc0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44e40; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d46d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02ce89c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e819b0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44e40; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d46d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02ce89c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0xc1bd43d40:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e82fa0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252a9f80; distributionItem='<IDEDistributionItem: 0xc24d45d40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45860; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d05740; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e81e60>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80d20>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e82ac0>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e83720>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d05680: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a0470>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45d40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45860; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d05740; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e81e60>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45d40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45860; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d05740; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80d20>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45d40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45860; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d05740; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e82ac0>: {
+}
+2026-02-24 03:59:55 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45d40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45860; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d05740; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0xc1bcd5420:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e83720>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252aa400; distributionItem='<IDEDistributionItem: 0xc24d44fc0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45b60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d15e00; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e83510>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e81c20>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e80ed0>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e80540>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d16f40: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc24158800>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44fc0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45b60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d15980; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e83510>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44fc0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45b60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d15980; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e81c20>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44fc0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45b60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d15980; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e80ed0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44fc0; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45b60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d15980; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0xc1bcd7090:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e80540>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252abb00; distributionItem='<IDEDistributionItem: 0xc24d44ba0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d2d8c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e828b0>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e835a0>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e82eb0>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e80300>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d2c180: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1c552530>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44ba0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d2d8c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e828b0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44ba0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d2d8c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e835a0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44ba0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d2d8c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e82eb0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d44ba0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44c00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d2d8c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0xc1bca6ae0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e80300>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252aa580; distributionItem='<IDEDistributionItem: 0xc24d456e0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d444e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d42040; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e82400>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e821c0>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e83c30>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e83b70>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d41bc0: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1bcd25c0>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d456e0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d444e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d42040; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e82400>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d456e0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d444e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d42040; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e821c0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d456e0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d444e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d42040; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e83c30>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d456e0; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d444e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d42040; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0xc24e76e60:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e83b70>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252aa600; distributionItem='<IDEDistributionItem: 0xc24d46e80; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44f00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d583c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e82340>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80c30>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e82370>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e81800>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d58180: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc183cfb20>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46e80; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44f00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d583c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e82340>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46e80; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44f00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d583c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e80c30>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46e80; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44f00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d583c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e82370>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46e80; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d44f00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d583c0; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0xc24e76a70:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e81800>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252aaa00; distributionItem='<IDEDistributionItem: 0xc24d46f40; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d471e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d72280; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e80ab0>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e82850>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e80c60>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e80030>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d71e00: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1c782540>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46f40; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d471e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d72280; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e80ab0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46f40; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d471e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d72280; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e82850>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46f40; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d471e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d72280; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e80c60>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d46f40; bundleID='com.apple.dt.runtime.swiftConcurrency', path='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d471e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d72280; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftConcurrency', executablePath='<DVTFilePath:0xc2508b020:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswift_Concurrency.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e80030>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Evaluating <IDEDistributionItemProvisionable: 0xc252aaf80; distributionItem='<IDEDistributionItem: 0xc24d45c20; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45260; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d8c600; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'>', team='<IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>', method='<IDEDistributionMethodiOSAppStoreDistribution: 0xc22a802a0>', provisioningStyle='0', entitlementsProcessors='(
+    "<IDEiCloudEntitlementsProcessor: 0xc06e83420>",
+    "<IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e838d0>",
+    "<IDEClassKitEntitlementsProcessor: 0xc06e837e0>",
+    "<IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e81710>"
+)'> with overrides <IDEProvisionableOverrides 0xc02d8d500: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1c781320>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45c20; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45260; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d8c600; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> from <IDEiCloudEntitlementsProcessor: 0xc06e83420>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45c20; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45260; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d8c600; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> from <IDEAppAttestEnvironmentEntitlementsProcessor: 0xc06e838d0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45c20; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45260; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d8c600; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> from <IDEClassKitEntitlementsProcessor: 0xc06e837e0>: {
+}
+2026-02-24 03:59:56 +0000 [MT] Applying entitlements delta for <IDEDistributionItem: 0xc24d45c20; bundleID='com.apple.dt.runtime.swiftos', path='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc24d45260; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc02d8c600; name='Apple Development: James Baker (8BNYND477R)', hash='DFFD70937E172C20739CFBC4F6A4397C8A6200BB', serialNumber='7B824CA1DE6C2E9395B1E6C91B03BD62', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-25 07:11:35 +0000''>', entitlements='(null)', teamID='G3P9A8Z2NP', identifier='com.apple.dt.runtime.swiftos', executablePath='<DVTFilePath:0xc24e773a0:'/Users/jamesbaker/Library/Developer/Xcode/Archives/2026-02-23/NYCBusScheduler 2-23-26, 7.59 PM.xcarchive/Products/Applications/NYCBusScheduler.app/Frameworks/libswiftos.dylib'>', hardenedRuntime='0'>'> from <IDEAppIdentifierPrefixedEntitlementsProcessor: 0xc06e81710>: {
+}
+2026-02-24 03:59:57 +0000 [MT] Evaluation for libswiftCore.dylib is <IDEProvisionableStatusEvaluation 0xc25375340: inputs: <IDEProvisionableStatusEvalutorInputs 0xc02d4b750: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610ef10: name: libswiftCore.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc03395900: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a3280>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftCore, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc240c2f60; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1d4a2080>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc23e46560: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02cc4c00: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a00f0>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc094d3240>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03012ac0; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:57 +0000 [MT] Evaluation for libswiftCoreFoundation.dylib is <IDEProvisionableStatusEvaluation 0xc25374230: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a4dc0: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610e0d0: name: libswiftCoreFoundation.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc080714a0: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a1e00>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftCoreFoundation, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc23e46c60; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1d4a1780>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc2407dce0: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02ce9200: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a2de0>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc094d0ba0>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc030121c0; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:57 +0000 [MT] Evaluation for libswiftCoreGraphics.dylib is <IDEProvisionableStatusEvaluation 0xc24ea58f0: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a7110: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610dcb0: name: libswiftCoreGraphics.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc085959a0: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc2415a4d0>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftCoreGraphics, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc2407dde0; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc2415ba40>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc24087400: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d05680: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a0470>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc067f3e40>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03011bc0; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:57 +0000 [MT] Evaluation for libswiftDarwin.dylib is <IDEProvisionableStatusEvaluation 0xc24ea5ff0: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a7430: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610f0c0: name: libswiftDarwin.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc0852b2a0: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1c552af0>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftDarwin, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc24087500; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1c553d10>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc241c4d40: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d16f40: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc24158800>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc067f3480>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03012940; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:58 +0000 [MT] Evaluation for libswiftDispatch.dylib is <IDEProvisionableStatusEvaluation 0xc24ea7db0: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a4f50: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610e880: name: libswiftDispatch.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc0a745040: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1bcd03b0>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftDispatch, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc241c5080; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1bcd2e10>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc2547e5c0: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d2c180: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1c552530>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc067f2490>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03013b40; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:58 +0000 [MT] Evaluation for libswiftFoundation.dylib is <IDEProvisionableStatusEvaluation 0xc24ea4ee0: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a4c80: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610cc00: name: libswiftFoundation.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc085ca260: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc183ce9e0>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftFoundation, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc2547e980; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc183cd3c0>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc2549fd80: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d41bc0: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1bcd25c0>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc06e80a20>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03013780; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:58 +0000 [MT] Evaluation for libswiftObjectiveC.dylib is <IDEProvisionableStatusEvaluation 0xc24ea7100: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a7f20: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610dad0: name: libswiftObjectiveC.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc08535ea0: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1c782530>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftObjectiveC, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc25486340; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1c7801d0>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc254c56c0: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d58180: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc183cfb20>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc096dca50>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc030133c0; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:58 +0000 [MT] Evaluation for libswift_Concurrency.dylib is <IDEProvisionableStatusEvaluation 0xc25374c40: inputs: <IDEProvisionableStatusEvalutorInputs 0xc02d480f0: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610f120: name: libswift_Concurrency.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc03394500: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1c781cc0>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftConcurrency, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc254c5c00; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1c782460>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc254eae80: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d71e00: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1c782540>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc09acc000>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03011140; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 03:59:59 +0000 [MT] Evaluation for libswiftos.dylib is <IDEProvisionableStatusEvaluation 0xc24ea7480: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a71b0: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610eb20: name: libswiftos.dylib, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc08534a00: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1c783f10>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: com.apple.dt.runtime.swiftos, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc254eb340; signedEntitlements='{\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1c780e30>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc255147c0: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc02d8d500: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1c781320>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc063f63d0>:
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc03011ec0; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 04:00:00 +0000 [MT] Evaluation for NYCBusScheduler.app is <IDEProvisionableStatusEvaluation 0xc24ea5730: inputs: <IDEProvisionableStatusEvalutorInputs 0xc078a4500: provisionableSnapshot: <IDEProvisionableSnapshot 0xc0610f360: name: NYCBusScheduler.app, configurations: {
+    Default = "<_IDEProvisionableConfigurationSnapshot 0xc08072580: name: Default, provisioningStyle: 0, certificateSigningStyle: 2, team: <IDEProvisioningDisambiguatableBasicTeam: 0xc0d1b28c0; teamID='G3P9A8Z2NP', teamName='James Baker', teamType='Individual', username='jbaker_00@msn.com', isFreeProvisioningTeam='0'>, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a12f0>, platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), bundleIdentifier: Baker.SurburbanNJBusScheduler, profileSpecifier: (null), certificateIdentifier: iPhone Distribution, entitlementsFilePath: (null), baseEntitlements: <IDEProvisionableEntitlements: 0xc1bc1c960; signedEntitlements='{\n    \"application-identifier\" = \"$(AppIdentifierPrefix)Baker.SurburbanNJBusScheduler\";\n    \"com.apple.developer.team-identifier\" = G3P9A8Z2NP;\n}', simulatedEntitlements='(null)'>, entitlementsExpansion: <IDEDistributionProvisioningEntitlementsExpansion: 0xc1d4a3750>, entitlementsDestination: 1, allowSigningWithoutTeamSelection: 0, signingRequiresTeam: 0, appIDFeatures: <DVTPortalAppIDFeatures 0xc240c2de0: Features: {\n}, Containers: {\n}>, provisioningPurpose: app-store, supportsIOSMac: 0, areFeaturesUpToDate: 0>";
+}, overrides: <IDEProvisionableOverrides 0xc0539e700: configuration: Default, profileSupport: <IDEProvisioningProfileSupport: 0xc1d4a2120>, provisioningStyle: (null), certificateSigningStyle: (null), provisioningPurpose: app-store, team: (null), platform: <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>, sdk: (null), sdkVariant: (null), profileSpecifier: (null), certificateIdentifier: (null), bundleIdentifier: (null), entitlements: (null), entitlementsFile: (null), baseEntitlements: (null), entitlementsExpansion: (null), entitlementsDestination: (null), allowSigningWithoutTeamSelection: (null), signingRequiresTeam: (null), appIDFeatures: (null)>>>, configuration: Default, codesignParameterSnapshot: <IDECodesignParameterSnapshot: 0xc0949b960>:
+Profile:  <DVTEmbeddedProvisioningProfile 0xc03011200: name: iOS Team Store Provisioning Profile: Baker.SurburbanNJBusScheduler, UUID: df3e378a-f1a2-4041-8c00-7325a46528d9, teamName: James Baker, teamIdentifierPrefixes: (
+    G3P9A8Z2NP
+), entitlements: {
+    "application-identifier" = "G3P9A8Z2NP.Baker.SurburbanNJBusScheduler";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = G3P9A8Z2NP;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "G3P9A8Z2NP.*",
+        "com.apple.token"
+    );
+}, appIdentifierName: SurburbanNJBusScheduler, applicationIdentifierPrefixes: (
+    G3P9A8Z2NP
+), dateCreated: 2026-02-24 04:00:00 +0000, dateExpired: 2027-01-26 07:02:38 +0000, certificateKinds: {(
+    "1.2.840.113635.100.6.1.4",
+    "1.2.840.113635.100.6.1.7"
+)}, certificateSHA1Hashes: {(
+    362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+)}, supportedUDIDs: {(
+)}, isUniversal: 0, isXcodeManaged: 1, platforms: {(
+    <DVTPlatform:0xc0d627f00:'com.apple.platform.xros':<DVTFilePath:0xc0d4e8d20:'/Applications/Xcode.app/Contents/Developer/Platforms/XROS.platform'>>,
+    <DVTPlatform:0xc0d627e00:'com.apple.platform.watchos':<DVTFilePath:0xc0d660540:'/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform'>>,
+    <DVTPlatform:0xc0d627d80:'com.apple.platform.iphoneos':<DVTFilePath:0xc0d660460:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>
+)}, filePath: <DVTFilePath:0xc033a3e80:'/Users/jamesbaker/Library/Developer/Xcode/UserData/Provisioning Profiles/df3e378a-f1a2-4041-8c00-7325a46528d9.mobileprovision'>>
+Identity: 362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED
+Certificate <DVTSigningCertificate: 0xc06c79f80; name='Apple Distribution: James Baker (G3P9A8Z2NP)', hash='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', serialNumber='26E2C337B284F5EFAA4BD5BA44C9C29F', certificateKinds='(
+    "1.2.840.113635.100.6.1.7",
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2026-01-26 07:02:39 +0000''>>, errors: (null)>
+2026-02-24 04:00:11 +0000  Uploading NYCBusScheduler with device token 4971317011F681D88CF492EFA37CD8E991F041F49C40D70B9B049413CF7A116A
+2026-02-24 04:00:11 +0000  Starting upload
+2026-02-24 04:00:11 +0000  Alert authorization granted? true (nil)
+2026-02-24 04:00:11 +0000  Updated message: Making copy of ‘NYCBusScheduler.ipa’…, progress: 0.000000
+2026-02-24 04:00:11 +0000  Updated progress: 0.000000 (raw value: 0.000000)
+2026-02-24 04:00:11 +0000  Updated message: Preparing to upload ‘NYCBusScheduler.ipa’…, progress: 0.000000
+2026-02-24 04:00:12 +0000  Updated message: Analyzing package…, progress: 0.000000
+2026-02-24 04:00:16 +0000  Updated message: Sending analysis to App Store Connect…, progress: 0.000000
+2026-02-24 04:00:17 +0000  Updated message: Waiting for App Store Connect analysis response…, progress: 0.000000
+2026-02-24 04:00:44 +0000  Updated message: Sending SPI analysis to App Store Connect…, progress: 0.000000
+2026-02-24 04:00:45 +0000  Updated message: Waiting for App Store Connect SPI analysis response…, progress: 0.000000
+2026-02-24 04:00:57 +0000  Updated message: Upload failed.
+Validation failed
+Invalid Pre-Release Train. The train version '5.5' is closed for new build submissions (ID: f7e89ffd-5624-4347-bf07-75be696e147b), progress: 0.000000
+2026-02-24 04:00:57 +0000  Distribution record info for archive: <IDEArchiveDistributionRecord: 0xc06c79680; task='2', distributionDestination='2', uploadDestination='1', teamID='G3P9A8Z2NP', signingCertificateSHA1='362D7D7D5A6DF6A16DF83ED2E8B809D5ABFE36ED', uniqueIdentifier='e18f1a6a-c657-414b-be1e-ed6d1709ddfb', packagePath='(null)', preparationEvent='<IDEArchiveDistributionEvent: 0xc078a4870; title='Prepared archive for uploading', shortTitle='Prepared', date='2026-02-24 03:59:50 +0000', errors='(
+)', warnings='(
+)', infoMessages='(
+)', state='2'>', uploadEvent='<IDEArchiveDistributionEvent: 0xc078a4910; title='Upload failed', shortTitle='Upload failed', date='2026-02-24 04:00:57 +0000', errors='(
+    "Error Domain=ContentDelivery Code=409 \"Validation failed\" UserInfo={IDEDistributionIssueSeverity=3, NSLocalizedDescription=Validation failed, NSLocalizedRecoverySuggestion=Invalid Pre-Release Train. The train version '5.5' is closed for new build submissions (ID: f7e89ffd-5624-4347-bf07-75be696e147b)}",
+    "Error Domain=ContentDelivery Code=409 \"Validation failed\" UserInfo={IDEDistributionIssueSeverity=3, NSLocalizedDescription=Validation failed, NSLocalizedRecoverySuggestion=This bundle is invalid. The value for key CFBundleShortVersionString [5.5] in the Info.plist file must contain a higher version than that of the previously approved version [5.5]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 1e0a905e-2775-43f4-8275-0d151063e4e3)}"
+)', warnings='(
+)', infoMessages='(
+)', state='5'>', validationEvent='(null)', processingCompletedEvent='(null)'>
+2026-02-24 04:00:57 +0000  Step failed: <IDEDistributionResultStep: 0xc19702780>: Error Domain=IDEDistributionResultStepErrorDomain Code=-1 "Upload failed with errors" UserInfo={NSLocalizedDescription=Upload failed with errors, IDEDistributionUnderlyingErrors=(
+    "Error Domain=ContentDelivery Code=409 \"error: Validation failed. Invalid Pre-Release Train. The train version '5.5' is closed for new build submissions (ID: f7e89ffd-5624-4347-bf07-75be696e147b).\" UserInfo={NSLocalizedDescription=error: Validation failed. Invalid Pre-Release Train. The train version '5.5' is closed for new build submissions (ID: f7e89ffd-5624-4347-bf07-75be696e147b).}",
+    "Error Domain=ContentDelivery Code=409 \"error: Validation failed. This bundle is invalid. The value for key CFBundleShortVersionString [5.5] in the Info.plist file must contain a higher version than that of the previously approved version [5.5]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 1e0a905e-2775-43f4-8275-0d151063e4e3).\" UserInfo={NSLocalizedDescription=error: Validation failed. This bundle is invalid. The value for key CFBundleShortVersionString [5.5] in the Info.plist file must contain a higher version than that of the previously approved version [5.5]. Please find more information about CFBundleShortVersionString at https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring (ID: 1e0a905e-2775-43f4-8275-0d151063e4e3).}"
+)}
+2026-02-24 04:00:57 +0000 [MT] Displaying Upload result for archive NYCBusScheduler

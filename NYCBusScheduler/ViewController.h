@@ -11,7 +11,7 @@
 #import <Mapkit/Mapkit.h> 
 @import GoogleMobileAds;
 
-@interface ViewController : UIViewController  <CLLocationManagerDelegate,GADInterstitialDelegate>
+@interface ViewController : UIViewController  <CLLocationManagerDelegate,GADFullScreenContentDelegate>
 {
     CLLocationManager *locationManager; 
     CLLocation *locationMe;
@@ -20,7 +20,7 @@
     int iAdCounter;
 }
 
-@property (nonatomic, strong) GADInterstitial *interstitial;
+@property (nonatomic, strong) GADInterstitialAd *interstitial;
  
 
 
